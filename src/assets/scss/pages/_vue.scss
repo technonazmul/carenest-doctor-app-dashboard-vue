@@ -1,0 +1,147 @@
+// .sidebar-menu {
+//     height: 100vh;
+//     overflow-y: auto;
+//     top: 56px;
+// }
+// .sidebar [data-simplebar]::-webkit-scrollbar {
+//   width: 1px;
+// }
+
+
+.datepic .vc-container.vc-monthly{
+    width: 100%;
+}
+.datepic .vc-container {
+    border: none !important;
+}
+.datepic .vc-container .vc-pane-container .vc-pane-layout .vc-pane .vc-weeks .vc-day .vc-highlights .vc-day-layer .vc-highlight {
+    background-color: #3D5EE1 !important;
+    text-shadow: unset !important;
+    color: #fff;
+    border-radius: 4px !important;
+}
+.vc-header {
+    padding: 0px 16px 10px 0 !important;
+}
+.ant-pagination.ant-table-pagination{
+    display: none;
+}
+.multiselect__tag {
+    color: #6c7688 !important;
+    background: #f5f6f8 !important;
+}
+
+.multiselect__option--highlight {
+    background: #2e37a4;
+    color: white;
+}
+.multiselect__option--highlight::after {
+    background: #2e37a4;
+    color: white;
+}
+.multiselect__option--selected.multiselect__option--highlight {
+    background: #2e37a4;
+    color: white;
+}
+.multiselect__option--selected.multiselect__option--highlight::after {
+    background: #2e37a4;
+    color: white;
+}
+.ant-picker-dropdown{
+    z-index: 1056 !important;
+}
+.chat-wrapper{
+    .slimscroll{
+        overflow-x: auto;
+    }
+}
+
+.chat-wrapper .chat.chat-messages .slimscroll {
+    height: calc(-163px + 100vh) !important;
+}
+.chat-wrapper .sidebar-group .slimscroll {
+    height: calc(100vh - 99px) !important;
+}
+.chat.chat-messages.show {
+    height: calc(100vh - 99px) !important;
+}
+.stickysidebar {
+    position: sticky;
+    top: 0;
+}
+.notes-slider .carousel ol li .card {
+	margin: 0 12px;	
+}
+.notes-slider .carousel .carousel__prev{
+    border: 1px solid var(--cf-border-color);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    color: #2E3B48;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -50px;
+    left: 20%;
+}
+.notes-slider .carousel .carousel__next{
+    border: 1px solid var(--cf-border-color);
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    background: #fff;
+    color: #2E3B48;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: -50px;
+    right: 70%;
+}
+.folders-carousel .carousel ol li .folder-wrap{
+    margin: 0 12px;
+}
+.files-carousel .carousel ol li .files-wrap{
+    margin: 0 12px;
+}
+.ant-picker-suffix{
+    display: none !important;
+}
+.input-icon-end .form-control{
+    padding-right: 100px;
+}
+.v3ti{
+    padding: 1px;
+}
+.v3ti .v3ti-tag{
+    color: #0A1B39 !important;
+    margin-right: 2px !important;
+    background: #F5F6F8 !important;
+    border-radius: 5px !important;
+    border: 1px solid #E7E8EB;
+    padding: 2px 4px !important;
+    font-size: 12px;
+    font-weight: 500 !important;
+}
+.v3ti .v3ti-tag .v3ti-remove-tag {
+    color: #0A1B39 !important;
+}
+.ant-picker-calendar .ant-picker-date-panel .ant-picker-content th{
+    padding: 0 !important;
+}
+
+.ant-picker-calendar .ant-picker-content td{
+    padding: 0 !important;
+}
+.indicators-container {
+    .clear-button{
+        display: none !important;
+    }
+}
+
+.notification-body{
+  height: 200px;
+  overflow: auto;
+}
