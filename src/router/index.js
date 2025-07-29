@@ -320,11 +320,11 @@ const routes = [
         component: () => import("@/views/pages/doctors/add-doctor.vue"),
       },
       {
-        path: "edit-doctor",
+        path: "edit-doctor/:id",
         component: () => import("@/views/pages/doctors/edit-doctor.vue"),
       },
       {
-        path: "doctor-details/:doctorId",
+        path: "doctor-details/:id",
         component: () => import("@/views/pages/doctors/doctor-details.vue"),
       },
       {
@@ -343,7 +343,7 @@ const routes = [
         component: () => import("@/views/pages/patients/patients-list.vue"),
       },
       {
-        path: "patient-details",
+        path: "patient-details/:id",
         component: () => import("@/views/pages/patients/patient-details.vue"),
       },
       {
@@ -355,7 +355,7 @@ const routes = [
         component: () => import("@/views/pages/patients/create-patient.vue"),
       },
       {
-        path: "edit-patient",
+        path: "edit-patient/:id",
         component: () => import("@/views/pages/patients/edit-patient.vue"),
       },
     ],

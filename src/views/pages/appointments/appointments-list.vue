@@ -11,15 +11,6 @@
         <div class="flex-grow-1">
           <h4 class="fw-semibold mb-0">Appointment</h4>
         </div>
-        <div class="text-end d-flex">
-          <!-- dropdown-->
-
-          <router-link
-            to="/appointments/new-appointment"
-            class="btn btn-primary ms-2 fs-13 btn-md"
-            ><i class="ti ti-plus me-1"></i> New Appointment
-          </router-link>
-        </div>
       </div>
       <!-- End Page Header -->
 

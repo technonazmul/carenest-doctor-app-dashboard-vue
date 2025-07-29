@@ -2,46 +2,41 @@
   <layouts-header></layouts-header>
   <layouts-sidebar></layouts-sidebar>
 
-  <!-- ========================
-        Start Page Content
-    ========================= -->
-
   <div class="page-wrapper">
-    <!-- Start Content -->
     <div class="content">
       <div class="row">
         <div class="col-lg-10 mx-auto">
-          <!-- Start Page Header -->
-          <div class="d-flex align-items-sm-center flex-sm-row flex-column gap-2 mb-3">
+          <!-- Page Header -->
+          <div
+            class="d-flex align-items-sm-center flex-sm-row flex-column gap-2 mb-3"
+          >
             <div class="flex-grow-1">
               <h6 class="fw-bold mb-0 d-flex align-items-center">
-                <router-link to="/doctors/doctors-grid"
-                  ><i class="ti ti-chevron-left me-1 fs-14"></i>Doctor</router-link
-                >
+                <router-link to="/doctors/doctors-grid">
+                  <i class="ti ti-chevron-left me-1 fs-14"></i>Doctor
+                </router-link>
               </h6>
             </div>
           </div>
-          <!-- End Page Header -->
 
-          <!-- Start Add Doctor -->
-
+          <!-- Edit Doctor Form -->
           <div class="card">
-            <!-- <div class="card-header">
-                            
-                        </div> -->
             <div class="card-body">
               <div
                 class="border-bottom d-flex align-items-center justify-content-between pb-3 mb-3"
               >
                 <h5 class="offcanvas-title fs-18 fw-bold">Edit Doctor</h5>
               </div>
-              <form action="#">
+
+              <form @submit.prevent="updateDoctor">
+                <!-- Contact Information -->
                 <div class="bg-light px-3 py-2 mb-3">
                   <h6 class="fw-bold mb-0">Contact Information</h6>
                 </div>
+
                 <div class="pb-0">
-                  <!-- start row-->
                   <div class="row">
+                    <!-- Profile Image -->
                     <div class="col-lg-12">
                       <div class="mb-3 d-flex align-items-center">
                         <label class="form-label">Profile Image</label>
@@ -49,14 +44,22 @@
                           class="drag-upload-btn avatar avatar-xxl rounded-circle bg-light text-muted position-relative overflow-hidden z-1 mb-2 ms-4 p-0"
                         >
                           <img
-                            src="@/assets/img/doctors/doctor-01.jpg"
+                            :src="
+                              form.image
+                                ? `${apiBase}/uploads/${form.image}`
+                                : `${apiBase}/uploads/default-doctor.jpg`
+                            "
                             class="position-relative z-n1"
-                            alt=""
+                            alt="Doctor Image"
+                            style="width: 100%; height: 100%; object-fit: cover"
                           />
                           <input
                             type="file"
+                            @change="onFileChange"
                             class="form-control image-sign"
-                            multiple=""
+                            ref="fileInput"
+                            :key="fileInputKey"
+                            accept="image/*"
                           />
                           <div
                             class="position-absolute bottom-0 end-0 star-0 w-100 h-25 bg-dark d-flex align-items-center justify-content-center z-n1"
@@ -71,10 +74,10 @@
                         </div>
                       </div>
                     </div>
-                    <!-- end col-->
 
                     <div class="col-lg-12">
                       <div class="row">
+                        <!-- Name -->
                         <div class="col-lg-6">
                           <div class="mb-3">
                             <label class="form-label"
@@ -83,1018 +86,538 @@
                             <input
                               type="text"
                               class="form-control"
-                              value="Dr.Mick Thompson"
+                              v-model="form.name"
+                              required
                             />
                           </div>
                         </div>
-                        <!-- end col-->
 
+                        <!-- Email -->
                         <div class="col-lg-6">
                           <div class="mb-3">
                             <label class="form-label"
-                              >Username <span class="text-danger">*</span></label
+                              >Email Address
+                              <span class="text-danger">*</span></label
                             >
-                            <input type="text" class="form-control" value="Andrew" />
+                            <input
+                              type="email"
+                              class="form-control"
+                              v-model="form.email"
+                              required
+                            />
                           </div>
                         </div>
-                        <!-- end col-->
 
+                        <!-- Qualifications -->
                         <div class="col-lg-6">
                           <div class="mb-3">
                             <label class="form-label"
-                              >Phone Number <span class="text-danger">*</span></label
+                              >Qualifications
+                              <span class="text-danger">*</span></label
                             >
                             <input
                               type="text"
                               class="form-control"
-                              value="+1 47895 58974"
+                              v-model="form.qualifications"
                             />
                           </div>
                         </div>
-                        <!-- end col-->
 
-                        <div class="col-lg-6">
-                          <div class="mb-3">
-                            <label class="form-label"
-                              >Email Address <span class="text-danger">*</span></label
-                            >
-                            <input
-                              type="text"
-                              class="form-control"
-                              value="mick@example.com"
-                            />
-                          </div>
-                        </div>
-                        <!-- end col-->
-                      </div>
-                    </div>
-                    <!-- end col-->
-
-                    <div class="col-lg-12">
-                      <div class="row">
-                        <div class="col-lg-6">
-                          <div class="mb-3">
-                            <label class="form-label"
-                              >DOB <span class="text-danger">*</span></label
-                            >
-                            <div class="input-icon-end position-relative">
-                              <a-date-picker
-                                v-model="valueThree"
-                                class="form-control datetimepicker"
-                                placeholder="dd/mm/yyyy"
-                              />
-                            </div>
-                          </div>
-                        </div>
+                        <!-- Experience -->
                         <div class="col-lg-6">
                           <div class="mb-3">
                             <label class="form-label"
                               >Year Of Experience
                               <span class="text-danger">*</span></label
                             >
-                            <input type="text" class="form-control" value="+5 Years" />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- end col-->
-
-                    <div class="col-lg-12">
-                      <div class="row">
-                        <div class="col-lg-6">
-                          <div class="mb-3">
-                            <label class="form-label"
-                              >Department<span class="text-danger ms-1">*</span></label
-                            >
-                            <vue3-select
-                              v-model="selected"
-                              :options="Department"
-                              placeholder="Select"
-                            />
-                          </div>
-                        </div>
-                        <div class="col-lg-6">
-                          <div class="mb-3">
-                            <label class="form-label"
-                              >Designation <span class="text-danger ms-1">*</span></label
-                            >
-                            <vue3-select
-                              v-model="selectedOne"
-                              :options="Designation"
-                              placeholder="Select"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- end col-->
-
-                    <div class="col-lg-12">
-                      <div class="row">
-                        <div class="col-lg-6">
-                          <div class="mb-3">
-                            <label class="form-label"
-                              >Medical License Number
-                              <span class="text-danger">*</span></label
-                            >
-                            <input type="text" class="form-control" value="MGF14578" />
-                          </div>
-                        </div>
-                        <div class="col-lg-6">
-                          <div class="mb-3">
-                            <label class="form-label">Language Spoken</label>
-                            <vue3-tags-input
-                              class="input-tags form-control"
+                            <input
                               type="text"
-                              id="inputBox2"
-                              data-role="tagsinput"
-                              name="specialist"
-                              value="Tag1"
-                              :tags="tagsTwo"
+                              class="form-control"
+                              v-model="form.experience"
                             />
                           </div>
                         </div>
                       </div>
                     </div>
-                    <!-- end col-->
 
                     <div class="col-lg-12">
                       <div class="row">
+                        <!-- Specialty Dropdown -->
                         <div class="col-lg-6">
                           <div class="mb-3">
                             <label class="form-label"
-                              >Blood Group<span class="text-danger ms-1">*</span></label
+                              >Department<span class="text-danger ms-1"
+                                >*</span
+                              ></label
                             >
-                            <vue3-select
-                              v-model="selectedTwo"
-                              :options="Bloodgroup"
-                              placeholder="Select"
-                            />
-                          </div>
-                        </div>
-                        <div class="col-lg-6">
-                          <div class="mb-3">
-                            <label class="form-label"
-                              >Gender <span class="text-danger ms-1">*</span></label
+                            <select
+                              class="form-control"
+                              v-model="form.specialization"
+                              required
                             >
-                            <vue3-select
-                              v-model="selectedThree"
-                              :options="Gender"
-                              placeholder="Select"
-                            />
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- end col-->
-
-                    <div class="col-lg-12">
-                      <div class="mb-3">
-                        <label class="form-label">Bio</label>
-                        <textarea class="form-control" rows="3">
-Dr.Mick Thompson is a compassionate and experienced internal medicine physician with over 5 years of clinical practice.</textarea
-                        >
-                      </div>
-                      <div class="form-check form-switch mb-3">
-                        <label class="form-check-label" for="switchCheckDefault3"
-                          >Feature On Website</label
-                        >
-                        <input
-                          class="form-check-input"
-                          type="checkbox"
-                          role="switch"
-                          id="switchCheckDefault3"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <!-- end row-->
-                </div>
-                <div class="bg-light px-3 py-2 mb-3">
-                  <h6 class="fw-bold mb-0">Address Information</h6>
-                </div>
-                <div class="pb-0">
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <div class="mb-3">
-                        <label class="form-label">Address 1</label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          value="2900 Alpha Avenue"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="mb-3">
-                        <label class="form-label">Address 2 </label>
-                        <input
-                          type="text"
-                          class="form-control"
-                          value="2900 Alpha Avenue"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <div class="mb-3">
-                        <label class="form-label">Country</label>
-                        <vue3-select
-                          v-model="selectedFour"
-                          :options="Country"
-                          placeholder="Select"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="mb-3">
-                        <label class="form-label">City</label>
-                        <vue3-select
-                          v-model="selectedFive"
-                          :options="City"
-                          placeholder="Select"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-lg-6">
-                      <div class="mb-3">
-                        <label class="form-label">State</label>
-                        <vue3-select
-                          v-model="selectedSix"
-                          :options="City"
-                          placeholder="Select"
-                        />
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="mb-3">
-                        <label class="form-label">Pincode</label>
-                        <input type="text" class="form-control" value="PA 15650" />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="bg-light px-3 py-2 mb-3">
-                  <h6 class="fw-bold mb-0">Address Information</h6>
-                </div>
-                <div>
-                  <ul
-                    class="nav nav-pills schedule-tab mb-3"
-                    id="pills-tab2"
-                    role="tablist"
-                  >
-                    <li class="nav-item me-1" role="presentation">
-                      <button
-                        class="nav-link btn btn-sm btn-icon p-2 d-flex align-items-center justify-content-center w-auto active"
-                        data-bs-toggle="pill"
-                        data-bs-target="#schedules-8"
-                        type="button"
-                        role="tab"
-                        aria-selected="true"
-                      >
-                        Monday
-                      </button>
-                    </li>
-                    <li class="nav-item me-1" role="presentation">
-                      <button
-                        class="nav-link btn btn-sm btn-icon p-2 d-flex align-items-center justify-content-center w-auto"
-                        data-bs-toggle="pill"
-                        data-bs-target="#schedules-8"
-                        type="button"
-                        role="tab"
-                        aria-selected="false"
-                        tabindex="-1"
-                      >
-                        Tuesday
-                      </button>
-                    </li>
-                    <li class="nav-item me-1" role="presentation">
-                      <button
-                        class="nav-link btn btn-sm btn-icon p-2 d-flex align-items-center justify-content-center w-auto"
-                        data-bs-toggle="pill"
-                        data-bs-target="#schedules-8"
-                        type="button"
-                        role="tab"
-                        aria-selected="false"
-                        tabindex="-1"
-                      >
-                        Wednesday
-                      </button>
-                    </li>
-                    <li class="nav-item me-1" role="presentation">
-                      <button
-                        class="nav-link btn btn-sm btn-icon p-2 d-flex align-items-center justify-content-center w-auto"
-                        data-bs-toggle="pill"
-                        data-bs-target="#schedules-8"
-                        type="button"
-                        role="tab"
-                        aria-selected="false"
-                        tabindex="-1"
-                      >
-                        Thursday
-                      </button>
-                    </li>
-                    <li class="nav-item me-1" role="presentation">
-                      <button
-                        class="nav-link btn btn-sm btn-icon p-2 d-flex align-items-center justify-content-center w-auto"
-                        data-bs-toggle="pill"
-                        data-bs-target="#schedules-8"
-                        type="button"
-                        role="tab"
-                        aria-selected="false"
-                        tabindex="-1"
-                      >
-                        Friday
-                      </button>
-                    </li>
-                    <li class="nav-item me-1" role="presentation">
-                      <button
-                        class="nav-link btn btn-sm btn-icon p-2 d-flex align-items-center justify-content-center w-auto"
-                        data-bs-toggle="pill"
-                        data-bs-target="#schedules-8"
-                        type="button"
-                        role="tab"
-                        aria-selected="false"
-                        tabindex="-1"
-                      >
-                        Saturday
-                      </button>
-                    </li>
-                    <li class="nav-item me-1" role="presentation">
-                      <button
-                        class="nav-link btn btn-sm btn-icon p-2 d-flex align-items-center justify-content-center w-auto"
-                        data-bs-toggle="pill"
-                        data-bs-target="#schedules-8"
-                        type="button"
-                        role="tab"
-                        aria-selected="false"
-                        tabindex="-1"
-                      >
-                        Sunday
-                      </button>
-                    </li>
-                  </ul>
-                  <div class="tab-content" id="pills-tabContent2">
-                    <div
-                      class="tab-pane fade active show"
-                      id="schedules-8"
-                      role="tabpanel"
-                    >
-                      <div class="add-schedule-list">
-                        <div class="row gx-3">
-                          <div class="col-lg-5">
-                            <div class="mb-3">
-                              <label class="form-label">Session</label>
-                              <vue3-select
-                                v-model="selectedSeven"
-                                :options="Session"
-                                placeholder="Select"
-                              />
-                            </div>
-                          </div>
-                          <div class="col-lg-7">
-                            <div class="row align-items-end gx-3">
-                              <div class="col-lg-9">
-                                <div class="row gx-3">
-                                  <div class="col-lg-6">
-                                    <div class="mb-3">
-                                      <label class="form-label">From</label>
-                                      <div class="input-icon-end position-relative">
-                                        <a-time-picker
-                                          v-model="valueOne"
-                                          class="form-control timepicker"
-                                          placeholder="03 : 05  AM"
-                                        />
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <div class="col-lg-6">
-                                    <div class="mb-3">
-                                      <label class="form-label">To</label>
-                                      <div class="input-icon-end position-relative">
-                                        <a-time-picker
-                                          v-model="valueTwo"
-                                          class="form-control timepicker"
-                                          placeholder="03 : 05  AM"
-                                        />
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="col-lg-3">
-                                <div class="mb-3">
-                                  <a
-                                    href="javascript:void(0);"
-                                    class="add-schedule-btn p-2 bg-light btn-icon text-dark rounded d-flex align-items-center justify-content-center"
-                                    @click="addSchedule"
-                                  >
-                                    <i class="ti ti-plus fs-16"></i>
-                                  </a>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div
-                        class="add-schedule-list row gx-3"
-                        v-for="(schedules, index) in schedules"
-                        :key="index"
-                      >
-                        <div class="col-lg-5">
-                          <div class="mb-3">
-                            <vue3-select
-                              v-model="selectedTen"
-                              :options="Session"
-                              placeholder="Select"
-                            />
-                          </div>
-                        </div>
-                        <div class="col-lg-7">
-                          <div class="row align-items-end gx-3">
-                            <div class="col-lg-9">
-                              <div class="row gx-3">
-                                <div class="col-lg-6">
-                                  <div class="mb-3">
-                                    <div class="input-icon-end position-relative">
-                                      <a-time-picker
-                                        v-model="valueOne"
-                                        class="form-control timepicker"
-                                        placeholder="03 : 05 AM"
-                                      />
-                                    </div>
-                                  </div>
-                                </div>
-                                <div class="col-lg-6">
-                                  <div class="mb-3">
-                                    <div class="input-icon-end position-relative">
-                                      <a-time-picker
-                                        v-model="valueTwo"
-                                        class="form-control timepicker"
-                                        placeholder="03 : 05 AM"
-                                      />
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                            <div class="col-lg-3">
-                              <div
-                                class="d-flex align-items-center justify-content-start mb-3"
+                              <option value="">Select Department</option>
+                              <option
+                                v-for="item in specialties"
+                                :key="item._id"
+                                :value="item._id"
                               >
-                                <a
-                                  href="javascript:void(0);"
-                                  class="add-schedule-btn p-2 bg-light btn-icon text-dark rounded d-flex align-items-center justify-content-center me-2"
-                                  @click="addSchedule"
-                                >
-                                  <i class="ti ti-plus fs-16"></i>
-                                </a>
-                                <a
-                                  href="javascript:void(0);"
-                                  class="remove-schedule-btn p-2 bg-soft-danger btn-icon text-danger rounded d-flex align-items-center justify-content-center"
-                                  @click="removeSchedule(index)"
-                                >
-                                  <i class="ti ti-trash fs-16"></i>
-                                </a>
-                              </div>
-                            </div>
+                                {{ item.name }}
+                              </option>
+                            </select>
+                          </div>
+                        </div>
+
+                        <!-- Designation & Department -->
+                        <div class="col-lg-6">
+                          <div class="mb-3">
+                            <label class="form-label"
+                              >Designation & Department
+                              <span class="text-danger ms-1">*</span></label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              v-model="form.designationAndDepartment"
+                            />
                           </div>
                         </div>
                       </div>
                     </div>
-                  </div>
-                  <div class="mb-3">
-                    <a href="#" class="btn btn-dark">Apply All</a>
-                  </div>
-                </div>
-                <div class="bg-light px-3 py-2 mb-3">
-                  <h6 class="fw-bold mb-0">Appointment Information</h6>
-                </div>
-                <div class="pb-0">
-                  <div class="row">
+
+                    <div class="col-lg-12">
+                      <div class="row">
+                        <!-- Specialty in Text -->
+                        <div class="col-lg-6">
+                          <div class="mb-3">
+                            <label class="form-label"
+                              >Specialties In Text</label
+                            >
+                            <input
+                              type="text"
+                              class="form-control"
+                              v-model="form.specialty"
+                            />
+                          </div>
+                        </div>
+
+                        <!-- Fee -->
+                        <div class="col-lg-6">
+                          <div class="mb-3">
+                            <label class="form-label">Consultation Fee</label>
+                            <input
+                              type="text"
+                              class="form-control"
+                              v-model="form.fee"
+                            />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Total Patients -->
                     <div class="col-lg-6">
                       <div class="mb-3">
-                        <label class="form-label">Appointment Type</label>
-                        <vue3-select
-                          v-model="selectedEight"
-                          :options="Appointment"
-                          placeholder="Select"
+                        <label class="form-label">Total Patients</label>
+                        <input
+                          type="text"
+                          class="form-control"
+                          v-model="form.patient"
                         />
                       </div>
                     </div>
-                    <div class="col-lg-6"></div>
-                    <div class="col-lg-6">
+
+                    <!-- Biography -->
+                    <div class="col-lg-12">
                       <div class="mb-3">
-                        <label class="form-label">Accept bookings (in Advance)</label>
-                        <div class="input-group">
-                          <input type="text" class="form-control" value="2" />
-                          <span class="input-group-text bg-transparent text-dark fs-14"
-                            >Days</span
-                          >
-                        </div>
+                        <label class="form-label">Biography</label>
+                        <textarea
+                          class="form-control"
+                          rows="3"
+                          v-model="form.biography"
+                        ></textarea>
                       </div>
                     </div>
+
+                    <!-- Password -->
                     <div class="col-lg-6">
                       <div class="mb-3">
-                        <label class="form-label">Appointment Duration</label>
-                        <div class="input-group">
-                          <input type="text" class="form-control" value="30" />
-                          <span class="input-group-text bg-transparent text-dark fs-14"
-                            >Mins</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="mb-3">
-                        <label class="form-label">Consultation Charge</label>
-                        <div class="input-group">
-                          <input type="text" class="form-control" value="$100" />
-                          <span class="input-group-text bg-transparent text-dark fs-14"
-                            >$</span
-                          >
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-6">
-                      <div class="mb-3">
-                        <label class="form-label">Max Bookings Per Slot</label>
-                        <input type="text" class="form-control" value="200" />
-                      </div>
-                    </div>
-                    <div class="col-md-6">
-                      <div class="form-check form-switch mb-3">
-                        <label class="form-check-label" for="switchCheckDefault2"
-                          >Display on Booking Page</label
+                        <label class="form-label"
+                          >Password <span class="text-danger">*</span></label
                         >
                         <input
-                          class="form-check-input"
-                          type="checkbox"
-                          role="switch"
-                          id="switchCheckDefault2"
+                          type="password"
+                          class="form-control"
+                          v-model="form.password"
                         />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="bg-light px-3 py-2 mb-3">
-                  <h6 class="fw-bold mb-0">Educational Information</h6>
-                </div>
-                <div class="pb-0">
-                  <div class="add-education-list">
-                    <div class="row align-items-end">
-                      <div class="col-lg-11">
-                        <div class="row">
-                          <div class="col-lg-3">
-                            <div class="mb-3">
-                              <label class="form-label">Educational Degree</label>
-                              <input type="text" class="form-control" value="M.B.B.S" />
-                            </div>
-                          </div>
-                          <div class="col-lg-3">
-                            <div class="mb-3">
-                              <label class="form-label">University</label>
-                              <input
-                                type="text"
-                                class="form-control"
-                                value="Harvard Medical School"
-                              />
-                            </div>
-                          </div>
-                          <div class="col-lg-3">
-                            <div class="mb-3">
-                              <label class="form-label">From</label>
-                              <div class="input-icon-end position-relative">
-                                <a-date-picker
-                                  v-model="valueFour"
-                                  class="form-control datetimepicker"
-                                  placeholder="dd/mm/yyyy"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-lg-3">
-                            <div class="mb-3">
-                              <label class="form-label">To</label>
-                              <div class="input-icon-end position-relative">
-                                <a-date-picker
-                                  v-model="valueFive"
-                                  class="form-control datetimepicker"
-                                  placeholder="dd/mm/yyyy"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-1">
-                        <div class="mb-3">
-                          <a
-                            href="javascript:void(0);"
-                            class="add-education-btn p-2 bg-light btn-icon text-dark rounded d-flex align-items-center justify-content-center"
-                            @click="addEducational"
-                          >
-                            <i class="ti ti-plus fs-16"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="add-education-list row align-items-end"
-                    v-for="(educational, index) in educational"
-                    :key="index"
-                  >
-                    <div class="col-lg-11">
-                      <div class="row">
-                        <div class="col-lg-3">
-                          <div class="mb-3">
-                            <label class="form-label">Educational Degree</label>
-                            <input type="text" class="form-control" />
-                          </div>
-                        </div>
-                        <div class="col-lg-3">
-                          <div class="mb-3">
-                            <label class="form-label">University</label>
-                            <input type="text" class="form-control" />
-                          </div>
-                        </div>
-                        <div class="col-lg-3">
-                          <div class="mb-3">
-                            <label class="form-label">From</label>
-                            <div class="input-icon-end position-relative">
-                              <a-date-picker
-                                v-model="valueEight"
-                                class="form-control datetimepicker"
-                                placeholder="dd/mm/yyyy"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-3">
-                          <div class="mb-3">
-                            <label class="form-label">To</label>
-                            <div class="input-icon-end position-relative">
-                              <a-date-picker
-                                v-model="valueNine"
-                                class="form-control datetimepicker"
-                                placeholder="dd/mm/yyyy"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-1">
-                      <div class="mb-3">
-                        <a
-                          href="javascript:void(0);"
-                          class="remove-education-btn p-2 bg-soft-danger btn-icon text-danger rounded d-flex align-items-center justify-content-center"
-                          @click="removeEducational"
-                        >
-                          <i class="ti ti-trash fs-16"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="bg-light px-3 py-2 mb-3">
-                  <h6 class="fw-bold mb-0">Awards & Recognition</h6>
-                </div>
-                <div class="pb-0">
-                  <div class="add-award-list">
-                    <div class="row align-items-end">
-                      <div class="col-lg-11">
-                        <div class="row">
-                          <div class="col-lg-6">
-                            <div class="mb-3">
-                              <label class="form-label">Name</label>
-                              <input
-                                type="text"
-                                class="form-control"
-                                value="Harvard Medical School"
-                              />
-                            </div>
-                          </div>
-                          <div class="col-lg-6">
-                            <div class="mb-3">
-                              <label class="form-label">From</label>
-                              <div class="input-icon-end position-relative">
-                                <a-date-picker
-                                  v-model="valueSix"
-                                  class="form-control datetimepicker"
-                                  placeholder="dd/mm/yyyy"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-1">
-                        <div class="mb-3">
-                          <a
-                            href="javascript:void(0);"
-                            class="add-award-btn p-2 bg-light btn-icon text-dark rounded d-flex align-items-center justify-content-center"
-                            @click="addAwards"
-                          >
-                            <i class="ti ti-plus fs-16"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="add-award-list row align-items-end"
-                    v-for="(awards, index) in awards"
-                    :key="index"
-                  >
-                    <div class="col-lg-11">
-                      <div class="row">
-                        <div class="col-lg-6">
-                          <div class="mb-3">
-                            <label class="form-label">Name</label>
-                            <input type="text" class="form-control" />
-                          </div>
-                        </div>
-                        <div class="col-lg-6">
-                          <div class="mb-3">
-                            <label class="form-label">From</label>
-                            <div class="input-icon-end position-relative">
-                              <a-date-picker
-                                v-model="valueEight"
-                                class="form-control datetimepicker"
-                                placeholder="dd/mm/yyyy"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-1">
-                      <div class="mb-3">
-                        <a
-                          href="javascript:void(0);"
-                          class="remove-award-btn p-2 bg-soft-danger btn-icon text-danger rounded d-flex align-items-center justify-content-center"
-                          @click="removeAwards"
-                        >
-                          <i class="ti ti-trash fs-16"></i>
-                        </a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="bg-light px-3 py-2">
-                  <h6 class="fw-bold mb-0">Certifications</h6>
-                </div>
-                <div class="pb-3 mb-3 border-bottom">
-                  <div class="add-certification-list">
-                    <div class="row align-items-end">
-                      <div class="col-lg-11">
-                        <div class="row">
-                          <div class="col-lg-6">
-                            <div class="mb-3">
-                              <label class="form-label">Name</label>
-                              <input
-                                type="text"
-                                class="form-control"
-                                value="Harvard Medical School"
-                              />
-                            </div>
-                          </div>
-                          <div class="col-lg-6">
-                            <div class="mb-3">
-                              <label class="form-label">From</label>
-                              <div class="input-icon-end position-relative">
-                                <a-date-picker
-                                  v-model="valueSeven"
-                                  class="form-control datetimepicker"
-                                  placeholder="dd/mm/yyyy"
-                                />
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-lg-1">
-                        <div class="mb-3">
-                          <a
-                            href="javascript:void(0);"
-                            class="add-certification-btn p-2 bg-light btn-icon text-dark rounded d-flex align-items-center justify-content-center"
-                            @click="addCertification"
-                          >
-                            <i class="ti ti-plus fs-16"></i>
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div
-                    class="add-certification-list row align-items-end"
-                    v-for="(certification, index) in certification"
-                    :key="index"
-                  >
-                    <div class="col-lg-11">
-                      <div class="row">
-                        <div class="col-lg-6">
-                          <div class="mb-3">
-                            <label class="form-label">Name</label>
-                            <input type="text" class="form-control" />
-                          </div>
-                        </div>
-                        <div class="col-lg-6">
-                          <div class="mb-3">
-                            <label class="form-label">From</label>
-                            <div class="input-icon-end position-relative">
-                              <a-date-picker
-                                v-model="valueTen"
-                                class="form-control datetimepicker"
-                                placeholder="dd/mm/yyyy"
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-lg-1">
-                      <div class="mb-3">
-                        <a
-                          href="javascript:void(0);"
-                          class="remove-certification-btn p-2 bg-soft-danger btn-icon text-danger rounded d-flex align-items-center justify-content-center"
-                          @click="removeCertification"
-                        >
-                          <i class="ti ti-trash fs-16"></i>
-                        </a>
                       </div>
                     </div>
                   </div>
                 </div>
 
+                <!-- Schedule Information -->
+                <div class="bg-light px-3 py-2 mb-3">
+                  <h6 class="fw-bold mb-0">Schedule Information</h6>
+                </div>
+
+                <div class="mb-4">
+                  <h4>Available Time Slots:</h4>
+                  <br />
+
+                  <div class="row">
+                    <div
+                      class="col-lg-4 col-md-6 mb-4"
+                      v-for="(slots, day) in form.timeSlots"
+                      :key="day"
+                    >
+                      <h5 class="mb-3">{{ day }}</h5>
+                      <div class="row">
+                        <div
+                          v-for="(slot, index) in staticTimeSlots"
+                          :key="index"
+                          class="col-4 mb-2"
+                        >
+                          <button
+                            type="button"
+                            :class="[
+                              'btn btn-sm w-100',
+                              form.timeSlots[day].includes(slot)
+                                ? 'btn-primary'
+                                : 'btn-outline-secondary',
+                            ]"
+                            @click="toggleTimeSlot(day, slot)"
+                          >
+                            {{ slot }}
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Submit Buttons -->
                 <div class="d-flex justify-content-end gap-2">
-                  <a
-                    href="javascript:void(0);"
+                  <button
+                    type="button"
                     class="btn btn-light btm-md"
-                    data-bs-dismiss="offcanvas"
-                    >Cancel</a
+                    @click="cancelForm"
                   >
-                  <button class="btn btn-primary btm-md">Save Changes</button>
+                    Cancel
+                  </button>
+                  <button
+                    type="submit"
+                    class="btn btn-primary btm-md"
+                    :disabled="isSubmitting"
+                  >
+                    {{ isSubmitting ? "Updating..." : "Save Changes" }}
+                  </button>
                 </div>
               </form>
             </div>
-            <!-- <div class="card-footer">
-                            
-                        </div> -->
           </div>
-
-          <!-- End Add Doctor -->
         </div>
       </div>
     </div>
-    <!-- End Content -->
 
-    <!-- Footer Start -->
+    <!-- Footer -->
     <div class="footer text-center bg-white p-2 border-top">
       <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
+        2025 &copy;
+        <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
         Rights Reserved
       </p>
     </div>
-    <!-- Footer End -->
   </div>
-
-  <!-- ========================
-        End Page Content
-    ========================= -->
 </template>
 
 <script>
-import { ref } from "vue";
-const valueOne = ref();
-const valueTwo = ref();
-const valueThree = ref();
-const valueFour = ref();
-const valueFive = ref();
-const valueSix = ref();
-const valueSeven = ref();
-const valueEight = ref();
-const valueNine = ref();
-import Vue3TagsInput from "vue3-tags-input";
+import axios from "axios";
+import { API_BASE } from "@/api/apiConfig";
+import Cookies from "js-cookie";
 
 export default {
-  components: {
-    Vue3TagsInput,
-  },
-  data() {
+  setup() {
+    const apiBase = API_BASE;
+    const adminToken = Cookies.get("adminToken");
+    const apiBaseUrl = `${apiBase}/api/backend`;
+
     return {
-      tagsTwo: ["English", "French"],
-      valueOne,
-      valueTwo,
-      valueThree,
-      valueFour,
-      valueFive,
-      valueSix,
-      valueSeven,
-      valueEight,
-      valueNine,
-      selected: "Cardiology",
-      selectedOne: "Cardiology",
-      selectedTwo: "O+",
-      selectedThree: "Male",
-      selectedFour: "United States",
-      selectedFive: "Los Angeles",
-      selectedSix: "California",
-      selectedSeven: "Morning",
-      selectedEight: "Online Consultation",
-      selectedTen: null,
-      Department: [
-        { label: "Cardiology", value: "Cardiology" },
-        { label: "Orthopedics", value: "Orthopedics" },
-        { label: "Pediatrics", value: "Pediatrics" },
-        { label: "Gynecology", value: "Gynecology" },
-        { label: "Psychiatry", value: "Psychiatry" },
-      ],
-      Designation: [
-        { label: "Cardiology", value: "Cardiology" },
-        { label: "Orthopedic Surgeon", value: "Orthopedic Surgeon" },
-        { label: "Pediatrics", value: "Pediatrics" },
-        { label: "Gynecology", value: "Gynecology" },
-        { label: "Psychiatry", value: "Psychiatry" },
-      ],
-      Bloodgroup: [
-        { label: "O+", value: "O+" },
-        { label: "O-", value: "O-" },
-        { label: "A+", value: "A+" },
-        { label: "A-", value: "A-" },
-        { label: "B+", value: "B+" },
-        { label: "B-", value: "B-" },
-      ],
-      Gender: [
-        { label: "Male", value: "Male" },
-        { label: "Female", value: "Female" },
-        { label: "Others", value: "Others" },
-      ],
-      Country: [
-        { label: "United States", value: "United States" },
-        { label: "India", value: "India" },
-        { label: "Canada", value: "Canada" },
-        { label: "Germany", value: "Germany" },
-        { label: "Brazil", value: "Brazil" },
-      ],
-      City: [
-        { label: "Los Angeles", value: "Los Angeles" },
-        { label: "San Francisco", value: "San Francisco" },
-        { label: "San Jose", value: "San Jose" },
-        { label: "Fresno", value: "Fresno" },
-      ],
-      State: [
-        { label: "California", value: "California" },
-        { label: "Texas", value: "Texas" },
-        { label: "New York", value: "New York" },
-        { label: "Florida", value: "Florida" },
-        { label: "Illinois", value: "Illinois" },
-      ],
-      Session: [
-        { label: "Morning", value: "Morning" },
-        { label: "Noon", value: "Noon" },
-      ],
-      Appointment: [
-        { label: "Select", value: "Select" },
-        { label: "Online Consultation", value: "Online Consultation" },
-      ],
-      schedules: [],
-      educational: [],
-      awards: [],
-      certification: [],
+      adminToken,
+      apiBaseUrl,
     };
   },
+
+  data() {
+    return {
+      doctorId: null,
+      apiBase: API_BASE,
+      specialties: [],
+      isSubmitting: false,
+      form: {
+        name: "",
+        email: "",
+        specialty: "",
+        biography: "",
+        experience: "",
+        videos: "",
+        patient: "",
+        specialization: "",
+        designationAndDepartment: "",
+        bmdcNumber: "",
+        fee: "",
+        qualifications: "",
+        appointmentPhoneNumber: "",
+        workplace: "",
+        chamberNameAddress: "",
+        visitingHour: "",
+        password: "",
+        image: null,
+        timeSlots: {
+          Saturday: [],
+          Sunday: [],
+          Monday: [],
+          Tuesday: [],
+          Wednesday: [],
+          Thursday: [],
+          Friday: [],
+        },
+      },
+      fileInputKey: Date.now(),
+    };
+  },
+
+  computed: {
+    staticTimeSlots() {
+      const startTime = new Date().setHours(8, 0, 0, 0); // 8:00 AM
+      const endTime = new Date().setHours(24, 0, 0, 0); // 12:00 AM (midnight)
+      const slots = [];
+      let currentTime = startTime;
+
+      while (currentTime < endTime) {
+        slots.push(
+          new Date(currentTime).toLocaleTimeString([], {
+            hour: "2-digit",
+            minute: "2-digit",
+          })
+        );
+        currentTime += 20 * 60 * 1000; // Add 20 minutes
+      }
+      return slots;
+    },
+  },
+
+  async mounted() {
+    this.doctorId = this.$route.params.id;
+    const authHeaders = this.getAuthHeaders();
+
+    // Fetch doctor data
+    if (this.doctorId) {
+      try {
+        const response = await axios.get(
+          `${this.apiBaseUrl}/doctor/${this.doctorId}`,
+          authHeaders
+        );
+        this.form = { ...this.form, ...response.data };
+
+        // Ensure timeSlots is properly initialized
+        if (!this.form.timeSlots) {
+          this.form.timeSlots = {
+            Saturday: [],
+            Sunday: [],
+            Monday: [],
+            Tuesday: [],
+            Wednesday: [],
+            Thursday: [],
+            Friday: [],
+          };
+        }
+      } catch (error) {
+        console.error("Error fetching doctor data:", error);
+        this.handleError(error);
+      }
+    }
+
+    // Fetch specialties
+    try {
+      const response = await axios.get(
+        `${this.apiBaseUrl}/specilities`,
+        authHeaders
+      );
+      this.specialties = response.data;
+    } catch (error) {
+      console.error("Error fetching specialties:", error);
+      this.handleError(error);
+    }
+  },
+
   methods: {
-    addSchedule() {
-      this.schedules.push({});
+    getAuthHeaders() {
+      return {
+        headers: {
+          Authorization: `Bearer ${this.adminToken}`,
+        },
+      };
     },
-    addEducational() {
-      this.educational.push({});
+
+    async updateDoctor() {
+      if (this.isSubmitting) return;
+
+      this.isSubmitting = true;
+
+      try {
+        const formData = new FormData();
+
+        // Helper function to append form data
+        const appendIfDefined = (key, value) => {
+          if (value !== undefined && value !== null) {
+            formData.append(key, value);
+          } else {
+            formData.append(key, "");
+          }
+        };
+
+        // Append all form fields
+        Object.keys(this.form).forEach((key) => {
+          if (key === "timeSlots") {
+            formData.append(key, JSON.stringify(this.form[key]));
+          } else if (key === "image") {
+            if (this.form.image instanceof File) {
+              formData.append("image", this.form.image);
+            } else if (typeof this.form.image === "string" && this.form.image) {
+              formData.append("existingImage", this.form.image);
+            }
+          } else {
+            appendIfDefined(key, this.form[key]);
+          }
+        });
+
+        const headers = {
+          ...this.getAuthHeaders().headers,
+          "Content-Type": "multipart/form-data",
+        };
+
+        const response = await axios.post(
+          `${this.apiBaseUrl}/doctor/update/${this.doctorId}`,
+          formData,
+          { headers }
+        );
+
+        this.form = { ...this.form, ...response.data };
+
+        // Show success message (assuming toastr is available)
+        if (typeof toastr !== "undefined") {
+          toastr.success("Doctor updated successfully!");
+        } else {
+          alert("Doctor updated successfully!");
+        }
+      } catch (error) {
+        console.error("Error updating doctor:", error);
+        this.handleError(error);
+      } finally {
+        this.isSubmitting = false;
+      }
     },
-    addAwards() {
-      this.awards.push({});
+
+    handleError(error) {
+      if (error.response && error.response.status === 401) {
+        const message = "Authentication failed. Please login again.";
+        if (typeof toastr !== "undefined") {
+          toastr.error(message);
+        } else {
+          alert(message);
+        }
+        this.$router.push("/admin/login");
+      } else {
+        const message = "Something went wrong!";
+        if (typeof toastr !== "undefined") {
+          toastr.warning(message);
+        } else {
+          alert(message);
+        }
+      }
     },
-    addCertification() {
-      this.certification.push({});
+
+    cancelForm() {
+      this.$router.push("/admin/doctors");
     },
-    removeSchedule(index) {
-      this.schedules.splice(index, 1);
+
+    onFileChange(e) {
+      const file = e.target.files[0];
+      if (file) {
+        this.form.image = file;
+      }
     },
-    removeEducational(index) {
-      this.educational.splice(index, 1);
+
+    toggleTimeSlot(day, slot) {
+      const slots = this.form.timeSlots[day];
+      if (slots.includes(slot)) {
+        this.form.timeSlots[day] = slots.filter((s) => s !== slot);
+      } else {
+        this.form.timeSlots[day].push(slot);
+      }
     },
-    removeAwards(index) {
-      this.awards.splice(index, 1);
-    },
-    removeCertification(index) {
-      this.certification.splice(index, 1);
+
+    resetForm() {
+      this.form = {
+        name: "",
+        email: "",
+        specialty: "",
+        biography: "",
+        experience: "",
+        videos: "",
+        patient: "",
+        specialization: "",
+        designationAndDepartment: "",
+        bmdcNumber: "",
+        fee: "",
+        qualifications: "",
+        appointmentPhoneNumber: "",
+        workplace: "",
+        chamberNameAddress: "",
+        visitingHour: "",
+        password: "",
+        image: null,
+        timeSlots: {
+          Saturday: [],
+          Sunday: [],
+          Monday: [],
+          Tuesday: [],
+          Wednesday: [],
+          Thursday: [],
+          Friday: [],
+        },
+      };
+      this.fileInputKey = Date.now();
     },
   },
 };
 </script>
+
+<style scoped>
+.drag-upload-btn {
+  cursor: pointer;
+}
+
+.drag-upload-btn input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.time-slot-item {
+  width: 93px;
+}
+
+.btn-sm {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+}
+
+.avatar-xxl {
+  width: 4rem;
+  height: 4rem;
+}
+</style>

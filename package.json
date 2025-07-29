@@ -36,6 +36,7 @@
     "sass-loader": "^16.0.5",
     "simplebar-vue": "^2.4.1",
     "themify-icons": "^1.0.0",
+    "toastr": "^2.1.4",
     "typicons.font": "^2.1.2",
     "v-calendar": "^3.0.0-alpha.8",
     "vee-validate": "^4.15.0",
