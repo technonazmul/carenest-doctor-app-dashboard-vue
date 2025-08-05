@@ -23,32 +23,6 @@
           </div>
           <div class="text-end d-flex">
             <!-- View toggle -->
-            <div
-              class="bg-white border shadow-sm rounded px-1 pb-0 text-center d-flex align-items-center justify-content-center"
-            >
-              <a
-                href="#"
-                class="bg-light rounded p-1 d-flex align-items-center justify-content-center"
-                :class="{ 'bg-primary text-white': viewMode === 'list' }"
-                @click="setViewMode('list')"
-              >
-                <i
-                  class="ti ti-list fs-14"
-                  :class="viewMode === 'list' ? 'text-white' : 'text-dark'"
-                ></i>
-              </a>
-              <a
-                href="#"
-                class="bg-white rounded p-1 d-flex align-items-center justify-content-center"
-                :class="{ 'bg-primary text-white': viewMode === 'grid' }"
-                @click="setViewMode('grid')"
-              >
-                <i
-                  class="ti ti-layout-grid fs-14"
-                  :class="viewMode === 'grid' ? 'text-white' : 'text-body'"
-                ></i>
-              </a>
-            </div>
 
             <!-- Add New Doctor Button -->
             <router-link
@@ -210,8 +184,8 @@
             <thead>
               <tr>
                 <th>Name & Designation</th>
-
                 <th>Fees</th>
+                <th>Balance</th>
                 <th>Status</th>
                 <th>Actions</th>
               </tr>
@@ -251,6 +225,12 @@
                     {{ formatFee(doctor.fee || doctor.Fees) }}
                   </h6>
                 </td>
+
+                <td>
+                  <h6 class="fs-14 fw-semibold mb-0">
+                    {{ formatFee(doctor.balance || doctor.Balance) }}
+                  </h6>
+                </td>
                 <td>
                   <span :class="getStatusClass(doctor.status || doctor.Status)">
                     {{
@@ -262,15 +242,6 @@
                 </td>
                 <td>
                   <div class="d-flex align-items-center">
-                    <div class="action-item me-2">
-                      <a
-                        href="#"
-                        @click.prevent="viewSchedule(doctor)"
-                        title="View Schedule"
-                      >
-                        <i class="ti ti-calendar-cog"></i>
-                      </a>
-                    </div>
                     <div
                       class="action-item dropdown"
                       style="position: relative"
@@ -285,13 +256,12 @@
                       </a>
                       <ul class="dropdown-menu dropdown-menu-end shadow">
                         <li>
-                          <a
-                            href="#"
+                          <router-link
+                            :to="`/doctors/doctor-details/${doctor._id}`"
                             class="dropdown-item justify-content-start"
-                            @click="viewDoctor(doctor)"
                           >
                             <i class="ti ti-eye me-2"></i>View
-                          </a>
+                          </router-link>
                         </li>
                         <li>
                           <a
@@ -1372,8 +1342,7 @@ export default {
     },
 
     viewDoctor(doctor) {
-      this.viewingDoctor = doctor;
-      this.openModal("viewDoctorModal");
+      // redirect to view page
     },
 
     confirmDelete(doctor) {

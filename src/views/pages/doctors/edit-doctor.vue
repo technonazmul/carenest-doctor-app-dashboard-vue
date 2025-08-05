@@ -333,6 +333,8 @@
 import axios from "axios";
 import { API_BASE } from "@/api/apiConfig";
 import Cookies from "js-cookie";
+import toastr from "toastr";
+import "toastr/build/toastr.min.css";
 
 export default {
   setup() {

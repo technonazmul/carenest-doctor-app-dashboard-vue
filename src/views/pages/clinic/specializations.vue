@@ -12,7 +12,7 @@
           <h4 class="fw-bold mb-0">
             Specializations<span
               class="badge badge-soft-primary border border-primary fs-13 fw-medium ms-2"
-              >Total Specializations : 33</span
+              >Total Specializations : {{ specializations.length }}</span
             >
           </h4>
         </div>
@@ -28,7 +28,9 @@
       </div>
       <!-- End Page Header -->
 
-      <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3">
+      <div
+        class="d-flex align-items-center justify-content-between flex-wrap row-gap-3"
+      >
         <div class="search-set mb-3">
           <div class="d-flex align-items-center flex-wrap gap-2">
             <div class="table-search d-flex align-items-center mb-0">
@@ -37,7 +39,7 @@
                 <input
                   type="text"
                   class="form-control"
-                  placeholder="Search"
+                  placeholder="Search specializations..."
                   v-model="searchQuery"
                 />
               </div>
@@ -47,85 +49,6 @@
         <div
           class="d-flex table-dropdown mb-3 pb-1 right-content align-items-center flex-wrap row-gap-3"
         >
-          <div class="dropdown me-2">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-white fs-14 py-1 bg-white border d-inline-flex text-dark align-items-center"
-              data-bs-toggle="dropdown"
-              data-bs-auto-close="outside"
-            >
-              <i class="ti ti-filter text-gray-5 me-1"></i>Filters
-            </a>
-            <div
-              class="dropdown-menu dropdown-lg dropdown-menu-end filter-dropdown p-0"
-              id="filter-dropdown"
-            >
-              <div
-                class="d-flex align-items-center justify-content-between border-bottom filter-header"
-              >
-                <h5 class="mb-0 fw-bold">Filter</h5>
-                <div class="d-flex align-items-center">
-                  <a
-                    href="javascript:void(0);"
-                    class="link-danger text-decoration-underline"
-                    >Clear All</a
-                  >
-                </div>
-              </div>
-              <form action="#">
-                <div class="filter-body pb-0">
-                  <div class="mb-3">
-                    <div class="d-flex align-items-center justify-content-between">
-                      <label class="form-label">Specialization</label>
-                    </div>
-                    <vue-multiselect
-                      v-model="selected"
-                      :options="Designation"
-                      :multiple="true"
-                      label="name"
-                      track-by="id"
-                    />
-                  </div>
-                  <div class="mb-3">
-                    <label class="form-label mb-1 text-dark fs-14 fw-medium">Date</label>
-                    <div class="input-icon-end position-relative">
-                      <a-date-picker
-                        v-model="valueOne"
-                        class="form-control datetimepicker"
-                        placeholder="20/09/2025"
-                      />
-                      <span class="input-icon-addon">
-                        <i class="ti ti-calendar"></i>
-                      </span>
-                    </div>
-                  </div>
-                  <div class="mb-3">
-                    <div class="d-flex align-items-center justify-content-between">
-                      <label class="form-label">Status</label>
-                    </div>
-                    <vue-multiselect
-                      v-model="selectedOne"
-                      :options="DesginSat"
-                      :multiple="true"
-                      label="name"
-                      track-by="id"
-                    />
-                  </div>
-                </div>
-                <div
-                  class="filter-footer d-flex align-items-center justify-content-end border-top"
-                >
-                  <a
-                    href="javascript:void(0);"
-                    class="btn btn-light btn-md me-2"
-                    id="close-filter"
-                    >Close</a
-                  >
-                  <button type="submit" class="btn btn-primary btn-md">Filter</button>
-                </div>
-              </form>
-            </div>
-          </div>
           <div class="dropdown">
             <a
               href="javascript:void(0);"
@@ -136,10 +59,14 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-end p-2">
               <li>
-                <a href="javascript:void(0);" class="dropdown-item rounded-1">Recent</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                  >Recent</a
+                >
               </li>
               <li>
-                <a href="javascript:void(0);" class="dropdown-item rounded-1">Oldest</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                  >Oldest</a
+                >
               </li>
             </ul>
           </div>
@@ -150,48 +77,33 @@
         <a-table
           class="table table-nowrap datatable"
           :columns="columns"
-          :data-source="filteredPages"
+          :data-source="filteredSpecializations"
+          :loading="isLoading"
         >
           <template #bodyCell="{ column, record }">
             <template v-if="column.key === 'Specialization'">
               <div class="d-flex align-items-center">
-                <a
-                  href="javascript:void(0);"
-                  class="avatar me-2"
-                  data-bs-toggle="modal"
-                  data-bs-target="#view_staff"
-                >
+                <a href="javascript:void(0);" class="avatar me-2">
                   <img
-                    :src="getImageUrl(record.Image)"
-                    alt="Doctor"
+                    :src="getImageUrl(record.image)"
+                    alt="Specialization"
                     class="rounded-circle"
+                    width="40"
+                    height="40"
+                    style="object-fit: cover"
                   />
                 </a>
                 <div>
                   <h6 class="mb-0 fs-14 fw-semibold">
-                    <a
-                      href="javascript:void(0);"
-                      data-bs-toggle="modal"
-                      data-bs-target="#view_staff"
-                      >{{ record.Specialization }}</a
-                    >
+                    {{ record.name }}
                   </h6>
                 </div>
               </div>
             </template>
             <template v-if="column.key === 'Status'">
               <span
-                class="fw-medium px-2 py-1 fs-13"
-                :class="[
-                  'badge',
-                  {
-                    'badge-soft-success rounded text-success border border-success':
-                      record.Status === 'Active',
-                    'badge-soft-danger rounded text-danger border border-danger':
-                      record.Status === 'Inactive',
-                  },
-                ]"
-                >{{ record.Status }}
+                class="fw-medium px-2 py-1 fs-13 badge badge-soft-success rounded text-success border border-success"
+                >Active
               </span>
             </template>
             <template v-if="column.key === 'action'">
@@ -206,6 +118,7 @@
                       class="dropdown-item d-flex align-items-center"
                       data-bs-toggle="modal"
                       data-bs-target="#edit_specialization"
+                      @click="setEditSpecialization(record)"
                       >Edit</a
                     >
                   </li>
@@ -213,8 +126,7 @@
                     <a
                       href="javascript:void(0);"
                       class="dropdown-item d-flex align-items-center"
-                      data-bs-toggle="modal"
-                      data-bs-target="#delete_specialization"
+                      @click="confirmDeleteSpecialization(record._id)"
                       >Delete</a
                     >
                   </li>
@@ -224,18 +136,36 @@
           </template>
         </a-table>
       </div>
+
+      <!-- Loading state -->
+      <div
+        v-if="isLoading && specializations.length === 0"
+        class="text-center p-4"
+      >
+        <p>Loading specializations...</p>
+      </div>
+
+      <!-- Empty state -->
+      <div
+        v-if="!isLoading && specializations.length === 0"
+        class="text-center p-4"
+      >
+        <p>No specializations found.</p>
+      </div>
     </div>
     <!-- End Content -->
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
       <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
+        2025 &copy;
+        <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
         Rights Reserved
       </p>
     </div>
     <!-- Footer End -->
   </div>
+
   <!-- Start Add Modal -->
   <div id="add_specialization" class="modal fade">
     <div class="modal-dialog modal-dialog-centered">
@@ -251,24 +181,49 @@
             <i class="ti ti-x"></i>
           </button>
         </div>
-        <form>
+        <form @submit.prevent="createSpecialization">
           <div class="modal-body">
             <div class="mb-3">
               <label class="form-label"
-                >Specialization<span class="text-danger ms-1">*</span></label
+                >Specialization Name<span class="text-danger ms-1"
+                  >*</span
+                ></label
               >
-              <input type="text" class="form-control" />
+              <input
+                type="text"
+                class="form-control"
+                v-model="newSpecialization.name"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Upload Image</label>
+              <input
+                type="file"
+                @change="onFileChange"
+                class="form-control"
+                ref="fileInput"
+                accept="image/*"
+              />
             </div>
             <div class="mb-0">
               <label class="form-label">Description</label>
-              <textarea class="form-control" rows="3"></textarea>
+              <textarea
+                class="form-control"
+                rows="3"
+                v-model="newSpecialization.description"
+              ></textarea>
             </div>
           </div>
           <div class="modal-footer d-flex align-items-center gap-1">
-            <button type="button" class="btn btn-light border" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-light border"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
-            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">
+            <button type="submit" class="btn btn-primary">
               Add Specialization
             </button>
           </div>
@@ -278,7 +233,7 @@
   </div>
   <!-- End Add Modal -->
 
-  <!-- Start Add Modal -->
+  <!-- Start Edit Modal -->
   <div id="edit_specialization" class="modal fade">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
@@ -293,238 +248,380 @@
             <i class="ti ti-x"></i>
           </button>
         </div>
-        <form>
+        <form @submit.prevent="updateSpecialization">
           <div class="modal-body">
             <div class="mb-3">
               <label class="form-label"
-                >Specialization<span class="text-danger ms-1">*</span></label
+                >Specialization Name<span class="text-danger ms-1"
+                  >*</span
+                ></label
               >
-              <input type="text" class="form-control" value="Cardiologist" />
+              <input
+                type="text"
+                class="form-control"
+                v-model="editSpecialization.name"
+                required
+              />
+            </div>
+            <div class="mb-3">
+              <label class="form-label">Current Image</label>
+              <div v-if="editSpecialization.image" class="mb-2">
+                <img
+                  :src="getImageUrl(editSpecialization.image)"
+                  alt="Current Image"
+                  width="60"
+                  height="60"
+                  class="rounded"
+                  style="object-fit: cover"
+                />
+              </div>
+              <label class="form-label">Upload New Image</label>
+              <input
+                type="file"
+                @change="onUpdateFileChange"
+                class="form-control"
+                accept="image/*"
+              />
             </div>
             <div class="mb-0">
               <label class="form-label">Description</label>
-              <textarea class="form-control" rows="3">
-Focuses on heart conditions in children.</textarea
-              >
+              <textarea
+                class="form-control"
+                rows="3"
+                v-model="editSpecialization.description"
+              ></textarea>
             </div>
           </div>
           <div class="modal-footer d-flex align-items-center gap-1">
-            <button type="button" class="btn btn-white border" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-white border"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
-            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">
-              Save Changes
-            </button>
+            <button type="submit" class="btn btn-primary">Save Changes</button>
           </div>
         </form>
       </div>
     </div>
   </div>
-  <!-- End Add Modal -->
-
-  <!-- Start Delete Modal  -->
-  <div class="modal fade" id="delete_specialization">
-    <div class="modal-dialog modal-dialog-centered modal-sm">
-      <div class="modal-content">
-        <div class="modal-body text-center position-relative z-1">
-          <img
-            src="@/assets/img/bg/delete-modal-bg-01.png"
-            alt=""
-            class="img-fluid position-absolute top-0 start-0 z-n1"
-          />
-          <img
-            src="@/assets/img/bg/delete-modal-bg-02.png"
-            alt=""
-            class="img-fluid position-absolute bottom-0 end-0 z-n1"
-          />
-          <div class="mb-3">
-            <span class="avatar avatar-lg bg-danger text-white"
-              ><i class="ti ti-trash fs-24"></i
-            ></span>
-          </div>
-          <h5 class="fw-bold mb-1">Delete Confirmation</h5>
-          <p class="mb-3">Are you sure want to delete?</p>
-          <div class="d-flex justify-content-center">
-            <a
-              href="javascript:void(0);"
-              class="btn btn-light position-relative z-1 me-3"
-              data-bs-dismiss="modal"
-              >Cancel</a
-            >
-            <a
-              href="javascript:void(0);"
-              class="btn btn-danger position-relative z-1"
-              data-bs-dismiss="modal"
-              >Yes, Delete</a
-            >
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!-- End Delete Modal  -->
+  <!-- End Edit Modal -->
 </template>
+
 <script>
+import axios from "axios";
+import { API_BASE } from "@/api/apiConfig";
+import Cookies from "js-cookie";
+import toastr from "toastr";
+import "toastr/build/toastr.min.css";
+
 const columns = [
   {
     title: "Specialization",
-    dataIndex: "Specialization",
+    dataIndex: "name",
     key: "Specialization",
     sorter: {
       compare: (a, b) =>
-        a.Specialization.toLowerCase() > b.Specialization.toLowerCase() ? -1 : 1,
+        a.name.toLowerCase().localeCompare(b.name.toLowerCase()),
     },
   },
-  {
-    title: "Created Date",
-    dataIndex: "CreatedDate",
-    key: "CreatedDate",
-    sorter: {
-      compare: (a, b) =>
-        a.CreatedDate.toLowerCase() > b.CreatedDate.toLowerCase() ? -1 : 1,
-    },
-  },
-  {
-    title: "No of Doctor",
-    dataIndex: "NoofDoctor",
-    key: "NoofDoctor",
-    sorter: {
-      compare: (a, b) =>
-        a.NoofDoctor.toLowerCase() > b.NoofDoctor.toLowerCase() ? -1 : 1,
-    },
-  },
+
   {
     title: "Status",
-    dataIndex: "Status",
+    dataIndex: "status",
     key: "Status",
     sorter: {
-      compare: (a, b) => (a.Status.toLowerCase() > b.Status.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.status.toLowerCase().localeCompare(b.status.toLowerCase()),
     },
   },
   {
-    title: "",
+    title: "Action",
     key: "action",
     sorter: false,
   },
 ];
-const data = [
-  {
-    Specialization: "General Medicine",
-    CreatedDate: "22 Apr 2025",
-    NoofDoctor: "20",
-    Image: "specialization-01.jpg",
-    Status: "Active",
-  },
-  {
-    Specialization: "Dentistry",
-    CreatedDate: "12 Apr 2025",
-    NoofDoctor: "15",
-    Image: "specialization-02.jpg",
-    Status: "Inactive",
-  },
-  {
-    Specialization: "Ophthalmology",
-    CreatedDate: "01 Apr 2025",
-    NoofDoctor: "10",
-    Image: "specialization-03.jpg",
-    Status: "Active",
-  },
-  {
-    Specialization: "Radiology",
-    CreatedDate: "05 Mar 2025",
-    NoofDoctor: "13",
-    Image: "specialization-04.jpg",
-    Status: "Active",
-  },
-  {
-    Specialization: "Physiotherapy",
-    CreatedDate: "20 Mar 2025",
-    NoofDoctor: "17",
-    Image: "specialization-05.jpg",
-    Status: "Active",
-  },
-  {
-    Specialization: "Cardiology",
-    CreatedDate: "01 Mar 2025",
-    NoofDoctor: "20",
-    Image: "specialization-06.jpg",
-    Status: "Active",
-  },
-  {
-    Specialization: "Dermatology",
-    CreatedDate: "15 Feb 2025",
-    NoofDoctor: "25",
-    Image: "specialization-07.jpg",
-    Status: "Inactive",
-  },
-  {
-    Specialization: "Pathology",
-    CreatedDate: "09 Feb 2025",
-    NoofDoctor: "15",
-    Image: "specialization-08.jpg",
-    Status: "Active",
-  },
-  {
-    Specialization: "ENT",
-    CreatedDate: "01 Feb 2025",
-    NoofDoctor: "19",
-    Image: "specialization-09.jpg",
-    Status: "Active",
-  },
-  {
-    Specialization: "Nutrition",
-    CreatedDate: "12 Jan 2025",
-    NoofDoctor: "24",
-    Image: "specialization-10.jpg",
-    Status: "Active",
-  },
-];
-import { ref } from "vue";
-const valueOne = ref();
+
 export default {
+  setup() {
+    // Get admin token from cookie
+    const adminToken = Cookies.get("adminToken");
+    const apiBase = API_BASE;
+    const apiBaseUrl = `${apiBase}/api/backend`;
+
+    return {
+      adminToken,
+      apiBase,
+      apiBaseUrl,
+    };
+  },
   data() {
     return {
       searchQuery: "",
-      data,
       columns,
-      valueOne,
-      selected: [],
-      selectedOne: [],
-      Designation: [
-        { id: 1, name: "General Medicine" },
-        { id: 2, name: "Dentistry" },
-        { id: 3, name: "Ophthalmology" },
-        { id: 4, name: "Radiology" },
-        { id: 5, name: "Physiotherapy" },
-        { id: 6, name: "Cardiology" },
-        { id: 7, name: "Dermatology" },
-        { id: 8, name: "Pathology" },
-        { id: 9, name: "ENT" },
-        { id: 10, name: "Nutrition" },
-      ],
-      DesginSat: [
-        { id: 1, name: "Active" },
-        { id: 2, name: "Inactive" },
-      ],
+      specializations: [],
+      isLoading: true,
+      deletingSpecializationId: null,
+      newSpecialization: {
+        name: "",
+        description: "",
+        image: null,
+      },
+      editSpecialization: {
+        _id: null,
+        name: "",
+        description: "",
+        image: "",
+        newImage: null,
+      },
     };
   },
-  methods: {
-    getImageUrl(imageName) {
-      return new URL(`/src/assets/img/doctors/${imageName}`, import.meta.url).href;
+  computed: {
+    filteredSpecializations() {
+      const query = this.searchQuery.toLowerCase();
+      return this.specializations.filter((record) => {
+        return (
+          record.name.toLowerCase().includes(query) ||
+          (record.description &&
+            record.description.toLowerCase().includes(query))
+        );
+      });
     },
   },
-  computed: {
-    filteredPages() {
-      const query = this.searchQuery.toLowerCase();
-      return this.data.filter((record) => {
-        return (
-          record.Specialization.toLowerCase().includes(query) ||
-          record.CreatedDate.toLowerCase().includes(query) ||
-          record.NoofDoctor.toLowerCase().includes(query) ||
-          record.Status.toLowerCase().includes(query)
+  async mounted() {
+    await this.fetchSpecializations();
+  },
+  methods: {
+    // Get auth headers for requests
+    getAuthHeaders() {
+      return {
+        headers: {
+          Authorization: `Bearer ${this.adminToken}`,
+        },
+      };
+    },
+
+    // Fetch all specializations
+    async fetchSpecializations() {
+      try {
+        this.isLoading = true;
+        const response = await axios.get(
+          `${this.apiBaseUrl}/specilities`,
+          this.getAuthHeaders()
         );
+        this.specializations = response.data;
+      } catch (error) {
+        console.error("Error fetching specializations:", error);
+        if (error.response && error.response.status === 401) {
+          toastr.error("Authentication failed. Please login again.");
+          this.$router.push("/admin/login");
+        } else {
+          toastr.error("Failed to fetch specializations.");
+        }
+      } finally {
+        this.isLoading = false;
+      }
+    },
+
+    // Create a new specialization
+    async createSpecialization() {
+      try {
+        const formData = new FormData();
+        formData.append("name", this.newSpecialization.name);
+        formData.append(
+          "description",
+          this.newSpecialization.description || ""
+        );
+        if (this.newSpecialization.image) {
+          formData.append("image", this.newSpecialization.image);
+        }
+
+        const headers = {
+          ...this.getAuthHeaders().headers,
+          "Content-Type": "multipart/form-data",
+        };
+
+        const response = await axios.post(
+          `${this.apiBaseUrl}/specialization/add`,
+          formData,
+          { headers }
+        );
+
+        this.specializations.push(response.data);
+        this.resetNewSpecializationForm();
+
+        // Close modal
+        const modal = document.getElementById("add_specialization");
+
+        toastr.success("Specialization added successfully!");
+      } catch (error) {
+        console.error("Error adding specialization:", error);
+        if (error.response && error.response.status === 401) {
+          toastr.error("Authentication failed. Please login again.");
+        } else {
+          toastr.error("Failed to add specialization.");
+        }
+      }
+    },
+
+    // Set specialization for editing
+    setEditSpecialization(specialization) {
+      this.editSpecialization = {
+        _id: specialization._id,
+        name: specialization.name,
+        description: specialization.description || "",
+        image: specialization.image,
+        newImage: null,
+      };
+    },
+
+    // Update specialization
+    async updateSpecialization() {
+      try {
+        const formData = new FormData();
+        formData.append("name", this.editSpecialization.name);
+        formData.append(
+          "description",
+          this.editSpecialization.description || ""
+        );
+
+        if (this.editSpecialization.newImage) {
+          formData.append("updateimage", this.editSpecialization.newImage);
+        }
+
+        const headers = {
+          ...this.getAuthHeaders().headers,
+          "Content-Type": "multipart/form-data",
+        };
+
+        await axios.post(
+          `${this.apiBaseUrl}/speciality/update/${this.editSpecialization._id}`,
+          formData,
+          { headers }
+        );
+
+        // Update the specialization in the data array
+        const index = this.specializations.findIndex(
+          (s) => s._id === this.editSpecialization._id
+        );
+        if (index !== -1) {
+          this.specializations[index].name = this.editSpecialization.name;
+          this.specializations[index].description =
+            this.editSpecialization.description;
+          if (this.editSpecialization.newImage) {
+            // Update image reference
+            this.specializations[index].image =
+              this.editSpecialization.newImage.name;
+          }
+        }
+
+        // Close modal
+        const modal = document.getElementById("edit_specialization");
+
+        toastr.success("Specialization updated successfully!");
+      } catch (error) {
+        console.error("Error updating specialization:", error);
+        if (error.response && error.response.status === 401) {
+          toastr.error("Authentication failed. Please login again.");
+        } else {
+          toastr.error("Failed to update specialization.");
+        }
+      }
+    },
+
+    // Confirm delete specialization
+    async confirmDeleteSpecialization(id) {
+      const confirmed = window.confirm(
+        "Are you sure you want to delete this specialization?"
+      );
+      if (confirmed) {
+        await this.deleteSpecialization(id);
+      }
+    },
+
+    // Delete specialization
+    async deleteSpecialization(id) {
+      this.deletingSpecializationId = id;
+      try {
+        await axios.delete(
+          `${this.apiBaseUrl}/speciality/delete/${id}`,
+          this.getAuthHeaders()
+        );
+
+        this.specializations = this.specializations.filter(
+          (specialization) => specialization._id !== id
+        );
+
+        toastr.success("Specialization deleted successfully.");
+      } catch (error) {
+        console.error("Error deleting specialization:", error);
+        if (error.response && error.response.status === 401) {
+          toastr.error("Authentication failed. Please login again.");
+        } else {
+          toastr.error("Failed to delete specialization.");
+        }
+      } finally {
+        this.deletingSpecializationId = null;
+      }
+    },
+
+    // Handle file input change for new specialization
+    onFileChange(event) {
+      this.newSpecialization.image = event.target.files[0];
+    },
+
+    // Handle file input change for updating specialization
+    onUpdateFileChange(event) {
+      this.editSpecialization.newImage = event.target.files[0];
+    },
+
+    // Get image URL
+    getImageUrl(imageName) {
+      if (!imageName) {
+        return "/placeholder-image.jpg"; // Default placeholder
+      }
+      return `${this.apiBase}/uploads/${imageName}`;
+    },
+
+    // Reset new specialization form
+    resetNewSpecializationForm() {
+      this.newSpecialization = {
+        name: "",
+        description: "",
+        image: null,
+      };
+      // Reset file input
+      if (this.$refs.fileInput) {
+        this.$refs.fileInput.value = "";
+      }
+    },
+
+    // Format date for display
+    formatDate(dateString) {
+      if (!dateString) return "N/A";
+      const date = new Date(dateString);
+      return date.toLocaleDateString("en-US", {
+        day: "2-digit",
+        month: "short",
+        year: "numeric",
       });
     },
   },
 };
 </script>
+
+<style scoped>
+.custom-badge {
+  border: none;
+}
+.status-green {
+  background-color: #e5f8ed;
+  color: #0cb777;
+}
+.action-icon {
+  color: #777;
+  font-size: 18px;
+  display: inline-block;
+}
+</style>

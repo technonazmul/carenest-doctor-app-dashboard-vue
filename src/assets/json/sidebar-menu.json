@@ -1,109 +1,73 @@
 [
   {
-    "tittle": "Main",
+    "tittle": "Menus",
     "showAsTab": true,
     "separateRoute": false,
     "menu": [
       {
         "menuValue": "Dashboard",
-        "active_link": "dashboard",
-        "hasSubRoute": true,
-        "showSubRoute": false,
         "Icon": "ti ti-layout-dashboard",
-        "subMenus": [
-          {
-            "menuValue": "Admin Dashboard",
-            "route": "/dashboard/admin-dashboard",
-            "active_link": "/dashboard/admin-dashboard"
-          }
-        ]
-      }
-    ]
-  },
-  {
-    "tittle": "Clinic",
-    "showAsTab": true,
-    "separateRoute": false,
-    "menu": [
+        "active_link": "/dashboard/admin-dashboard",
+        "route": "/dashboard/admin-dashboard",
+        "hasSubRoute": false,
+        "showSubRoute": false
+      },
       {
         "menuValue": "Doctors",
-        "active_link": "doctors",
-        "hasSubRoute": true,
-        "showSubRoute": false,
         "Icon": "ti ti-user-plus",
-        "subMenus": [
-          {
-            "menuValue": "Doctors",
-            "route": "/doctors/doctors-list",
-            "active_link": "/doctors/doctors-list"
-          },
-
-          {
-            "menuValue": "Add Doctor",
-            "route": "/doctors/add-doctor",
-            "active_link": "/doctors/add-doctor"
-          }
-        ]
+        "active_link": "/doctors/doctors-list",
+        "route": "/doctors/doctors-list",
+        "hasSubRoute": false,
+        "showSubRoute": false
       },
+
       {
         "menuValue": "Patients",
-        "active_link": "patients",
-        "hasSubRoute": true,
-        "showSubRoute": false,
         "Icon": "ti ti-user-heart",
-        "subMenus": [
-          {
-            "menuValue": "Patients",
-            "route": "/patients/patients-list",
-            "active_link": "/patients/patients-list"
-          },
-          {
-            "menuValue": "Patient Details",
-            "route": "/patients/patient-details",
-            "active_link": "/patients/patient-details"
-          },
-          {
-            "menuValue": "Create Patient",
-            "route": "/patients/create-patient",
-            "active_link": "/patients/create-patient"
-          }
-        ]
+        "active_link": "/patients/patients-list",
+        "route": "/patients/patients-list",
+        "hasSubRoute": false,
+        "showSubRoute": false
       },
+
       {
         "menuValue": "Appointments",
-        "active_link": "appointments",
-        "hasSubRoute": true,
-        "showSubRoute": false,
         "Icon": "ti ti-calendar-check",
-        "subMenus": [
-          {
-            "menuValue": "Appointments",
-            "route": "/appointments/appointments-list",
-            "active_link": "/appointments/appointments-list"
-          }
-        ]
-      },
-      {
-        "menuValue": "Locations",
-        "Icon": "ti ti-map-pin",
-        "active_link": "/clinic/locations",
-        "route": "/clinic/locations",
+        "active_link": "/appointments/appointments-list",
+        "route": "/appointments/appointments-list",
         "hasSubRoute": false,
         "showSubRoute": false
       },
-      {
-        "menuValue": "Services",
-        "Icon": "ti ti-user-cog",
-        "active_link": "/clinic/services",
-        "route": "/clinic/services",
-        "hasSubRoute": false,
-        "showSubRoute": false
-      },
+
       {
         "menuValue": "Specializations",
         "Icon": "ti ti-user-shield",
         "active_link": "/clinic/specializations",
         "route": "/clinic/specializations",
+        "hasSubRoute": false,
+        "showSubRoute": false
+      },
+      {
+        "menuValue": "Banners",
+        "Icon": "ti ti-photo",
+        "active_link": "/clinic/banners",
+        "route": "/clinic/banners",
+        "hasSubRoute": false,
+        "showSubRoute": false
+      },
+      {
+        "menuValue": "Notifications",
+        "Icon": "ti ti-bell",
+        "active_link": "/clinic/notifications",
+        "route": "/clinic/notifications",
+        "hasSubRoute": false,
+        "showSubRoute": false
+      },
+      {
+        "menuValue": "Reviews",
+        "Icon": "ti ti-star",
+        "active_link": "/clinic/reviews",
+        "route": "/clinic/reviews",
         "hasSubRoute": false,
         "showSubRoute": false
       },

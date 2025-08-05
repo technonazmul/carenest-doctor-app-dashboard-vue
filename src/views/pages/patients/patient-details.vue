@@ -84,30 +84,24 @@
               <div class="p-3 text-lg-end">
                 <div class="mb-4">
                   <a
-                    href="javascript:void(0);"
+                    v-if="patient.phone"
+                    :href="'tel:' + patient.phone"
                     class="btn btn-outline-white shadow-sm rounded-circle d-inline-flex align-items-center p-2 fs-14 me-2"
                   >
                     <i class="ti ti-phone"></i>
                   </a>
                   <a
-                    href="javascript:void(0);"
+                    v-else
+                    :href="'mailto:' + patient.email"
                     class="btn btn-outline-white shadow-sm rounded-circle d-inline-flex align-items-center p-2 fs-14 me-2"
                   >
                     <i class="ti ti-message-circle"></i>
                   </a>
-                  <a
-                    href="javascript:void(0);"
-                    class="btn btn-outline-white shadow-sm rounded-circle d-inline-flex align-items-center p-2 fs-14"
-                  >
-                    <i class="ti ti-video"></i>
-                  </a>
                 </div>
-                <router-link
-                  to="/appointments/new-appointment"
-                  class="btn btn-primary"
-                >
-                  <i class="ti ti-calendar-event me-1"></i>Book Appointment
-                </router-link>
+
+                <a href="#appointments-section" class="btn btn-primary">
+                  <i class="ti ti-calendar-event me-1"></i>Appointments
+                </a>
               </div>
             </div>
           </div>
@@ -336,7 +330,7 @@
         <!-- tab end -->
 
         <!-- tab content start -->
-        <div class="tab-content">
+        <div class="tab-content" id="appointments-section">
           <div class="tab-pane show active" id="appointments">
             <appointment-details-table
               :patient-id="patientId"

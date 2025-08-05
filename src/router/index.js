@@ -940,6 +940,20 @@ const routes = [
         component: () => import("@/views/pages/clinic/specializations.vue"),
       },
       {
+        path: "banners",
+        component: () => import("@/views/pages/clinic/banner/manage.vue"),
+      },
+      {
+        path: "notifications",
+        component: () =>
+          import("@/views/pages/clinic/notifications/manage.vue"),
+      },
+      {
+        path: "reviews",
+        component: () => import("@/views/pages/clinic/reviews/manage.vue"),
+      },
+
+      {
         path: "services",
         component: () => import("@/views/pages/clinic/services.vue"),
       },
@@ -1694,6 +1708,11 @@ const routes = [
           import("@/views/pages/uiinterface/maps/maps-vector.vue"),
       },
     ],
+  },
+  {
+    path: "/withdraw-methods-management",
+    component: () =>
+      import("@/views/pages/withdraw-methods/withdraw-methods-index.vue"),
   },
 ];
 

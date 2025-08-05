@@ -5,7 +5,7 @@
     <div class="sidebar-logo">
       <div>
         <!-- Logo Normal -->
-       <router-link to="/dashboard/" class="logo logo-normal">
+        <router-link to="/dashboard/" class="logo logo-normal">
           <img src="@/assets/img/logo.svg" alt="Logo" />
         </router-link>
 
@@ -38,98 +38,6 @@
     <div class="sidebar-inner" data-simplebar>
       <simplebar id="scrollbar" class="h-100" ref="scrollbar">
         <div id="sidebar-menu" class="sidebar-menu">
-          <div class="sidebar-top shadow-sm p-2 rounded-1 mb-3 dropend">
-            <a
-              href="javascript:void(0);"
-              class="drop-arrow-none"
-              data-bs-toggle="dropdown"
-              data-bs-auto-close="outside"
-              data-bs-offset="0,22"
-              aria-haspopup="false"
-              aria-expanded="false"
-            >
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="d-flex align-items-center">
-                  <span class="avatar rounded-circle flex-shrink-0 p-2"
-                    ><img src="@/assets/img/icons/trustcare.svg" alt="img"
-                  /></span>
-                  <div class="ms-2">
-                    <h6 class="fs-14 fw-semibold mb-0">Trustcare Clinic</h6>
-                    <p class="fs-13 mb-0">Lasvegas</p>
-                  </div>
-                </div>
-                <i class="ti ti-arrows-transfer-up"></i>
-              </div>
-            </a>
-            <div class="dropdown-menu dropdown-menu-lg">
-              <div class="p-2">
-                <label
-                  class="dropdown-item d-flex align-items-center justify-content-between p-1"
-                >
-                  <span class="d-flex align-items-center">
-                    <span class="me-2"
-                      ><img src="@/assets/img/icons/clinic-01.svg" alt=""
-                    /></span>
-                    <span class="fw-semibold text-dark"
-                      >CureWell Medical Hub<small
-                        class="d-block text-muted fw-normal fs-13"
-                        >Ohio</small
-                      ></span
-                    >
-                  </span>
-                  <input class="form-check-input m-0 me-2" type="checkbox" />
-                </label>
-                <label
-                  class="dropdown-item d-flex align-items-center justify-content-between p-1"
-                >
-                  <span class="d-flex align-items-center">
-                    <span class="me-2"
-                      ><img src="@/assets/img/icons/clinic-02.svg" alt=""
-                    /></span>
-                    <span class="fw-semibold text-dark"
-                      >Trustcare Clinic<small
-                        class="d-block text-muted fw-normal fs-13"
-                        >Lasvegas</small
-                      ></span
-                    >
-                  </span>
-                  <input class="form-check-input m-0 me-2" type="checkbox" />
-                </label>
-                <label
-                  class="dropdown-item d-flex align-items-center justify-content-between p-1"
-                >
-                  <span class="d-flex align-items-center">
-                    <span class="me-2"
-                      ><img src="@/assets/img/icons/clinic-03.svg" alt=""
-                    /></span>
-                    <span class="fw-semibold text-dark"
-                      >NovaCare Medical<small
-                        class="d-block text-muted fw-normal fs-13"
-                        >Washington</small
-                      ></span
-                    >
-                  </span>
-                  <input class="form-check-input m-0 me-2" type="checkbox" />
-                </label>
-                <label
-                  class="dropdown-item d-flex align-items-center justify-content-between p-1"
-                >
-                  <span class="d-flex align-items-center">
-                    <span class="me-2"
-                      ><img src="@/assets/img/icons/clinic-04.svg" alt=""
-                    /></span>
-                    <span class="fw-semibold text-dark"
-                      >Greeny Medical Clinic<small
-                        class="d-block text-muted fw-normal fs-13"
-                        >Illinios</small
-                      ></span
-                    >
-                  </span>
-                  <input class="form-check-input m-0 me-2" type="checkbox" />
-                </label>
-              </div>
-            </div>
-          </div>
           <sidebar-menu></sidebar-menu>
         </div>
         <div class="sidebar-footer border-top mt-3">
@@ -155,7 +63,6 @@
   </div>
   <!-- Sidenav Menu End -->
 </template>
-
 
 <script>
 import simplebar from "simplebar-vue";
