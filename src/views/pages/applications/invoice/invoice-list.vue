@@ -10,7 +10,9 @@
     <!-- Start Content -->
     <div class="content content-two">
       <!-- Page Header -->
-      <div class="d-flex align-items-sm-center flex-sm-row flex-column gap-2 pb-3">
+      <div
+        class="d-flex align-items-sm-center flex-sm-row flex-column gap-2 pb-3"
+      >
         <div class="flex-grow-1">
           <h4 class="fs-18 fw-semibold mb-0">Invoices</h4>
         </div>
@@ -51,7 +53,8 @@
               </div>
               <div>
                 <p class="d-flex align-items-center text-truncate">
-                  <span class="text-success fs-12 d-flex align-items-center me-1"
+                  <span
+                    class="text-success fs-12 d-flex align-items-center me-1"
                     ><i class="ti ti-arrow-wave-right-up me-1"></i>+32.40%</span
                   >from last month
                 </p>
@@ -121,7 +124,8 @@
               </div>
               <div>
                 <p class="d-flex align-items-center text-truncate">
-                  <span class="text-success fs-12 d-flex align-items-center me-1"
+                  <span
+                    class="text-success fs-12 d-flex align-items-center me-1"
                     ><i class="ti ti-arrow-wave-right-up me-1"></i>12%</span
                   >from last month
                 </p>
@@ -198,9 +202,11 @@
                 >
                   <template #bodyCell="{ column, record }">
                     <template v-if="column.key === 'Invoice'">
-                      <router-link to="/invoice/invoice-details" class="tb-data">{{
-                        record.Invoice
-                      }}</router-link>
+                      <router-link
+                        to="/invoice/invoice-details"
+                        class="tb-data"
+                        >{{ record.Invoice }}</router-link
+                      >
                     </template>
                     <template v-if="column.key === 'Name'">
                       <div class="d-flex align-items-center">
@@ -237,7 +243,8 @@
                           'd-inline-flex align-items-center',
                         ]"
                       >
-                        <i class="ti ti-point-filled me-1"></i>{{ record.Status }}
+                        <i class="ti ti-point-filled me-1"></i
+                        >{{ record.Status }}
                       </span>
                     </template>
                     <template v-if="column.key === 'action'">
@@ -272,7 +279,8 @@
       class="footer d-sm-flex align-items-center justify-content-between bg-white py-2 px-4 border-top"
     >
       <p class="text-dark mb-0">
-        &copy; 2025 <a href="javascript:void(0);" class="link-primary">Kanakku</a>, All
+        &copy; 2025
+        <a href="javascript:void(0);" class="link-primary">Kanakku</a>, All
         Rights Reserved
       </p>
       <p class="text-dark">Version : 1.3.8</p>
@@ -290,7 +298,9 @@
       <div class="modal-content">
         <div class="modal-body text-center">
           <div class="mb-3">
-            <span class="avatar bg-danger"><i class="ti ti-trash fs-24"></i></span>
+            <span class="avatar bg-danger"
+              ><i class="ti ti-trash fs-24"></i
+            ></span>
           </div>
           <h6 class="mb-1">Delete Confirmation</h6>
           <p class="mb-3">Are you sure want to delete?</p>
@@ -454,7 +464,8 @@ const columns = [
     dataIndex: "Invoice",
     key: "Invoice",
     sorter: {
-      compare: (a, b) => (a.Invoice.toLowerCase() > b.Invoice.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Invoice.toLowerCase() > b.Invoice.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -477,7 +488,8 @@ const columns = [
     title: "Total",
     dataIndex: "Total",
     sorter: {
-      compare: (a, b) => (a.Total.toLowerCase() > b.Total.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Total.toLowerCase() > b.Total.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -492,7 +504,8 @@ const columns = [
     title: "Due Date",
     dataIndex: "Due_Date",
     sorter: {
-      compare: (a, b) => (a.Due_Date.toLowerCase() > b.Due_Date.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Due_Date.toLowerCase() > b.Due_Date.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -500,7 +513,8 @@ const columns = [
     dataIndex: "Status",
     key: "Status",
     sorter: {
-      compare: (a, b) => (a.Status.toLowerCase() > b.Status.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Status.toLowerCase() > b.Status.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -534,7 +548,8 @@ export default {
   },
   methods: {
     getImageUrl(imageName) {
-      return new URL(`/src/assets/img/users/${imageName}`, import.meta.url).href;
+      return new URL(`/src/assets/img/users/${imageName}`, import.meta.url)
+        .href;
     },
   },
   computed: {

@@ -885,6 +885,14 @@ const routes = [
     ],
   },
   {
+    path: "/withdrawals",
+    component: () => import("@/views/pages/withdrawals/withdrawals-list.vue"),
+  },
+  {
+    path: "/dashboard/settings",
+    component: () => import("@/views/pages/settings/main-settings.vue"),
+  },
+  {
     path: "/hrm",
     component: () => import("@/views/pages/hrm/hrm-index.vue"),
     children: [

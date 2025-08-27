@@ -70,28 +70,105 @@
         "route": "/clinic/reviews",
         "hasSubRoute": false,
         "showSubRoute": false
-      },
+      }
+    ]
+  },
+  {
+    "tittle": "SETTINGS",
+    "showAsTab": true,
+    "separateRoute": false,
+    "menu": [
       {
-        "menuValue": "Assets",
-        "Icon": "ti ti-asset",
-        "active_link": "/clinic/assets",
-        "route": "/clinic/assets",
+        "menuValue": "Withdraw Methods",
+        "Icon": "ti ti-users-group",
+        "active_link": "/withdraw-methods-management",
+        "route": "/withdraw-methods-management",
         "hasSubRoute": false,
         "showSubRoute": false
       },
       {
-        "menuValue": "Activities",
-        "Icon": "ti ti-activity",
-        "active_link": "/clinic/activities",
-        "route": "/clinic/activities",
+        "menuValue": "Settings",
+        "Icon": "ti ti-users-group",
+        "active_link": "/dashboard/settings",
+        "route": "/dashboard/settings",
+        "hasSubRoute": false,
+        "showSubRoute": false
+      }
+    ]
+  },
+
+  {
+    "tittle": "Finance & Accounts",
+    "showAsTab": true,
+    "separateRoute": false,
+    "menu": [
+      {
+        "menuValue": "Withdrawls",
+        "Icon": "ti ti-coins",
+        "active_link": "/withdrawals",
+        "route": "/withdrawals",
         "hasSubRoute": false,
         "showSubRoute": false
       },
       {
-        "menuValue": "Messages",
-        "Icon": "ti ti-messages",
-        "active_link": "/clinic/messages",
-        "route": "/clinic/messages",
+        "menuValue": "Expenses",
+        "active_link": "expenses",
+        "hasSubRoute": true,
+        "showSubRoute": false,
+        "Icon": "ti ti-users-minus",
+        "subMenus": [
+          {
+            "menuValue": "Expenses",
+            "route": "/expenses/expenses-list",
+            "active_link": "/expenses/expenses-list"
+          },
+          {
+            "menuValue": "Expense Category",
+            "route": "/expenses/expense-category",
+            "active_link": "/expenses/expense-category"
+          }
+        ]
+      },
+      {
+        "menuValue": "Income",
+        "Icon": "ti ti-coins",
+        "active_link": "/finance/income",
+        "route": "/finance/income",
+        "hasSubRoute": false,
+        "showSubRoute": false
+      },
+      {
+        "menuValue": "Invoices",
+        "active_link": "invoices",
+        "hasSubRoute": true,
+        "showSubRoute": false,
+        "Icon": "ti ti-file-invoice",
+        "subMenus": [
+          {
+            "menuValue": "Invoices",
+            "route": "/invoices/invoices-list",
+            "active_link": "/invoices/invoices-list"
+          },
+          {
+            "menuValue": "Invoice Details",
+            "route": "/invoices/invoices-details",
+            "active_link": "/invoices/invoices-details"
+          }
+        ]
+      },
+      {
+        "menuValue": "Payments",
+        "Icon": "ti ti-cards",
+        "active_link": "/finance/payments",
+        "route": "/finance/payments",
+        "hasSubRoute": false,
+        "showSubRoute": false
+      },
+      {
+        "menuValue": "Transactions",
+        "Icon": "ti ti-transition-right",
+        "active_link": "/finance/transactions",
+        "route": "/finance/transactions",
         "hasSubRoute": false,
         "showSubRoute": false
       }
@@ -166,75 +243,6 @@
         "Icon": "ti ti-coin",
         "active_link": "/hrm/payroll",
         "route": "/hrm/payroll",
-        "hasSubRoute": false,
-        "showSubRoute": false
-      }
-    ]
-  },
-  {
-    "tittle": "Finance & Accounts",
-    "showAsTab": true,
-    "separateRoute": false,
-    "menu": [
-      {
-        "menuValue": "Expenses",
-        "active_link": "expenses",
-        "hasSubRoute": true,
-        "showSubRoute": false,
-        "Icon": "ti ti-users-minus",
-        "subMenus": [
-          {
-            "menuValue": "Expenses",
-            "route": "/expenses/expenses-list",
-            "active_link": "/expenses/expenses-list"
-          },
-          {
-            "menuValue": "Expense Category",
-            "route": "/expenses/expense-category",
-            "active_link": "/expenses/expense-category"
-          }
-        ]
-      },
-      {
-        "menuValue": "Income",
-        "Icon": "ti ti-coins",
-        "active_link": "/finance/income",
-        "route": "/finance/income",
-        "hasSubRoute": false,
-        "showSubRoute": false
-      },
-      {
-        "menuValue": "Invoices",
-        "active_link": "invoices",
-        "hasSubRoute": true,
-        "showSubRoute": false,
-        "Icon": "ti ti-file-invoice",
-        "subMenus": [
-          {
-            "menuValue": "Invoices",
-            "route": "/invoices/invoices-list",
-            "active_link": "/invoices/invoices-list"
-          },
-          {
-            "menuValue": "Invoice Details",
-            "route": "/invoices/invoices-details",
-            "active_link": "/invoices/invoices-details"
-          }
-        ]
-      },
-      {
-        "menuValue": "Payments",
-        "Icon": "ti ti-cards",
-        "active_link": "/finance/payments",
-        "route": "/finance/payments",
-        "hasSubRoute": false,
-        "showSubRoute": false
-      },
-      {
-        "menuValue": "Transactions",
-        "Icon": "ti ti-transition-right",
-        "active_link": "/finance/transactions",
-        "route": "/finance/transactions",
         "hasSubRoute": false,
         "showSubRoute": false
       }
