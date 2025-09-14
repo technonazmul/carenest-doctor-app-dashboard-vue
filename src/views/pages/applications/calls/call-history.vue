@@ -11,7 +11,9 @@
     <div class="content content-two">
       <div>
         <!-- Page Header -->
-        <div class="d-flex align-items-sm-center flex-sm-row flex-column gap-2 pb-3">
+        <div
+          class="d-flex align-items-sm-center flex-sm-row flex-column gap-2 pb-3"
+        >
           <div class="flex-grow-1">
             <h4 class="fs-18 fw-semibold mb-0">Call History</h4>
           </div>
@@ -23,7 +25,9 @@
               <li class="breadcrumb-item">
                 <a href="javascript:void(0);">Applications</a>
               </li>
-              <li class="breadcrumb-item active" aria-current="page">Call History</li>
+              <li class="breadcrumb-item active" aria-current="page">
+                Call History
+              </li>
             </ol>
           </div>
         </div>
@@ -52,10 +56,14 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-end">
               <li>
-                <a href="javascript:void(0);" class="dropdown-item rounded-1">Newest</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                  >Newest</a
+                >
               </li>
               <li>
-                <a href="javascript:void(0);" class="dropdown-item rounded-1">Oldest</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                  >Oldest</a
+                >
               </li>
             </ul>
           </div>
@@ -68,7 +76,11 @@
               <tr>
                 <th>
                   <div class="form-check form-check-md">
-                    <input class="form-check-input" type="checkbox" id="select-all" />
+                    <input
+                      class="form-check-input"
+                      type="checkbox"
+                      id="select-all"
+                    />
                   </div>
                 </th>
                 <th>Name</th>
@@ -102,7 +114,10 @@
                     </a>
                     <div class="ms-2">
                       <p class="text-dark fw-medium mb-0">
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#view_details"
+                        <a
+                          href="#"
+                          data-bs-toggle="modal"
+                          data-bs-target="#view_details"
                           >Anthony Lewis</a
                         >
                       </p>
@@ -113,7 +128,8 @@
                 <td>(123) 4567 890</td>
                 <td>
                   <div class="d-inline-flex align-items-center">
-                    <i class="ti ti-phone-incoming text-success me-2"></i>Incoming
+                    <i class="ti ti-phone-incoming text-success me-2"></i
+                    >Incoming
                   </div>
                 </td>
                 <td>00.25</td>
@@ -159,7 +175,10 @@
                     </a>
                     <div class="ms-2">
                       <p class="text-dark fw-medium mb-0">
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#view_details"
+                        <a
+                          href="#"
+                          data-bs-toggle="modal"
+                          data-bs-target="#view_details"
                           >Brian Villalobos</a
                         >
                       </p>
@@ -170,7 +189,8 @@
                 <td>(179) 7382 829</td>
                 <td>
                   <div class="d-inline-flex align-items-center">
-                    <i class="ti ti-phone-outgoing text-success me-2"></i>Outgoing
+                    <i class="ti ti-phone-outgoing text-success me-2"></i
+                    >Outgoing
                   </div>
                 </td>
                 <td>00.10</td>
@@ -216,7 +236,10 @@
                     </a>
                     <div class="ms-2">
                       <p class="text-dark fw-medium mb-0">
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#view_details"
+                        <a
+                          href="#"
+                          data-bs-toggle="modal"
+                          data-bs-target="#view_details"
                           >Harvey Smith</a
                         >
                       </p>
@@ -273,7 +296,10 @@
                     </a>
                     <div class="ms-2">
                       <p class="text-dark fw-medium mb-0">
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#view_details"
+                        <a
+                          href="#"
+                          data-bs-toggle="modal"
+                          data-bs-target="#view_details"
                           >peral@example.com</a
                         >
                       </p>
@@ -328,7 +354,10 @@
                     /></a>
                     <div class="ms-2">
                       <p class="text-dark fw-medium mb-0">
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#view_details"
+                        <a
+                          href="#"
+                          data-bs-toggle="modal"
+                          data-bs-target="#view_details"
                           >Doglas Martini</a
                         >
                       </p>
@@ -385,7 +414,10 @@
                     </a>
                     <div class="ms-2">
                       <p class="text-dark fw-medium mb-0">
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#view_details"
+                        <a
+                          href="#"
+                          data-bs-toggle="modal"
+                          data-bs-target="#view_details"
                           >Linda Ray</a
                         >
                       </p>
@@ -396,7 +428,8 @@
                 <td>(120) 3728 039</td>
                 <td>
                   <div class="d-inline-flex align-items-center">
-                    <i class="ti ti-phone-incoming text-success me-2"></i>Incomiing
+                    <i class="ti ti-phone-incoming text-success me-2"></i
+                    >Incomiing
                   </div>
                 </td>
                 <td>01.40</td>
@@ -442,7 +475,10 @@
                     </a>
                     <div class="ms-2">
                       <p class="text-dark fw-medium mb-0">
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#view_details"
+                        <a
+                          href="#"
+                          data-bs-toggle="modal"
+                          data-bs-target="#view_details"
                           >Elliot Murray</a
                         >
                       </p>
@@ -499,7 +535,10 @@
                     </a>
                     <div class="ms-2">
                       <p class="text-dark fw-medium mb-0">
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#view_details"
+                        <a
+                          href="#"
+                          data-bs-toggle="modal"
+                          data-bs-target="#view_details"
                           >Rebecca Smtih</a
                         >
                       </p>
@@ -510,7 +549,8 @@
                 <td>(162) 8920 713</td>
                 <td>
                   <div class="d-inline-flex align-items-center">
-                    <i class="ti ti-phone-outgoing text-success me-2"></i>Outgoing
+                    <i class="ti ti-phone-outgoing text-success me-2"></i
+                    >Outgoing
                   </div>
                 </td>
                 <td>00.45</td>
@@ -554,7 +594,10 @@
                     /></a>
                     <div class="ms-2">
                       <p class="text-dark fw-medium mb-0">
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#view_details"
+                        <a
+                          href="#"
+                          data-bs-toggle="modal"
+                          data-bs-target="#view_details"
                           >Connie Waters</a
                         >
                       </p>
@@ -565,7 +608,8 @@
                 <td>(189) 0920 723</td>
                 <td>
                   <div class="d-inline-flex align-items-center">
-                    <i class="ti ti-phone-incoming text-success me-2"></i>Incoming
+                    <i class="ti ti-phone-incoming text-success me-2"></i
+                    >Incoming
                   </div>
                 </td>
                 <td>00.50</td>
@@ -611,7 +655,10 @@
                     </a>
                     <div class="ms-2">
                       <p class="text-dark fw-medium mb-0">
-                        <a href="#" data-bs-toggle="modal" data-bs-target="#view_details"
+                        <a
+                          href="#"
+                          data-bs-toggle="modal"
+                          data-bs-target="#view_details"
                           >Lori Broaddus</a
                         >
                       </p>
@@ -656,11 +703,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy;
-        <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All Rights
-        Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
@@ -771,7 +814,9 @@
       <div class="modal-content">
         <div class="modal-body text-center">
           <div class="mb-3">
-            <span class="avatar bg-danger"><i class="ti ti-trash fs-24"></i></span>
+            <span class="avatar bg-danger"
+              ><i class="ti ti-trash fs-24"></i
+            ></span>
           </div>
           <h6 class="mb-1">Delete Confirmation</h6>
           <p class="mb-3">Are you sure want to delete?</p>
@@ -823,10 +868,16 @@ export default {
             endDate: end,
             ranges: {
               Today: [moment(), moment()],
-              Yesterday: [moment().subtract(1, "days"), moment().subtract(1, "days")],
+              Yesterday: [
+                moment().subtract(1, "days"),
+                moment().subtract(1, "days"),
+              ],
               "Last 7 Days": [moment().subtract(6, "days"), moment()],
               "Last 30 Days": [moment().subtract(29, "days"), moment()],
-              "This Month": [moment().startOf("month"), moment().endOf("month")],
+              "This Month": [
+                moment().startOf("month"),
+                moment().endOf("month"),
+              ],
               "Last Month": [
                 moment().subtract(1, "month").startOf("month"),
                 moment().subtract(1, "month").endOf("month"),

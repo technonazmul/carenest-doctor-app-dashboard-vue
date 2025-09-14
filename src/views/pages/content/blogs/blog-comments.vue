@@ -8,7 +8,8 @@
       <div class="mb-3 pb-3 border-bottom">
         <div class="d-flex align-items-center">
           <h4 class="fw-bold mb-0 me-2">Comments</h4>
-          <span class="badge badge-soft-primary border pt-1 px-2 border-primary fw-medium"
+          <span
+            class="badge badge-soft-primary border pt-1 px-2 border-primary fw-medium"
             >Total Comments : 365</span
           >
         </div>
@@ -52,8 +53,8 @@
               <td>ruth@gmail.com</td>
               <td>
                 <p class="truncate-text">
-                  Great article! Always remember—prevention is better than cure. Regular
-                  checkups and healthy habits go a long way
+                  Great article! Always remember—prevention is better than cure.
+                  Regular checkups and healthy habits go a long way
                 </p>
               </td>
               <td>30 Apr 2025</td>
@@ -68,10 +69,14 @@
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end p-2">
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item">Unpublish</a>
+                      <a href="javascript:void(0);" class="dropdown-item"
+                        >Unpublish</a
+                      >
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item">Publish</a>
+                      <a href="javascript:void(0);" class="dropdown-item"
+                        >Publish</a
+                      >
                     </li>
                   </ul>
                 </div>
@@ -109,8 +114,8 @@
               <td>john@gmail.com</td>
               <td>
                 <p class="truncate-text">
-                  Glad to see people investing in their health! Just a reminder to always
-                  consult your doctor before starting new supplements
+                  Glad to see people investing in their health! Just a reminder
+                  to always consult your doctor before starting new supplements
                 </p>
               </td>
               <td>15 Apr 2025</td>
@@ -125,10 +130,14 @@
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end p-2">
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item">Unpublish</a>
+                      <a href="javascript:void(0);" class="dropdown-item"
+                        >Unpublish</a
+                      >
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item">Publish</a>
+                      <a href="javascript:void(0);" class="dropdown-item"
+                        >Publish</a
+                      >
                     </li>
                   </ul>
                 </div>
@@ -166,8 +175,8 @@
               <td>mary@gmail.com</td>
               <td>
                 <p class="truncate-text">
-                  Small daily changes lead to big results. Stay consistent and put your
-                  health first—your future self will thank you!
+                  Small daily changes lead to big results. Stay consistent and
+                  put your health first—your future self will thank you!
                 </p>
               </td>
               <td>02 Apr 2025</td>
@@ -182,10 +191,14 @@
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end p-2">
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item">Unpublish</a>
+                      <a href="javascript:void(0);" class="dropdown-item"
+                        >Unpublish</a
+                      >
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item">Publish</a>
+                      <a href="javascript:void(0);" class="dropdown-item"
+                        >Publish</a
+                      >
                     </li>
                   </ul>
                 </div>
@@ -223,8 +236,8 @@
               <td>emma@gmail.com</td>
               <td>
                 <p class="truncate-text">
-                  Appreciate this focus on mental well-being. Taking care of your mind is
-                  just as important as your body.
+                  Appreciate this focus on mental well-being. Taking care of
+                  your mind is just as important as your body.
                 </p>
               </td>
               <td>27 Mar 2025</td>
@@ -239,10 +252,14 @@
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end p-2">
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item">Unpublish</a>
+                      <a href="javascript:void(0);" class="dropdown-item"
+                        >Unpublish</a
+                      >
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item">Publish</a>
+                      <a href="javascript:void(0);" class="dropdown-item"
+                        >Publish</a
+                      >
                     </li>
                   </ul>
                 </div>
@@ -280,8 +297,8 @@
               <td>kelly@gmail.com</td>
               <td>
                 <p class="truncate-text">
-                  This is helpful information! If anyone has ongoing symptoms, don’t
-                  hesitate to speak to a licensed healthcare provider
+                  This is helpful information! If anyone has ongoing symptoms,
+                  don’t hesitate to speak to a licensed healthcare provider
                 </p>
               </td>
               <td>30 Apr 2025</td>
@@ -296,10 +313,14 @@
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end p-2">
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item">Unpublish</a>
+                      <a href="javascript:void(0);" class="dropdown-item"
+                        >Unpublish</a
+                      >
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item">Publish</a>
+                      <a href="javascript:void(0);" class="dropdown-item"
+                        >Publish</a
+                      >
                     </li>
                   </ul>
                 </div>
@@ -337,8 +358,8 @@
               <td>oscar@gmail.com</td>
               <td>
                 <p class="truncate-text">
-                  Very professional and caring staff. I felt heard and understood
-                  throughout my treatment.
+                  Very professional and caring staff. I felt heard and
+                  understood throughout my treatment.
                 </p>
               </td>
               <td>12 Mar 2025</td>
@@ -353,10 +374,14 @@
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end p-2">
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item">Unpublish</a>
+                      <a href="javascript:void(0);" class="dropdown-item"
+                        >Unpublish</a
+                      >
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item">Publish</a>
+                      <a href="javascript:void(0);" class="dropdown-item"
+                        >Publish</a
+                      >
                     </li>
                   </ul>
                 </div>
@@ -394,8 +419,8 @@
               <td>daniel@gmail.com</td>
               <td>
                 <p class="truncate-text">
-                  The doctors took time to explain everything clearly. I left feeling
-                  informed and reassured.
+                  The doctors took time to explain everything clearly. I left
+                  feeling informed and reassured.
                 </p>
               </td>
               <td>05 Mar 2025</td>
@@ -410,10 +435,14 @@
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end p-2">
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item">Unpublish</a>
+                      <a href="javascript:void(0);" class="dropdown-item"
+                        >Unpublish</a
+                      >
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item">Publish</a>
+                      <a href="javascript:void(0);" class="dropdown-item"
+                        >Publish</a
+                      >
                     </li>
                   </ul>
                 </div>
@@ -451,8 +480,8 @@
               <td>chris@gmail.com</td>
               <td>
                 <p class="truncate-text">
-                  Exceptional care from start to finish. The clinic is clean, organized,
-                  and patient-focused.
+                  Exceptional care from start to finish. The clinic is clean,
+                  organized, and patient-focused.
                 </p>
               </td>
               <td>24 Feb 2025</td>
@@ -467,10 +496,14 @@
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end p-2">
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item">Unpublish</a>
+                      <a href="javascript:void(0);" class="dropdown-item"
+                        >Unpublish</a
+                      >
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item">Publish</a>
+                      <a href="javascript:void(0);" class="dropdown-item"
+                        >Publish</a
+                      >
                     </li>
                   </ul>
                 </div>
@@ -508,8 +541,8 @@
               <td>steve@gmail.com</td>
               <td>
                 <p class="truncate-text">
-                  Booking was easy, the team was punctual, and I received excellent
-                  medical attention.
+                  Booking was easy, the team was punctual, and I received
+                  excellent medical attention.
                 </p>
               </td>
               <td>16 Feb 2025</td>
@@ -524,10 +557,14 @@
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end p-2">
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item">Unpublish</a>
+                      <a href="javascript:void(0);" class="dropdown-item"
+                        >Unpublish</a
+                      >
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item">Publish</a>
+                      <a href="javascript:void(0);" class="dropdown-item"
+                        >Publish</a
+                      >
                     </li>
                   </ul>
                 </div>
@@ -565,8 +602,8 @@
               <td>charles@gmail.com</td>
               <td>
                 <p class="truncate-text">
-                  Great experience! The doctor truly listened and provided personalized
-                  advice.
+                  Great experience! The doctor truly listened and provided
+                  personalized advice.
                 </p>
               </td>
               <td>01 Feb 2025</td>
@@ -581,10 +618,14 @@
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end p-2">
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item">Unpublish</a>
+                      <a href="javascript:void(0);" class="dropdown-item"
+                        >Unpublish</a
+                      >
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item">Publish</a>
+                      <a href="javascript:void(0);" class="dropdown-item"
+                        >Publish</a
+                      >
                     </li>
                   </ul>
                 </div>
@@ -608,10 +649,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>

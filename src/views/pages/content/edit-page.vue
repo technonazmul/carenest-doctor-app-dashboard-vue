@@ -27,7 +27,11 @@
                       <label class="form-label mb-1 fw-medium"
                         >Title<span class="text-danger ms-1">*</span></label
                       >
-                      <input type="text" class="form-control" value="Specializations" />
+                      <input
+                        type="text"
+                        class="form-control"
+                        value="Specializations"
+                      />
                     </div>
                   </div>
 
@@ -39,7 +43,11 @@
                           automatically)</span
                         ><span class="text-danger ms-1">*</span></label
                       >
-                      <input type="text" class="form-control" value="specializations" />
+                      <input
+                        type="text"
+                        class="form-control"
+                        value="specializations"
+                      />
                     </div>
                   </div>
 
@@ -90,7 +98,9 @@
                             name="customRadio"
                             class="form-check-input"
                           />
-                          <label class="form-check-label fw-normal" for="customRadio1"
+                          <label
+                            class="form-check-label fw-normal"
+                            for="customRadio1"
                             >Top Menu</label
                           >
                         </div>
@@ -101,7 +111,9 @@
                             name="customRadio"
                             class="form-check-input"
                           />
-                          <label class="form-check-label fw-normal" for="customRadio2"
+                          <label
+                            class="form-check-label fw-normal"
+                            for="customRadio2"
                             >Quick Links</label
                           >
                         </div>
@@ -140,7 +152,9 @@
 
           <div class="d-flex align-items-center justify-content-end">
             <a href="javascript:void(0);" class="btn btn-light me-2">Cancel</a>
-            <a href="javascript:void(0);" class="btn btn-primary">Save Changes</a>
+            <a href="javascript:void(0);" class="btn btn-primary"
+              >Save Changes</a
+            >
           </div>
         </div>
       </div>
@@ -150,10 +164,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>

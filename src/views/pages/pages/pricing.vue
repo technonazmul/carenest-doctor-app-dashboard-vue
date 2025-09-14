@@ -18,7 +18,9 @@
               <div class="mb-3">
                 <div class="mb-3">
                   <h4 class="fw-bold mb-1">Basic</h4>
-                  <p class="mb-3 text-truncate line-clamb-2">Ideal for small practices</p>
+                  <p class="mb-3 text-truncate line-clamb-2">
+                    Ideal for small practices
+                  </p>
                 </div>
                 <div class="d-flex align-items-center mb-3 flex-wrap gap-2">
                   <h2 class="fs-32 fw-bold mb-0">
@@ -77,7 +79,9 @@
               <div class="mb-3">
                 <div class="mb-3">
                   <h4 class="fw-bold mb-1">Premium</h4>
-                  <p class="mb-3 text-truncate line-clamb-2">Ideal for small practices</p>
+                  <p class="mb-3 text-truncate line-clamb-2">
+                    Ideal for small practices
+                  </p>
                 </div>
                 <div class="d-flex align-items-center mb-1 flex-wrap gap-2">
                   <h2 class="fs-32 fw-bold mb-0">
@@ -140,7 +144,9 @@
               <div class="mb-3">
                 <div class="mb-3">
                   <h4 class="fw-bold mb-1">Enterprise</h4>
-                  <p class="mb-3 text-truncate line-clamb-2">Ideal for small practices</p>
+                  <p class="mb-3 text-truncate line-clamb-2">
+                    Ideal for small practices
+                  </p>
                 </div>
                 <div class="d-flex align-items-center mb-1 flex-wrap gap-2">
                   <h2 class="fs-32 fw-bold mb-0">
@@ -204,10 +210,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>

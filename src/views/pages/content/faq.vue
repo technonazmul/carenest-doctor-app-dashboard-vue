@@ -41,9 +41,9 @@
               <td>What services does your clinic offer?</td>
               <td>
                 <p class="truncate-text">
-                  We provide a comprehensive range of services, including preventive care,
-                  diagnostics, treatment for acute and chronic conditions, vaccinations,
-                  and wellness counseling.
+                  We provide a comprehensive range of services, including
+                  preventive care, diagnostics, treatment for acute and chronic
+                  conditions, vaccinations, and wellness counseling.
                 </p>
               </td>
               <td>General</td>
@@ -81,8 +81,9 @@
               <td>Do you accept walk-in patients?</td>
               <td>
                 <p class="truncate-text">
-                  Yes, we accept walk-in patients for urgent care needs. However,
-                  scheduling an appointment is recommended to reduce waiting times.
+                  Yes, we accept walk-in patients for urgent care needs.
+                  However, scheduling an appointment is recommended to reduce
+                  waiting times.
                 </p>
               </td>
               <td>General</td>
@@ -120,8 +121,8 @@
               <td>What should I bring to my appointment?</td>
               <td>
                 <p class="truncate-text">
-                  Please bring a valid ID, your insurance card, a list of current
-                  medications, and any relevant medical records.
+                  Please bring a valid ID, your insurance card, a list of
+                  current medications, and any relevant medical records.
                 </p>
               </td>
               <td>General</td>
@@ -159,8 +160,8 @@
               <td>How do I cancel or reschedule my appointment?</td>
               <td>
                 <p class="truncate-text">
-                  To cancel or reschedule, please call our office at least 24 hours in
-                  advance to avoid any cancellation fees.
+                  To cancel or reschedule, please call our office at least 24
+                  hours in advance to avoid any cancellation fees.
                 </p>
               </td>
               <td>General</td>
@@ -198,8 +199,9 @@
               <td>What medical services do you provide?</td>
               <td>
                 <p class="truncate-text">
-                  We offer a range of services including preventive care, chronic disease
-                  management, vaccinations, pediatric care, and minor surgical procedures.
+                  We offer a range of services including preventive care,
+                  chronic disease management, vaccinations, pediatric care, and
+                  minor surgical procedures.
                 </p>
               </td>
               <td>General</td>
@@ -237,9 +239,9 @@
               <td>Do you offer telemedicine consultations?</td>
               <td>
                 <p class="truncate-text">
-                  Yes, we provide telemedicine services for certain non-emergency
-                  conditions. Please contact our office to determine if your condition is
-                  suitable for a virtual visit.
+                  Yes, we provide telemedicine services for certain
+                  non-emergency conditions. Please contact our office to
+                  determine if your condition is suitable for a virtual visit.
                 </p>
               </td>
               <td>Prescriptions</td>
@@ -277,8 +279,8 @@
               <td>Are laboratory services available on-site?</td>
               <td>
                 <p class="truncate-text">
-                  Yes, we have an on-site laboratory for blood tests, urinalysis, and
-                  other diagnostic services.
+                  Yes, we have an on-site laboratory for blood tests,
+                  urinalysis, and other diagnostic services.
                 </p>
               </td>
               <td>Treatment</td>
@@ -316,8 +318,9 @@
               <td>Which insurance plans do you accept?</td>
               <td>
                 <p class="truncate-text">
-                  We accept most major insurance plans. Please visit our website or call
-                  our billing department to confirm if we accept your specific plan.
+                  We accept most major insurance plans. Please visit our website
+                  or call our billing department to confirm if we accept your
+                  specific plan.
                 </p>
               </td>
               <td>Clinic Policies</td>
@@ -355,9 +358,10 @@
               <td>How do I access the patient portal?</td>
               <td>
                 <p class="truncate-text">
-                  You can access the patient portal by visiting our website and clicking
-                  on the "Patient Portal" link. First-time users will need to register
-                  using their email address and a provided access code.
+                  You can access the patient portal by visiting our website and
+                  clicking on the "Patient Portal" link. First-time users will
+                  need to register using their email address and a provided
+                  access code.
                 </p>
               </td>
               <td>Wellness</td>
@@ -395,8 +399,8 @@
               <td>What should I do in case of a medical emergency?</td>
               <td>
                 <p class="truncate-text">
-                  If you are experiencing a life-threatening emergency, call 911 or go to
-                  the nearest emergency room immediately.
+                  If you are experiencing a life-threatening emergency, call 911
+                  or go to the nearest emergency room immediately.
                 </p>
               </td>
               <td>Wellness</td>
@@ -439,10 +443,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
@@ -470,22 +471,41 @@
           <div class="modal-body">
             <div class="mb-2">
               <label class="form-label">Category</label>
-              <input type="text" class="form-control" placeholder="Placeholder" />
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Placeholder"
+              />
             </div>
             <div class="mb-2">
               <label class="form-label">Question</label>
-              <input type="text" class="form-control" placeholder="Placeholder" />
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Placeholder"
+              />
             </div>
             <div class="mb-0">
               <label class="form-label">Answer</label>
-              <textarea class="form-control" placeholder="Description"></textarea>
+              <textarea
+                class="form-control"
+                placeholder="Description"
+              ></textarea>
             </div>
           </div>
           <div class="modal-footer d-flex align-items-center gap-1">
-            <button type="button" class="btn btn-white border" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-white border"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
-            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
               Add FAQ
             </button>
           </div>
@@ -532,10 +552,18 @@ We accep  t most major insurance plans. You can check the list of accepted insur
             </div>
           </div>
           <div class="modal-footer d-flex align-items-center gap-1">
-            <button type="button" class="btn btn-white border" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-white border"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
-            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
               Save Changes
             </button>
           </div>

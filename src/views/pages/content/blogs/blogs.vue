@@ -51,8 +51,9 @@
                   >
                 </h6>
                 <p class="truncate-2-lines mb-0">
-                  Preventive care refers to medical services that help you avoid illness,
-                  detect health issues early, and maintain overall wellness
+                  Preventive care refers to medical services that help you avoid
+                  illness, detect health issues early, and maintain overall
+                  wellness
                 </p>
               </div>
             </div>
@@ -94,8 +95,8 @@
                   >
                 </h6>
                 <p class="truncate-2-lines mb-0">
-                  Fuel your body, move with purpose—wellness starts with what you eat and
-                  how you live
+                  Fuel your body, move with purpose—wellness starts with what
+                  you eat and how you live
                 </p>
               </div>
             </div>
@@ -137,8 +138,8 @@
                   >
                 </h6>
                 <p class="truncate-2-lines mb-0">
-                  Add a fruit or veggie to every meal.Don’t skip breakfast—it fuels your
-                  day.Go to bed and wake up at the same time daily
+                  Add a fruit or veggie to every meal.Don’t skip breakfast—it
+                  fuels your day.Go to bed and wake up at the same time daily
                 </p>
               </div>
             </div>
@@ -180,8 +181,8 @@
                   >
                 </h6>
                 <p class="truncate-2-lines mb-0">
-                  Avoid screens at least 1 hour before bedtime.Take 5-minute deep
-                  breathing breaks throughout your day.
+                  Avoid screens at least 1 hour before bedtime.Take 5-minute
+                  deep breathing breaks throughout your day.
                 </p>
               </div>
             </div>
@@ -223,8 +224,8 @@
                   >
                 </h6>
                 <p class="truncate-2-lines mb-0">
-                  Move your body for at least 30 minutes a day.Practice deep breathing or
-                  mindfulness to manage stress.
+                  Move your body for at least 30 minutes a day.Practice deep
+                  breathing or mindfulness to manage stress.
                 </p>
               </div>
             </div>
@@ -266,8 +267,8 @@
                   >
                 </h6>
                 <p class="truncate-2-lines mb-0">
-                  Healing isn't linear—progress takes time and patience.Therapy gives you
-                  tools; growth comes from using them.
+                  Healing isn't linear—progress takes time and patience.Therapy
+                  gives you tools; growth comes from using them.
                 </p>
               </div>
             </div>
@@ -309,8 +310,8 @@
                   >
                 </h6>
                 <p class="truncate-2-lines mb-0">
-                  Vaccines for Kids: What Parents Should Know.Screen Time and Children’s
-                  Health: Striking the Balance
+                  Vaccines for Kids: What Parents Should Know.Screen Time and
+                  Children’s Health: Striking the Balance
                 </p>
               </div>
             </div>
@@ -352,8 +353,8 @@
                   >
                 </h6>
                 <p class="truncate-2-lines mb-0">
-                  Move More, Live More: Exercise as a Prescription.Sleep, Stress, and
-                  Sugar: The Silent Health Killers
+                  Move More, Live More: Exercise as a Prescription.Sleep,
+                  Stress, and Sugar: The Silent Health Killers
                 </p>
               </div>
             </div>
@@ -396,8 +397,8 @@
                   >
                 </h6>
                 <p class="truncate-2-lines mb-0">
-                  Start your day with 2 minutes of silence. Taking a walk without your
-                  phone. Getting enough sleep
+                  Start your day with 2 minutes of silence. Taking a walk
+                  without your phone. Getting enough sleep
                 </p>
               </div>
             </div>
@@ -423,10 +424,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>

@@ -14,7 +14,8 @@
       >
         <div class="d-flex align-items-center">
           <h4 class="fw-bold mb-0 me-2">Announcements</h4>
-          <span class="badge badge-soft-primary border pt-1 px-2 border-primary fw-medium"
+          <span
+            class="badge badge-soft-primary border pt-1 px-2 border-primary fw-medium"
             >Total City : 365</span
           >
         </div>
@@ -30,7 +31,9 @@
       </div>
       <!-- End Page Header -->
 
-      <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3">
+      <div
+        class="d-flex align-items-center justify-content-between flex-wrap row-gap-3"
+      >
         <div class="search-set mb-3">
           <div class="d-flex align-items-center flex-wrap gap-2">
             <div class="table-search d-flex align-items-center mb-0">
@@ -105,7 +108,9 @@
                     />
                   </div>
                   <div class="mb-3">
-                    <div class="d-flex align-items-center justify-content-between">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
                       <label class="form-label">Date</label>
                     </div>
                     <div class="input-group position-relative">
@@ -137,7 +142,9 @@
                     id="close-filter"
                     >Close</a
                   >
-                  <button type="submit" class="btn btn-primary btn-md">Filter</button>
+                  <button type="submit" class="btn btn-primary btn-md">
+                    Filter
+                  </button>
                 </div>
               </form>
             </div>
@@ -152,10 +159,14 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-end p-2">
               <li>
-                <a href="javascript:void(0);" class="dropdown-item rounded-1">Recent</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                  >Recent</a
+                >
               </li>
               <li>
-                <a href="javascript:void(0);" class="dropdown-item rounded-1">Oldest</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                  >Oldest</a
+                >
               </li>
             </ul>
           </div>
@@ -229,10 +240,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
@@ -260,7 +268,9 @@
           <div class="modal-body">
             <div class="mb-2">
               <label class="form-label"
-                >Announcement Title<span class="text-danger ms-1">*</span></label
+                >Announcement Title<span class="text-danger ms-1"
+                  >*</span
+                ></label
               >
               <input type="text" class="form-control" />
             </div>
@@ -276,10 +286,18 @@
             </div>
           </div>
           <div class="modal-footer d-flex align-items-center gap-1">
-            <button type="button" class="btn btn-white border" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-white border"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
-            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
               Add Announcement
             </button>
           </div>
@@ -308,7 +326,9 @@
           <div class="modal-body">
             <div class="mb-2">
               <label class="form-label"
-                >Announcement Title<span class="text-danger ms-1">*</span></label
+                >Announcement Title<span class="text-danger ms-1"
+                  >*</span
+                ></label
               >
               <input
                 type="text"
@@ -340,10 +360,18 @@ Platform will be under maintenance on 07 Apr from 1 AM to 3 AM.</textarea
             </div>
           </div>
           <div class="modal-footer d-flex align-items-center gap-1">
-            <button type="button" class="btn btn-white border" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-white border"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
-            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
               Save Changes
             </button>
           </div>
@@ -402,7 +430,8 @@ const columns = [
     dataIndex: "CreatedOn",
     key: "CreatedOn",
     sorter: {
-      compare: (a, b) => (a.CreatedOn.toLowerCase() > b.CreatedOn.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.CreatedOn.toLowerCase() > b.CreatedOn.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -427,7 +456,8 @@ const columns = [
     dataIndex: "Status",
     key: "Status",
     sorter: {
-      compare: (a, b) => (a.Status.toLowerCase() > b.Status.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Status.toLowerCase() > b.Status.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -447,42 +477,48 @@ const data = [
   {
     CreatedOn: "15 Apr 2025",
     Announcement: "New Lab Test Packages Added",
-    Content: "New health checkup and diagnostic packages now available for booking.",
+    Content:
+      "New health checkup and diagnostic packages now available for booking.",
     Type: "Service Update",
     Status: "Active",
   },
   {
     CreatedOn: "02 Apr 2025",
     Announcement: "Staff Training Program",
-    Content: "Mandatory EMR training for all staff on 02 Apr at 10 AM in Meeting Room 1.",
+    Content:
+      "Mandatory EMR training for all staff on 02 Apr at 10 AM in Meeting Room 1.",
     Type: "Service Update",
     Status: "Active",
   },
   {
     CreatedOn: "27 Mar 2025",
     Announcement: "Patient Feedback System Launched",
-    Content: "Mandatory EMR training for all staff on 02 Apr at 10 AM in Meeting Room 1.",
+    Content:
+      "Mandatory EMR training for all staff on 02 Apr at 10 AM in Meeting Room 1.",
     Type: "Internal Notice",
     Status: "Inactive",
   },
   {
     CreatedOn: "12 Mar 2025",
     Announcement: "Pharmacy Stock Audit Notice",
-    Content: "A new digital form is now available for feedback after appointments.",
+    Content:
+      "A new digital form is now available for feedback after appointments.",
     Type: "Staff Update",
     Status: "Active",
   },
   {
     CreatedOn: "05 Mar 2025",
     Announcement: "Lab Closed for Renovation",
-    Content: "A new digital form is now available for feedback after appointments.",
+    Content:
+      "A new digital form is now available for feedback after appointments.",
     Type: "Service Update",
     Status: "Active",
   },
   {
     CreatedOn: "24 Feb 2025",
     Announcement: "Referral Program Live",
-    Content: "Lab services will pause 20–22 Mar for upgrades. Alternate slots available.",
+    Content:
+      "Lab services will pause 20–22 Mar for upgrades. Alternate slots available.",
     Type: "Pharmacy Notice",
     Status: "Inactive",
   },
@@ -496,7 +532,8 @@ const data = [
   {
     CreatedOn: "01 Feb 2025",
     Announcement: "Referral Program Live",
-    Content: "Lab services will pause 20-22 Mar for upgrades. Alternate slots available.",
+    Content:
+      "Lab services will pause 20-22 Mar for upgrades. Alternate slots available.",
     Type: "Promotion",
     Status: "Inactive",
   },
@@ -542,7 +579,8 @@ export default {
   },
   methods: {
     getImageUrl(imageName) {
-      return new URL(`/src/assets/img/users/${imageName}`, import.meta.url).href;
+      return new URL(`/src/assets/img/users/${imageName}`, import.meta.url)
+        .href;
     },
   },
   computed: {
@@ -578,10 +616,16 @@ export default {
             endDate: end,
             ranges: {
               Today: [moment(), moment()],
-              Yesterday: [moment().subtract(1, "days"), moment().subtract(1, "days")],
+              Yesterday: [
+                moment().subtract(1, "days"),
+                moment().subtract(1, "days"),
+              ],
               "Last 7 Days": [moment().subtract(6, "days"), moment()],
               "Last 30 Days": [moment().subtract(29, "days"), moment()],
-              "This Month": [moment().startOf("month"), moment().endOf("month")],
+              "This Month": [
+                moment().startOf("month"),
+                moment().endOf("month"),
+              ],
               "Last Month": [
                 moment().subtract(1, "month").startOf("month"),
                 moment().subtract(1, "month").endOf("month"),

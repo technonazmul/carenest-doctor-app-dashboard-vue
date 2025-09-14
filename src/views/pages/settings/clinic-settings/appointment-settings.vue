@@ -55,14 +55,17 @@
                   <!-- end col -->
                   <div class="col-lg-1">
                     <div class="form-check form-switch">
-                      <input class="form-check-input text-end me-1" type="checkbox" />
+                      <input
+                        class="form-check-input text-end me-1"
+                        type="checkbox"
+                      />
                     </div>
                   </div>
                   <!-- end col -->
                   <div class="col-lg-11">
                     <h6 class="fs-14 fw-medium">
-                      Appointments auto-cancel if clients reply 'No' or 'Cancel' to
-                      reminders.
+                      Appointments auto-cancel if clients reply 'No' or 'Cancel'
+                      to reminders.
                     </h6>
                   </div>
                   <!-- end col -->
@@ -83,12 +86,16 @@
                   <h5 class="fw-bold mb-3">Automatic Reminders</h5>
 
                   <div class="reminder-list mb-3 border-bottom">
-                    <div class="row d-flex align-items-center mb-3 reminder-list-item">
+                    <div
+                      class="row d-flex align-items-center mb-3 reminder-list-item"
+                    >
                       <div class="col-md-2">
                         <h6 class="fs-14 fw-medium mb-0">Reminder</h6>
                       </div>
                       <div class="col-md-10 flex-grow-1">
-                        <div class="d-flex align-items-center justify-content-end">
+                        <div
+                          class="d-flex align-items-center justify-content-end"
+                        >
                           <div class="me-2">
                             <vue3-select
                               v-model="selected"
@@ -126,12 +133,16 @@
                         </div>
                       </div>
                     </div>
-                    <div class="row d-flex align-items-center mb-3 reminder-list-item">
+                    <div
+                      class="row d-flex align-items-center mb-3 reminder-list-item"
+                    >
                       <div class="col-md-2">
                         <h6 class="fs-14 fw-medium mb-0">Reminder</h6>
                       </div>
                       <div class="col-md-10 flex-grow-1">
-                        <div class="d-flex align-items-center justify-content-end">
+                        <div
+                          class="d-flex align-items-center justify-content-end"
+                        >
                           <div class="me-2">
                             <vue3-select
                               v-model="selectedThree"
@@ -172,14 +183,18 @@
                   </div>
 
                   <div class="pb-3 mb-3 border-bottom">
-                    <div class="d-flex align-items-center justify-content-between mb-3">
+                    <div
+                      class="d-flex align-items-center justify-content-between mb-3"
+                    >
                       <h5 class="fw-bold mb-0">Manual Reminders</h5>
                     </div>
 
                     <!-- start row -->
                     <div class="row align-items-center row-gap-2 mb-3">
                       <div class="col-lg-6">
-                        <p class="text-dark fw-medium mb-0">SMS Reminder Template</p>
+                        <p class="text-dark fw-medium mb-0">
+                          SMS Reminder Template
+                        </p>
                       </div>
                       <!-- end col -->
                       <div class="col-lg-6">
@@ -203,7 +218,9 @@
                     <!-- start row -->
                     <div class="row align-items-center row-gap-2 mb-3">
                       <div class="col-lg-6">
-                        <p class="text-dark fw-medium mb-0">Email Reminder Template</p>
+                        <p class="text-dark fw-medium mb-0">
+                          Email Reminder Template
+                        </p>
                       </div>
                       <!-- end col -->
                       <div class="col-lg-6">
@@ -229,11 +246,14 @@
                       <div class="row align-items-center mb-3">
                         <div class="col-9">
                           <p class="mb-0 text-dark fw-medium">
-                            Send reminder automatically upon new appointment booking
+                            Send reminder automatically upon new appointment
+                            booking
                           </p>
                         </div>
                         <div class="col-3">
-                          <div class="d-flex align-items-center justify-content-end">
+                          <div
+                            class="d-flex align-items-center justify-content-end"
+                          >
                             <div class="form-check form-switch">
                               <input
                                 class="form-check-input text-end me-1"
@@ -278,8 +298,12 @@
                   </div>
 
                   <div class="d-flex align-items-center justify-content-end">
-                    <a href="javascript:void(0);" class="btn btn-light me-2">Cancel</a>
-                    <a href="javascript:void(0);" class="btn btn-primary">Save Changes</a>
+                    <a href="javascript:void(0);" class="btn btn-light me-2"
+                      >Cancel</a
+                    >
+                    <a href="javascript:void(0);" class="btn btn-primary"
+                      >Save Changes</a
+                    >
                   </div>
                 </div>
               </div>
@@ -294,10 +318,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
@@ -334,10 +355,16 @@ export default {
         { label: "Select", value: "Select" },
         { label: "Welcome Email", value: "Welcome Email" },
         { label: "Appointment Reminder", value: "Appointment Reminder" },
-        { label: "Appointment Confirmation", value: "Appointment Confirmation" },
+        {
+          label: "Appointment Confirmation",
+          value: "Appointment Confirmation",
+        },
         { label: "Appointment Rescheduled", value: "Appointment Rescheduled" },
         { label: "Appointment Cancelled", value: "Appointment Cancelled" },
-        { label: "Test Result Notification", value: "Test Result Notification" },
+        {
+          label: "Test Result Notification",
+          value: "Test Result Notification",
+        },
       ],
       AppointEmailOne: [
         { label: "SMS", value: "SMS" },
@@ -357,28 +384,46 @@ export default {
         { label: "Select", value: "Select" },
         { label: "Welcome Email", value: "Welcome Email" },
         { label: "Appointment Reminder", value: "Appointment Reminder" },
-        { label: "Appointment Confirmation", value: "Appointment Confirmation" },
+        {
+          label: "Appointment Confirmation",
+          value: "Appointment Confirmation",
+        },
         { label: "Appointment Rescheduled", value: "Appointment Rescheduled" },
         { label: "Appointment Cancelled", value: "Appointment Cancelled" },
-        { label: "Test Result Notification", value: "Test Result Notification" },
+        {
+          label: "Test Result Notification",
+          value: "Test Result Notification",
+        },
       ],
       AppointRedmin: [
         { label: "Select", value: "Select" },
         { label: "Welcome Email", value: "Welcome Email" },
         { label: "Appointment Reminder", value: "Appointment Reminder" },
-        { label: "Appointment Confirmation", value: "Appointment Confirmation" },
+        {
+          label: "Appointment Confirmation",
+          value: "Appointment Confirmation",
+        },
         { label: "Appointment Rescheduled", value: "Appointment Rescheduled" },
         { label: "Appointment Cancelled", value: "Appointment Cancelled" },
-        { label: "Test Result Notification", value: "Test Result Notification" },
+        {
+          label: "Test Result Notification",
+          value: "Test Result Notification",
+        },
       ],
       AppointRedminOne: [
         { label: "Select", value: "Select" },
         { label: "Welcome Email", value: "Welcome Email" },
         { label: "Appointment Reminder", value: "Appointment Reminder" },
-        { label: "Appointment Confirmation", value: "Appointment Confirmation" },
+        {
+          label: "Appointment Confirmation",
+          value: "Appointment Confirmation",
+        },
         { label: "Appointment Rescheduled", value: "Appointment Rescheduled" },
         { label: "Appointment Cancelled", value: "Appointment Cancelled" },
-        { label: "Test Result Notification", value: "Test Result Notification" },
+        {
+          label: "Test Result Notification",
+          value: "Test Result Notification",
+        },
       ],
       AppointEmailTwo: [
         { label: "SMS", value: "SMS" },
@@ -391,10 +436,16 @@ export default {
         { label: "Select", value: "Select" },
         { label: "Welcome Email", value: "Welcome Email" },
         { label: "Appointment Reminder", value: "Appointment Reminder" },
-        { label: "Appointment Confirmation", value: "Appointment Confirmation" },
+        {
+          label: "Appointment Confirmation",
+          value: "Appointment Confirmation",
+        },
         { label: "Appointment Rescheduled", value: "Appointment Rescheduled" },
         { label: "Appointment Cancelled", value: "Appointment Cancelled" },
-        { label: "Test Result Notification", value: "Test Result Notification" },
+        {
+          label: "Test Result Notification",
+          value: "Test Result Notification",
+        },
       ],
     };
   },

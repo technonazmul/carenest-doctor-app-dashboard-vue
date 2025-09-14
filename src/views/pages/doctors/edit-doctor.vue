@@ -254,6 +254,30 @@
                   </div>
                 </div>
 
+                <!-- Status Information -->
+                <div class="bg-light px-3 py-2 mb-3">
+                  <h6 class="fw-bold mb-0">Account Status</h6>
+                </div>
+
+                <div class="pb-0 mb-3">
+                  <div class="row">
+                    <!-- Active Status -->
+                    <div class="col-lg-3">
+                      <div class="mb-3">
+                        <label class="form-label">Account Status</label>
+                        <select class="form-control" v-model="form.active">
+                          <option :value="true">Active</option>
+                          <option :value="false">Inactive</option>
+                        </select>
+                        <small class="form-text text-muted">
+                          Inactive doctors will not be visible to patients and
+                          cannot receive appointments.
+                        </small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
                 <!-- Schedule Information -->
                 <div class="bg-light px-3 py-2 mb-3">
                   <h6 class="fw-bold mb-0">Schedule Information</h6>
@@ -320,11 +344,7 @@
 
     <!-- Footer -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy;
-        <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
   </div>
 </template>
@@ -373,6 +393,7 @@ export default {
         visitingHour: "",
         password: "",
         image: null,
+        active: true, // Added active field with default value
         timeSlots: {
           Saturday: [],
           Sunday: [],
@@ -432,6 +453,11 @@ export default {
             Friday: [],
           };
         }
+
+        // Ensure active field is properly set (convert string to boolean if needed)
+        if (typeof this.form.active === "string") {
+          this.form.active = this.form.active === "true";
+        }
       } catch (error) {
         console.error("Error fetching doctor data:", error);
         this.handleError(error);
@@ -487,6 +513,9 @@ export default {
             } else if (typeof this.form.image === "string" && this.form.image) {
               formData.append("existingImage", this.form.image);
             }
+          } else if (key === "active") {
+            // Ensure active is sent as boolean
+            formData.append(key, Boolean(this.form[key]));
           } else {
             appendIfDefined(key, this.form[key]);
           }
@@ -578,6 +607,7 @@ export default {
         visitingHour: "",
         password: "",
         image: null,
+        active: true, // Reset active to default true
         timeSlots: {
           Saturday: [],
           Sunday: [],
@@ -621,5 +651,10 @@ export default {
 .avatar-xxl {
   width: 4rem;
   height: 4rem;
+}
+
+.badge {
+  padding: 0.5rem 1rem;
+  font-size: 0.875rem;
 }
 </style>

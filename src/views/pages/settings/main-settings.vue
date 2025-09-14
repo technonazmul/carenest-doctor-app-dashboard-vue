@@ -141,43 +141,6 @@
                         placeholder="Company address"
                       ></textarea>
                     </div>
-                    <div class="mb-3">
-                      <label for="favicon" class="form-label"
-                        >Favicon / App Icon</label
-                      >
-                      <input
-                        type="file"
-                        class="form-control"
-                        id="favicon"
-                        @change="handleFileUpload($event, 'favicon')"
-                        accept="image/*"
-                        ref="faviconInput"
-                      />
-                      <div
-                        v-if="faviconPreview || settings.general.favicon"
-                        class="mt-2"
-                      >
-                        <img
-                          :src="
-                            faviconPreview ||
-                            getFileUrl(settings.general.favicon)
-                          "
-                          alt="Favicon Preview"
-                          class="img-thumbnail"
-                          style="max-width: 64px; max-height: 64px"
-                        />
-                        <button
-                          type="button"
-                          class="btn btn-sm btn-danger ms-2"
-                          @click="removeFile('favicon')"
-                        >
-                          <i class="fas fa-trash"></i> Remove
-                        </button>
-                      </div>
-                      <small class="text-muted"
-                        >Recommended size: 32x32px or 64x64px</small
-                      >
-                    </div>
                   </div>
                 </div>
               </div>
@@ -539,7 +502,7 @@
         </div>
 
         <!-- Payment Gateway APIs -->
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-xl-12">
             <div class="card">
               <div class="card-header">
@@ -636,10 +599,10 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <!-- Firebase / FCM -->
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-xl-12">
             <div class="card">
               <div class="card-header">
@@ -709,10 +672,10 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <!-- Third-Party Services -->
-        <div class="row">
+        <!-- <div class="row">
           <div class="col-xl-12">
             <div class="card">
               <div class="card-header">
@@ -782,7 +745,7 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> -->
 
         <!-- Save Button -->
         <div class="row">

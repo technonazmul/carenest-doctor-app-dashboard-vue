@@ -65,7 +65,9 @@
       <!-- End Page Header -->
 
       <!--  Start Filter -->
-      <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3">
+      <div
+        class="d-flex align-items-center justify-content-between flex-wrap row-gap-3"
+      >
         <div class="d-flex align-items-center gap-2">
           <div class="search-set mb-3">
             <div class="d-flex align-items-center flex-wrap gap-2">
@@ -122,9 +124,13 @@
               <form action="#">
                 <div class="filter-body pb-0">
                   <div class="mb-3">
-                    <div class="d-flex align-items-center justify-content-between">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
                       <label class="form-label mb-1">Doctor</label>
-                      <a href="javascript:void(0);" class="link-primary mb-1">Reset</a>
+                      <a href="javascript:void(0);" class="link-primary mb-1"
+                        >Reset</a
+                      >
                     </div>
                     <select class="select2" multiple="multiple">
                       <option value="m-1" selected>Dr. Mick Thompson</option>
@@ -135,9 +141,13 @@
                     </select>
                   </div>
                   <div class="mb-3">
-                    <div class="d-flex align-items-center justify-content-between">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
                       <label class="form-label">Designation</label>
-                      <a href="javascript:void(0);" class="link-primary mb-1">Reset</a>
+                      <a href="javascript:void(0);" class="link-primary mb-1"
+                        >Reset</a
+                      >
                     </div>
                     <select class="select2" multiple="multiple">
                       <option value="m-1" selected>Cardiologist</option>
@@ -147,9 +157,13 @@
                     </select>
                   </div>
                   <div class="mb-3">
-                    <div class="d-flex align-items-center justify-content-between">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
                       <label class="form-label">Department</label>
-                      <a href="javascript:void(0);" class="link-primary mb-1">Reset</a>
+                      <a href="javascript:void(0);" class="link-primary mb-1"
+                        >Reset</a
+                      >
                     </div>
                     <select class="select2" multiple="multiple">
                       <option value="m-1" selected>Cardiology</option>
@@ -162,16 +176,24 @@
                       >Date<span class="text-danger">*</span></label
                     >
                     <div class="input-icon-end position-relative">
-                      <a-date-picker v-model="valueOne" class="form-control datetimepicker" placeholder="dd/mm/yyyy" />
+                      <a-date-picker
+                        v-model="valueOne"
+                        class="form-control datetimepicker"
+                        placeholder="dd/mm/yyyy"
+                      />
                       <span class="input-icon-addon">
                         <i class="ti ti-calendar"></i>
                       </span>
                     </div>
                   </div>
                   <div class="mb-3">
-                    <div class="d-flex align-items-center justify-content-between">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
                       <label class="form-label">Amount</label>
-                      <a href="javascript:void(0);" class="link-primary mb-1">Reset</a>
+                      <a href="javascript:void(0);" class="link-primary mb-1"
+                        >Reset</a
+                      >
                     </div>
                     <select class="select2" multiple="multiple">
                       <option value="m-1" selected>$501 - $1000</option>
@@ -180,9 +202,13 @@
                     </select>
                   </div>
                   <div class="mb-3">
-                    <div class="d-flex align-items-center justify-content-between">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
                       <label class="form-label">Status</label>
-                      <a href="javascript:void(0);" class="link-primary mb-1">Reset</a>
+                      <a href="javascript:void(0);" class="link-primary mb-1"
+                        >Reset</a
+                      >
                     </div>
                     <select class="select2" multiple="multiple">
                       <option value="m-1" selected>Available</option>
@@ -199,7 +225,10 @@
                     id="close-filter"
                     >Close</a
                   >
-                  <button type="submit" class="btn btn-primary btn-md fw-medium">
+                  <button
+                    type="submit"
+                    class="btn btn-primary btn-md fw-medium"
+                  >
                     Filter
                   </button>
                 </div>
@@ -260,11 +289,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy;
-        <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All Rights
-        Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
@@ -284,16 +309,17 @@ import interactionPlugin from "@fullcalendar/interaction";
 
 // Define the getImageUrl function outside the component scope
 function getImageUrl(avatar) {
-  const imgPath = typeof avatar === "object" && avatar.img ? avatar.img : avatar;
+  const imgPath =
+    typeof avatar === "object" && avatar.img ? avatar.img : avatar;
 
   return new URL(`/src/assets/img/users/${imgPath}`, import.meta.url).href;
 }
 
 export default {
-  data(){
-    return{
+  data() {
+    return {
       valueOne,
-    }
+    };
   },
   mounted() {
     const calendarEl = document.getElementById("calendar");

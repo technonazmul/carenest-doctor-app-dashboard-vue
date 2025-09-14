@@ -50,7 +50,9 @@
       </div>
       <!-- End Page Header -->
 
-      <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3">
+      <div
+        class="d-flex align-items-center justify-content-between flex-wrap row-gap-3"
+      >
         <div class="search-set mb-3">
           <div class="d-flex align-items-center flex-wrap gap-2">
             <div class="table-search d-flex align-items-center mb-0">
@@ -97,9 +99,13 @@
               <form action="#">
                 <div class="filter-body pb-0">
                   <div class="mb-3">
-                    <div class="d-flex align-items-center justify-content-between">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
                       <label class="form-label">Staff</label>
-                      <a href="javascript:void(0);" class="link-primary mb-1">Reset</a>
+                      <a href="javascript:void(0);" class="link-primary mb-1"
+                        >Reset</a
+                      >
                     </div>
                     <vue-multiselect
                       v-model="selectedOne"
@@ -110,9 +116,13 @@
                     />
                   </div>
                   <div class="mb-3">
-                    <div class="d-flex align-items-center justify-content-between">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
                       <label class="form-label">Designation</label>
-                      <a href="javascript:void(0);" class="link-primary mb-1">Reset</a>
+                      <a href="javascript:void(0);" class="link-primary mb-1"
+                        >Reset</a
+                      >
                     </div>
                     <vue-multiselect
                       v-model="selectedTwo"
@@ -123,9 +133,13 @@
                     />
                   </div>
                   <div class="mb-3">
-                    <div class="d-flex align-items-center justify-content-between">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
                       <label class="form-label">Role</label>
-                      <a href="javascript:void(0);" class="link-primary mb-1">Reset</a>
+                      <a href="javascript:void(0);" class="link-primary mb-1"
+                        >Reset</a
+                      >
                     </div>
                     <vue-multiselect
                       v-model="selectedThree"
@@ -151,9 +165,13 @@
                     </div>
                   </div>
                   <div class="mb-3">
-                    <div class="d-flex align-items-center justify-content-between">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
                       <label class="form-label">Amount</label>
-                      <a href="javascript:void(0);" class="link-primary mb-1">Reset</a>
+                      <a href="javascript:void(0);" class="link-primary mb-1"
+                        >Reset</a
+                      >
                     </div>
                     <div class="dropdown">
                       <a
@@ -169,16 +187,23 @@
                         <div class="filter-range">
                           <input type="text" id="range_03" />
                           <p>
-                            Range : <span class="text-gray-9">Range : $200 - $5695</span>
+                            Range :
+                            <span class="text-gray-9"
+                              >Range : $200 - $5695</span
+                            >
                           </p>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="mb-3">
-                    <div class="d-flex align-items-center justify-content-between">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
                       <label class="form-label">Status</label>
-                      <a href="javascript:void(0);" class="link-primary mb-1">Reset</a>
+                      <a href="javascript:void(0);" class="link-primary mb-1"
+                        >Reset</a
+                      >
                     </div>
                     <vue-multiselect
                       v-model="selectedFour"
@@ -198,7 +223,9 @@
                     id="close-filter"
                     >Close</a
                   >
-                  <button type="submit" class="btn btn-primary btn-md">Filter</button>
+                  <button type="submit" class="btn btn-primary btn-md">
+                    Filter
+                  </button>
                 </div>
               </form>
             </div>
@@ -213,10 +240,14 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-end p-2">
               <li>
-                <a href="javascript:void(0);" class="dropdown-item rounded-1">Recent</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                  >Recent</a
+                >
               </li>
               <li>
-                <a href="javascript:void(0);" class="dropdown-item rounded-1">Oldest</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                  >Oldest</a
+                >
               </li>
             </ul>
           </div>
@@ -315,10 +346,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
@@ -453,7 +481,10 @@
                       <td>Jun 2025</td>
                       <td>
                         <div class="action-item">
-                          <a href="javascript:void(0);" data-bs-toggle="dropdown">
+                          <a
+                            href="javascript:void(0);"
+                            data-bs-toggle="dropdown"
+                          >
                             <i class="ti ti-dots-vertical"></i>
                           </a>
                           <ul class="dropdown-menu p-2">
@@ -485,7 +516,10 @@
                       <td>May 2025</td>
                       <td>
                         <div class="action-item">
-                          <a href="javascript:void(0);" data-bs-toggle="dropdown">
+                          <a
+                            href="javascript:void(0);"
+                            data-bs-toggle="dropdown"
+                          >
                             <i class="ti ti-dots-vertical"></i>
                           </a>
                           <ul class="dropdown-menu p-2">
@@ -517,7 +551,10 @@
                       <td>Apr 2025</td>
                       <td>
                         <div class="action-item">
-                          <a href="javascript:void(0);" data-bs-toggle="dropdown">
+                          <a
+                            href="javascript:void(0);"
+                            data-bs-toggle="dropdown"
+                          >
                             <i class="ti ti-dots-vertical"></i>
                           </a>
                           <ul class="dropdown-menu p-2">
@@ -549,7 +586,10 @@
                       <td>Mar 2025</td>
                       <td>
                         <div class="action-item">
-                          <a href="javascript:void(0);" data-bs-toggle="dropdown">
+                          <a
+                            href="javascript:void(0);"
+                            data-bs-toggle="dropdown"
+                          >
                             <i class="ti ti-dots-vertical"></i>
                           </a>
                           <ul class="dropdown-menu p-2">
@@ -581,7 +621,10 @@
                       <td>Feb 2025</td>
                       <td>
                         <div class="action-item">
-                          <a href="javascript:void(0);" data-bs-toggle="dropdown">
+                          <a
+                            href="javascript:void(0);"
+                            data-bs-toggle="dropdown"
+                          >
                             <i class="ti ti-dots-vertical"></i>
                           </a>
                           <ul class="dropdown-menu p-2">
@@ -613,7 +656,10 @@
                       <td>Jan 2025</td>
                       <td>
                         <div class="action-item">
-                          <a href="javascript:void(0);" data-bs-toggle="dropdown">
+                          <a
+                            href="javascript:void(0);"
+                            data-bs-toggle="dropdown"
+                          >
                             <i class="ti ti-dots-vertical"></i>
                           </a>
                           <ul class="dropdown-menu p-2">
@@ -645,7 +691,10 @@
                       <td>Dec 2024</td>
                       <td>
                         <div class="action-item">
-                          <a href="javascript:void(0);" data-bs-toggle="dropdown">
+                          <a
+                            href="javascript:void(0);"
+                            data-bs-toggle="dropdown"
+                          >
                             <i class="ti ti-dots-vertical"></i>
                           </a>
                           <ul class="dropdown-menu p-2">
@@ -707,7 +756,11 @@
                 class="drag-upload-btn avatar avatar-xxl rounded-circle bg-light text-muted position-relative overflow-hidden z-1 mb-2 ms-4 p-0"
               >
                 <i class="ti ti-user-plus fs-16"></i>
-                <input type="file" class="form-control image-sign" multiple="" />
+                <input
+                  type="file"
+                  class="form-control image-sign"
+                  multiple=""
+                />
                 <div
                   class="position-absolute bottom-0 end-0 star-0 w-100 h-25 bg-dark d-flex align-items-center justify-content-center z-n1"
                 >
@@ -721,7 +774,9 @@
               </div>
             </div>
             <div class="mb-3">
-              <label class="form-label">Name <span class="text-danger">*</span></label>
+              <label class="form-label"
+                >Name <span class="text-danger">*</span></label
+              >
               <input type="text" class="form-control" />
             </div>
 
@@ -880,10 +935,18 @@
             <!-- end row -->
           </div>
           <div class="modal-footer d-flex align-items-center gap-1">
-            <button type="button" class="btn btn-white border" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-white border"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
-            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
               Add Staff
             </button>
           </div>
@@ -916,7 +979,11 @@
               <div class="profile-container">
                 <img src="@/assets/img/users/user-08.jpg" alt="Profile" />
                 <div class="overlay-btn">
-                  <a href="javascript:void(0);" class="text-white" id="uploadTrigger">
+                  <a
+                    href="javascript:void(0);"
+                    class="text-white"
+                    id="uploadTrigger"
+                  >
                     <i class="ti ti-photo fs-10"></i>
                   </a>
                 </div>
@@ -924,7 +991,9 @@
               </div>
             </div>
             <div class="mb-3">
-              <label class="form-label">Name <span class="text-danger">*</span></label>
+              <label class="form-label"
+                >Name <span class="text-danger">*</span></label
+              >
               <input type="text" class="form-control" value="James Adair" />
             </div>
 
@@ -968,7 +1037,11 @@
                   <label class="form-label"
                     >Phone Number<span class="text-danger ms-1">*</span></label
                   >
-                  <input type="text" class="form-control" value="+1 5258 25874" />
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="+1 5258 25874"
+                  />
                 </div>
               </div>
               <!-- end col -->
@@ -977,7 +1050,11 @@
                   <label class="form-label"
                     >Email<span class="text-danger ms-1">*</span></label
                   >
-                  <input type="text" class="form-control" value="james@gmail.com" />
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="james@gmail.com"
+                  />
                 </div>
               </div>
               <!-- end col -->
@@ -1083,10 +1160,18 @@
             <!-- end row -->
           </div>
           <div class="modal-footer d-flex align-items-center gap-1">
-            <button type="button" class="btn btn-white border" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-white border"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
-            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
               Save Changes
             </button>
           </div>
@@ -1145,7 +1230,8 @@ const columns = [
     dataIndex: "Staff",
     key: "Staff",
     sorter: {
-      compare: (a, b) => (a.Staff.toLowerCase() > b.Staff.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Staff.toLowerCase() > b.Staff.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -1170,7 +1256,8 @@ const columns = [
     dataIndex: "Phone",
     key: "Phone",
     sorter: {
-      compare: (a, b) => (a.Phone.toLowerCase() > b.Phone.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Phone.toLowerCase() > b.Phone.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -1178,7 +1265,8 @@ const columns = [
     dataIndex: "Email",
     key: "Email",
     sorter: {
-      compare: (a, b) => (a.Email.toLowerCase() > b.Email.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Email.toLowerCase() > b.Email.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -1186,7 +1274,8 @@ const columns = [
     dataIndex: "Status",
     key: "Status",
     sorter: {
-      compare: (a, b) => (a.Status.toLowerCase() > b.Status.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Status.toLowerCase() > b.Status.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -1433,7 +1522,8 @@ export default {
   },
   methods: {
     getImageUrl(imageName) {
-      return new URL(`/src/assets/img/users/${imageName}`, import.meta.url).href;
+      return new URL(`/src/assets/img/users/${imageName}`, import.meta.url)
+        .href;
     },
     addTag(newTag) {
       const tag = {

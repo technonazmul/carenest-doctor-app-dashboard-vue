@@ -50,7 +50,9 @@
       </div>
       <!-- End Page Header -->
 
-      <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3">
+      <div
+        class="d-flex align-items-center justify-content-between flex-wrap row-gap-3"
+      >
         <div class="search-set mb-3">
           <div class="d-flex align-items-center flex-wrap gap-2">
             <div class="table-search d-flex align-items-center mb-0">
@@ -97,9 +99,13 @@
               <form action="#">
                 <div class="filter-body pb-0">
                   <div class="mb-3">
-                    <div class="d-flex align-items-center justify-content-between">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
                       <label class="form-label">Service Name</label>
-                      <a href="javascript:void(0);" class="link-primary mb-1">Reset</a>
+                      <a href="javascript:void(0);" class="link-primary mb-1"
+                        >Reset</a
+                      >
                     </div>
                     <vue-multiselect
                       v-model="selected"
@@ -110,9 +116,13 @@
                     />
                   </div>
                   <div class="mb-3">
-                    <div class="d-flex align-items-center justify-content-between">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
                       <label class="form-label">Department</label>
-                      <a href="javascript:void(0);" class="link-primary mb-1">Reset</a>
+                      <a href="javascript:void(0);" class="link-primary mb-1"
+                        >Reset</a
+                      >
                     </div>
                     <vue-multiselect
                       v-model="selectedTwo"
@@ -137,15 +147,22 @@
                       <div class="dropdown-menu shadow-lg w-100 dropdown-info">
                         <div class="filter-range">
                           <input type="text" id="range_03" />
-                          <p>Range : <span class="text-gray-9">$200 - $5695</span></p>
+                          <p>
+                            Range :
+                            <span class="text-gray-9">$200 - $5695</span>
+                          </p>
                         </div>
                       </div>
                     </div>
                   </div>
                   <div class="mb-3">
-                    <div class="d-flex align-items-center justify-content-between">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
                       <label class="form-label">Status</label>
-                      <a href="javascript:void(0);" class="link-primary mb-1">Reset</a>
+                      <a href="javascript:void(0);" class="link-primary mb-1"
+                        >Reset</a
+                      >
                     </div>
                     <vue-multiselect
                       v-model="selectedOne"
@@ -165,7 +182,9 @@
                     id="close-filter"
                     >Close</a
                   >
-                  <button type="submit" class="btn btn-primary btn-md">Filter</button>
+                  <button type="submit" class="btn btn-primary btn-md">
+                    Filter
+                  </button>
                 </div>
               </form>
             </div>
@@ -180,10 +199,14 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-end p-2">
               <li>
-                <a href="javascript:void(0);" class="dropdown-item rounded-1">Recent</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                  >Recent</a
+                >
               </li>
               <li>
-                <a href="javascript:void(0);" class="dropdown-item rounded-1">Oldest</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                  >Oldest</a
+                >
               </li>
             </ul>
           </div>
@@ -247,10 +270,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
@@ -300,10 +320,18 @@
             </div>
           </div>
           <div class="modal-footer d-flex align-items-center gap-1">
-            <button type="button" class="btn btn-white border" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-white border"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
-            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
               Add New Service
             </button>
           </div>
@@ -334,7 +362,11 @@
               <label class="form-label"
                 >Service Name<span class="text-danger ms-1">*</span></label
               >
-              <input type="text" class="form-control" value="General Consultation" />
+              <input
+                type="text"
+                class="form-control"
+                value="General Consultation"
+              />
             </div>
             <div class="mb-3">
               <label class="form-label"
@@ -354,10 +386,18 @@
             </div>
           </div>
           <div class="modal-footer d-flex align-items-center gap-1">
-            <button type="button" class="btn btn-white border" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-white border"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
-            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
               Save Changes
             </button>
           </div>
@@ -434,7 +474,8 @@ const columns = [
     dataIndex: "Status",
     key: "Status",
     sorter: {
-      compare: (a, b) => (a.Status.toLowerCase() > b.Status.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Status.toLowerCase() > b.Status.toLowerCase() ? -1 : 1,
     },
   },
   {

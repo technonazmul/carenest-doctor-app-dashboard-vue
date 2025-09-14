@@ -23,7 +23,11 @@
 
               <div class="mb-3">
                 <label class="form-label">Category</label>
-                <vue3-select v-model="selected" :options="BlogGen" placeholder="Select" />
+                <vue3-select
+                  v-model="selected"
+                  :options="BlogGen"
+                  placeholder="Select"
+                />
               </div>
 
               <div class="mb-3">
@@ -54,8 +58,12 @@
               </div>
 
               <div class="d-flex align-items-center justify-content-end">
-                <a href="javascript:void(0);" class="btn btn-light me-2">Cancel</a>
-                <a href="javascript:void(0);" class="btn btn-primary">Add Blog</a>
+                <a href="javascript:void(0);" class="btn btn-light me-2"
+                  >Cancel</a
+                >
+                <a href="javascript:void(0);" class="btn btn-primary"
+                  >Add Blog</a
+                >
               </div>
             </div>
             <!-- end card body -->
@@ -70,10 +78,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>

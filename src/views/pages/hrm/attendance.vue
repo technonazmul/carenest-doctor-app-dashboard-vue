@@ -26,7 +26,9 @@
                 ref="dateRangeInput"
               >
                 <i class="ti ti-calendar text-gray-5 fs-14 me-1"></i
-                ><span class="reportrange-picker-field">16 Apr 25 - 16 Apr 25</span>
+                ><span class="reportrange-picker-field"
+                  >16 Apr 25 - 16 Apr 25</span
+                >
               </div>
             </div>
           </div>
@@ -42,7 +44,8 @@
             class="badge badge-sm badge-soft-danger border border-danger fw-medium me-2"
             >Absent</span
           >
-          <span class="badge badge-sm badge-soft-info border border-info fw-medium"
+          <span
+            class="badge badge-sm badge-soft-info border border-info fw-medium"
             >Holiday</span
           >
         </div>
@@ -115,7 +118,8 @@
                 </div>
               </td>
               <td>
-                <span class="badge badge-soft-success border border-success fw-medium"
+                <span
+                  class="badge badge-soft-success border border-success fw-medium"
                   >100%</span
                 >
               </td>
@@ -140,41 +144,14 @@
                 ></span>
               </td>
               <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-success"
+                <span class="text-info"
                   ><i class="ti ti-square-filled fs-14"></i
                 ></span>
               </td>
               <td>
-                <span class="text-success"
+                <span class="text-info"
                   ><i class="ti ti-square-filled fs-14"></i
                 ></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
               </td>
               <td>
                 <span class="text-success"
@@ -202,13 +179,12 @@
                 ></span>
               </td>
               <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
               </td>
               <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-success"
+                <span class="text-info"
                   ><i class="ti ti-square-filled fs-14"></i
                 ></span>
               </td>
@@ -233,10 +209,54 @@
                 ></span>
               </td>
               <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
               </td>
               <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
               </td>
               <td>
                 <span class="text-success"
@@ -282,7 +302,8 @@
                 </div>
               </td>
               <td>
-                <span class="badge badge-soft-warning border border-warning fw-medium"
+                <span
+                  class="badge badge-soft-warning border border-warning fw-medium"
                   >70%</span
                 >
               </td>
@@ -292,63 +313,7 @@
                 ></span>
               </td>
               <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-success"
+                <span class="text-danger"
                   ><i class="ti ti-square-filled fs-14"></i
                 ></span>
               </td>
@@ -363,10 +328,14 @@
                 ></span>
               </td>
               <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
               </td>
               <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
               </td>
               <td>
                 <span class="text-success"
@@ -374,7 +343,44 @@
                 ></span>
               </td>
               <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-danger"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-danger"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
               </td>
               <td>
                 <span class="text-success"
@@ -392,10 +398,29 @@
                 ></span>
               </td>
               <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
               </td>
               <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-danger"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
               </td>
               <td>
                 <span class="text-success"
@@ -408,7 +433,29 @@
                 ></span>
               </td>
               <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-danger"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
               </td>
             </tr>
             <tr>
@@ -439,42 +486,13 @@
                 </div>
               </td>
               <td>
-                <span class="badge badge-soft-warning border border-warning fw-medium"
+                <span
+                  class="badge badge-soft-warning border border-warning fw-medium"
                   >75%</span
                 >
               </td>
               <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-success"
+                <span class="text-danger"
                   ><i class="ti ti-square-filled fs-14"></i
                 ></span>
               </td>
@@ -489,10 +507,29 @@
                 ></span>
               </td>
               <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
+                <span class="text-danger"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
               </td>
               <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-danger"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
               </td>
               <td>
                 <span class="text-success"
@@ -510,26 +547,14 @@
                 ></span>
               </td>
               <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-success"
+                <span class="text-info"
                   ><i class="ti ti-square-filled fs-14"></i
                 ></span>
               </td>
               <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-success"
+                <span class="text-info"
                   ><i class="ti ti-square-filled fs-14"></i
                 ></span>
-              </td>
-              <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
               </td>
               <td>
                 <span class="text-success"
@@ -547,10 +572,39 @@
                 ></span>
               </td>
               <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
+                <span class="text-danger"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
               </td>
               <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-danger"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
               </td>
               <td>
                 <span class="text-success"
@@ -563,7 +617,29 @@
                 ></span>
               </td>
               <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-danger"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
               </td>
             </tr>
             <tr>
@@ -594,42 +670,13 @@
                 </div>
               </td>
               <td>
-                <span class="badge badge-soft-danger border border-danger fw-medium"
+                <span
+                  class="badge badge-soft-danger border border-danger fw-medium"
                   >40%</span
                 >
               </td>
               <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-success"
+                <span class="text-danger"
                   ><i class="ti ti-square-filled fs-14"></i
                 ></span>
               </td>
@@ -644,24 +691,17 @@
                 ></span>
               </td>
               <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-success"
+                <span class="text-danger"
                   ><i class="ti ti-square-filled fs-14"></i
                 ></span>
               </td>
               <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
               </td>
               <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-success"
+                <span class="text-info"
                   ><i class="ti ti-square-filled fs-14"></i
                 ></span>
               </td>
@@ -671,10 +711,9 @@
                 ></span>
               </td>
               <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
+                <span class="text-danger"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
               </td>
               <td>
                 <span class="text-success"
@@ -692,7 +731,14 @@
                 ></span>
               </td>
               <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
               </td>
               <td>
                 <span class="text-success"
@@ -700,13 +746,74 @@
                 ></span>
               </td>
               <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
+                <span class="text-danger"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
               </td>
               <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
+                <span class="text-danger"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
               </td>
               <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-danger"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-danger"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
               </td>
               <td>
                 <span class="text-success"
@@ -747,7 +854,8 @@
                 </div>
               </td>
               <td>
-                <span class="badge badge-soft-success border border-success fw-medium"
+                <span
+                  class="badge badge-soft-success border border-success fw-medium"
                   >85%</span
                 >
               </td>
@@ -762,24 +870,7 @@
                 ></span>
               </td>
               <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-success"
+                <span class="text-danger"
                   ><i class="ti ti-square-filled fs-14"></i
                 ></span>
               </td>
@@ -789,52 +880,19 @@
                 ></span>
               </td>
               <td>
-                <span class="text-success"
+                <span class="text-info"
                   ><i class="ti ti-square-filled fs-14"></i
                 ></span>
               </td>
               <td>
-                <span class="text-success"
+                <span class="text-info"
                   ><i class="ti ti-square-filled fs-14"></i
                 ></span>
               </td>
               <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-success"
+                <span class="text-danger"
                   ><i class="ti ti-square-filled fs-14"></i
                 ></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
               </td>
               <td>
                 <span class="text-success"
@@ -857,10 +915,84 @@
                 ></span>
               </td>
               <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
               </td>
               <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-danger"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-danger"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
               </td>
               <td>
                 <span class="text-success"
@@ -906,7 +1038,8 @@
                 </div>
               </td>
               <td>
-                <span class="badge badge-soft-success border border-success fw-medium"
+                <span
+                  class="badge badge-soft-success border border-success fw-medium"
                   >92%</span
                 >
               </td>
@@ -916,26 +1049,7 @@
                 ></span>
               </td>
               <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-success"
+                <span class="text-danger"
                   ><i class="ti ti-square-filled fs-14"></i
                 ></span>
               </td>
@@ -950,7 +1064,12 @@
                 ></span>
               </td>
               <td>
-                <span class="text-success"
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-info"
                   ><i class="ti ti-square-filled fs-14"></i
                 ></span>
               </td>
@@ -958,15 +1077,6 @@
                 <span class="text-success"
                   ><i class="ti ti-square-filled fs-14"></i
                 ></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
               </td>
               <td>
                 <span class="text-success"
@@ -989,26 +1099,17 @@
                 ></span>
               </td>
               <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-success"
+                <span class="text-info"
                   ><i class="ti ti-square-filled fs-14"></i
                 ></span>
               </td>
               <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-success"
+                <span class="text-info"
                   ><i class="ti ti-square-filled fs-14"></i
                 ></span>
               </td>
               <td>
-                <span class="text-success"
+                <span class="text-danger"
                   ><i class="ti ti-square-filled fs-14"></i
                 ></span>
               </td>
@@ -1018,13 +1119,69 @@
                 ></span>
               </td>
               <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
               </td>
               <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
               </td>
               <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-danger"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-danger"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
               </td>
               <td>
                 <span class="text-success"
@@ -1070,90 +1227,7 @@
                 >
               </td>
               <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-success"
+                <span class="text-danger"
                   ><i class="ti ti-square-filled fs-14"></i
                 ></span>
               </td>
@@ -1173,10 +1247,14 @@
                 ></span>
               </td>
               <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
               </td>
               <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
               </td>
               <td>
                 <span class="text-success"
@@ -1184,7 +1262,114 @@
                 ></span>
               </td>
               <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
+                <span class="text-danger"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-danger"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-danger"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-danger"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-danger"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
               </td>
               <td>
                 <span class="text-success"
@@ -1220,7 +1405,8 @@
                 </div>
               </td>
               <td>
-                <span class="badge badge-soft-warning border border-warning fw-medium"
+                <span
+                  class="badge badge-soft-warning border border-warning fw-medium"
                   >70%</span
                 >
               </td>
@@ -1235,21 +1421,7 @@
                 ></span>
               </td>
               <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-success"
+                <span class="text-danger"
                   ><i class="ti ti-square-filled fs-14"></i
                 ></span>
               </td>
@@ -1259,55 +1431,14 @@
                 ></span>
               </td>
               <td>
-                <span class="text-success"
+                <span class="text-info"
                   ><i class="ti ti-square-filled fs-14"></i
                 ></span>
               </td>
               <td>
-                <span class="text-success"
+                <span class="text-info"
                   ><i class="ti ti-square-filled fs-14"></i
                 ></span>
-              </td>
-              <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
               </td>
               <td>
                 <span class="text-success"
@@ -1330,10 +1461,34 @@
                 ></span>
               </td>
               <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
+                <span class="text-danger"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
               </td>
               <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-danger"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
               </td>
               <td>
                 <span class="text-success"
@@ -1346,7 +1501,64 @@
                 ></span>
               </td>
               <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-danger"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-danger"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
               </td>
             </tr>
             <tr>
@@ -1387,26 +1599,7 @@
                 ></span>
               </td>
               <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-success"
+                <span class="text-danger"
                   ><i class="ti ti-square-filled fs-14"></i
                 ></span>
               </td>
@@ -1421,21 +1614,12 @@
                 ></span>
               </td>
               <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-success"
+                <span class="text-info"
                   ><i class="ti ti-square-filled fs-14"></i
                 ></span>
               </td>
               <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-success"
+                <span class="text-info"
                   ><i class="ti ti-square-filled fs-14"></i
                 ></span>
               </td>
@@ -1443,9 +1627,6 @@
                 <span class="text-success"
                   ><i class="ti ti-square-filled fs-14"></i
                 ></span>
-              </td>
-              <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
               </td>
               <td>
                 <span class="text-success"
@@ -1458,10 +1639,9 @@
                 ></span>
               </td>
               <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
+                <span class="text-danger"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
               </td>
               <td>
                 <span class="text-success"
@@ -1469,7 +1649,14 @@
                 ></span>
               </td>
               <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
               </td>
               <td>
                 <span class="text-success"
@@ -1477,7 +1664,14 @@
                 ></span>
               </td>
               <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-danger"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
               </td>
               <td>
                 <span class="text-success"
@@ -1485,10 +1679,19 @@
                 ></span>
               </td>
               <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
               </td>
               <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
               </td>
               <td>
                 <span class="text-success"
@@ -1496,7 +1699,44 @@
                 ></span>
               </td>
               <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
+                <span class="text-danger"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-danger"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-danger"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
               </td>
               <td>
                 <span class="text-success"
@@ -1532,7 +1772,8 @@
                 </div>
               </td>
               <td>
-                <span class="badge badge-soft-success border border-success fw-medium"
+                <span
+                  class="badge badge-soft-success border border-success fw-medium"
                   >80%</span
                 >
               </td>
@@ -1557,71 +1798,17 @@
                 ></span>
               </td>
               <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-success"
+                <span class="text-info"
                   ><i class="ti ti-square-filled fs-14"></i
                 ></span>
               </td>
               <td>
-                <span class="text-success"
+                <span class="text-info"
                   ><i class="ti ti-square-filled fs-14"></i
                 ></span>
               </td>
               <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-success"
-                  ><i class="ti ti-square-filled fs-14"></i
-                ></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
-              </td>
-              <td>
-                <span class="text-success"
+                <span class="text-danger"
                   ><i class="ti ti-square-filled fs-14"></i
                 ></span>
               </td>
@@ -1646,13 +1833,89 @@
                 ></span>
               </td>
               <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
               </td>
               <td>
-                <span class="text-info"><i class="ti ti-square-filled fs-14"></i></span>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
               </td>
               <td>
-                <span class="text-danger"><i class="ti ti-square-filled fs-14"></i></span>
+                <span class="text-danger"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-success"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-info"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
+              </td>
+              <td>
+                <span class="text-danger"
+                  ><i class="ti ti-square-filled fs-14"></i
+                ></span>
               </td>
               <td>
                 <span class="text-success"
@@ -1673,10 +1936,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
@@ -1712,10 +1972,16 @@ export default {
             endDate: end,
             ranges: {
               Today: [moment(), moment()],
-              Yesterday: [moment().subtract(1, "days"), moment().subtract(1, "days")],
+              Yesterday: [
+                moment().subtract(1, "days"),
+                moment().subtract(1, "days"),
+              ],
               "Last 7 Days": [moment().subtract(6, "days"), moment()],
               "Last 30 Days": [moment().subtract(29, "days"), moment()],
-              "This Month": [moment().startOf("month"), moment().endOf("month")],
+              "This Month": [
+                moment().startOf("month"),
+                moment().endOf("month"),
+              ],
               "Last Month": [
                 moment().subtract(1, "month").startOf("month"),
                 moment().subtract(1, "month").endOf("month"),

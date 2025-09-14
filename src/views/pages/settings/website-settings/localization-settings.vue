@@ -105,7 +105,9 @@
                       <!-- start row -->
                       <div class="row align-items-center mb-3">
                         <div class="col-lg-4">
-                          <label class="form-label mb-0">Default Language</label>
+                          <label class="form-label mb-0"
+                            >Default Language</label
+                          >
                         </div>
                         <!-- end col -->
                         <div class="col-lg-8">
@@ -124,7 +126,9 @@
                       <!-- start row -->
                       <div class="row align-items-center mb-3">
                         <div class="col-lg-4">
-                          <label class="form-label mb-0">Language Switcher</label>
+                          <label class="form-label mb-0"
+                            >Language Switcher</label
+                          >
                         </div>
                         <!-- end col -->
                         <div class="col-lg-8">
@@ -191,7 +195,9 @@
                       <!-- start row -->
                       <div class="row align-items-center mb-3">
                         <div class="col-lg-4">
-                          <label class="form-label mb-0">Currency Position</label>
+                          <label class="form-label mb-0"
+                            >Currency Position</label
+                          >
                         </div>
                         <!-- end col -->
                         <div class="col-lg-8">
@@ -210,7 +216,9 @@
                       <!-- start row -->
                       <div class="row align-items-center mb-3">
                         <div class="col-lg-4">
-                          <label class="form-label mb-0">Decimal Seperator</label>
+                          <label class="form-label mb-0"
+                            >Decimal Seperator</label
+                          >
                         </div>
                         <!-- end col -->
                         <div class="col-lg-8">
@@ -229,7 +237,9 @@
                       <!-- start row -->
                       <div class="row align-items-center mb-3">
                         <div class="col-lg-4">
-                          <label class="form-label mb-0">Thousand Seperator</label>
+                          <label class="form-label mb-0"
+                            >Thousand Seperator</label
+                          >
                         </div>
                         <!-- end col -->
                         <div class="col-lg-8">
@@ -248,8 +258,12 @@
                   <!-- end row -->
 
                   <div class="d-flex align-items-center justify-content-end">
-                    <a href="javascript:void(0);" class="btn btn-light me-3">Cancel</a>
-                    <a href="javascript:void(0);" class="btn btn-primary">Save Changes</a>
+                    <a href="javascript:void(0);" class="btn btn-light me-3"
+                      >Cancel</a
+                    >
+                    <a href="javascript:void(0);" class="btn btn-primary"
+                      >Save Changes</a
+                    >
                   </div>
                 </form>
               </div>
@@ -264,10 +278,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>

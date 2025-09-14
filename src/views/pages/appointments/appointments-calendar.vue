@@ -64,7 +64,9 @@
       <!-- End Page Header -->
 
       <!--  Start Filter -->
-      <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3">
+      <div
+        class="d-flex align-items-center justify-content-between flex-wrap row-gap-3"
+      >
         <div class="d-flex align-items-center gap-2">
           <div class="search-set mb-3">
             <div class="d-flex align-items-center flex-wrap gap-2">
@@ -175,11 +177,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy;
-        <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All Rights
-        Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
@@ -203,7 +201,8 @@ import DateRangePicker from "daterangepicker";
 
 // Define the getImageUrl function outside the component scope
 function getImageUrl(avatar) {
-  const imgPath = typeof avatar === "object" && avatar.img ? avatar.img : avatar;
+  const imgPath =
+    typeof avatar === "object" && avatar.img ? avatar.img : avatar;
 
   return new URL(`/src/assets/img/users/${imgPath}`, import.meta.url).href;
 }
@@ -229,10 +228,16 @@ export default {
             endDate: end,
             ranges: {
               Today: [moment(), moment()],
-              Yesterday: [moment().subtract(1, "days"), moment().subtract(1, "days")],
+              Yesterday: [
+                moment().subtract(1, "days"),
+                moment().subtract(1, "days"),
+              ],
               "Last 7 Days": [moment().subtract(6, "days"), moment()],
               "Last 30 Days": [moment().subtract(29, "days"), moment()],
-              "This Month": [moment().startOf("month"), moment().endOf("month")],
+              "This Month": [
+                moment().startOf("month"),
+                moment().endOf("month"),
+              ],
               "Last Month": [
                 moment().subtract(1, "month").startOf("month"),
                 moment().subtract(1, "month").endOf("month"),

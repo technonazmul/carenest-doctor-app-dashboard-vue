@@ -8,7 +8,9 @@
       <div class="row">
         <div class="col-lg-10 mx-auto">
           <!-- start page header -->
-          <div class="d-flex align-items-sm-center flex-sm-row flex-column mb-4">
+          <div
+            class="d-flex align-items-sm-center flex-sm-row flex-column mb-4"
+          >
             <div class="flex-grow-1">
               <h6 class="fs-14 fw-semibold mb-0 d-flex align-items-center">
                 <router-link to="/patient/patient-prescriptions" class="me-1"
@@ -57,7 +59,8 @@
                     Department : <span class="text-body"> Cardiology OP</span>
                   </p>
                   <p class="text-dark mb-1">
-                    Prescribed on : <span class="text-body"> 25 Jan 2025, 09:00 AM</span>
+                    Prescribed on :
+                    <span class="text-body"> 25 Jan 2025, 09:00 AM</span>
                   </p>
                   <p class="text-dark mb-0">
                     Consultation : <span class="text-body"> Video </span>
@@ -86,7 +89,9 @@
 
               <!-- Items -->
               <div class="mb-4">
-                <h6 class="mb-3 fs-16 fw-bold text-center">Cardiology Prescription</h6>
+                <h6 class="mb-3 fs-16 fw-bold text-center">
+                  Cardiology Prescription
+                </h6>
                 <div class="">
                   <!-- Table List -->
                   <div class="table-responsive border bg-white">
@@ -145,12 +150,13 @@
               <div class="pb-3 mb-3 border-1 border-bottom">
                 <h6 class="mb-1 fs-16 fw-semibold">Advice</h6>
                 <p>
-                  An account of the present illness, which includes the circumstances
-                  surrounding the onset of recent health changes and the chronology of
-                  subsequent events that have led the patient to seek medical care, is
-                  essential to understanding the course of the disease process.
-                  Medications are listed in the medical history because they may play a
-                  role in the current illness.
+                  An account of the present illness, which includes the
+                  circumstances surrounding the onset of recent health changes
+                  and the chronology of subsequent events that have led the
+                  patient to seek medical care, is essential to understanding
+                  the course of the disease process. Medications are listed in
+                  the medical history because they may play a role in the
+                  current illness.
                 </p>
               </div>
 
@@ -161,7 +167,9 @@
               >
                 <div class="">
                   <h6 class="mb-1 fs-16 fw-semibold">Follow Up</h6>
-                  <p>Follow u p after 3 months, Have to come on empty stomach</p>
+                  <p>
+                    Follow u p after 3 months, Have to come on empty stomach
+                  </p>
                 </div>
                 <div class="">
                   <img
@@ -174,11 +182,19 @@
                 </div>
               </div>
 
-              <div class="text-center d-flex align-items-center justify-content-center">
-                <a href="" class="btn btn-md btn-dark me-2 d-flex align-items-center">
+              <div
+                class="text-center d-flex align-items-center justify-content-center"
+              >
+                <a
+                  href=""
+                  class="btn btn-md btn-dark me-2 d-flex align-items-center"
+                >
                   <i class="ti ti-printer me-1"></i> Print</a
                 >
-                <a href="" class="btn btn-md btn-primary d-flex align-items-center">
+                <a
+                  href=""
+                  class="btn btn-md btn-primary d-flex align-items-center"
+                >
                   <i class="ti ti-download me-1"></i> Download</a
                 >
               </div>
@@ -192,10 +208,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>

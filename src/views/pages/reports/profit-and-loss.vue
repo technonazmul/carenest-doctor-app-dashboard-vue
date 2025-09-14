@@ -40,7 +40,9 @@
         <div class="col-xl-3 col-md-6 d-flex">
           <div class="card shadow-sm flex-fill w-100">
             <div class="card-body">
-              <div class="d-flex align-items-center justify-content-between mb-2">
+              <div
+                class="d-flex align-items-center justify-content-between mb-2"
+              >
                 <div>
                   <p class="mb-1 text-truncate">Total Income</p>
                   <h6 class="mb-2 fw-bold">$125,150</h6>
@@ -67,7 +69,9 @@
         <div class="col-xl-3 col-md-6 d-flex">
           <div class="card shadow-sm flex-fill w-100">
             <div class="card-body">
-              <div class="d-flex align-items-center justify-content-between mb-2">
+              <div
+                class="d-flex align-items-center justify-content-between mb-2"
+              >
                 <div>
                   <p class="mb-1 text-truncate">Total Expenses</p>
                   <h6 class="mb-2 fw-bold">$91,800</h6>
@@ -94,7 +98,9 @@
         <div class="col-xl-3 col-md-6 d-flex">
           <div class="card shadow-sm flex-fill w-100">
             <div class="card-body">
-              <div class="d-flex align-items-center justify-content-between mb-2">
+              <div
+                class="d-flex align-items-center justify-content-between mb-2"
+              >
                 <div>
                   <p class="mb-1 text-truncate">Net Profit</p>
                   <h6 class="mb-2 fw-bold">$91,800</h6>
@@ -121,7 +127,9 @@
         <div class="col-xl-3 col-md-6 d-flex">
           <div class="card shadow-sm flex-fill w-100">
             <div class="card-body">
-              <div class="d-flex align-items-center justify-content-between mb-2">
+              <div
+                class="d-flex align-items-center justify-content-between mb-2"
+              >
                 <div>
                   <p class="mb-1 text-truncate">Profit Margin (%)</p>
                   <h6 class="mb-2 fw-bold">26.6%</h6>
@@ -197,7 +205,9 @@
               <td><p class="text-dark fw-medium">$75,900</p></td>
             </tr>
             <tr>
-              <td class="border-end"><p class="text-dark fw-medium">Gross Profit</p></td>
+              <td class="border-end">
+                <p class="text-dark fw-medium">Gross Profit</p>
+              </td>
               <td><p class="text-dark fw-medium">$25,750</p></td>
               <td><p class="text-dark fw-medium">$151,775</p></td>
               <td><p class="text-dark fw-medium">$151,775</p></td>
@@ -206,7 +216,9 @@
               <td><p class="text-dark fw-medium">$151,775</p></td>
             </tr>
             <tr>
-              <td class="border-end"><p class="text-dark fw-medium">Expense</p></td>
+              <td class="border-end">
+                <p class="text-dark fw-medium">Expense</p>
+              </td>
               <td><p class="text-dark fw-medium"></p></td>
               <td><p class="text-dark fw-medium"></p></td>
               <td><p class="text-dark fw-medium"></p></td>
@@ -269,7 +281,9 @@
               <td><p class="text-dark fw-medium">$20,800</p></td>
             </tr>
             <tr>
-              <td class="border-end"><p class="text-dark fw-medium">Total Expense</p></td>
+              <td class="border-end">
+                <p class="text-dark fw-medium">Total Expense</p>
+              </td>
               <td><p class="text-dark fw-medium">$2,69,276</p></td>
               <td>
                 <p class="text-dark fw-medium"></p>
@@ -284,7 +298,9 @@
               <td><p class="text-dark fw-medium">$151,775</p></td>
             </tr>
             <tr>
-              <td class="border-end"><p class="text-dark fw-medium">Net Income</p></td>
+              <td class="border-end">
+                <p class="text-dark fw-medium">Net Income</p>
+              </td>
               <td><p class="text-dark fw-medium">$2,69,276</p></td>
               <td><p class="text-dark fw-medium">$2,75,638</p></td>
               <td><p class="text-dark fw-medium">$2,51,629</p></td>
@@ -300,10 +316,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>

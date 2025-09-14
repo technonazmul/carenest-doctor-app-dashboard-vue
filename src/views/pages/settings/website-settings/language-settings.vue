@@ -120,7 +120,8 @@
                                 alt="img"
                                 class="avatar avatar-xs rounded-circle"
                             /></router-link>
-                            <router-link to="/website-settings/language-settings2"
+                            <router-link
+                              to="/website-settings/language-settings2"
                               >English</router-link
                             >
                           </div>
@@ -216,7 +217,8 @@
                                 alt="img"
                                 class="avatar avatar-xs rounded-circle"
                             /></router-link>
-                            <router-link to="/website-settings/language-settings2"
+                            <router-link
+                              to="/website-settings/language-settings2"
                               >German</router-link
                             >
                           </div>
@@ -312,7 +314,8 @@
                                 alt="img"
                                 class="avatar avatar-xs rounded-circle"
                             /></router-link>
-                            <router-link to="/website-settings/language-settings2"
+                            <router-link
+                              to="/website-settings/language-settings2"
                               >Arabic</router-link
                             >
                           </div>
@@ -408,7 +411,8 @@
                                 alt="img"
                                 class="avatar avatar-xs rounded-circle"
                             /></router-link>
-                            <router-link to="/website-settings/language-settings2"
+                            <router-link
+                              to="/website-settings/language-settings2"
                               >French</router-link
                             >
                           </div>
@@ -509,10 +513,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>

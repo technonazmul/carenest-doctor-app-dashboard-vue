@@ -50,7 +50,9 @@
       <!-- End Page Header -->
 
       <!--  Start Filter -->
-      <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3">
+      <div
+        class="d-flex align-items-center justify-content-between flex-wrap row-gap-3"
+      >
         <div class="d-flex align-items-center gap-2">
           <div class="search-set mb-3">
             <div class="d-flex align-items-center flex-wrap gap-2">
@@ -100,9 +102,13 @@
               <form action="#">
                 <div class="filter-body pb-0">
                   <div class="mb-3">
-                    <div class="d-flex align-items-center justify-content-between">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
                       <label class="form-label mb-1">Received From</label>
-                      <a href="javascript:void(0);" class="link-primary mb-1">Reset</a>
+                      <a href="javascript:void(0);" class="link-primary mb-1"
+                        >Reset</a
+                      >
                     </div>
                     <vue-multiselect
                       v-model="selected"
@@ -114,7 +120,9 @@
                   </div>
 
                   <div class="mb-3">
-                    <label class="form-label mb-1 text-dark fs-14 fw-medium">Date</label>
+                    <label class="form-label mb-1 text-dark fs-14 fw-medium"
+                      >Date</label
+                    >
                     <div class="input-icon-end position-relative">
                       <a-date-picker
                         v-model:value="valueOne"
@@ -128,9 +136,13 @@
                   </div>
 
                   <div class="mb-3">
-                    <div class="d-flex align-items-center justify-content-between">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
                       <label class="form-label">Amount</label>
-                      <a href="javascript:void(0);" class="link-primary mb-1">Reset</a>
+                      <a href="javascript:void(0);" class="link-primary mb-1"
+                        >Reset</a
+                      >
                     </div>
                     <vue-multiselect
                       v-model="selectedThree"
@@ -142,9 +154,13 @@
                   </div>
 
                   <div class="mb-3">
-                    <div class="d-flex align-items-center justify-content-between">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
                       <label class="form-label">Status</label>
-                      <a href="javascript:void(0);" class="link-primary mb-1">Reset</a>
+                      <a href="javascript:void(0);" class="link-primary mb-1"
+                        >Reset</a
+                      >
                     </div>
                     <vue-multiselect
                       v-model="selectedFour"
@@ -164,7 +180,10 @@
                     id="close-filter"
                     >Close</a
                   >
-                  <button type="submit" class="btn btn-primary btn-md fw-medium">
+                  <button
+                    type="submit"
+                    class="btn btn-primary btn-md fw-medium"
+                  >
                     Filter
                   </button>
                 </div>
@@ -182,10 +201,14 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-end p-2">
               <li>
-                <a href="javascript:void(0);" class="dropdown-item rounded-1">Recent</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                  >Recent</a
+                >
               </li>
               <li>
-                <a href="javascript:void(0);" class="dropdown-item rounded-1">Oldest</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                  >Oldest</a
+                >
               </li>
             </ul>
           </div>
@@ -298,10 +321,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
@@ -346,10 +366,10 @@
                 >
                 <div class="input-group position-relative">
                   <a-date-picker
-                        v-model:value="valueTwo"
-                        class="form-control datetimepicker"
-                        placeholder="dd/mm/yyyy"
-                      />
+                    v-model:value="valueTwo"
+                    class="form-control datetimepicker"
+                    placeholder="dd/mm/yyyy"
+                  />
                   <span class="input-icon-addon">
                     <i class="ti ti-calendar text-body"></i>
                   </span>
@@ -391,7 +411,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/users/user-01.jpg"
@@ -404,7 +427,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/users/user-02.jpg"
@@ -417,7 +443,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/users/user-03.jpg"
@@ -430,7 +459,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/users/user-04.jpg"
@@ -443,7 +475,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/users/user-05.jpg"
@@ -456,7 +491,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/users/user-06.jpg"
@@ -469,7 +507,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/users/user-07.jpg"
@@ -482,7 +523,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/users/user-08.jpg"
@@ -495,7 +539,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/users/user-09.jpg"
@@ -508,7 +555,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/users/user-10.jpg"
@@ -557,7 +607,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/doctors/doctor-01.jpg"
@@ -570,7 +623,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/doctors/doctor-02.jpg"
@@ -583,7 +639,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/doctors/doctor-03.jpg"
@@ -596,7 +655,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/doctors/doctor-04.jpg"
@@ -609,7 +671,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/doctors/doctor-05.jpg"
@@ -622,7 +687,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/doctors/doctor-06.jpg"
@@ -635,7 +703,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/doctors/doctor-07.jpg"
@@ -648,7 +719,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/doctors/doctor-08.jpg"
@@ -661,7 +735,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/doctors/doctor-09.jpg"
@@ -674,7 +751,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/doctors/doctor-10.jpg"
@@ -733,7 +813,9 @@
                   >
                     Select
                   </a>
-                  <ul class="dropdown-menu dropdown-menu-lg p-2 dropdown-employee w-100">
+                  <ul
+                    class="dropdown-menu dropdown-menu-lg p-2 dropdown-employee w-100"
+                  >
                     <li>
                       <div class="mb-2">
                         <input
@@ -747,7 +829,10 @@
                       <label
                         class="dropdown-item px-2 d-flex align-items-center rounded-1"
                       >
-                        <input class="form-check-input m-0 me-2" type="checkbox" />
+                        <input
+                          class="form-check-input m-0 me-2"
+                          type="checkbox"
+                        />
                         PayPal
                       </label>
                     </li>
@@ -796,7 +881,9 @@
                   >
                     Select
                   </a>
-                  <ul class="dropdown-menu dropdown-menu-lg p-2 dropdown-employee w-100">
+                  <ul
+                    class="dropdown-menu dropdown-menu-lg p-2 dropdown-employee w-100"
+                  >
                     <li>
                       <div class="mb-2">
                         <input
@@ -822,7 +909,10 @@
                       <label
                         class="dropdown-item px-2 d-flex align-items-center rounded-1"
                       >
-                        <input class="form-check-input m-0 me-2" type="checkbox" />
+                        <input
+                          class="form-check-input m-0 me-2"
+                          type="checkbox"
+                        />
                         Options Enhanced
                       </label>
                     </li>
@@ -830,7 +920,10 @@
                       <label
                         class="dropdown-item px-2 d-flex align-items-center rounded-1"
                       >
-                        <input class="form-check-input m-0 me-2" type="checkbox" />
+                        <input
+                          class="form-check-input m-0 me-2"
+                          type="checkbox"
+                        />
                         Pending
                       </label>
                     </li>
@@ -838,7 +931,10 @@
                       <label
                         class="dropdown-item px-2 d-flex align-items-center rounded-1"
                       >
-                        <input class="form-check-input m-0 me-2" type="checkbox" />
+                        <input
+                          class="form-check-input m-0 me-2"
+                          type="checkbox"
+                        />
                         New
                       </label>
                     </li>
@@ -914,10 +1010,10 @@
                 >
                 <div class="input-group position-relative">
                   <a-date-picker
-                        v-model:value="valueThree"
-                        class="form-control datetimepicker"
-                        placeholder="dd/mm/yyyy"
-                      />
+                    v-model:value="valueThree"
+                    class="form-control datetimepicker"
+                    placeholder="dd/mm/yyyy"
+                  />
                   <span class="input-icon-addon">
                     <i class="ti ti-calendar text-body"></i>
                   </span>
@@ -959,7 +1055,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/users/user-01.jpg"
@@ -972,7 +1071,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/users/user-02.jpg"
@@ -985,7 +1087,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/users/user-03.jpg"
@@ -998,7 +1103,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/users/user-04.jpg"
@@ -1011,7 +1119,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/doctors/doctor-01.jpg"
@@ -1024,7 +1135,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/doctors/doctor-02.jpg"
@@ -1037,7 +1151,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/doctors/doctor-03.jpg"
@@ -1050,7 +1167,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/doctors/doctor-04.jpg"
@@ -1063,7 +1183,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/users/user-06.jpg"
@@ -1112,7 +1235,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/doctors/doctor-01.jpg"
@@ -1125,7 +1251,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/doctors/doctor-02.jpg"
@@ -1138,7 +1267,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/doctors/doctor-03.jpg"
@@ -1151,7 +1283,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/doctors/doctor-04.jpg"
@@ -1164,7 +1299,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/doctors/doctor-05.jpg"
@@ -1177,7 +1315,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/doctors/doctor-06.jpg"
@@ -1190,7 +1331,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/doctors/doctor-07.jpg"
@@ -1203,7 +1347,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/doctors/doctor-08.jpg"
@@ -1216,7 +1363,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/doctors/doctor-09.jpg"
@@ -1229,7 +1379,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/doctors/doctor-10.jpg"
@@ -1288,7 +1441,9 @@
                   >
                     PayPal
                   </a>
-                  <ul class="dropdown-menu dropdown-menu-lg p-2 dropdown-employee w-100">
+                  <ul
+                    class="dropdown-menu dropdown-menu-lg p-2 dropdown-employee w-100"
+                  >
                     <li>
                       <div class="mb-2">
                         <input
@@ -1302,7 +1457,10 @@
                       <label
                         class="dropdown-item px-2 d-flex align-items-center rounded-1"
                       >
-                        <input class="form-check-input m-0 me-2" type="checkbox" />
+                        <input
+                          class="form-check-input m-0 me-2"
+                          type="checkbox"
+                        />
                         PayPal
                       </label>
                     </li>
@@ -1351,7 +1509,9 @@
                   >
                     Paid
                   </a>
-                  <ul class="dropdown-menu dropdown-menu-lg p-2 dropdown-employee w-100">
+                  <ul
+                    class="dropdown-menu dropdown-menu-lg p-2 dropdown-employee w-100"
+                  >
                     <li>
                       <div class="mb-2">
                         <input
@@ -1377,7 +1537,10 @@
                       <label
                         class="dropdown-item px-2 d-flex align-items-center rounded-1"
                       >
-                        <input class="form-check-input m-0 me-2" type="checkbox" />
+                        <input
+                          class="form-check-input m-0 me-2"
+                          type="checkbox"
+                        />
                         Options Enhanced
                       </label>
                     </li>
@@ -1385,7 +1548,10 @@
                       <label
                         class="dropdown-item px-2 d-flex align-items-center rounded-1"
                       >
-                        <input class="form-check-input m-0 me-2" type="checkbox" />
+                        <input
+                          class="form-check-input m-0 me-2"
+                          type="checkbox"
+                        />
                         Pending
                       </label>
                     </li>
@@ -1393,7 +1559,10 @@
                       <label
                         class="dropdown-item px-2 d-flex align-items-center rounded-1"
                       >
-                        <input class="form-check-input m-0 me-2" type="checkbox" />
+                        <input
+                          class="form-check-input m-0 me-2"
+                          type="checkbox"
+                        />
                         New
                       </label>
                     </li>
@@ -1454,7 +1623,9 @@
               ><i class="ti ti-trash fs-24"></i
             ></span>
           </div>
-          <h5 class="fw-bold mb-1 position-relative z-1">Delete Confirmation</h5>
+          <h5 class="fw-bold mb-1 position-relative z-1">
+            Delete Confirmation
+          </h5>
           <p class="mb-3 position-relative z-1">Are you sure want to delete?</p>
           <div class="d-flex justify-content-center">
             <a
@@ -1483,7 +1654,8 @@ const columns = [
     dataIndex: "InvoiceID",
     key: "InvoiceID",
     sorter: {
-      compare: (a, b) => (a.InvoiceID.toLowerCase() > b.InvoiceID.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.InvoiceID.toLowerCase() > b.InvoiceID.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -1491,7 +1663,8 @@ const columns = [
     dataIndex: "Patient",
     key: "Patient",
     sorter: {
-      compare: (a, b) => (a.Patient.toLowerCase() > b.Patient.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Patient.toLowerCase() > b.Patient.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -1508,7 +1681,8 @@ const columns = [
     dataIndex: "DueDate",
     key: "DueDate",
     sorter: {
-      compare: (a, b) => (a.DueDate.toLowerCase() > b.DueDate.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.DueDate.toLowerCase() > b.DueDate.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -1516,7 +1690,8 @@ const columns = [
     dataIndex: "Amount",
     key: "Amount",
     sorter: {
-      compare: (a, b) => (a.Amount.toLowerCase() > b.Amount.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Amount.toLowerCase() > b.Amount.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -1524,7 +1699,8 @@ const columns = [
     dataIndex: "Status",
     key: "Status",
     sorter: {
-      compare: (a, b) => (a.Status.toLowerCase() > b.Status.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Status.toLowerCase() > b.Status.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -1666,7 +1842,8 @@ export default {
   },
   methods: {
     getImageUrl(imageName) {
-      return new URL(`/src/assets/img/users/${imageName}`, import.meta.url).href;
+      return new URL(`/src/assets/img/users/${imageName}`, import.meta.url)
+        .href;
     },
     addTag(newTag) {
       const tag = {

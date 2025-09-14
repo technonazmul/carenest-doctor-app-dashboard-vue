@@ -10,7 +10,8 @@
       >
         <div class="d-flex align-items-center">
           <h4 class="fw-bold mb-0 me-2">Countries</h4>
-          <span class="badge badge-soft-primary border pt-1 px-2 border-primary fw-medium"
+          <span
+            class="badge badge-soft-primary border pt-1 px-2 border-primary fw-medium"
             >Total States : 365</span
           >
         </div>
@@ -108,10 +109,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
@@ -136,7 +134,11 @@
               <label class="form-label"
                 >Country Code<span class="text-danger ms-1">*</span></label
               >
-              <vue3-select v-model="selected" :options="CoundCode" placeholder="Select" />
+              <vue3-select
+                v-model="selected"
+                :options="CoundCode"
+                placeholder="Select"
+              />
             </div>
             <div class="mb-2">
               <label class="form-label"
@@ -160,10 +162,18 @@
             </div>
           </div>
           <div class="modal-footer d-flex align-items-center gap-1">
-            <button type="button" class="btn btn-white border" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-white border"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
-            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
               Add Country
             </button>
           </div>
@@ -223,10 +233,18 @@
             </div>
           </div>
           <div class="modal-footer d-flex align-items-center gap-1">
-            <button type="button" class="btn btn-white border" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-white border"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
-            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
               Save Changes
             </button>
           </div>
@@ -294,7 +312,8 @@ const columns = [
     dataIndex: "Country",
     key: "Country",
     sorter: {
-      compare: (a, b) => (a.Country.toLowerCase() > b.Country.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Country.toLowerCase() > b.Country.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -302,7 +321,8 @@ const columns = [
     dataIndex: "Status",
     key: "Status",
     sorter: {
-      compare: (a, b) => (a.Status.toLowerCase() > b.Status.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Status.toLowerCase() > b.Status.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -442,7 +462,8 @@ export default {
   },
   methods: {
     getImageUrl(imageName) {
-      return new URL(`/src/assets/img/flags/${imageName}`, import.meta.url).href;
+      return new URL(`/src/assets/img/flags/${imageName}`, import.meta.url)
+        .href;
     },
   },
   computed: {

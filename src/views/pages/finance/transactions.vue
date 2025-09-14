@@ -314,7 +314,7 @@
               <div class="text-dark">{{ record.PaymentMethod }}</div>
             </template>
             <template v-if="column.key === 'Amount'">
-              <div class="text-dark">${{ record.Amount }}</div>
+              <div class="text-dark">{{ formatCurrency(record.Amount) }}</div>
             </template>
             <template v-if="column.key === 'Status'">
               <span
@@ -340,11 +340,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy;
-        <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
@@ -356,8 +352,10 @@
 </template>
 
 <script>
+import { useSettings } from "@/composables/useSettings";
 import axios from "axios";
 import { ref } from "vue";
+import { API_BASE } from "@/api/apiConfig";
 
 const columns = [
   {
@@ -404,6 +402,13 @@ const valueTwo = ref();
 const valueThree = ref();
 
 export default {
+  setup() {
+    const { getCurrencySymbol, formatCurrency } = useSettings();
+    return {
+      getCurrencySymbol,
+      formatCurrency,
+    };
+  },
   data() {
     return {
       searchQuery: "",
@@ -449,7 +454,7 @@ export default {
 
       try {
         const response = await axios.get(
-          "http://0.0.0.0:5002/api/backend/company-transactions"
+          `${API_BASE}/api/backend/company-transactions`
         );
 
         if (response.data && response.data.transactions) {

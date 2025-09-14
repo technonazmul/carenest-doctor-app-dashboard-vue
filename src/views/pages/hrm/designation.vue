@@ -50,7 +50,9 @@
       </div>
       <!-- End Page Header -->
 
-      <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3">
+      <div
+        class="d-flex align-items-center justify-content-between flex-wrap row-gap-3"
+      >
         <div class="search-set mb-3">
           <div class="d-flex align-items-center flex-wrap gap-2">
             <div class="table-search d-flex align-items-center mb-0">
@@ -97,9 +99,13 @@
               <form action="#">
                 <div class="filter-body pb-0">
                   <div class="mb-3">
-                    <div class="d-flex align-items-center justify-content-between">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
                       <label class="form-label">Designation</label>
-                      <a href="javascript:void(0);" class="link-primary mb-1">Reset</a>
+                      <a href="javascript:void(0);" class="link-primary mb-1"
+                        >Reset</a
+                      >
                     </div>
                     <vue-multiselect
                       v-model="selected"
@@ -110,7 +116,9 @@
                     />
                   </div>
                   <div class="mb-3">
-                    <label class="form-label mb-1 text-dark fs-14 fw-medium">Date</label>
+                    <label class="form-label mb-1 text-dark fs-14 fw-medium"
+                      >Date</label
+                    >
                     <div class="input-icon-end position-relative">
                       <a-date-picker
                         v-model:value="valueOne"
@@ -123,9 +131,13 @@
                     </div>
                   </div>
                   <div class="mb-3">
-                    <div class="d-flex align-items-center justify-content-between">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
                       <label class="form-label">Status</label>
-                      <a href="javascript:void(0);" class="link-primary mb-1">Reset</a>
+                      <a href="javascript:void(0);" class="link-primary mb-1"
+                        >Reset</a
+                      >
                     </div>
                     <vue-multiselect
                       v-model="selectedOne"
@@ -145,7 +157,9 @@
                     id="close-filter"
                     >Close</a
                   >
-                  <button type="submit" class="btn btn-primary btn-md">Filter</button>
+                  <button type="submit" class="btn btn-primary btn-md">
+                    Filter
+                  </button>
                 </div>
               </form>
             </div>
@@ -160,10 +174,14 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-end p-2">
               <li>
-                <a href="javascript:void(0);" class="dropdown-item rounded-1">Recent</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                  >Recent</a
+                >
               </li>
               <li>
-                <a href="javascript:void(0);" class="dropdown-item rounded-1">Oldest</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                  >Oldest</a
+                >
               </li>
             </ul>
           </div>
@@ -227,10 +245,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
@@ -265,7 +280,9 @@
                     name="Radio-2"
                     id="Radio-sm-1"
                   />
-                  <label class="form-check-label fs-13" for="Radio-sm-1">Staff</label>
+                  <label class="form-check-label fs-13" for="Radio-sm-1"
+                    >Staff</label
+                  >
                 </div>
                 <div class="form-check d-flex align-items-center">
                   <input
@@ -274,7 +291,9 @@
                     name="Radio-2"
                     id="Radio-sm-2"
                   />
-                  <label class="form-check-label fs-13" for="Radio-sm-2">Doctor</label>
+                  <label class="form-check-label fs-13" for="Radio-sm-2"
+                    >Doctor</label
+                  >
                 </div>
               </div>
             </div>
@@ -300,10 +319,16 @@
             </div>
           </div>
           <div class="modal-footer d-flex align-items-center gap-1">
-            <button type="button" class="btn btn-white border" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-white border"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
-            <button type="submit" class="btn btn-primary">Add Designation</button>
+            <button type="submit" class="btn btn-primary">
+              Add Designation
+            </button>
           </div>
         </form>
       </div>
@@ -338,7 +363,9 @@
                     id="Radio-sm-3"
                     checked
                   />
-                  <label class="form-check-label fs-13" for="Radio-sm-3">Staff</label>
+                  <label class="form-check-label fs-13" for="Radio-sm-3"
+                    >Staff</label
+                  >
                 </div>
                 <div class="form-check d-flex align-items-center">
                   <input
@@ -347,7 +374,9 @@
                     name="Radio-2"
                     id="Radio-sm-4"
                   />
-                  <label class="form-check-label fs-13" for="Radio-sm-4">Doctor</label>
+                  <label class="form-check-label fs-13" for="Radio-sm-4"
+                    >Doctor</label
+                  >
                 </div>
               </div>
             </div>
@@ -383,7 +412,11 @@ A nurse provides patient care and supports medical treatments.</textarea
             </div>
           </div>
           <div class="modal-footer d-flex align-items-center gap-1">
-            <button type="button" class="btn btn-white border" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-white border"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
             <button type="submit" class="btn btn-primary">Save Changes</button>
@@ -423,7 +456,10 @@ A nurse provides patient care and supports medical treatments.</textarea
               data-bs-dismiss="modal"
               >Cancel</a
             >
-            <a href="javascript:void(0);" class="btn btn-danger position-relative z-1" data-bs-dismiss="modal"
+            <a
+              href="javascript:void(0);"
+              class="btn btn-danger position-relative z-1"
+              data-bs-dismiss="modal"
               >Yes, Delete</a
             >
           </div>
@@ -458,7 +494,8 @@ const columns = [
     dataIndex: "Status",
     key: "Status",
     sorter: {
-      compare: (a, b) => (a.Status.toLowerCase() > b.Status.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Status.toLowerCase() > b.Status.toLowerCase() ? -1 : 1,
     },
   },
   {

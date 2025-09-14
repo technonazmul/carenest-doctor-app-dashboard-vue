@@ -13,15 +13,9 @@
         </div>
         <div class="d-flex align-items-center flex-wrap gap-2">
           <router-link
-            to="/appointments/new-appointment"
+            to="/appointments/appointments-list"
             class="btn btn-primary d-inline-flex align-items-center"
-            ><i class="ti ti-plus me-1"></i>New Appointment</router-link
-          >
-          <router-link
-            to="/doctors/doctor-schedule"
-            class="btn btn-outline-white bg-white d-inline-flex align-items-center"
-            ><i class="ti ti-calendar-time me-1"></i>Schedule
-            Availability</router-link
+            >Appointments</router-link
           >
         </div>
       </div>
@@ -168,23 +162,58 @@
               <div
                 class="d-flex align-items-center mb-2 justify-content-between"
               >
-                <span class="avatar bg-success rounded-circle"
-                  ><i class="ti ti-calendar-heart fs-24"></i
-                ></span>
+                <span class="avatar bg-success rounded-circle">
+                  <i class="ti ti-wallet fs-24"></i>
+                </span>
                 <div class="text-end">
                   <span
-                    class="badge px-2 py-1 fs-12 fw-medium d-inline-flex mb-1 bg-success"
-                    >+25%</span
+                    v-if="balanceLoading"
+                    class="badge px-2 py-1 fs-12 fw-medium d-inline-flex mb-1 bg-secondary"
                   >
-                  <p class="fs-13 mb-0">in last 7 Days</p>
+                    <div class="spinner-border spinner-border-sm" role="status">
+                      <span class="visually-hidden">Loading...</span>
+                    </div>
+                  </span>
+                  <span
+                    v-else-if="!balanceError"
+                    class="badge px-2 py-1 fs-12 fw-medium d-inline-flex mb-1 bg-success"
+                  >
+                    +{{
+                      Math.round(
+                        ((totalEarnings - totalWithdrawals) /
+                          Math.max(totalEarnings, 1)) *
+                          100
+                      )
+                    }}%
+                  </span>
+                  <p class="fs-13 mb-0">Total Growth</p>
                 </div>
               </div>
               <div
                 class="d-flex align-items-center justify-content-between overflow-hidden"
               >
                 <div>
-                  <p class="mb-1">Revenue</p>
-                  <h3 class="fw-bold mb-0 text-truncate">$55,1240</h3>
+                  <p class="mb-1">Balance</p>
+
+                  <div v-if="balanceLoading" class="d-flex align-items-center">
+                    <div
+                      class="spinner-border spinner-border-sm me-2"
+                      role="status"
+                    >
+                      <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <h3 class="fw-bold mb-0">Loading...</h3>
+                  </div>
+
+                  <div v-else-if="balanceError" class="text-danger">
+                    <h3 class="fw-bold mb-0">{{ getCurrencySymbol() }}0</h3>
+                    <small class="text-muted">{{ balanceError }}</small>
+                  </div>
+
+                  <!-- Use formatCurrency from settings -->
+                  <h3 v-else class="fw-bold mb-0 text-truncate">
+                    {{ formatCurrency(companyBalance) }}
+                  </h3>
                 </div>
                 <div>
                   <div id="s-col-4" class="chart-set">
@@ -594,7 +623,7 @@
       <!-- row start -->
       <div class="row">
         <!-- col start -->
-        <div class="col-xl-4 d-flex">
+        <div class="col-xl-6 d-flex">
           <div class="card shadow-sm flex-fill w-100">
             <div
               class="card-header d-flex align-items-center justify-content-between"
@@ -651,7 +680,8 @@
         <!-- col end -->
 
         <!-- col start -->
-        <div class="col-xl-4 col-lg-6 d-flex">
+        <!-- Replace the existing "Recent Transactions" card with this updated version -->
+        <div class="col-xl-6 d-flex">
           <div class="card shadow-sm flex-fill w-100">
             <div
               class="card-header d-flex align-items-center justify-content-between"
@@ -667,394 +697,104 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="#">Monthly</a>
+                    <a
+                      class="dropdown-item"
+                      href="#"
+                      @click="fetchRecentTransactions"
+                      >Refresh</a
+                    >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="#">Weekly</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Yearly</a>
+                    <router-link class="dropdown-item" to="/transactions"
+                      >View All</router-link
+                    >
                   </li>
                 </ul>
               </div>
             </div>
             <div class="card-body">
-              <div
-                class="d-flex justify-content-between align-items-center mb-3"
-              >
-                <div class="d-flex align-items-center">
-                  <a
-                    href="javascript:void(0);"
-                    class="avatar me-2 flex-shrink-0"
-                  >
-                    <img
-                      src="@/assets/img/icons/stripe.svg"
-                      alt="img"
-                      class="rounded-circle"
-                    />
-                  </a>
-                  <div>
-                    <h6 class="fs-14 mb-1 text-truncate">
-                      <a href="javascript:void(0);" class="fw-semibold"
-                        >General Check-up</a
-                      >
-                    </h6>
-                    <p class="mb-0 fs-13 text-truncate">
-                      <a href="javascript:void(0);" class="link-primary"
-                        >#INV5889</a
-                      >
-                    </p>
-                  </div>
+              <!-- Loading State -->
+              <div v-if="transactionsLoading" class="text-center py-3">
+                <div class="spinner-border spinner-border-sm" role="status">
+                  <span class="visually-hidden">Loading...</span>
                 </div>
-                <span class="badge fw-medium bg-success flex-shrink-0"
-                  >+ $234</span
-                >
+                <p class="mt-2 mb-0 text-muted">Loading transactions...</p>
               </div>
-              <div
-                class="d-flex justify-content-between align-items-center mb-3"
-              >
-                <div class="d-flex align-items-center">
-                  <a
-                    href="javascript:void(0);"
-                    class="avatar me-2 flex-shrink-0"
-                  >
-                    <img
-                      src="@/assets/img/icons/paypal.svg"
-                      alt="img"
-                      class="rounded-circle"
-                    />
-                  </a>
-                  <div>
-                    <h6 class="fs-14 mb-1 text-truncate">
-                      <a href="javascript:void(0);" class="fw-semibold"
-                        >Online Consultation</a
-                      >
-                    </h6>
-                    <p class="mb-0 fs-13 text-truncate">
-                      <a href="javascript:void(0);" class="link-primary"
-                        >#INV7874</a
-                      >
-                    </p>
-                  </div>
-                </div>
-                <span class="badge fw-medium bg-success flex-shrink-0"
-                  >+ $234</span
-                >
-              </div>
-              <div
-                class="d-flex justify-content-between align-items-center mb-3"
-              >
-                <div class="d-flex align-items-center">
-                  <a
-                    href="javascript:void(0);"
-                    class="avatar me-2 flex-shrink-0"
-                  >
-                    <img
-                      src="@/assets/img/icons/stripe.svg"
-                      alt="img"
-                      class="rounded-circle"
-                    />
-                  </a>
-                  <div>
-                    <h6 class="fs-14 mb-1 text-truncate">
-                      <a href="javascript:void(0);" class="fw-semibold"
-                        >Purchase Product</a
-                      >
-                    </h6>
-                    <p class="mb-0 fs-13 text-truncate">
-                      <a href="javascript:void(0);" class="link-primary"
-                        >#INV4458</a
-                      >
-                    </p>
-                  </div>
-                </div>
-                <span class="badge fw-medium bg-danger flex-shrink-0"
-                  >- $69</span
-                >
-              </div>
-              <div
-                class="d-flex justify-content-between align-items-center mb-3"
-              >
-                <div class="d-flex align-items-center">
-                  <a
-                    href="javascript:void(0);"
-                    class="avatar me-2 flex-shrink-0"
-                  >
-                    <img
-                      src="@/assets/img/icons/paypal.svg"
-                      alt="img"
-                      class="rounded-circle"
-                    />
-                  </a>
-                  <div>
-                    <h6 class="fs-14 mb-1 text-truncate">
-                      <a href="javascript:void(0);" class="fw-semibold"
-                        >Online Consultation</a
-                      >
-                    </h6>
-                    <p class="mb-0 fs-13 text-truncate">
-                      <a href="javascript:void(0);" class="link-primary"
-                        >#INV5456</a
-                      >
-                    </p>
-                  </div>
-                </div>
-                <span class="badge fw-medium bg-success flex-shrink-0"
-                  >+ $234</span
-                >
-              </div>
-              <div
-                class="d-flex justify-content-between align-items-center mb-0"
-              >
-                <div class="d-flex align-items-center">
-                  <a
-                    href="javascript:void(0);"
-                    class="avatar me-2 flex-shrink-0"
-                  >
-                    <img
-                      src="@/assets/img/icons/stripe.svg"
-                      alt="img"
-                      class="rounded-circle"
-                    />
-                  </a>
-                  <div>
-                    <h6 class="fs-14 mb-1 text-truncate">
-                      <a href="javascript:void(0);" class="fw-semibold"
-                        >Online Consultation</a
-                      >
-                    </h6>
-                    <p class="mb-0 fs-13 text-truncate">
-                      <a href="javascript:void(0);" class="link-primary"
-                        >#INV4557</a
-                      >
-                    </p>
-                  </div>
-                </div>
-                <span class="badge fw-medium bg-success flex-shrink-0"
-                  >+ $234</span
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- col end -->
 
-        <!-- col start -->
-        <div class="col-xl-4 col-lg-6 d-flex">
-          <div class="card shadow-sm flex-fill w-100">
-            <div
-              class="card-header d-flex align-items-center justify-content-between"
-            >
-              <h5 class="fw-bold mb-0">Leave Requests</h5>
-              <div class="dropdown">
-                <a
-                  href="javascript:void(0);"
-                  class="btn btn-sm px-2 border shadow-sm btn-outline-white d-inline-flex align-items-center"
-                  data-bs-toggle="dropdown"
+              <!-- Error State -->
+              <div v-else-if="transactionsError" class="text-center py-3">
+                <div class="text-danger mb-2">
+                  <i class="ti ti-exclamation-circle fs-24"></i>
+                </div>
+                <p class="text-danger mb-2">{{ transactionsError }}</p>
+                <button
+                  class="btn btn-sm btn-outline-primary"
+                  @click="fetchRecentTransactions"
                 >
-                  Today <i class="ti ti-chevron-down ms-1"></i>
-                </a>
-                <ul class="dropdown-menu">
-                  <li>
-                    <a class="dropdown-item" href="#">Today</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">This Week</a>
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">This Month</a>
-                  </li>
-                </ul>
+                  Try Again
+                </button>
               </div>
-            </div>
-            <div class="card-body">
-              <div class="d-flex justify-content-between mb-3">
-                <div class="d-flex align-items-center">
-                  <router-link
-                    to="/doctors/doctor-details"
-                    class="avatar flex-shrink-0"
-                  >
-                    <img
-                      src="@/assets/img/profiles/avatar-16.jpg"
-                      class="rounded-circle"
-                      alt="img"
-                    />
-                  </router-link>
-                  <div class="ms-2">
+
+              <!-- No Transactions State -->
+              <div
+                v-else-if="recentTransactions.length === 0"
+                class="text-center py-3"
+              >
+                <div class="text-muted mb-2">
+                  <i class="ti ti-receipt fs-24"></i>
+                </div>
+                <p class="text-muted mb-0">No recent transactions found</p>
+              </div>
+
+              <!-- Transactions List -->
+              <div v-else>
+                <div
+                  v-for="(transaction, index) in recentTransactions"
+                  :key="transaction.id"
+                  class="d-flex justify-content-between align-items-center"
+                  :class="{
+                    'mb-3': index < recentTransactions.length - 1,
+                    'mb-0': index === recentTransactions.length - 1,
+                  }"
+                >
+                  <div class="d-flex align-items-center">
                     <div>
-                      <h6 class="fw-semibold text-truncate mb-1 fs-14">
-                        <router-link to="/doctors/doctor-details"
-                          >James Allaire</router-link
-                        >
+                      <h6 class="fs-14 mb-1 text-truncate">
+                        <a href="javascript:void(0);" class="fw-semibold">
+                          {{ transaction.description }}
+                        </a>
                       </h6>
-                      <p class="fs-13 mb-0 text-truncate">
-                        4 Days - Personal Reason
+                      <p class="mb-0 fs-13 text-truncate">
+                        <a href="javascript:void(0);" class="link-primary">
+                          {{ transaction.invoiceNumber }}
+                        </a>
                       </p>
                     </div>
                   </div>
-                </div>
-                <div class="d-flex align-items-center">
-                  <a
-                    href="javascript:void(0);"
-                    class="d-inline-flex bg-soft-danger text-danger p-2 rounded-circle"
-                    ><i class="ti ti-x fw-bold"></i
-                  ></a>
-                  <a
-                    href="javascript:void(0);"
-                    class="d-inline-flex ms-2 text-success p-2 bg-soft-success rounded-circle"
-                    ><i class="ti ti-check fw-bold"></i
-                  ></a>
+                  <span
+                    class="badge fw-medium flex-shrink-0"
+                    :class="{
+                      'bg-success': transaction.type === 'CREDIT',
+                      'bg-danger': transaction.type === 'DEBIT',
+                    }"
+                  >
+                    {{ transaction.type === "CREDIT" ? "+" : "-" }}
+                    {{ getCurrencySymbol() }}{{ transaction.amount }}
+                  </span>
                 </div>
               </div>
-              <div class="d-flex justify-content-between mb-3">
-                <div class="d-flex align-items-center">
-                  <router-link
-                    to="/doctors/doctor-details"
-                    class="avatar flex-shrink-0"
-                  >
-                    <img
-                      src="@/assets/img/profiles/avatar-21.jpg"
-                      class="rounded-circle"
-                      alt="img"
-                    />
-                  </router-link>
-                  <div class="ms-2">
-                    <div>
-                      <h6 class="fw-semibold text-truncate mb-1 fs-14">
-                        <router-link to="/doctors/doctor-details"
-                          >Esther Schmidt</router-link
-                        >
-                      </h6>
-                      <p class="fs-13 mb-0 text-truncate">
-                        2 Days - Going to Hospital
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center">
-                  <a
-                    href="javascript:void(0);"
-                    class="d-inline-flex bg-soft-danger text-danger p-2 rounded-circle"
-                    ><i class="ti ti-x fw-bold"></i
-                  ></a>
-                  <a
-                    href="javascript:void(0);"
-                    class="d-inline-flex ms-2 text-success p-2 bg-soft-success rounded-circle"
-                    ><i class="ti ti-check fw-bold"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="d-flex justify-content-between mb-3">
-                <div class="d-flex align-items-center">
-                  <router-link
-                    to="/doctors/doctor-details"
-                    class="avatar flex-shrink-0"
-                  >
-                    <img
-                      src="@/assets/img/doctors/doctor-03.jpg"
-                      class="rounded-circle"
-                      alt="img"
-                    />
-                  </router-link>
-                  <div class="ms-2">
-                    <div>
-                      <h6 class="fw-semibold text-truncate mb-1 fs-14">
-                        <router-link to="/doctors/doctor-details"
-                          >Valerie Padgett</router-link
-                        >
-                      </h6>
-                      <p class="fs-13 mb-0 text-truncate">
-                        1 Day - Changing Account
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center">
-                  <a
-                    href="javascript:void(0);"
-                    class="d-inline-flex bg-soft-danger text-danger p-2 rounded-circle"
-                    ><i class="ti ti-x fw-bold"></i
-                  ></a>
-                  <a
-                    href="javascript:void(0);"
-                    class="d-inline-flex ms-2 text-success p-2 bg-soft-success rounded-circle"
-                    ><i class="ti ti-check fw-bold"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="d-flex justify-content-between mb-3">
-                <div class="d-flex align-items-center">
-                  <router-link
-                    to="/doctors/doctor-details"
-                    class="avatar flex-shrink-0"
-                  >
-                    <img
-                      src="@/assets/img/doctors/doctor-02.jpg"
-                      class="rounded-circle"
-                      alt="img"
-                    />
-                  </router-link>
-                  <div class="ms-2">
-                    <div>
-                      <h6 class="fw-semibold text-truncate mb-1 fs-14">
-                        <router-link to="/doctors/doctor-details"
-                          >Diane Nash</router-link
-                        >
-                      </h6>
-                      <p class="fs-13 mb-0 text-truncate">1 Day - Not Well</p>
-                    </div>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center">
-                  <a
-                    href="javascript:void(0);"
-                    class="d-inline-flex bg-soft-danger text-danger p-2 rounded-circle"
-                    ><i class="ti ti-x fw-bold"></i
-                  ></a>
-                  <a
-                    href="javascript:void(0);"
-                    class="d-inline-flex ms-2 text-success p-2 bg-soft-success rounded-circle"
-                    ><i class="ti ti-check fw-bold"></i
-                  ></a>
-                </div>
-              </div>
-              <div class="d-flex justify-content-between mb-0">
-                <div class="d-flex align-items-center">
-                  <router-link
-                    to="/doctors/doctor-details"
-                    class="avatar flex-shrink-0"
-                  >
-                    <img
-                      src="@/assets/img/doctors/doctor-09.jpg"
-                      class="rounded-circle"
-                      alt="img"
-                    />
-                  </router-link>
-                  <div class="ms-2">
-                    <div>
-                      <h6 class="fw-semibold text-truncate mb-1 fs-14">
-                        <router-link to="/doctors/doctor-details"
-                          >Sally Cavazos</router-link
-                        >
-                      </h6>
-                      <p class="fs-13 mb-0 text-truncate">
-                        2 Days - Going to Checkup
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <div class="d-flex align-items-center">
-                  <a
-                    href="javascript:void(0);"
-                    class="d-inline-flex bg-soft-danger text-danger p-2 rounded-circle"
-                    ><i class="ti ti-x fw-bold"></i
-                  ></a>
-                  <a
-                    href="javascript:void(0);"
-                    class="d-inline-flex ms-2 text-success p-2 bg-soft-success rounded-circle"
-                    ><i class="ti ti-check fw-bold"></i
-                  ></a>
-                </div>
+
+              <!-- View All Link -->
+              <div
+                v-if="recentTransactions.length > 0"
+                class="mt-3 pt-3 border-top"
+              >
+                <router-link
+                  to="/finance/transactions"
+                  class="btn btn-outline-primary btn-sm w-100"
+                >
+                  View All Transactions
+                </router-link>
               </div>
             </div>
           </div>
@@ -1067,11 +807,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy;
-        <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
@@ -1085,6 +821,7 @@ import {
   adminColChart19,
   adminCircleChart,
 } from "./data";
+import { useSettings } from "@/composables/useSettings";
 import { ref } from "vue";
 import { API_BASE } from "@/api/apiConfig";
 import axios from "axios";
@@ -1094,6 +831,30 @@ const onPanelChange = (value, mode) => {
 };
 
 export default {
+  setup() {
+    // Use the settings composable
+    const {
+      settings,
+      loading: settingsLoading,
+      error: settingsError,
+      formatCurrency,
+      getCurrencySymbol,
+      getCurrency,
+      getCompanyInfo,
+      getFinancialSettings,
+    } = useSettings();
+
+    return {
+      settings,
+      settingsLoading,
+      settingsError,
+      formatCurrency,
+      getCurrencySymbol,
+      getCurrency,
+      getCompanyInfo,
+      getFinancialSettings,
+    };
+  },
   data() {
     return {
       value,
@@ -1119,15 +880,25 @@ export default {
       popularDoctors: [],
       latestAppointments: [],
       topPatients: [],
+      recentTransactions: [],
+      transactionsLoading: false,
+      transactionsError: null,
+      companyBalance: 0,
+      totalEarnings: 0,
+      totalWithdrawals: 0,
+      balanceLoading: false,
+      balanceError: null,
     };
   },
   async mounted() {
     await this.fetchTotalDoctor();
     await this.fetchTotalPatient();
+    await this.fetchCompanyAccount();
     await this.fetchTotalAppointments();
     await this.fetchPopularDoctors();
     await this.fetchLatestAppointments();
     await this.fetchTopPatients();
+    await this.fetchRecentTransactions();
 
     // 👇 Get today’s date and format as YYYY-MM-DD
     const today = new Date();
@@ -1223,6 +994,109 @@ export default {
         this.topPatients = response.data.topPatients;
       } catch (error) {
         console.error("Error fetching top patients:", error);
+      }
+    },
+    async fetchCompanyAccount() {
+      this.balanceLoading = true;
+      this.balanceError = null;
+
+      try {
+        const response = await axios.get(
+          `${API_BASE}/api/backend/company-account`
+        );
+
+        if (
+          response.data &&
+          response.data.accounts &&
+          response.data.accounts.length > 0
+        ) {
+          const account = response.data.accounts[0];
+          this.companyBalance = account.balance || 0;
+          this.totalEarnings = account.totalEarnings || 0;
+          this.totalWithdrawals = account.totalWithdrawals || 0;
+        } else {
+          this.balanceError = "No account data found";
+        }
+      } catch (error) {
+        console.error("Error fetching company account:", error);
+        this.balanceError = "Failed to load balance";
+        this.companyBalance = 0;
+        this.totalEarnings = 0;
+        this.totalWithdrawals = 0;
+      } finally {
+        this.balanceLoading = false;
+      }
+    },
+
+    // Updated fetchRecentTransactions method
+    async fetchRecentTransactions() {
+      this.transactionsLoading = true;
+      this.transactionsError = null;
+
+      try {
+        const response = await axios.get(
+          `${API_BASE}/api/backend/company-transactions`
+        );
+
+        if (response.data && response.data.transactions) {
+          this.recentTransactions = this.processTransactionData(
+            response.data.transactions
+          ).slice(0, 5);
+        }
+      } catch (error) {
+        console.error("Error fetching transactions:", error);
+        this.transactionsError = "Failed to load transactions";
+      } finally {
+        this.transactionsLoading = false;
+      }
+    },
+
+    // Updated processTransactionData method
+    processTransactionData(transactions) {
+      return transactions
+        .map((transaction) => {
+          const booking = transaction.referenceId;
+
+          return {
+            id: transaction._id,
+            description: transaction.source || "Transaction",
+            invoiceNumber: `#${transaction._id.slice(-6).toUpperCase()}`,
+            amount: transaction.amount,
+            type: transaction.type,
+            method: transaction.method || "N/A",
+            date: this.formatTransactionDate(transaction.createdAt),
+            status: transaction.type === "DEBIT" ? "Completed" : "Pending",
+            paymentIcon: this.getPaymentIcon(transaction.method),
+          };
+        })
+        .sort((a, b) => new Date(b.date) - new Date(a.date));
+    },
+
+    // this method to format transaction dates
+    formatTransactionDate(dateString) {
+      if (!dateString) return new Date();
+
+      // Handle MM/DD/YYYY format
+      if (dateString.includes("/")) {
+        const [month, day, year] = dateString.split("/");
+        return new Date(year, month - 1, day);
+      }
+
+      // Handle ISO date format
+      return new Date(dateString);
+    },
+
+    // this method to get payment icons
+    getPaymentIcon(method) {
+      switch (method?.toLowerCase()) {
+        case "stripe":
+        case "card":
+        case "credit_card":
+          return "@/assets/img/icons/stripe.svg";
+        case "paypal":
+          return "@/assets/img/icons/paypal.svg";
+        default:
+          return "@/assets/img/icons/stripe.svg"; // Default icon
       }
     },
   },

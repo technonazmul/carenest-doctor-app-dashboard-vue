@@ -13,7 +13,8 @@
         <div class="d-flex align-items-center justify-content-between">
           <div class="d-flex align-items-center">
             <h4 class="fw-bold mb-0 me-2">Payroll</h4>
-            <span class="badge badge-soft-primary border border-primary fw-medium"
+            <span
+              class="badge badge-soft-primary border border-primary fw-medium"
               >Total Department : 33</span
             >
           </div>
@@ -28,7 +29,9 @@
       </div>
       <!-- End Page Header -->
 
-      <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3">
+      <div
+        class="d-flex align-items-center justify-content-between flex-wrap row-gap-3"
+      >
         <div class="search-set mb-3">
           <div class="d-flex align-items-center flex-wrap gap-2">
             <div class="table-search d-flex align-items-center mb-0">
@@ -75,9 +78,13 @@
               <form action="#">
                 <div class="filter-body pb-0">
                   <div class="mb-3">
-                    <div class="d-flex align-items-center justify-content-between">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
                       <label class="form-label">Employee</label>
-                      <a href="javascript:void(0);" class="link-primary mb-1">Reset</a>
+                      <a href="javascript:void(0);" class="link-primary mb-1"
+                        >Reset</a
+                      >
                     </div>
                     <vue-multiselect
                       v-model="selected"
@@ -88,9 +95,13 @@
                     />
                   </div>
                   <div class="mb-3">
-                    <div class="d-flex align-items-center justify-content-between">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
                       <label class="form-label">Role</label>
-                      <a href="javascript:void(0);" class="link-primary mb-1">Reset</a>
+                      <a href="javascript:void(0);" class="link-primary mb-1"
+                        >Reset</a
+                      >
                     </div>
                     <vue-multiselect
                       v-model="selectedOne"
@@ -101,7 +112,9 @@
                     />
                   </div>
                   <div class="mb-3">
-                    <label class="form-label mb-1 text-dark fs-14 fw-medium">Date</label>
+                    <label class="form-label mb-1 text-dark fs-14 fw-medium"
+                      >Date</label
+                    >
                     <div class="input-icon-end position-relative">
                       <a-date-picker
                         v-model:value="valueOne"
@@ -114,9 +127,13 @@
                     </div>
                   </div>
                   <div class="mb-3">
-                    <div class="d-flex align-items-center justify-content-between">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
                       <label class="form-label">Status</label>
-                      <a href="javascript:void(0);" class="link-primary mb-1">Reset</a>
+                      <a href="javascript:void(0);" class="link-primary mb-1"
+                        >Reset</a
+                      >
                     </div>
                     <vue-multiselect
                       v-model="selectedTwo"
@@ -136,7 +153,9 @@
                     id="close-filter"
                     >Close</a
                   >
-                  <button type="submit" class="btn btn-primary btn-md">Filter</button>
+                  <button type="submit" class="btn btn-primary btn-md">
+                    Filter
+                  </button>
                 </div>
               </form>
             </div>
@@ -151,10 +170,14 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-end p-2">
               <li>
-                <a href="javascript:void(0);" class="dropdown-item rounded-1">Recent</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                  >Recent</a
+                >
               </li>
               <li>
-                <a href="javascript:void(0);" class="dropdown-item rounded-1">Oldest</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                  >Oldest</a
+                >
               </li>
             </ul>
           </div>
@@ -195,9 +218,11 @@
               </div>
             </template>
             <template v-if="column.key === 'Status'">
-              <router-link to="/hrm/payroll-2" class="btn btn-white border text-dark">{{
-                record.Status
-              }}</router-link>
+              <router-link
+                to="/hrm/payroll-2"
+                class="btn btn-white border text-dark"
+                >{{ record.Status }}</router-link
+              >
             </template>
             <template v-if="column.key === 'action'">
               <td class="action-item">
@@ -238,10 +263,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
@@ -319,7 +341,9 @@
                 </div>
                 <div class="mb-3">
                   <label class="form-label"
-                    >Medical Allowance<span class="text-danger ms-1">*</span></label
+                    >Medical Allowance<span class="text-danger ms-1"
+                      >*</span
+                    ></label
                   >
                   <input type="text" class="form-control" value="0" />
                 </div>
@@ -357,7 +381,9 @@
                 </div>
                 <div class="mb-3">
                   <label class="form-label"
-                    >Labour Welfare<span class="text-danger ms-1">*</span></label
+                    >Labour Welfare<span class="text-danger ms-1"
+                      >*</span
+                    ></label
                   >
                   <input type="text" class="form-control" placeholder="0" />
                 </div>
@@ -373,7 +399,11 @@
             <!-- end row -->
           </div>
           <div class="modal-footer d-flex align-items-center gap-1">
-            <button type="button" class="btn btn-white border" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-white border"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
             <button type="submit" class="btn btn-primary">Add Payslip</button>
@@ -453,7 +483,9 @@
                 </div>
                 <div class="mb-3">
                   <label class="form-label"
-                    >Medical Allowance<span class="text-danger ms-1">*</span></label
+                    >Medical Allowance<span class="text-danger ms-1"
+                      >*</span
+                    ></label
                   >
                   <input type="text" class="form-control" value="40" />
                 </div>
@@ -491,7 +523,9 @@
                 </div>
                 <div class="mb-3">
                   <label class="form-label"
-                    >Labour Welfare<span class="text-danger ms-1">*</span></label
+                    >Labour Welfare<span class="text-danger ms-1"
+                      >*</span
+                    ></label
                   >
                   <input type="text" class="form-control" value="30" />
                 </div>
@@ -507,7 +541,11 @@
             <!-- end row -->
           </div>
           <div class="modal-footer d-flex align-items-center gap-1">
-            <button type="button" class="btn btn-white border" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-white border"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
             <button type="submit" class="btn btn-primary">Save Changes</button>
@@ -567,7 +605,8 @@ const columns = [
     dataIndex: "Employee",
     key: "Employee",
     sorter: {
-      compare: (a, b) => (a.Employee.toLowerCase() > b.Employee.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Employee.toLowerCase() > b.Employee.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -575,7 +614,8 @@ const columns = [
     dataIndex: "Email",
     key: "Email",
     sorter: {
-      compare: (a, b) => (a.Email.toLowerCase() > b.Email.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Email.toLowerCase() > b.Email.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -600,7 +640,8 @@ const columns = [
     dataIndex: "Salary",
     key: "Salary",
     sorter: {
-      compare: (a, b) => (a.Salary.toLowerCase() > b.Salary.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Salary.toLowerCase() > b.Salary.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -608,7 +649,8 @@ const columns = [
     dataIndex: "Status",
     key: "Status",
     sorter: {
-      compare: (a, b) => (a.Status.toLowerCase() > b.Status.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Status.toLowerCase() > b.Status.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -746,7 +788,8 @@ export default {
   },
   methods: {
     getImageUrl(imageName) {
-      return new URL(`/src/assets/img/users/${imageName}`, import.meta.url).href;
+      return new URL(`/src/assets/img/users/${imageName}`, import.meta.url)
+        .href;
     },
   },
   computed: {

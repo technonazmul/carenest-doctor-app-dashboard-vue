@@ -43,7 +43,9 @@
                             ><i class="ti ti-eye"></i
                           ></a>
                         </div>
-                        <div class="d-flex justify-content-between align-items-center">
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
                           <a href="javascript:void(0);">General Invoice 1</a>
                           <a
                             href="javascript:void(0);"
@@ -75,7 +77,9 @@
                             ><i class="ti ti-eye"></i
                           ></a>
                         </div>
-                        <div class="d-flex justify-content-between align-items-center">
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
                           <a href="javascript:void(0);">General Invoice 2</a>
                           <a
                             href="javascript:void(0);"
@@ -109,7 +113,9 @@
                             ><i class="ti ti-eye"></i
                           ></a>
                         </div>
-                        <div class="d-flex justify-content-between align-items-center">
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
                           <a href="javascript:void(0);">General Invoice 3</a>
                           <a
                             href="javascript:void(0);"
@@ -143,7 +149,9 @@
                             ><i class="ti ti-eye"></i
                           ></a>
                         </div>
-                        <div class="d-flex justify-content-between align-items-center">
+                        <div
+                          class="d-flex justify-content-between align-items-center"
+                        >
                           <a href="javascript:void(0);">General Invoice 4</a>
                           <a
                             href="javascript:void(0);"
@@ -172,10 +180,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>

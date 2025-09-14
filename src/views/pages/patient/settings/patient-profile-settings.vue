@@ -20,13 +20,15 @@
                   to="/patient/settings/patient-profile-settings"
                   class="d-block w-100 btn btn-md border rounded fs-14 fw-medium text-primary text-start active mb-1 w-100 justify-content-start"
                 >
-                  <i class="ti ti-user-cog me-2 text-primary"> </i> Profile Settings
+                  <i class="ti ti-user-cog me-2 text-primary"> </i> Profile
+                  Settings
                 </router-link>
                 <router-link
                   to="/patient/settings/patient-password-settings"
                   class="btn btn-md rounded fs-14 fw-medium text-dark mb-1 w-100 justify-content-start"
                 >
-                  <i class="ti ti-lock-star me-2 text-dark"> </i> Change Password
+                  <i class="ti ti-lock-star me-2 text-dark"> </i> Change
+                  Password
                 </router-link>
                 <router-link
                   to="/patient/settings/patient-notifications-settings"
@@ -51,13 +53,18 @@
                     <div class="row align-items-center mb-3">
                       <div class="col-lg-2">
                         <label class="form-label mb-0"
-                          >Profile Image<span class="text-danger ms-1">*</span></label
+                          >Profile Image<span class="text-danger ms-1"
+                            >*</span
+                          ></label
                         >
                       </div>
                       <!-- end col -->
                       <div class="col-lg-10">
                         <div class="profile-container">
-                          <img src="@/assets/img/users/user-08.jpg" alt="Profile" />
+                          <img
+                            src="@/assets/img/users/user-08.jpg"
+                            alt="Profile"
+                          />
                           <div class="overlay-btn">
                             <a
                               href="javascript:void(0);"
@@ -67,7 +74,11 @@
                               <i class="ti ti-photo fs-10"></i>
                             </a>
                           </div>
-                          <input type="file" id="profileUpload" style="display: none" />
+                          <input
+                            type="file"
+                            id="profileUpload"
+                            style="display: none"
+                          />
                         </div>
                       </div>
                       <!-- end col -->
@@ -80,7 +91,9 @@
                     <div class="row align-items-center mb-3">
                       <div class="col-lg-4">
                         <label class="form-label mb-0"
-                          >First Name<span class="text-danger ms-1">*</span></label
+                          >First Name<span class="text-danger ms-1"
+                            >*</span
+                          ></label
                         >
                       </div>
                       <!-- end col -->
@@ -97,7 +110,9 @@
                     <div class="row align-items-center mb-3">
                       <div class="col-lg-4">
                         <label class="form-label mb-0"
-                          >Last Name<span class="text-danger ms-1">*</span></label
+                          >Last Name<span class="text-danger ms-1"
+                            >*</span
+                          ></label
                         >
                       </div>
                       <!-- end col -->
@@ -131,7 +146,9 @@
                     <div class="row align-items-center mb-3">
                       <div class="col-lg-4">
                         <label class="form-label mb-0"
-                          >Phone Number<span class="text-danger ms-1">*</span></label
+                          >Phone Number<span class="text-danger ms-1"
+                            >*</span
+                          ></label
                         >
                       </div>
                       <!-- end col -->
@@ -256,11 +273,19 @@
                 </div>
                 <!-- end row -->
 
-                <div class="d-flex justify-content-end align-items-center gap-2">
-                  <a href="" class="btn btn-light btn-md fs-13 fw-medium rounded">
+                <div
+                  class="d-flex justify-content-end align-items-center gap-2"
+                >
+                  <a
+                    href=""
+                    class="btn btn-light btn-md fs-13 fw-medium rounded"
+                  >
                     Cancel
                   </a>
-                  <a href="" class="btn btn-primary btn-md fs-13 fw-medium rounded">
+                  <a
+                    href=""
+                    class="btn btn-primary btn-md fs-13 fw-medium rounded"
+                  >
                     Save Changes
                   </a>
                 </div>
@@ -277,10 +302,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>

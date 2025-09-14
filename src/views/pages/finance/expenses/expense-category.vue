@@ -256,10 +256,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
@@ -329,7 +326,11 @@
                 >Category Name<span class="text-danger">*</span></label
               >
               <div class="input-group">
-                <input type="text" class="form-control" value="Medical Supplies" />
+                <input
+                  type="text"
+                  class="form-control"
+                  value="Medical Supplies"
+                />
               </div>
             </div>
           </div>
@@ -350,7 +351,9 @@
                 >
                   Active
                 </a>
-                <ul class="dropdown-menu dropdown-menu-lg p-2 dropdown-employee w-100">
+                <ul
+                  class="dropdown-menu dropdown-menu-lg p-2 dropdown-employee w-100"
+                >
                   <li>
                     <div class="mb-2">
                       <input
@@ -361,26 +364,48 @@
                     </div>
                   </li>
                   <li>
-                    <label class="dropdown-item px-2 d-flex align-items-center rounded-1">
-                      <input class="form-check-input m-0 me-2" type="checkbox" checked />
+                    <label
+                      class="dropdown-item px-2 d-flex align-items-center rounded-1"
+                    >
+                      <input
+                        class="form-check-input m-0 me-2"
+                        type="checkbox"
+                        checked
+                      />
                       Approved
                     </label>
                   </li>
                   <li>
-                    <label class="dropdown-item px-2 d-flex align-items-center rounded-1">
-                      <input class="form-check-input m-0 me-2" type="checkbox" />
+                    <label
+                      class="dropdown-item px-2 d-flex align-items-center rounded-1"
+                    >
+                      <input
+                        class="form-check-input m-0 me-2"
+                        type="checkbox"
+                      />
                       Options Enhanced
                     </label>
                   </li>
                   <li>
-                    <label class="dropdown-item px-2 d-flex align-items-center rounded-1">
-                      <input class="form-check-input m-0 me-2" type="checkbox" checked />
+                    <label
+                      class="dropdown-item px-2 d-flex align-items-center rounded-1"
+                    >
+                      <input
+                        class="form-check-input m-0 me-2"
+                        type="checkbox"
+                        checked
+                      />
                       Pending
                     </label>
                   </li>
                   <li>
-                    <label class="dropdown-item px-2 d-flex align-items-center rounded-1">
-                      <input class="form-check-input m-0 me-2" type="checkbox" />
+                    <label
+                      class="dropdown-item px-2 d-flex align-items-center rounded-1"
+                    >
+                      <input
+                        class="form-check-input m-0 me-2"
+                        type="checkbox"
+                      />
                       New
                     </label>
                   </li>
@@ -427,7 +452,9 @@
               ><i class="ti ti-trash fs-24"></i
             ></span>
           </div>
-          <h5 class="fw-bold mb-1 position-relative z-1">Delete Confirmation</h5>
+          <h5 class="fw-bold mb-1 position-relative z-1">
+            Delete Confirmation
+          </h5>
           <p class="mb-3 position-relative z-1">Are you sure want to delete?</p>
           <div class="d-flex justify-content-center">
             <a

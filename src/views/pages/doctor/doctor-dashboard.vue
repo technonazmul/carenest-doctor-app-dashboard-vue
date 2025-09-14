@@ -34,12 +34,16 @@
         <div class="col-xl-4 d-flex">
           <div class="card shadow-sm flex-fill w-100">
             <div class="card-body">
-              <div class="d-flex align-items-center justify-content-between mb-3">
+              <div
+                class="d-flex align-items-center justify-content-between mb-3"
+              >
                 <div>
                   <p class="mb-1">Total Appointments</p>
                   <div class="d-flex align-items-center gap-1">
                     <h3 class="fw-bold mb-0">658</h3>
-                    <span class="badge fw-medium bg-success flex-shrink-0">+95%</span>
+                    <span class="badge fw-medium bg-success flex-shrink-0"
+                      >+95%</span
+                    >
                   </div>
                 </div>
                 <span
@@ -57,7 +61,8 @@
                     :series="sColChart5.series"
                   ></apexchart>
                 </div>
-                <span class="badge fw-medium badge-soft-success flex-shrink-0 ms-2"
+                <span
+                  class="badge fw-medium badge-soft-success flex-shrink-0 ms-2"
                   >+21% <i class="ti ti-arrow-up ms-1"></i
                 ></span>
                 <p class="ms-1 fs-13 text-truncate">in last 7 Days</p>
@@ -71,12 +76,16 @@
         <div class="col-xl-4 d-flex">
           <div class="card shadow-sm flex-fill w-100">
             <div class="card-body">
-              <div class="d-flex align-items-center justify-content-between mb-3">
+              <div
+                class="d-flex align-items-center justify-content-between mb-3"
+              >
                 <div>
                   <p class="mb-1">Online Consultations</p>
                   <div class="d-flex align-items-center gap-1">
                     <h3 class="fw-bold mb-0">125</h3>
-                    <span class="badge fw-medium bg-danger flex-shrink-0">-15%</span>
+                    <span class="badge fw-medium bg-danger flex-shrink-0"
+                      >-15%</span
+                    >
                   </div>
                 </div>
                 <span
@@ -94,7 +103,8 @@
                     :series="sColChart6.series"
                   ></apexchart>
                 </div>
-                <span class="badge fw-medium badge-soft-danger flex-shrink-0 ms-2"
+                <span
+                  class="badge fw-medium badge-soft-danger flex-shrink-0 ms-2"
                   >+21% <i class="ti ti-arrow-down ms-1"></i
                 ></span>
                 <p class="ms-1 fs-13 text-truncate">in last 7 Days</p>
@@ -108,12 +118,16 @@
         <div class="col-xl-4 d-flex">
           <div class="card shadow-sm flex-fill w-100">
             <div class="card-body">
-              <div class="d-flex align-items-center justify-content-between mb-3">
+              <div
+                class="d-flex align-items-center justify-content-between mb-3"
+              >
                 <div>
                   <p class="mb-1">Cancelled Appointments</p>
                   <div class="d-flex align-items-center gap-1">
                     <h3 class="fw-bold mb-0">35</h3>
-                    <span class="badge fw-medium bg-success flex-shrink-0">+45%</span>
+                    <span class="badge fw-medium bg-success flex-shrink-0"
+                      >+45%</span
+                    >
                   </div>
                 </div>
                 <span
@@ -131,7 +145,8 @@
                     :series="sColChart7.series"
                   ></apexchart>
                 </div>
-                <span class="badge fw-medium badge-soft-success flex-shrink-0 ms-2"
+                <span
+                  class="badge fw-medium badge-soft-success flex-shrink-0 ms-2"
                   >+31% <i class="ti ti-arrow-up ms-1"></i
                 ></span>
                 <p class="ms-1 fs-13 text-truncate">in last 7 Days</p>
@@ -149,7 +164,9 @@
         <div class="col-xl-4 d-flex">
           <!-- card start -->
           <div class="card shadow-sm flex-fill w-100">
-            <div class="card-header d-flex align-items-center justify-content-between">
+            <div
+              class="card-header d-flex align-items-center justify-content-between"
+            >
               <h5 class="fw-bold mb-0 text-truncate">Upcoming Appointments</h5>
               <div class="dropdown">
                 <a
@@ -183,7 +200,9 @@
                 </a>
                 <div>
                   <h6 class="fs-14 mb-1 text-truncate">
-                    <a href="javascript:void(0);" class="fw-semibold">Andrew Billard</a>
+                    <a href="javascript:void(0);" class="fw-semibold"
+                      >Andrew Billard</a
+                    >
                   </h6>
                   <p class="mb-0 fs-13 text-truncate">#AP455698</p>
                 </div>
@@ -191,7 +210,8 @@
               <h6 class="fs-14 fw-semibold mb-1">General Visit</h6>
               <div class="d-flex align-items-center gap-2 flex-wrap mb-3">
                 <p class="mb-0 d-inline-flex align-items-center">
-                  <i class="ti ti-calendar-time text-dark me-1"></i>Monday, 31 Mar 2025
+                  <i class="ti ti-calendar-time text-dark me-1"></i>Monday, 31
+                  Mar 2025
                 </p>
                 <p class="mb-0 d-inline-flex align-items-center">
                   <i class="ti ti-clock text-dark me-1"></i>06:30 PM
@@ -216,7 +236,9 @@
                 <a href="javascript:void(0);" class="btn btn-dark w-100"
                   ><i class="ti ti-brand-hipchat me-1"></i>Chat Now</a
                 >
-                <a href="javascript:void(0);" class="btn btn-outline-white w-100"
+                <a
+                  href="javascript:void(0);"
+                  class="btn btn-outline-white w-100"
                   ><i class="ti ti-video me-1"></i>Video Consutation</a
                 >
               </div>
@@ -230,7 +252,9 @@
         <div class="col-xl-8 d-flex">
           <!-- card start -->
           <div class="card shadow-sm flex-fill w-100">
-            <div class="card-header d-flex align-items-center justify-content-between">
+            <div
+              class="card-header d-flex align-items-center justify-content-between"
+            >
               <h5 class="fw-bold mb-0">Appointments</h5>
               <div class="dropdown">
                 <a
@@ -258,12 +282,12 @@
                 class="d-flex align-items-center justify-content-end gap-2 mb-1 flex-wrap mb-3"
               >
                 <p class="mb-0 d-inline-flex align-items-center">
-                  <i class="ti ti-point-filled me-1 fs-18 text-primary"></i>Total
-                  Appointments
+                  <i class="ti ti-point-filled me-1 fs-18 text-primary"></i
+                  >Total Appointments
                 </p>
                 <p class="mb-0 d-inline-flex align-items-center">
-                  <i class="ti ti-point-filled me-1 fs-18 text-success"></i>Completed
-                  Appointments
+                  <i class="ti ti-point-filled me-1 fs-18 text-success"></i
+                  >Completed Appointments
                 </p>
               </div>
               <div class="chart-set" id="s-col-20">
@@ -303,7 +327,8 @@
         <div class="col">
           <div class="card shadow-sm">
             <div class="card-body">
-              <span class="avatar bg-secondary rounded-2 fs-20 d-inline-flex mb-2"
+              <span
+                class="avatar bg-secondary rounded-2 fs-20 d-inline-flex mb-2"
                 ><i class="ti ti-video"></i
               ></span>
               <p class="mb-1 text-truncate">Video Consultation</p>
@@ -381,7 +406,9 @@
       <div class="row">
         <div class="col-12 d-flex">
           <div class="card shadow-sm flex-fill w-100">
-            <div class="card-header d-flex align-items-center justify-content-between">
+            <div
+              class="card-header d-flex align-items-center justify-content-between"
+            >
               <h5 class="fw-bold mb-0">Recent Appointments</h5>
               <div class="dropdown">
                 <a
@@ -441,7 +468,11 @@
                       </td>
                       <td>27 May 2025 - 09:30 AM</td>
                       <td>Online</td>
-                      <td><span class="badge bg-success fw-medium">Checked Out</span></td>
+                      <td>
+                        <span class="badge bg-success fw-medium"
+                          >Checked Out</span
+                        >
+                      </td>
                       <td class="fw-semibold text-dark">$400</td>
                       <td>
                         <a
@@ -501,7 +532,11 @@
                       </td>
                       <td>26 May 2025 - 10:15 AM</td>
                       <td>Online</td>
-                      <td><span class="badge bg-warning fw-medium">Checked in</span></td>
+                      <td>
+                        <span class="badge bg-warning fw-medium"
+                          >Checked in</span
+                        >
+                      </td>
                       <td class="fw-semibold text-dark">$370</td>
                       <td>
                         <a
@@ -561,7 +596,9 @@
                       </td>
                       <td>25 May 2025 - 02:40 PM</td>
                       <td>In-Person</td>
-                      <td><span class="badge bg-danger fw-medium">Cancelled</span></td>
+                      <td>
+                        <span class="badge bg-danger fw-medium">Cancelled</span>
+                      </td>
                       <td class="fw-semibold text-dark">$450</td>
                       <td>
                         <a
@@ -621,7 +658,9 @@
                       </td>
                       <td>24 May 2025 - 11:30 AM</td>
                       <td>In-Person</td>
-                      <td><span class="badge bg-info fw-medium">Schedule</span></td>
+                      <td>
+                        <span class="badge bg-info fw-medium">Schedule</span>
+                      </td>
                       <td class="fw-semibold text-dark">$310</td>
                       <td>
                         <a
@@ -681,7 +720,9 @@
                       </td>
                       <td>23 May 2025 - 04:10 PM</td>
                       <td>Online</td>
-                      <td><span class="badge bg-info fw-medium">Schedule</span></td>
+                      <td>
+                        <span class="badge bg-info fw-medium">Schedule</span>
+                      </td>
                       <td class="fw-semibold text-dark">$400</td>
                       <td>
                         <a
@@ -734,7 +775,9 @@
         <!-- col start -->
         <div class="col-xl-4 d-flex">
           <div class="card shadow-sm flex-fill w-100">
-            <div class="card-header d-flex align-items-center justify-content-between">
+            <div
+              class="card-header d-flex align-items-center justify-content-between"
+            >
               <h5 class="fw-bold mb-0">Availability</h5>
               <div class="dropdown">
                 <a
@@ -817,13 +860,17 @@
                   <i class="ti ti-clock me-1"></i>11:00 PM - 12:30 PM
                 </p>
               </div>
-              <div class="d-flex align-items-center justify-content-between mb-2 pb-2">
+              <div
+                class="d-flex align-items-center justify-content-between mb-2 pb-2"
+              >
                 <p class="text-dark fw-semibold mb-0">Sun</p>
                 <p class="mb-0 d-inline-flex align-items-center text-danger">
                   <i class="ti ti-clock me-1"></i>Closed
                 </p>
               </div>
-              <a href="javascript:void(0);" class="btn btn-light w-100 mt-2 fs-13"
+              <a
+                href="javascript:void(0);"
+                class="btn btn-light w-100 mt-2 fs-13"
                 >Edit Availability</a
               >
             </div>
@@ -834,7 +881,9 @@
         <!-- col start -->
         <div class="col-xl-4 col-lg-6 d-flex">
           <div class="card shadow-sm flex-fill w-100">
-            <div class="card-header d-flex align-items-center justify-content-between">
+            <div
+              class="card-header d-flex align-items-center justify-content-between"
+            >
               <h5 class="fw-bold mb-0 text-truncate">Appointment Statistics</h5>
               <div class="dropdown">
                 <a
@@ -867,22 +916,27 @@
                   :series="sCirclechart.series"
                 ></apexchart>
               </div>
-              <div class="d-flex align-items-center justify-content-center gap-2 mt-3">
+              <div
+                class="d-flex align-items-center justify-content-center gap-2 mt-3"
+              >
                 <div class="text-center">
                   <p class="d-flex align-items-center mb-1 fs-13">
-                    <i class="ti ti-circle-filled text-success fs-10 me-1"></i>Completed
+                    <i class="ti ti-circle-filled text-success fs-10 me-1"></i
+                    >Completed
                   </p>
                   <h5 class="fw-bold mb-0">260</h5>
                 </div>
                 <div class="text-center">
                   <p class="d-flex align-items-center mb-1 fs-13">
-                    <i class="ti ti-circle-filled text-warning fs-10 me-1"></i>Pending
+                    <i class="ti ti-circle-filled text-warning fs-10 me-1"></i
+                    >Pending
                   </p>
                   <h5 class="fw-bold mb-0">21</h5>
                 </div>
                 <div class="text-center">
                   <p class="d-flex align-items-center mb-1 fs-13">
-                    <i class="ti ti-circle-filled text-danger fs-10 me-1"></i>Cancelled
+                    <i class="ti ti-circle-filled text-danger fs-10 me-1"></i
+                    >Cancelled
                   </p>
                   <h5 class="fw-bold mb-0">50</h5>
                 </div>
@@ -895,7 +949,9 @@
         <!-- col start -->
         <div class="col-xl-4 col-lg-6 d-flex">
           <div class="card shadow-sm flex-fill w-100">
-            <div class="card-header d-flex align-items-center justify-content-between">
+            <div
+              class="card-header d-flex align-items-center justify-content-between"
+            >
               <h5 class="fw-bold mb-0">Top Patients</h5>
               <div class="dropdown">
                 <a
@@ -919,9 +975,14 @@
               </div>
             </div>
             <div class="card-body">
-              <div class="d-flex align-items-center justify-content-between mb-4">
+              <div
+                class="d-flex align-items-center justify-content-between mb-4"
+              >
                 <div class="d-flex align-items-center">
-                  <a href="javascript:void(0);" class="avatar me-2 flex-shrink-0">
+                  <a
+                    href="javascript:void(0);"
+                    class="avatar me-2 flex-shrink-0"
+                  >
                     <img
                       src="@/assets/img/profiles/avatar-06.jpg"
                       alt="img"
@@ -930,7 +991,9 @@
                   </a>
                   <div>
                     <h6 class="fs-14 mb-1 text-truncate">
-                      <a href="javascript:void(0);" class="fw-medium">Alberto Ripley</a>
+                      <a href="javascript:void(0);" class="fw-medium"
+                        >Alberto Ripley</a
+                      >
                     </h6>
                     <p class="mb-0 fs-13 text-truncate">+1 56556 54565</p>
                   </div>
@@ -940,9 +1003,14 @@
                   >20 Appointments</span
                 >
               </div>
-              <div class="d-flex align-items-center justify-content-between mb-4">
+              <div
+                class="d-flex align-items-center justify-content-between mb-4"
+              >
                 <div class="d-flex align-items-center">
-                  <a href="javascript:void(0);" class="avatar me-2 flex-shrink-0">
+                  <a
+                    href="javascript:void(0);"
+                    class="avatar me-2 flex-shrink-0"
+                  >
                     <img
                       src="@/assets/img/profiles/avatar-12.jpg"
                       alt="img"
@@ -951,7 +1019,9 @@
                   </a>
                   <div>
                     <h6 class="fs-14 mb-1 text-truncate">
-                      <a href="javascript:void(0);" class="fw-medium">Susan Babin</a>
+                      <a href="javascript:void(0);" class="fw-medium"
+                        >Susan Babin</a
+                      >
                     </h6>
                     <p class="mb-0 fs-13 text-truncate">+1 65658 95654</p>
                   </div>
@@ -961,9 +1031,14 @@
                   >18 Appointments</span
                 >
               </div>
-              <div class="d-flex align-items-center justify-content-between mb-4">
+              <div
+                class="d-flex align-items-center justify-content-between mb-4"
+              >
                 <div class="d-flex align-items-center">
-                  <a href="javascript:void(0);" class="avatar me-2 flex-shrink-0">
+                  <a
+                    href="javascript:void(0);"
+                    class="avatar me-2 flex-shrink-0"
+                  >
                     <img
                       src="@/assets/img/profiles/avatar-08.jpg"
                       alt="img"
@@ -972,7 +1047,9 @@
                   </a>
                   <div>
                     <h6 class="fs-14 mb-1 text-truncate">
-                      <a href="javascript:void(0);" class="fw-medium">Carol Lam</a>
+                      <a href="javascript:void(0);" class="fw-medium"
+                        >Carol Lam</a
+                      >
                     </h6>
                     <p class="mb-0 fs-13 text-truncate">+1 55654 56647</p>
                   </div>
@@ -982,9 +1059,14 @@
                   >16 Appointments</span
                 >
               </div>
-              <div class="d-flex align-items-center justify-content-between mb-4">
+              <div
+                class="d-flex align-items-center justify-content-between mb-4"
+              >
                 <div class="d-flex align-items-center">
-                  <a href="javascript:void(0);" class="avatar me-2 flex-shrink-0">
+                  <a
+                    href="javascript:void(0);"
+                    class="avatar me-2 flex-shrink-0"
+                  >
                     <img
                       src="@/assets/img/profiles/avatar-22.jpg"
                       alt="img"
@@ -993,7 +1075,9 @@
                   </a>
                   <div>
                     <h6 class="fs-14 mb-1 text-truncate">
-                      <a href="javascript:void(0);" class="fw-medium">Marsha Noland</a>
+                      <a href="javascript:void(0);" class="fw-medium"
+                        >Marsha Noland</a
+                      >
                     </h6>
                     <p class="mb-0 fs-13 text-truncate">+1 65668 54558</p>
                   </div>
@@ -1003,9 +1087,14 @@
                   >14 Appointments</span
                 >
               </div>
-              <div class="d-flex align-items-center justify-content-between mb-0">
+              <div
+                class="d-flex align-items-center justify-content-between mb-0"
+              >
                 <div class="d-flex align-items-center">
-                  <a href="javascript:void(0);" class="avatar me-2 flex-shrink-0">
+                  <a
+                    href="javascript:void(0);"
+                    class="avatar me-2 flex-shrink-0"
+                  >
                     <img
                       src="@/assets/img/profiles/avatar-17.jpg"
                       alt="img"
@@ -1014,7 +1103,9 @@
                   </a>
                   <div>
                     <h6 class="fs-14 mb-1 text-truncate">
-                      <a href="javascript:void(0);" class="fw-medium">Irma Armstrong</a>
+                      <a href="javascript:void(0);" class="fw-medium"
+                        >Irma Armstrong</a
+                      >
                     </h6>
                     <p class="mb-0 fs-13 text-truncate">+1 45214 66568</p>
                   </div>
@@ -1035,16 +1126,19 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
 </template>
 <script>
-import { sColChart5, sColChart6, sColChart7, sColChart20, sCirclechart } from "./data";
+import {
+  sColChart5,
+  sColChart6,
+  sColChart7,
+  sColChart20,
+  sCirclechart,
+} from "./data";
 export default {
   data() {
     return {

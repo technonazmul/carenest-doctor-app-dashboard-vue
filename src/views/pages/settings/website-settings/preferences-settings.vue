@@ -29,7 +29,9 @@
                   <div class="col-md-6 col-xl-4">
                     <div class="card shadow-none">
                       <div class="card-body">
-                        <div class="d-flex align-items-center justify-content-between">
+                        <div
+                          class="d-flex align-items-center justify-content-between"
+                        >
                           <p class="text-dark fw-medium mb-0">Doctors</p>
                           <div class="form-check form-switch">
                             <input
@@ -48,7 +50,9 @@
                   <div class="col-md-6 col-xl-4">
                     <div class="card shadow-none">
                       <div class="card-body">
-                        <div class="d-flex align-items-center justify-content-between">
+                        <div
+                          class="d-flex align-items-center justify-content-between"
+                        >
                           <p class="text-dark fw-medium mb-0">Patients</p>
                           <div class="form-check form-switch">
                             <input
@@ -67,7 +71,9 @@
                   <div class="col-md-6 col-xl-4">
                     <div class="card shadow-none">
                       <div class="card-body">
-                        <div class="d-flex align-items-center justify-content-between">
+                        <div
+                          class="d-flex align-items-center justify-content-between"
+                        >
                           <p class="text-dark fw-medium mb-0">Appointments</p>
                           <div class="form-check form-switch">
                             <input
@@ -86,7 +92,9 @@
                   <div class="col-md-6 col-xl-4">
                     <div class="card shadow-none">
                       <div class="card-body">
-                        <div class="d-flex align-items-center justify-content-between">
+                        <div
+                          class="d-flex align-items-center justify-content-between"
+                        >
                           <p class="text-dark fw-medium mb-0">Locations</p>
                           <div class="form-check form-switch">
                             <input
@@ -105,7 +113,9 @@
                   <div class="col-md-6 col-xl-4">
                     <div class="card shadow-none">
                       <div class="card-body">
-                        <div class="d-flex align-items-center justify-content-between">
+                        <div
+                          class="d-flex align-items-center justify-content-between"
+                        >
                           <p class="text-dark fw-medium mb-0">Visits</p>
                           <div class="form-check form-switch">
                             <input
@@ -124,7 +134,9 @@
                   <div class="col-md-6 col-xl-4">
                     <div class="card shadow-none">
                       <div class="card-body">
-                        <div class="d-flex align-items-center justify-content-between">
+                        <div
+                          class="d-flex align-items-center justify-content-between"
+                        >
                           <p class="text-dark fw-medium mb-0">Services</p>
                           <div class="form-check form-switch">
                             <input
@@ -143,7 +155,9 @@
                   <div class="col-md-6 col-xl-4">
                     <div class="card shadow-none">
                       <div class="card-body">
-                        <div class="d-flex align-items-center justify-content-between">
+                        <div
+                          class="d-flex align-items-center justify-content-between"
+                        >
                           <p class="text-dark fw-medium mb-0">Designations</p>
                           <div class="form-check form-switch">
                             <input
@@ -162,7 +176,9 @@
                   <div class="col-md-6 col-xl-4">
                     <div class="card shadow-none">
                       <div class="card-body">
-                        <div class="d-flex align-items-center justify-content-between">
+                        <div
+                          class="d-flex align-items-center justify-content-between"
+                        >
                           <p class="text-dark fw-medium mb-0">Departments</p>
                           <div class="form-check form-switch">
                             <input
@@ -181,7 +197,9 @@
                   <div class="col-md-6 col-xl-4">
                     <div class="card shadow-none">
                       <div class="card-body">
-                        <div class="d-flex align-items-center justify-content-between">
+                        <div
+                          class="d-flex align-items-center justify-content-between"
+                        >
                           <p class="text-dark fw-medium mb-0">Activities</p>
                           <div class="form-check form-switch">
                             <input
@@ -200,7 +218,9 @@
                   <div class="col-md-6 col-xl-4">
                     <div class="card shadow-none">
                       <div class="card-body">
-                        <div class="d-flex align-items-center justify-content-between">
+                        <div
+                          class="d-flex align-items-center justify-content-between"
+                        >
                           <p class="text-dark fw-medium mb-0">Reports</p>
                           <div class="form-check form-switch">
                             <input
@@ -219,7 +239,9 @@
                   <div class="col-md-6 col-xl-4">
                     <div class="card shadow-none">
                       <div class="card-body">
-                        <div class="d-flex align-items-center justify-content-between">
+                        <div
+                          class="d-flex align-items-center justify-content-between"
+                        >
                           <p class="text-dark fw-medium mb-0">Staffs</p>
                           <div class="form-check form-switch">
                             <input
@@ -238,7 +260,9 @@
                   <div class="col-md-6 col-xl-4">
                     <div class="card shadow-none">
                       <div class="card-body">
-                        <div class="d-flex align-items-center justify-content-between">
+                        <div
+                          class="d-flex align-items-center justify-content-between"
+                        >
                           <p class="text-dark fw-medium mb-0">Invoices</p>
                           <div class="form-check form-switch">
                             <input
@@ -268,10 +292,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
@@ -306,16 +327,26 @@
             </div>
             <div class="mb-0">
               <label class="form-label"
-                >Login Redirect URL<span class="text-danger ms-1">*</span></label
+                >Login Redirect URL<span class="text-danger ms-1"
+                  >*</span
+                ></label
               >
               <input type="text" class="form-control" />
             </div>
           </div>
           <div class="modal-footer d-flex align-items-center gap-1">
-            <button type="button" class="btn btn-white border" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-white border"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
-            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
               Submit
             </button>
           </div>
@@ -356,16 +387,26 @@
             </div>
             <div class="mb-0">
               <label class="form-label"
-                >Login Redirect URL<span class="text-danger ms-1">*</span></label
+                >Login Redirect URL<span class="text-danger ms-1"
+                  >*</span
+                ></label
               >
               <input type="text" class="form-control" />
             </div>
           </div>
           <div class="modal-footer d-flex align-items-center gap-1">
-            <button type="button" class="btn btn-white border" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-white border"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
-            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
               Submit
             </button>
           </div>

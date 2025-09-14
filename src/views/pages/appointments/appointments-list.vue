@@ -237,7 +237,7 @@
                       href="javascript:void(0);"
                       class="dropdown-item d-flex align-items-center"
                       @click.prevent="editAppointment(record._id)"
-                      >Edit</a
+                      >Reschedule</a
                     >
                   </li>
                   <li>
@@ -247,22 +247,10 @@
                       @click.prevent="viewAppointmentDetails(record)"
                       data-bs-toggle="offcanvas"
                       data-bs-target="#view_details"
-                      >View</a
+                      >Edit</a
                     >
                   </li>
-                  <li v-if="record.status !== 'Cancelled'">
-                    <a
-                      href="javascript:void(0);"
-                      class="dropdown-item d-flex align-items-center"
-                      @click.prevent="
-                        updateAppointmentStatus(
-                          record._id,
-                          getNextStatus(record.status)
-                        )
-                      "
-                      >{{ getStatusActionText(record.status) }}</a
-                    >
-                  </li>
+
                   <li>
                     <a
                       href="javascript:void(0);"
@@ -301,11 +289,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy;
-        <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
@@ -478,6 +462,7 @@
               class="form-select"
               v-model="selectedAppointment.paymentStatus"
               @change="updateSelectedAppointmentPaymentStatus"
+              :disabled="selectedAppointment.paymentStatus === 'refunded'"
             >
               <option value="pending">pending</option>
               <option value="paid">paid</option>
@@ -542,19 +527,24 @@
 </template>
 
 <script>
+import { useSettings } from "@/composables/useSettings";
 import axios from "axios";
 import Cookies from "js-cookie";
 import { API_BASE } from "@/api/apiConfig";
+import { errorMessages } from "vue/compiler-sfc";
 
 export default {
   setup() {
     const apiBase = API_BASE;
     const adminToken = Cookies.get("adminToken");
     const apiBaseUrl = `${apiBase}/api/backend`;
+    const { getCurrencySymbol, formatCurrency } = useSettings();
 
     return {
       adminToken,
       apiBaseUrl,
+      getCurrencySymbol,
+      formatCurrency,
     };
   },
 
@@ -597,6 +587,15 @@ export default {
           sorter: {
             compare: (a, b) => a.doctorName.localeCompare(b.doctorName),
           },
+        },
+        {
+          title: "Amount",
+          dataIndex: "fee",
+          key: "fee",
+          sorter: {
+            compare: (a, b) => a.fee - b.fee,
+          },
+          customRender: ({ text: fee }) => this.formatCurrency(fee),
         },
         {
           title: "Payment Status",
@@ -791,6 +790,10 @@ export default {
 
     async updateAppointmentPaymentStatus(id, newStatus) {
       try {
+        const confirmed = window.confirm(
+          `Are you sure you want to update the appointment status to "${newStatus}"?`
+        );
+        if (!confirmed) return;
         await axios.post(
           `${this.apiBaseUrl}/booking/update-payment-status/${id}`,
           { status: newStatus },
@@ -800,11 +803,23 @@ export default {
         await this.fetchAppointments();
       } catch (error) {
         console.error("Error updating appointment status:", error);
-        if (error.response && error.response.status === 401) {
-          this.showError("Authentication failed. Please login again.");
-          this.$router.push("/admin/login");
+
+        if (error.response) {
+          // ✅ Get the error message sent from your Node.js backend
+          const serverMessage =
+            error.response.data?.error || "Unknown server error";
+
+          if (error.response.status === 401) {
+            this.showError("Authentication failed. Please login again.");
+            this.$router.push("/admin/login");
+          } else {
+            // Show the actual backend error
+            this.showError(serverMessage);
+          }
+        } else if (error.request) {
+          this.showError("No response from server. Please try again.");
         } else {
-          this.showError("There was an error updating appointment status.");
+          this.showError("An error occurred: " + error.message);
         }
       }
     },

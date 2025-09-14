@@ -102,10 +102,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
@@ -140,7 +137,11 @@
                   class="drag-upload-btn avatar avatar-xxl rounded-circle bg-light text-muted position-relative overflow-hidden z-1 mb-2 ms-4 p-0"
                 >
                   <i class="ti ti-user-plus fs-16"></i>
-                  <input type="file" class="form-control image-sign" multiple="" />
+                  <input
+                    type="file"
+                    class="form-control image-sign"
+                    multiple=""
+                  />
                   <div
                     class="position-absolute bottom-0 end-0 star-0 w-100 h-25 bg-dark d-flex align-items-center justify-content-center z-n1"
                   >
@@ -169,7 +170,11 @@
                 <label class="form-label mb-1"
                   >Location Type<span class="text-danger ms-1">*</span></label
                 >
-                <vue3-select v-model="selected" :options="Locatp" placeholder="Select" />
+                <vue3-select
+                  v-model="selected"
+                  :options="Locatp"
+                  placeholder="Select"
+                />
               </div>
             </div>
 
@@ -305,7 +310,11 @@
                     class="position-relative z-n1"
                     alt="img"
                   />
-                  <input type="file" class="form-control image-sign" multiple="" />
+                  <input
+                    type="file"
+                    class="form-control image-sign"
+                    multiple=""
+                  />
                   <div
                     class="position-absolute bottom-0 end-0 star-0 w-100 h-25 bg-dark d-flex align-items-center justify-content-center z-n1"
                   >
@@ -347,7 +356,11 @@
                 <label class="form-label mb-1"
                   >Email Address<span class="text-danger ms-1">*</span></label
                 >
-                <input type="email" class="form-control" value="james@example.com" />
+                <input
+                  type="email"
+                  class="form-control"
+                  value="james@example.com"
+                />
               </div>
             </div>
 
@@ -365,7 +378,11 @@
                 <label class="form-label mb-1"
                   >Address 1<span class="text-danger ms-1">*</span></label
                 >
-                <input type="text" class="form-control" value="123 Main Street" />
+                <input
+                  type="text"
+                  class="form-control"
+                  value="123 Main Street"
+                />
               </div>
             </div>
 
@@ -465,7 +482,9 @@
               ><i class="ti ti-trash fs-24"></i
             ></span>
           </div>
-          <h5 class="fw-bold mb-1 position-relative z-1">Delete Confirmation</h5>
+          <h5 class="fw-bold mb-1 position-relative z-1">
+            Delete Confirmation
+          </h5>
           <p class="mb-3 position-relative z-1">Are you sure want to delete?</p>
           <div class="d-flex justify-content-center">
             <a
@@ -503,7 +522,8 @@ const columns = [
     dataIndex: "Address",
     key: "Address",
     sorter: {
-      compare: (a, b) => (a.Address.toLowerCase() > b.Address.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Address.toLowerCase() > b.Address.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -631,7 +651,8 @@ export default {
   },
   methods: {
     getImageUrl(imageName) {
-      return new URL(`/src/assets/img/icons/${imageName}`, import.meta.url).href;
+      return new URL(`/src/assets/img/icons/${imageName}`, import.meta.url)
+        .href;
     },
   },
   computed: {

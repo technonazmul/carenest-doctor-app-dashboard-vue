@@ -254,10 +254,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
@@ -287,10 +284,18 @@
             </div>
           </div>
           <div class="modal-footer d-flex align-items-center gap-1">
-            <button type="button" class="btn btn-white border" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-white border"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
-            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
               Add Reason
             </button>
           </div>
@@ -305,7 +310,9 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="text-dark modal-title fw-bold">Edit Cancellation Reason</h5>
+          <h5 class="text-dark modal-title fw-bold">
+            Edit Cancellation Reason
+          </h5>
           <button
             type="button"
             class="btn-close btn-close-modal custom-btn-close"
@@ -321,22 +328,38 @@
               <label class="form-label"
                 >Reason<span class="text-danger ms-1">*</span></label
               >
-              <input type="text" class="form-control" value="Personal Emergency" />
+              <input
+                type="text"
+                class="form-control"
+                value="Personal Emergency"
+              />
             </div>
             <div class="mb-0">
               <div class="d-flex align-items-center justify-content-between">
                 <label class="form-label">Required</label>
                 <div class="form-check form-switch ps-0">
-                  <input class="form-check-input m-0" type="checkbox" checked="" />
+                  <input
+                    class="form-check-input m-0"
+                    type="checkbox"
+                    checked=""
+                  />
                 </div>
               </div>
             </div>
           </div>
           <div class="modal-footer d-flex align-items-center gap-1">
-            <button type="button" class="btn btn-white border" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-white border"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
-            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
               Save Changes
             </button>
           </div>

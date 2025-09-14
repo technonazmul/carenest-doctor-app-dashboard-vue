@@ -14,7 +14,9 @@
     <!-- Start Content -->
     <div class="content">
       <!-- Page Header -->
-      <div class="d-flex align-items-sm-center flex-sm-row flex-column gap-2 pb-3">
+      <div
+        class="d-flex align-items-sm-center flex-sm-row flex-column gap-2 pb-3"
+      >
         <div class="flex-grow-1">
           <h4 class="fs-18 fw-semibold mb-0">File Manager</h4>
         </div>
@@ -26,13 +28,17 @@
             <li class="breadcrumb-item">
               <a href="javascript:void(0);">Applications</a>
             </li>
-            <li class="breadcrumb-item active" aria-current="page">File Manager</li>
+            <li class="breadcrumb-item active" aria-current="page">
+              File Manager
+            </li>
           </ol>
         </div>
       </div>
       <!-- End Page Header -->
 
-      <div class="d-flex align-items-center justify-content-between flex-wrap mb-2">
+      <div
+        class="d-flex align-items-center justify-content-between flex-wrap mb-2"
+      >
         <div class="mb-2">
           <div class="dropdown">
             <a
@@ -49,10 +55,14 @@
                 >
               </li>
               <li>
-                <a href="javascript:void(0);" class="dropdown-item rounded-1">Music</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                  >Music</a
+                >
               </li>
               <li>
-                <a href="javascript:void(0);" class="dropdown-item rounded-1">Video</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                  >Video</a
+                >
               </li>
               <li>
                 <a href="javascript:void(0);" class="dropdown-item rounded-1"
@@ -60,7 +70,9 @@
                 >
               </li>
               <li>
-                <a href="javascript:void(0);" class="dropdown-item rounded-1">Photos</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                  >Photos</a
+                >
               </li>
             </ul>
           </div>
@@ -81,7 +93,9 @@
         <div class="col-lg-3 col-md-6 d-flex">
           <div class="card flex-fill">
             <div class="card-body">
-              <div class="d-flex align-items-center justify-content-between mb-2">
+              <div
+                class="d-flex align-items-center justify-content-between mb-2"
+              >
                 <div class="d-flex align-items-center">
                   <img src="@/assets/img/icons/dropbox.svg" alt="img" />
                   <h5 class="fs-16 ms-2 mb-0">Dropbox</h5>
@@ -96,17 +110,23 @@
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end">
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                      <a
+                        href="javascript:void(0);"
+                        class="dropdown-item rounded-1"
                         ><i class="ti ti-folder-open me-2"></i>Open</a
                       >
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                      <a
+                        href="javascript:void(0);"
+                        class="dropdown-item rounded-1"
                         ><i class="ti ti-trash me-1"></i>Delete All</a
                       >
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                      <a
+                        href="javascript:void(0);"
+                        class="dropdown-item rounded-1"
                         ><i class="ti ti-status-change me-1"></i>Reset</a
                       >
                     </li>
@@ -137,7 +157,9 @@
         <div class="col-lg-3 col-md-6 d-flex">
           <div class="card flex-fill">
             <div class="card-body">
-              <div class="d-flex align-items-center justify-content-between mb-2">
+              <div
+                class="d-flex align-items-center justify-content-between mb-2"
+              >
                 <div class="d-flex align-items-center">
                   <img src="@/assets/img/icons/drive.svg" alt="img" />
                   <h5 class="fs-16 ms-2 mb-0">Google Drive</h5>
@@ -152,17 +174,23 @@
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end">
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                      <a
+                        href="javascript:void(0);"
+                        class="dropdown-item rounded-1"
                         ><i class="ti ti-folder-open me-2"></i>Open</a
                       >
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                      <a
+                        href="javascript:void(0);"
+                        class="dropdown-item rounded-1"
                         ><i class="ti ti-trash me-1"></i>Delete All</a
                       >
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                      <a
+                        href="javascript:void(0);"
+                        class="dropdown-item rounded-1"
                         ><i class="ti ti-status-change me-1"></i>Reset</a
                       >
                     </li>
@@ -193,7 +221,9 @@
         <div class="col-lg-3 col-md-6 d-flex">
           <div class="card flex-fill">
             <div class="card-body">
-              <div class="d-flex align-items-center justify-content-between mb-2">
+              <div
+                class="d-flex align-items-center justify-content-between mb-2"
+              >
                 <div class="d-flex align-items-center">
                   <img src="@/assets/img/icons/cloud.svg" alt="img" />
                   <h5 class="fs-16 ms-2 mb-0">Cloud Storage</h5>
@@ -208,17 +238,23 @@
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end">
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                      <a
+                        href="javascript:void(0);"
+                        class="dropdown-item rounded-1"
                         ><i class="ti ti-folder-open me-2"></i>Open</a
                       >
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                      <a
+                        href="javascript:void(0);"
+                        class="dropdown-item rounded-1"
                         ><i class="ti ti-trash me-1"></i>Delete All</a
                       >
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                      <a
+                        href="javascript:void(0);"
+                        class="dropdown-item rounded-1"
                         ><i class="ti ti-status-change me-1"></i>Reset</a
                       >
                     </li>
@@ -249,7 +285,9 @@
         <div class="col-lg-3 col-md-6 d-flex">
           <div class="card flex-fill">
             <div class="card-body">
-              <div class="d-flex align-items-center justify-content-between mb-2">
+              <div
+                class="d-flex align-items-center justify-content-between mb-2"
+              >
                 <div class="d-flex align-items-center">
                   <img src="@/assets/img/icons/storage.svg" alt="img" />
                   <h5 class="fs-16 ms-2 mb-0">Internal Storage</h5>
@@ -264,17 +302,23 @@
                   </a>
                   <ul class="dropdown-menu dropdown-menu-end">
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                      <a
+                        href="javascript:void(0);"
+                        class="dropdown-item rounded-1"
                         ><i class="ti ti-folder-open me-2"></i>Open</a
                       >
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                      <a
+                        href="javascript:void(0);"
+                        class="dropdown-item rounded-1"
                         ><i class="ti ti-trash me-1"></i>Delete All</a
                       >
                     </li>
                     <li>
-                      <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                      <a
+                        href="javascript:void(0);"
+                        class="dropdown-item rounded-1"
                         ><i class="ti ti-status-change me-1"></i>Reset</a
                       >
                     </li>
@@ -322,12 +366,16 @@
                     </span>
                     <div class="overflow-hidden ms-2">
                       <h5 class="fs-16 text-truncate mb-1">James Hong</h5>
-                      <p class="fs-13 text-truncate mb-0">jameshong@example.com</p>
+                      <p class="fs-13 text-truncate mb-0">
+                        jameshong@example.com
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
-              <div class="border rounded position-relative p-3 mb-3 text-center">
+              <div
+                class="border rounded position-relative p-3 mb-3 text-center"
+              >
                 <span class="avatar avatar-sm bg-primary text-white mb-2">
                   <i class="ti ti-upload fs-16"></i>
                 </span>
@@ -393,7 +441,9 @@
                 <h6 class="mb-2">Storage Details</h6>
                 <span class="badge bg-success mb-2">Used 77%</span>
               </div>
-              <div class="d-flex align-items-center justify-content-between mb-3">
+              <div
+                class="d-flex align-items-center justify-content-between mb-3"
+              >
                 <div class="d-flex align-items-center overflow-hidden">
                   <span class="avatar avatar-md bg-info-subtle">
                     <i class="ti ti-music fs-20 text-info"></i>
@@ -405,7 +455,9 @@
                 </div>
                 <p class="text-dark mb-0">8.5 GB</p>
               </div>
-              <div class="d-flex align-items-center justify-content-between mb-3">
+              <div
+                class="d-flex align-items-center justify-content-between mb-3"
+              >
                 <div class="d-flex align-items-center overflow-hidden">
                   <span class="avatar avatar-md bg-warning-subtle">
                     <i class="ti ti-video fs-20 text-warning"></i>
@@ -417,7 +469,9 @@
                 </div>
                 <p class="text-dark mb-0">2 GB</p>
               </div>
-              <div class="d-flex align-items-center justify-content-between mb-3">
+              <div
+                class="d-flex align-items-center justify-content-between mb-3"
+              >
                 <div class="d-flex align-items-center overflow-hidden">
                   <span class="avatar avatar-md bg-secondary-subtle">
                     <i class="ti ti-file-description fs-20 text-secondary"></i>
@@ -429,7 +483,9 @@
                 </div>
                 <p class="text-dark mb-0">24.5 GB</p>
               </div>
-              <div class="d-flex align-items-center justify-content-between mb-3">
+              <div
+                class="d-flex align-items-center justify-content-between mb-3"
+              >
                 <div class="d-flex align-items-center overflow-hidden">
                   <span class="avatar avatar-md bg-primary-subtle">
                     <i class="ti ti-photo fs-20 text-primary"></i>
@@ -441,7 +497,9 @@
                 </div>
                 <p class="text-dark mb-0">8.5 GB</p>
               </div>
-              <div class="d-flex align-items-center justify-content-between mb-0">
+              <div
+                class="d-flex align-items-center justify-content-between mb-0"
+              >
                 <div class="d-flex align-items-center overflow-hidden">
                   <span class="avatar avatar-md bg-danger-subtle">
                     <i class="ti ti-file-type-doc fs-20 text-danger"></i>
@@ -467,7 +525,9 @@
             <div class="d-flex align-items-center justify-content-between mb-2">
               <h6 class="mb-2">Quick Access</h6>
               <div>
-                <a href="javascript:void(0);" class="mb-2 fw-medium link-default"
+                <a
+                  href="javascript:void(0);"
+                  class="mb-2 fw-medium link-default"
                   >View All</a
                 >
               </div>
@@ -480,7 +540,11 @@
               <div class="col d-flex">
                 <div class="card position-relative flex-fill">
                   <div class="card-body text-center">
-                    <img src="@/assets/img/icons/file.svg" alt="img" class="mb-3" />
+                    <img
+                      src="@/assets/img/icons/file.svg"
+                      alt="img"
+                      class="mb-3"
+                    />
                     <h6 class="mb-2 fw-medium">
                       <a
                         href="javascript:void(0);"
@@ -503,7 +567,11 @@
               <div class="col d-flex">
                 <div class="card position-relative flex-fill">
                   <div class="card-body text-center">
-                    <img src="@/assets/img/icons/pdf-icon.svg" alt="img" class="mb-3" />
+                    <img
+                      src="@/assets/img/icons/pdf-icon.svg"
+                      alt="img"
+                      class="mb-3"
+                    />
                     <h6 class="mb-2 fw-medium">
                       <a
                         href="javascript:void(0);"
@@ -526,7 +594,11 @@
               <div class="col d-flex">
                 <div class="card position-relative flex-fill">
                   <div class="card-body text-center">
-                    <img src="@/assets/img/icons/image.svg" alt="img" class="mb-3" />
+                    <img
+                      src="@/assets/img/icons/image.svg"
+                      alt="img"
+                      class="mb-3"
+                    />
                     <h6 class="mb-2 fw-medium">
                       <a
                         href="javascript:void(0);"
@@ -549,7 +621,11 @@
               <div class="col d-flex">
                 <div class="card position-relative flex-fill">
                   <div class="card-body text-center">
-                    <img src="@/assets/img/icons/xls-icon.svg" alt="img" class="mb-3" />
+                    <img
+                      src="@/assets/img/icons/xls-icon.svg"
+                      alt="img"
+                      class="mb-3"
+                    />
                     <h6 class="mb-2 fw-medium">
                       <a
                         href="javascript:void(0);"
@@ -599,7 +675,11 @@
               <div class="col d-flex">
                 <div class="card position-relative flex-fill">
                   <div class="card-body text-center">
-                    <img src="@/assets/img/icons/file.svg" alt="img" class="mb-3" />
+                    <img
+                      src="@/assets/img/icons/file.svg"
+                      alt="img"
+                      class="mb-3"
+                    />
                     <h6 class="mb-2 fw-medium">
                       <a
                         href="javascript:void(0);"
@@ -633,21 +713,29 @@
                   class="dropdown-toggle btn btn-sm btn-outline-light bg-white text-dark d-inline-flex align-items-center drop-arrow-none"
                   data-bs-toggle="dropdown"
                 >
-                  Last 7 Days<i class="ti ti-chevron-down align-middle ms-1"></i>
+                  Last 7 Days<i
+                    class="ti ti-chevron-down align-middle ms-1"
+                  ></i>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end">
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                    <a
+                      href="javascript:void(0);"
+                      class="dropdown-item rounded-1"
                       >Last 7 Days</a
                     >
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                    <a
+                      href="javascript:void(0);"
+                      class="dropdown-item rounded-1"
                       >Last Month</a
                     >
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                    <a
+                      href="javascript:void(0);"
+                      class="dropdown-item rounded-1"
                       >Last Year</a
                     >
                   </li>
@@ -667,14 +755,18 @@
                     </span>
                     <div class="ms-2">
                       <h6 class="mb-1">
-                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#preview"
+                        <a
+                          href="#"
+                          data-bs-toggle="offcanvas"
+                          data-bs-target="#preview"
                           >Assets</a
                         >
                       </h6>
                       <div class="d-flex align-items-center">
                         <p class="fs-12 mb-0 me-1">2.4 GB</p>
                         <p class="fs-12 mb-0 d-flex align-items-center">
-                          <i class="ti ti-circle-filled fs-7 me-1 text-dark"></i>35 files
+                          <i class="ti ti-circle-filled fs-7 me-1 text-dark"></i
+                          >35 files
                         </p>
                       </div>
                     </div>
@@ -715,22 +807,30 @@
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-copy me-2"></i>Duplicate</a
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-arrow-left-right me-2"></i>Move</a
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-user-plus me-2"></i>Invite</a
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-share-3 me-2"></i>Share Link</a
                           >
                         </li>
@@ -738,12 +838,16 @@
                           <hr class="dropdown-divider my-2" />
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-eye me-2"></i>View Details</a
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-download me-2"></i>Download</a
                           >
                         </li>
@@ -773,14 +877,18 @@
                     </span>
                     <div class="ms-2">
                       <h6 class="mb-1">
-                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#preview"
+                        <a
+                          href="#"
+                          data-bs-toggle="offcanvas"
+                          data-bs-target="#preview"
                           >Document</a
                         >
                       </h6>
                       <div class="d-flex align-items-center">
                         <p class="fs-12 mb-0 me-1">4 GB</p>
                         <p class="fs-12 mb-0 d-flex align-items-center">
-                          <i class="ti ti-circle-filled fs-7 me-1 text-dark"></i>15 files
+                          <i class="ti ti-circle-filled fs-7 me-1 text-dark"></i
+                          >15 files
                         </p>
                       </div>
                     </div>
@@ -821,22 +929,30 @@
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-copy me-2"></i>Duplicate</a
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-arrow-left-right me-2"></i>Move</a
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-user-plus me-2"></i>Invite</a
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-share-3 me-2"></i>Share Link</a
                           >
                         </li>
@@ -844,12 +960,16 @@
                           <hr class="dropdown-divider my-2" />
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-eye me-2"></i>View Details</a
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-download me-2"></i>Download</a
                           >
                         </li>
@@ -879,14 +999,18 @@
                     </span>
                     <div class="ms-2">
                       <h6 class="mb-1">
-                        <a href="#" data-bs-toggle="offcanvas" data-bs-target="#preview"
+                        <a
+                          href="#"
+                          data-bs-toggle="offcanvas"
+                          data-bs-target="#preview"
                           >Handyimages</a
                         >
                       </h6>
                       <div class="d-flex align-items-center">
                         <p class="fs-12 mb-0 me-1">1.4 GB</p>
                         <p class="fs-12 mb-0 d-flex align-items-center">
-                          <i class="ti ti-circle-filled fs-7 me-1 text-dark"></i>115 files
+                          <i class="ti ti-circle-filled fs-7 me-1 text-dark"></i
+                          >115 files
                         </p>
                       </div>
                     </div>
@@ -927,22 +1051,30 @@
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-copy me-2"></i>Duplicate</a
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-arrow-left-right me-2"></i>Move</a
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-user-plus me-2"></i>Invite</a
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-share-3 me-2"></i>Share Link</a
                           >
                         </li>
@@ -950,12 +1082,16 @@
                           <hr class="dropdown-divider my-2" />
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-eye me-2"></i>View Details</a
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-download me-2"></i>Download</a
                           >
                         </li>
@@ -995,21 +1131,29 @@
                   class="dropdown-toggle btn btn-sm bg-white text-dark btn-outline-light drop-arrow-none"
                   data-bs-toggle="dropdown"
                 >
-                  Last Modified<i class="ti ti-chevron-down align-middle ms-1"></i>
+                  Last Modified<i
+                    class="ti ti-chevron-down align-middle ms-1"
+                  ></i>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end">
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                    <a
+                      href="javascript:void(0);"
+                      class="dropdown-item rounded-1"
                       >Newest to Oldest</a
                     >
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                    <a
+                      href="javascript:void(0);"
+                      class="dropdown-item rounded-1"
                       >Last Modified</a
                     >
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                    <a
+                      href="javascript:void(0);"
+                      class="dropdown-item rounded-1"
                       >Oldest to Newest</a
                     >
                   </li>
@@ -1030,7 +1174,10 @@
                     class="bg-white d-flex align-items-center justify-content-between p-3 rounded-bottom"
                   >
                     <h6 class="fw-medium mb-0">
-                      <a href="#" data-bs-toggle="offcanvas" data-bs-target="#preview"
+                      <a
+                        href="#"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#preview"
                         >customer_data.txt</a
                       >
                     </h6>
@@ -1053,22 +1200,30 @@
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-copy me-2"></i>Duplicate</a
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-arrow-left-right me-2"></i>Move</a
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-user-plus me-2"></i>Invite</a
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-share-3 me-2"></i>Share Link</a
                           >
                         </li>
@@ -1076,12 +1231,16 @@
                           <hr class="dropdown-divider my-2" />
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-eye me-2"></i>View Details</a
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-download me-2"></i>Download</a
                           >
                         </li>
@@ -1112,7 +1271,10 @@
                     class="bg-white d-flex align-items-center justify-content-between p-3 rounded-bottom"
                   >
                     <h6 class="fw-medium text-truncate mb-0">
-                      <a href="#" data-bs-toggle="offcanvas" data-bs-target="#preview"
+                      <a
+                        href="#"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#preview"
                         >video_player_installer_setup.rar</a
                       >
                     </h6>
@@ -1135,22 +1297,30 @@
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-copy me-2"></i>Duplicate</a
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-arrow-left-right me-2"></i>Move</a
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-user-plus me-2"></i>Invite</a
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-share-3 me-2"></i>Share Link</a
                           >
                         </li>
@@ -1158,12 +1328,16 @@
                           <hr class="dropdown-divider my-2" />
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-eye me-2"></i>View Details</a
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-download me-2"></i>Download</a
                           >
                         </li>
@@ -1194,7 +1368,10 @@
                     class="bg-white d-flex align-items-center justify-content-between p-3 rounded-bottom"
                   >
                     <h6 class="fw-medium text-truncate mb-0">
-                      <a href="#" data-bs-toggle="offcanvas" data-bs-target="#preview"
+                      <a
+                        href="#"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#preview"
                         >recording.mp3</a
                       >
                     </h6>
@@ -1217,22 +1394,30 @@
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-copy me-2"></i>Duplicate</a
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-arrow-left-right me-2"></i>Move</a
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-user-plus me-2"></i>Invite</a
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-share-3 me-2"></i>Share Link</a
                           >
                         </li>
@@ -1240,12 +1425,16 @@
                           <hr class="dropdown-divider my-2" />
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-eye me-2"></i>View Details</a
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-download me-2"></i>Download</a
                           >
                         </li>
@@ -1281,31 +1470,51 @@
                   class="dropdown-toggle btn bg-white text-dark btn-sm btn-outline-light drop-arrow-none"
                   data-bs-toggle="dropdown"
                 >
-                  Sort By : Docs Type<i class="ti ti-chevron-down align-middle ms-1"></i>
+                  Sort By : Docs Type<i
+                    class="ti ti-chevron-down align-middle ms-1"
+                  ></i>
                 </a>
                 <ul class="dropdown-menu dropdown-menu-end">
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Docs</a>
+                    <a
+                      href="javascript:void(0);"
+                      class="dropdown-item rounded-1"
+                      >Docs</a
+                    >
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Pdf</a>
+                    <a
+                      href="javascript:void(0);"
+                      class="dropdown-item rounded-1"
+                      >Pdf</a
+                    >
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                    <a
+                      href="javascript:void(0);"
+                      class="dropdown-item rounded-1"
                       >Image</a
                     >
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                    <a
+                      href="javascript:void(0);"
+                      class="dropdown-item rounded-1"
                       >Folder</a
                     >
                   </li>
                   <li>
-                    <a href="javascript:void(0);" class="dropdown-item rounded-1">Xml</a>
+                    <a
+                      href="javascript:void(0);"
+                      class="dropdown-item rounded-1"
+                      >Xml</a
+                    >
                   </li>
                 </ul>
               </div>
-              <a href="javascript:void(0);" class="link-primary fw-medium">View All</a>
+              <a href="javascript:void(0);" class="link-primary fw-medium"
+                >View All</a
+              >
             </div>
           </div>
 
@@ -1316,7 +1525,11 @@
                 <tr>
                   <th>
                     <div class="form-check form-check-md">
-                      <input class="form-check-input" type="checkbox" id="select-all" />
+                      <input
+                        class="form-check-input"
+                        type="checkbox"
+                        id="select-all"
+                      />
                     </div>
                   </th>
                   <th class="fs-14 fw-medium">Name</th>
@@ -1349,7 +1562,10 @@
                       /></a>
                       <div class="ms-2">
                         <p class="text-dark fw-medium mb-0">
-                          <a href="#" data-bs-toggle="offcanvas" data-bs-target="#preview"
+                          <a
+                            href="#"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#preview"
                             >Secret</a
                           >
                         </p>
@@ -1390,7 +1606,9 @@
                   <td>
                     <div class="d-flex align-items-center">
                       <div class="rating-select me-2">
-                        <a href="javascript:void(0);"><i class="ti ti-star"></i></a>
+                        <a href="javascript:void(0);"
+                          ><i class="ti ti-star"></i
+                        ></a>
                       </div>
                       <div class="dropdown">
                         <a
@@ -1443,7 +1661,10 @@
                       /></a>
                       <div class="ms-2">
                         <p class="text-dark fw-medium mb-0">
-                          <a href="#" data-bs-toggle="offcanvas" data-bs-target="#preview"
+                          <a
+                            href="#"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#preview"
                             >Sophie Headrick</a
                           >
                         </p>
@@ -1477,7 +1698,9 @@
                   <td>
                     <div class="d-flex align-items-center">
                       <div class="rating-select me-2">
-                        <a href="javascript:void(0);"><i class="ti ti-star"></i></a>
+                        <a href="javascript:void(0);"
+                          ><i class="ti ti-star"></i
+                        ></a>
                       </div>
                       <div class="dropdown">
                         <a
@@ -1530,7 +1753,10 @@
                       /></a>
                       <div class="ms-2">
                         <p class="text-dark fw-medium mb-0">
-                          <a href="#" data-bs-toggle="offcanvas" data-bs-target="#preview"
+                          <a
+                            href="#"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#preview"
                             >Gallery</a
                           >
                         </p>
@@ -1584,7 +1810,9 @@
                   <td>
                     <div class="d-flex align-items-center">
                       <div class="rating-select me-2">
-                        <a href="javascript:void(0);"><i class="ti ti-star"></i></a>
+                        <a href="javascript:void(0);"
+                          ><i class="ti ti-star"></i
+                        ></a>
                       </div>
                       <div class="dropdown">
                         <a
@@ -1637,7 +1865,10 @@
                       /></a>
                       <div class="ms-2">
                         <p class="text-dark fw-medium mb-0">
-                          <a href="#" data-bs-toggle="offcanvas" data-bs-target="#preview"
+                          <a
+                            href="#"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#preview"
                             >Doris Crowley</a
                           >
                         </p>
@@ -1678,7 +1909,9 @@
                   <td>
                     <div class="d-flex align-items-center">
                       <div class="rating-select me-2">
-                        <a href="javascript:void(0);"><i class="ti ti-star"></i></a>
+                        <a href="javascript:void(0);"
+                          ><i class="ti ti-star"></i
+                        ></a>
                       </div>
                       <div class="dropdown">
                         <a
@@ -1731,7 +1964,10 @@
                       /></a>
                       <div class="ms-2">
                         <p class="text-dark fw-medium mb-0">
-                          <a href="#" data-bs-toggle="offcanvas" data-bs-target="#preview"
+                          <a
+                            href="#"
+                            data-bs-toggle="offcanvas"
+                            data-bs-target="#preview"
                             >Cheat_codez</a
                           >
                         </p>
@@ -1779,7 +2015,9 @@
                   <td>
                     <div class="d-flex align-items-center">
                       <div class="rating-select me-2">
-                        <a href="javascript:void(0);"><i class="ti ti-star"></i></a>
+                        <a href="javascript:void(0);"
+                          ><i class="ti ti-star"></i
+                        ></a>
                       </div>
                       <div class="dropdown">
                         <a
@@ -1824,10 +2062,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
@@ -1856,10 +2091,16 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-light me-2" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-light me-2"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
-            <button type="submit" class="btn btn-primary">Add New Folder</button>
+            <button type="submit" class="btn btn-primary">
+              Add New Folder
+            </button>
           </div>
         </form>
       </div>
@@ -1881,7 +2122,11 @@
         </div>
         <div class="modal-body pb-2">
           <div class="position-relative mb-3">
-            <input type="text" class="form-control" placeholder="Search Email" />
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Search Email"
+            />
           </div>
           <div class="form-check ps-0">
             <label
@@ -1974,7 +2219,9 @@
         <h4 class="mb-1 text-white">Preview</h4>
       </div>
       <div class="d-flex align-items-center">
-        <a href="#" class="d-flex align-items-center justify-content-center me-3"
+        <a
+          href="#"
+          class="d-flex align-items-center justify-content-center me-3"
           ><i class="ti ti-star-filled filled text-warning"></i
         ></a>
         <a
@@ -1996,7 +2243,8 @@
           <img src="@/assets/img/icons/pdf-icon.svg" alt="icon" />
         </div>
         <h6 class="mb-1">
-          Document Final Proof Read<span class="badge bg-secondary fw-normal fs-10 ms-2"
+          Document Final Proof Read<span
+            class="badge bg-secondary fw-normal fs-10 ms-2"
             >2.4 GB</span
           >
         </h6>

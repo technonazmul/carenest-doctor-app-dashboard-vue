@@ -50,8 +50,9 @@
 
                 <div class="p-3 bg-light border rounded-2 mb-3">
                   <p class="mb-0">
-                    <i class="ti ti-info-circle me-1 text-info"></i>Before updating, it's
-                    best to back up your files and database and review the changelog.
+                    <i class="ti ti-info-circle me-1 text-info"></i>Before
+                    updating, it's best to back up your files and database and
+                    review the changelog.
                   </p>
                 </div>
 
@@ -60,7 +61,9 @@
                   <div class="col-lg-6">
                     <div class="mb-0">
                       <label class="form-label"
-                        >Purchase Key<span class="text-danger ms-1">*</span></label
+                        >Purchase Key<span class="text-danger ms-1"
+                          >*</span
+                        ></label
                       >
                       <input type="text" class="form-control" />
                     </div>
@@ -91,10 +94,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>

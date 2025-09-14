@@ -45,12 +45,15 @@
               class="position-absolute end-0 bottom-0 z-n1"
             />
             <div class="card-body">
-              <div class="d-flex justify-content-between align-items-center mb-2">
+              <div
+                class="d-flex justify-content-between align-items-center mb-2"
+              >
                 <div>
                   <p class="mb-1 text-truncate">Total Patients</p>
                   <h6 class="mb-0 fw-bold">1,240</h6>
                 </div>
-                <span class="avatar avatar-lg bg-primary rounded-circle flex-shrink-0"
+                <span
+                  class="avatar avatar-lg bg-primary rounded-circle flex-shrink-0"
                   ><i class="ti ti-users fs-24"></i
                 ></span>
               </div>
@@ -74,12 +77,15 @@
               class="position-absolute end-0 bottom-0 z-n1"
             />
             <div class="card-body">
-              <div class="d-flex justify-content-between align-items-center mb-2">
+              <div
+                class="d-flex justify-content-between align-items-center mb-2"
+              >
                 <div>
                   <p class="mb-1 text-truncate">New Patients</p>
                   <h6 class="mb-0 fw-bold">210</h6>
                 </div>
-                <span class="avatar avatar-lg bg-success rounded-circle flex-shrink-0"
+                <span
+                  class="avatar avatar-lg bg-success rounded-circle flex-shrink-0"
                   ><i class="ti ti-users-plus fs-24"></i
                 ></span>
               </div>
@@ -103,12 +109,15 @@
               class="position-absolute end-0 bottom-0 z-n1"
             />
             <div class="card-body">
-              <div class="d-flex justify-content-between align-items-center mb-2">
+              <div
+                class="d-flex justify-content-between align-items-center mb-2"
+              >
                 <div>
                   <p class="mb-1 text-truncate">Appointment Booked</p>
                   <h6 class="mb-0 fw-bold">500</h6>
                 </div>
-                <span class="avatar avatar-lg bg-warning rounded-circle flex-shrink-0"
+                <span
+                  class="avatar avatar-lg bg-warning rounded-circle flex-shrink-0"
                   ><i class="ti ti-bookmarks fs-24"></i
                 ></span>
               </div>
@@ -132,12 +141,15 @@
               class="position-absolute end-0 bottom-0 z-n1"
             />
             <div class="card-body">
-              <div class="d-flex justify-content-between align-items-center mb-2">
+              <div
+                class="d-flex justify-content-between align-items-center mb-2"
+              >
                 <div>
                   <p class="mb-1 text-truncate">Returning Patients</p>
                   <h6 class="mb-0 fw-bold">380</h6>
                 </div>
-                <span class="avatar avatar-lg bg-danger rounded-circle flex-shrink-0"
+                <span
+                  class="avatar avatar-lg bg-danger rounded-circle flex-shrink-0"
                   ><i class="ti ti-users-minus fs-24"></i
                 ></span>
               </div>
@@ -177,7 +189,11 @@
             <div class="col-lg-4">
               <div class="mb-0">
                 <label class="form-label">Patient</label>
-                <vue3-select v-model="selected" :options="PatiApp" placeholder="Select" />
+                <vue3-select
+                  v-model="selected"
+                  :options="PatiApp"
+                  placeholder="Select"
+                />
               </div>
             </div>
             <!-- end col -->
@@ -282,10 +298,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
@@ -297,7 +310,8 @@ const columns = [
     dataIndex: "Patient",
     key: "Patient",
     sorter: {
-      compare: (a, b) => (a.Patient.toLowerCase() > b.Patient.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Patient.toLowerCase() > b.Patient.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -305,7 +319,8 @@ const columns = [
     dataIndex: "AgeGender",
     key: "AgeGender",
     sorter: {
-      compare: (a, b) => (a.AgeGender.toLowerCase() > b.AgeGender.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.AgeGender.toLowerCase() > b.AgeGender.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -322,7 +337,8 @@ const columns = [
     dataIndex: "Email",
     key: "Email",
     sorter: {
-      compare: (a, b) => (a.Email.toLowerCase() > b.Email.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Email.toLowerCase() > b.Email.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -339,7 +355,8 @@ const columns = [
     dataIndex: "Location",
     key: "Location",
     sorter: {
-      compare: (a, b) => (a.Location.toLowerCase() > b.Location.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Location.toLowerCase() > b.Location.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -347,7 +364,8 @@ const columns = [
     dataIndex: "LastVisit",
     key: "LastVisit",
     sorter: {
-      compare: (a, b) => (a.LastVisit.toLowerCase() > b.LastVisit.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.LastVisit.toLowerCase() > b.LastVisit.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -355,7 +373,8 @@ const columns = [
     dataIndex: "Status",
     key: "Status",
     sorter: {
-      compare: (a, b) => (a.Status.toLowerCase() > b.Status.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Status.toLowerCase() > b.Status.toLowerCase() ? -1 : 1,
     },
   },
 ];
@@ -564,10 +583,16 @@ export default {
             endDate: end,
             ranges: {
               Today: [moment(), moment()],
-              Yesterday: [moment().subtract(1, "days"), moment().subtract(1, "days")],
+              Yesterday: [
+                moment().subtract(1, "days"),
+                moment().subtract(1, "days"),
+              ],
               "Last 7 Days": [moment().subtract(6, "days"), moment()],
               "Last 30 Days": [moment().subtract(29, "days"), moment()],
-              "This Month": [moment().startOf("month"), moment().endOf("month")],
+              "This Month": [
+                moment().startOf("month"),
+                moment().endOf("month"),
+              ],
               "Last Month": [
                 moment().subtract(1, "month").startOf("month"),
                 moment().subtract(1, "month").endOf("month"),

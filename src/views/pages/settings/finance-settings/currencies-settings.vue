@@ -276,10 +276,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
@@ -339,16 +336,28 @@
               <div class="d-flex align-items-center justify-content-between">
                 <label class="form-label">Make a default</label>
                 <div class="form-check form-switch ps-0">
-                  <input class="form-check-input m-0" type="checkbox" checked="" />
+                  <input
+                    class="form-check-input m-0"
+                    type="checkbox"
+                    checked=""
+                  />
                 </div>
               </div>
             </div>
           </div>
           <div class="modal-footer d-flex align-items-center gap-1">
-            <button type="button" class="btn btn-white border" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-white border"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
-            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
               Add Currency
             </button>
           </div>
@@ -413,7 +422,11 @@
               <div class="d-flex align-items-center justify-content-between">
                 <label class="form-label">Make a default</label>
                 <div class="form-check form-switch ps-0">
-                  <input class="form-check-input m-0" type="checkbox" checked="" />
+                  <input
+                    class="form-check-input m-0"
+                    type="checkbox"
+                    checked=""
+                  />
                 </div>
               </div>
             </div>
@@ -421,16 +434,28 @@
               <div class="d-flex align-items-center justify-content-between">
                 <label class="form-label">Status</label>
                 <div class="form-check form-switch ps-0">
-                  <input class="form-check-input m-0" type="checkbox" checked="" />
+                  <input
+                    class="form-check-input m-0"
+                    type="checkbox"
+                    checked=""
+                  />
                 </div>
               </div>
             </div>
           </div>
           <div class="modal-footer d-flex align-items-center gap-1">
-            <button type="button" class="btn btn-white border" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-white border"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
-            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
               Save Changes
             </button>
           </div>

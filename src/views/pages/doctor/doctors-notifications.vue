@@ -21,13 +21,17 @@
                   class="reportrange-picker d-flex align-items-center"
                 >
                   <i class="ti ti-calendar text-gray-5 fs-14 me-1"></i
-                  ><span class="reportrange-picker-field">16 Apr 25 - 16 Apr 25</span>
+                  ><span class="reportrange-picker-field"
+                    >16 Apr 25 - 16 Apr 25</span
+                  >
                 </div>
               </div>
             </div>
             <ul>
               <li>
-                <a href="#" class="btn"><i class="feather-check"></i> Mark all as read</a>
+                <a href="#" class="btn"
+                  ><i class="feather-check"></i> Mark all as read</a
+                >
               </li>
               <li>
                 <a href="#" class="btn btn-delete"
@@ -58,10 +62,14 @@
                   </div>
                 </div>
                 <div class="col-lg-3">
-                  <div class="d-lg-flex align-items-center justify-content-between">
+                  <div
+                    class="d-lg-flex align-items-center justify-content-between"
+                  >
                     <div class="noti-btn">
                       <a href="javascript:void(0);" class="btn m-0">Decline</a>
-                      <a href="javascript:void(0);" class="btn btn-primary m-0">Accept</a>
+                      <a href="javascript:void(0);" class="btn btn-primary m-0"
+                        >Accept</a
+                      >
                     </div>
                     <p class="m-0">2 mins ago</p>
                   </div>
@@ -233,10 +241,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
@@ -274,7 +279,9 @@
               data-bs-dismiss="modal"
               >Cancel</a
             >
-            <a href="javascript:void(0);" class="btn btn-danger position-relative z-1"
+            <a
+              href="javascript:void(0);"
+              class="btn btn-danger position-relative z-1"
               >Yes, Delete</a
             >
           </div>

@@ -29,7 +29,9 @@
                       <!-- start row -->
                       <div class="row align-items-center mb-3">
                         <div class="col-lg-4">
-                          <label class="form-label mb-0">Cookies Position</label>
+                          <label class="form-label mb-0"
+                            >Cookies Position</label
+                          >
                         </div>
                         <!-- end col -->
                         <div class="col-lg-5">
@@ -47,7 +49,9 @@
                       <!-- start row -->
                       <div class="row align-items-center mb-3">
                         <div class="col-lg-4">
-                          <label class="form-label mb-0">Agree Button Text</label>
+                          <label class="form-label mb-0"
+                            >Agree Button Text</label
+                          >
                         </div>
                         <!-- end col -->
                         <div class="col-lg-5">
@@ -62,7 +66,9 @@
                       <!-- start row -->
                       <div class="row align-items-center mb-3">
                         <div class="col-lg-4">
-                          <label class="form-label mb-0">Decline Button Text</label>
+                          <label class="form-label mb-0"
+                            >Decline Button Text</label
+                          >
                         </div>
                         <!-- end col -->
                         <div class="col-lg-5">
@@ -77,7 +83,9 @@
                       <!-- start row -->
                       <div class="row align-items-center mb-3">
                         <div class="col-lg-4">
-                          <label class="form-label mb-0">Show Decline Button</label>
+                          <label class="form-label mb-0"
+                            >Show Decline Button</label
+                          >
                         </div>
                         <!-- end col -->
                         <div class="col-lg-8">
@@ -98,7 +106,9 @@
                       <!-- start row -->
                       <div class="row align-items-center mb-3">
                         <div class="col-lg-4">
-                          <label class="form-label mb-0">Links for Cookies Page</label>
+                          <label class="form-label mb-0"
+                            >Links for Cookies Page</label
+                          >
                         </div>
                         <!-- end col -->
                         <div class="col-lg-8">
@@ -113,7 +123,9 @@
                       <!-- start row -->
                       <div class="row align-items-center mb-3">
                         <div class="col-lg-4">
-                          <label class="form-label mb-0">Cookies Content Text</label>
+                          <label class="form-label mb-0"
+                            >Cookies Content Text</label
+                          >
                         </div>
                         <!-- end col -->
                         <div class="col-lg-8">
@@ -132,8 +144,12 @@
                   <!-- end row -->
 
                   <div class="d-flex align-items-center justify-content-end">
-                    <a href="javascript:void(0);" class="btn btn-light me-3">Cancel</a>
-                    <a href="javascript:void(0);" class="btn btn-primary">Save Changes</a>
+                    <a href="javascript:void(0);" class="btn btn-light me-3"
+                      >Cancel</a
+                    >
+                    <a href="javascript:void(0);" class="btn btn-primary"
+                      >Save Changes</a
+                    >
                   </div>
                 </form>
               </div>
@@ -148,10 +164,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>

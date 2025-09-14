@@ -37,13 +37,15 @@
                         <div class="d-flex">
                           <span
                             class="avatar avatar-lg p-2 bg-light rounded flex-shrink-0 me-2"
-                            ><img src="@/assets/img/icons/php-mailer.svg" alt="Img"
+                            ><img
+                              src="@/assets/img/icons/php-mailer.svg"
+                              alt="Img"
                           /></span>
                           <div>
                             <p class="fw-medium text-dark mb-1">PHP Mailer</p>
                             <p class="mb-0">
-                              Used to send emails safely and easily via PHP code from a
-                              web server.
+                              Used to send emails safely and easily via PHP code
+                              from a web server.
                             </p>
                           </div>
                         </div>
@@ -93,8 +95,8 @@
                           <div>
                             <p class="fw-medium text-dark mb-1">SMTP</p>
                             <p class="mb-0">
-                              SMTP is used to send, relay or forward messages from a mail
-                              client.
+                              SMTP is used to send, relay or forward messages
+                              from a mail client.
                             </p>
                           </div>
                         </div>
@@ -138,13 +140,15 @@
                         <div class="d-flex">
                           <span
                             class="avatar avatar-lg p-2 bg-light rounded flex-shrink-0 me-2"
-                            ><img src="@/assets/img/icons/send-grid.svg" alt="Img"
+                            ><img
+                              src="@/assets/img/icons/send-grid.svg"
+                              alt="Img"
                           /></span>
                           <div>
                             <p class="fw-medium text-dark mb-1">Send Grid</p>
                             <p class="mb-0">
-                              Cloud-based email marketing tool that assists marketers and
-                              developers .
+                              Cloud-based email marketing tool that assists
+                              marketers and developers .
                             </p>
                           </div>
                         </div>
@@ -196,10 +200,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
@@ -222,7 +223,9 @@
           <div class="modal-body">
             <div class="mb-3">
               <label class="form-label"
-                >From Email Address<span class="text-danger ms-1">*</span></label
+                >From Email Address<span class="text-danger ms-1"
+                  >*</span
+                ></label
               >
               <input type="text" class="form-control" />
             </div>
@@ -240,10 +243,18 @@
             </div>
           </div>
           <div class="modal-footer d-flex align-items-center gap-1">
-            <button type="button" class="btn btn-white border" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-white border"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
-            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
               Submit
             </button>
           </div>
@@ -272,7 +283,9 @@
           <div class="modal-body">
             <div class="mb-3">
               <label class="form-label"
-                >From Email Address<span class="text-danger ms-1">*</span></label
+                >From Email Address<span class="text-danger ms-1"
+                  >*</span
+                ></label
               >
               <input type="text" class="form-control" />
             </div>
@@ -296,10 +309,18 @@
             </div>
           </div>
           <div class="modal-footer d-flex align-items-center gap-1">
-            <button type="button" class="btn btn-white border" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-white border"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
-            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
               Submit
             </button>
           </div>
@@ -334,10 +355,18 @@
             </div>
           </div>
           <div class="modal-footer d-flex align-items-center gap-1">
-            <button type="button" class="btn btn-white border" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-white border"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
-            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
               Submit
             </button>
           </div>

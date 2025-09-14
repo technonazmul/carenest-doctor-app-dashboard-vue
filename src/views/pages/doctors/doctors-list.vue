@@ -222,13 +222,13 @@
 
                 <td>
                   <h6 class="fs-14 fw-semibold mb-0">
-                    {{ formatFee(doctor.fee || doctor.Fees) }}
+                    {{ formatCurrency(doctor.fee || doctor.Fees) }}
                   </h6>
                 </td>
 
                 <td>
                   <h6 class="fs-14 fw-semibold mb-0">
-                    {{ formatFee(doctor.balance || doctor.Balance) }}
+                    {{ formatCurrency(doctor.balance || doctor.Balance) }}
                   </h6>
                 </td>
                 <td>
@@ -463,11 +463,7 @@
 
       <!-- Footer -->
       <div class="footer text-center bg-white p-2 border-top">
-        <p class="text-dark mb-0">
-          2025 &copy;
-          <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-          Rights Reserved
-        </p>
+        <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
       </div>
     </div>
 
@@ -878,6 +874,7 @@
 </template>
 
 <script>
+import { useSettings } from "@/composables/useSettings";
 import axios from "axios";
 import { API_BASE } from "@/api/apiConfig";
 import Cookies from "js-cookie";
@@ -886,8 +883,11 @@ export default {
   name: "DoctorManagement",
   setup() {
     const adminToken = Cookies.get("adminToken");
+    const { getCurrencySymbol, formatCurrency } = useSettings();
     return {
       adminToken,
+      getCurrencySymbol,
+      formatCurrency,
     };
   },
   data() {

@@ -8,11 +8,14 @@
       <div class="row m-auto justify-content-center">
         <div class="col-lg-10">
           <!-- Start Page Header -->
-          <div class="d-flex align-items-sm-center flex-sm-row flex-column gap-2 mb-3">
+          <div
+            class="d-flex align-items-sm-center flex-sm-row flex-column gap-2 mb-3"
+          >
             <div class="flex-grow-1">
               <h6 class="fw-bold mb-0 d-flex align-items-center">
                 <router-link to="/invoices/invoices-list" class=""
-                  ><i class="ti ti-chevron-left me-1 fs-14"></i>Invoices</router-link
+                  ><i class="ti ti-chevron-left me-1 fs-14"></i
+                  >Invoices</router-link
                 >
               </h6>
             </div>
@@ -89,7 +92,9 @@
                         <tr>
                           <td>1</td>
                           <td>Full body checkup</td>
-                          <td>Complete health screening covering all major systems</td>
+                          <td>
+                            Complete health screening covering all major systems
+                          </td>
                           <td>$400</td>
                           <td>1</td>
                           <td>$400</td>
@@ -97,7 +102,10 @@
                         <tr>
                           <td>2</td>
                           <td>Blood Test</td>
-                          <td>Routine blood analysis to assess overall health status</td>
+                          <td>
+                            Routine blood analysis to assess overall health
+                            status
+                          </td>
                           <td>$250</td>
                           <td>1</td>
                           <td>$250</td>
@@ -117,7 +125,8 @@
                       Bank Name : <span class="text-dark"> ABC Bank </span>
                     </p>
                     <p class="text-body mb-1">
-                      Account Number : <span class="text-dark"> 782459739212 </span>
+                      Account Number :
+                      <span class="text-dark"> 782459739212 </span>
                     </p>
                     <p class="text-body mb-1">
                       IFSC Code : <span class="text-dark"> ABC0001345 </span>
@@ -131,15 +140,21 @@
                 <!-- end col -->
                 <div class="col-lg-6">
                   <div class="">
-                    <div class="d-flex align-items-center justify-content-between mb-2">
+                    <div
+                      class="d-flex align-items-center justify-content-between mb-2"
+                    >
                       <h6 class="fs-14 fw-medium text-body">Amount</h6>
                       <h6 class="fs-14 fw-semibold text-dark">$650</h6>
                     </div>
-                    <div class="d-flex align-items-center justify-content-between mb-2">
+                    <div
+                      class="d-flex align-items-center justify-content-between mb-2"
+                    >
                       <h6 class="fs-14 fw-medium text-body">CGST (9%)</h6>
                       <h6 class="fs-14 fw-semibold text-dark">$18</h6>
                     </div>
-                    <div class="d-flex align-items-center justify-content-between mb-2">
+                    <div
+                      class="d-flex align-items-center justify-content-between mb-2"
+                    >
                       <h6 class="fs-14 fw-medium text-body">SGST (9%)</h6>
                       <h6 class="fs-14 fw-semibold text-dark">$18</h6>
                     </div>
@@ -149,13 +164,17 @@
                       <h6 class="fs-14 fw-medium text-body">Discount</h6>
                       <h6 class="fs-14 fw-semibold text-danger">-$36</h6>
                     </div>
-                    <div class="d-flex align-items-center justify-content-between mb-2">
+                    <div
+                      class="d-flex align-items-center justify-content-between mb-2"
+                    >
                       <h6 class="fs-18 fw-bold">Total (USD)</h6>
                       <h6 class="fs-18 fw-bold">$650</h6>
                     </div>
                     <div>
                       <h6 class="fs-14 text-body mb-1">Total in words</h6>
-                      <p class="fw-semibold text-dark">Dollar Six Hundread Fifty</p>
+                      <p class="fw-semibold text-dark">
+                        Dollar Six Hundread Fifty
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -176,8 +195,8 @@
                   <div class="">
                     <h6 class="mb-1 fs-14 fw-semibold">Notes</h6>
                     <p>
-                      All charges are final and include applicable taxes, fees, and
-                      additional costs.
+                      All charges are final and include applicable taxes, fees,
+                      and additional costs.
                     </p>
                   </div>
                 </div>
@@ -193,11 +212,19 @@
                 </div>
               </div>
 
-              <div class="text-center d-flex align-items-center justify-content-center">
-                <a href="" class="btn btn-md btn-dark me-2 d-flex align-items-center">
+              <div
+                class="text-center d-flex align-items-center justify-content-center"
+              >
+                <a
+                  href=""
+                  class="btn btn-md btn-dark me-2 d-flex align-items-center"
+                >
                   <i class="ti ti-printer me-1"></i> Print</a
                 >
-                <a href="" class="btn btn-md btn-primary d-flex align-items-center">
+                <a
+                  href=""
+                  class="btn btn-md btn-primary d-flex align-items-center"
+                >
                   <i class="ti ti-download me-1"></i> Download</a
                 >
               </div>
@@ -214,10 +241,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>

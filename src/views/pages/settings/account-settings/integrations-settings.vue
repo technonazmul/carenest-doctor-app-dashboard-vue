@@ -30,13 +30,15 @@
                         <div class="d-flex">
                           <span
                             class="avatar avatar-lg p-2 bg-light rounded flex-shrink-0 me-2"
-                            ><img src="@/assets/img/icons/mail-icon.svg" alt="Img"
+                            ><img
+                              src="@/assets/img/icons/mail-icon.svg"
+                              alt="Img"
                           /></span>
                           <div>
                             <p class="fw-medium text-dark mb-1">Gmail</p>
                             <p class="mb-0">
-                              Send invoices, payment reminders and customer communication
-                              directly
+                              Send invoices, payment reminders and customer
+                              communication directly
                             </p>
                           </div>
                         </div>
@@ -81,13 +83,17 @@
                         <div class="d-flex">
                           <span
                             class="avatar avatar-lg p-2 bg-light rounded flex-shrink-0 me-2"
-                            ><img src="@/assets/img/icons/calender-icon.svg" alt="Img"
+                            ><img
+                              src="@/assets/img/icons/calender-icon.svg"
+                              alt="Img"
                           /></span>
                           <div>
-                            <p class="fw-medium text-dark mb-1">Google Calendar</p>
+                            <p class="fw-medium text-dark mb-1">
+                              Google Calendar
+                            </p>
                             <p class="mb-0">
-                              Automatically schedule invoice due dates and set up payment
-                              follow-up.
+                              Automatically schedule invoice due dates and set
+                              up payment follow-up.
                             </p>
                           </div>
                         </div>
@@ -139,10 +145,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>

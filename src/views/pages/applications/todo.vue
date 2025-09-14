@@ -9,7 +9,9 @@
   <div class="page-wrapper">
     <!-- Start Content -->
     <div class="content">
-      <div class="d-flex align-items-sm-center flex-sm-row flex-column gap-2 pb-3">
+      <div
+        class="d-flex align-items-sm-center flex-sm-row flex-column gap-2 pb-3"
+      >
         <div class="flex-grow-1">
           <h4 class="fs-18 fw-semibold mb-0">Todo</h4>
         </div>
@@ -25,7 +27,9 @@
           </ol>
         </div>
       </div>
-      <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
+      <div
+        class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3"
+      >
         <a
           href="#"
           class="btn btn-sm btn-primary"
@@ -57,7 +61,9 @@
             <div class="col-sm-4">
               <div class="d-flex align-items-center">
                 <h6 class="fs-16 mb-0">Total Todo</h6>
-                <span class="badge badge-dark rounded-pill badge-xs ms-2">+1</span>
+                <span class="badge badge-dark rounded-pill badge-xs ms-2"
+                  >+1</span
+                >
               </div>
             </div>
             <!-- end col -->
@@ -70,7 +76,9 @@
                 <p class="mb-0 me-2 pe-2 border-end fs-14">
                   Pending : <span class="text-dark"> 15 </span>
                 </p>
-                <p class="mb-0 fs-14">Completed : <span class="text-dark"> 40 </span></p>
+                <p class="mb-0 fs-14">
+                  Completed : <span class="text-dark"> 40 </span>
+                </p>
               </div>
             </div>
             <!-- end col -->
@@ -105,32 +113,44 @@
                       </a>
                       <ul class="dropdown-menu dropdown-menu-end">
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             >All Tags</a
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             >Internal</a
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             >Projects</a
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             >Meetings</a
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             >Reminder</a
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             >Research</a
                           >
                         </li>
@@ -146,27 +166,37 @@
                       </a>
                       <ul class="dropdown-menu dropdown-menu-end">
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             >Recently Added</a
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             >Ascending</a
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             >Desending</a
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             >Last Month</a
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             >Last 7 Days</a
                           >
                         </li>
@@ -200,10 +230,13 @@
                         </div>
                         <div class="d-flex align-items-center">
                           <span
-                            ><i class="ti ti-square-rounded text-purple me-2"></i
+                            ><i
+                              class="ti ti-square-rounded text-purple me-2"
+                            ></i
                           ></span>
                           <h5 class="fw-semibold mb-0">High</h5>
-                          <span class="badge bg-light text-dark rounded-pill ms-2"
+                          <span
+                            class="badge bg-light text-dark rounded-pill ms-2"
                             >15</span
                           >
                         </div>
@@ -232,7 +265,9 @@
               >
                 <div class="accordion-body p-0">
                   <div class="list-group list-group-flush">
-                    <div class="list-group-item list-item-hover border rounded mb-2 p-3">
+                    <div
+                      class="list-group-item list-item-hover border rounded mb-2 p-3"
+                    >
                       <!-- start row -->
                       <div class="row align-items-center row-gap-3">
                         <div class="col-lg-6 col-md-7">
@@ -247,15 +282,19 @@
                             <div class="form-check form-check-md me-2">
                               <input class="form-check-input" type="checkbox" />
                             </div>
-                            <span class="me-2 d-flex align-items-center rating-select"
+                            <span
+                              class="me-2 d-flex align-items-center rating-select"
                               ><i class="ti ti-star-filled filled"></i
                             ></span>
                             <div class="strike-info">
-                              <h4 class="fs-14 mb-0">Finalize project proposal</h4>
+                              <h4 class="fs-14 mb-0">
+                                Finalize project proposal
+                              </h4>
                             </div>
                             <span
                               class="badge badge-soft-info ms-2 d-inline-flex align-items-center p-1"
-                              ><i class="ti ti-calendar me-1"></i>15 Jan 2025</span
+                              ><i class="ti ti-calendar me-1"></i>15 Jan
+                              2025</span
                             >
                           </div>
                         </div>
@@ -270,7 +309,8 @@
                             >
                             <span
                               class="badge badge-soft-danger d-inline-flex align-items-center me-2"
-                              ><i class="fas fa-circle fs-6 me-1"></i>Onhold</span
+                              ><i class="fas fa-circle fs-6 me-1"></i
+                              >Onhold</span
                             >
                             <div class="d-flex align-items-center">
                               <div class="avatar-list-stacked avatar-group-sm">
@@ -341,7 +381,9 @@
                       </div>
                       <!-- end row -->
                     </div>
-                    <div class="list-group-item list-item-hover border rounded mb-2 p-3">
+                    <div
+                      class="list-group-item list-item-hover border rounded mb-2 p-3"
+                    >
                       <!-- start row -->
                       <div class="row align-items-center row-gap-3">
                         <div class="col-lg-6 col-md-7">
@@ -356,15 +398,19 @@
                             <div class="form-check form-check-md me-2">
                               <input class="form-check-input" type="checkbox" />
                             </div>
-                            <span class="me-2 rating-select d-flex align-items-center"
+                            <span
+                              class="me-2 rating-select d-flex align-items-center"
                               ><i class="ti ti-star"></i
                             ></span>
                             <div class="strike-info">
-                              <h4 class="fs-14 mb-0">Submit to supervisor by EOD</h4>
+                              <h4 class="fs-14 mb-0">
+                                Submit to supervisor by EOD
+                              </h4>
                             </div>
                             <span
                               class="badge badge-soft-info ms-2 d-inline-flex align-items-center p-1"
-                              ><i class="ti ti-calendar me-1"></i>25 May 2024</span
+                              ><i class="ti ti-calendar me-1"></i>25 May
+                              2024</span
                             >
                           </div>
                         </div>
@@ -377,7 +423,8 @@
                             <span class="badge bg-danger me-2">Internal</span>
                             <span
                               class="badge badge-soft-secondary d-flex align-items-center me-2"
-                              ><i class="fas fa-circle fs-6 me-1"></i>Inprogress</span
+                              ><i class="fas fa-circle fs-6 me-1"></i
+                              >Inprogress</span
                             >
                             <div class="d-flex align-items-center">
                               <div class="avatar-list-stacked avatar-group-sm">
@@ -448,7 +495,9 @@
                       </div>
                       <!-- end row -->
                     </div>
-                    <div class="list-group-item list-item-hover border rounded mb-2 p-3">
+                    <div
+                      class="list-group-item list-item-hover border rounded mb-2 p-3"
+                    >
                       <!-- start row -->
                       <div class="row align-items-center row-gap-3">
                         <div class="col-lg-6 col-md-7">
@@ -461,17 +510,25 @@
                               ><i class="ti ti-grid-dots text-dark"></i
                             ></span>
                             <div class="form-check form-check-md me-2">
-                              <input class="form-check-input" type="checkbox" checked />
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                checked
+                              />
                             </div>
-                            <span class="me-2 rating-select d-flex align-items-center"
+                            <span
+                              class="me-2 rating-select d-flex align-items-center"
                               ><i class="ti ti-star"></i
                             ></span>
                             <div class="strike-info">
-                              <h4 class="fs-14 mb-0">Prepare presentation slides</h4>
+                              <h4 class="fs-14 mb-0">
+                                Prepare presentation slides
+                              </h4>
                             </div>
                             <span
                               class="badge badge-soft-info ms-2 d-inline-flex align-items-center p-1"
-                              ><i class="ti ti-calendar me-1"></i>15 Jan 2025</span
+                              ><i class="ti ti-calendar me-1"></i>15 Jan
+                              2025</span
                             >
                           </div>
                         </div>
@@ -484,7 +541,8 @@
                             <span class="badge bg-info me-2">Reminder</span>
                             <span
                               class="badge badge-soft-info d-flex align-items-center me-2"
-                              ><i class="fas fa-circle fs-6 me-1"></i>Pending</span
+                              ><i class="fas fa-circle fs-6 me-1"></i
+                              >Pending</span
                             >
                             <div class="d-flex align-items-center">
                               <div class="avatar-list-stacked avatar-group-sm">
@@ -566,7 +624,10 @@
               <!-- start row -->
               <div class="row align-items-center mb-2 row-gap-3">
                 <div class="col-lg-4 col-sm-6">
-                  <div class="accordion-header cursor-pointer" id="headingThree">
+                  <div
+                    class="accordion-header cursor-pointer"
+                    id="headingThree"
+                  >
                     <div
                       class="accordion-button bg-transparent shadow-none p-0"
                       data-bs-toggle="collapse"
@@ -581,10 +642,13 @@
                         </div>
                         <div class="d-flex align-items-center">
                           <span
-                            ><i class="ti ti-square-rounded text-warning me-2"></i
+                            ><i
+                              class="ti ti-square-rounded text-warning me-2"
+                            ></i
                           ></span>
                           <h5 class="fw-semibold mb-0">Medium</h5>
-                          <span class="badge bg-light text-dark rounded-pill ms-2"
+                          <span
+                            class="badge bg-light text-dark rounded-pill ms-2"
                             >05</span
                           >
                         </div>
@@ -613,7 +677,9 @@
               >
                 <div class="accordion-body p-0">
                   <div class="list-group list-group-flush">
-                    <div class="list-group-item list-item-hover border rounded mb-2 p-3">
+                    <div
+                      class="list-group-item list-item-hover border rounded mb-2 p-3"
+                    >
                       <!-- start row -->
                       <div class="row align-items-center row-gap-3">
                         <div class="col-lg-6 col-md-7">
@@ -628,11 +694,14 @@
                             <div class="form-check form-check-md me-2">
                               <input class="form-check-input" type="checkbox" />
                             </div>
-                            <span class="me-2 rating-select d-flex align-items-center"
+                            <span
+                              class="me-2 rating-select d-flex align-items-center"
                               ><i class="ti ti-star"></i
                             ></span>
                             <div class="strike-info">
-                              <h4 class="fs-14 mb-0">Check and respond to emails</h4>
+                              <h4 class="fs-14 mb-0">
+                                Check and respond to emails
+                              </h4>
                             </div>
                             <span
                               class="badge badge-soft-info ms-2 d-inline-flex align-items-center p-1"
@@ -649,7 +718,8 @@
                             <span class="badge bg-info me-2">Reminder</span>
                             <span
                               class="badge badge-soft-success d-inline-flex align-items-center me-2"
-                              ><i class="fas fa-circle fs-6 me-1"></i>Completed</span
+                              ><i class="fas fa-circle fs-6 me-1"></i
+                              >Completed</span
                             >
                             <div class="d-flex align-items-center">
                               <div class="avatar-list-stacked avatar-group-sm">
@@ -721,7 +791,9 @@
                       <!-- end row -->
                     </div>
 
-                    <div class="list-group-item list-item-hover border rounded mb-2 p-3">
+                    <div
+                      class="list-group-item list-item-hover border rounded mb-2 p-3"
+                    >
                       <!-- start row -->
                       <div class="row align-items-center row-gap-3">
                         <div class="col-lg-6 col-md-7">
@@ -736,7 +808,8 @@
                             <div class="form-check form-check-md me-2">
                               <input class="form-check-input" type="checkbox" />
                             </div>
-                            <span class="me-2 rating-select d-flex align-items-center"
+                            <span
+                              class="me-2 rating-select d-flex align-items-center"
                               ><i class="ti ti-star"></i
                             ></span>
                             <div class="strike-info">
@@ -746,7 +819,8 @@
                             </div>
                             <span
                               class="badge badge-soft-info ms-2 d-inline-flex align-items-center p-1"
-                              ><i class="ti ti-calendar me-1"></i>25 May 2024</span
+                              ><i class="ti ti-calendar me-1"></i>25 May
+                              2024</span
                             >
                           </div>
                         </div>
@@ -759,7 +833,8 @@
                             <span class="badge bg-danger me-2">Internal</span>
                             <span
                               class="badge badge-soft-secondary d-flex align-items-center me-2"
-                              ><i class="fas fa-circle fs-6 me-1"></i>Inprogress</span
+                              ><i class="fas fa-circle fs-6 me-1"></i
+                              >Inprogress</span
                             >
                             <div class="d-flex align-items-center">
                               <div class="avatar-list-stacked avatar-group-sm">
@@ -856,10 +931,13 @@
                         </div>
                         <div class="d-flex align-items-center">
                           <span
-                            ><i class="ti ti-square-rounded text-success me-2"></i
+                            ><i
+                              class="ti ti-square-rounded text-success me-2"
+                            ></i
                           ></span>
                           <h5 class="fw-semibold mb-0">Low</h5>
-                          <span class="badge bg-light text-dark rounded-pill ms-2"
+                          <span
+                            class="badge bg-light text-dark rounded-pill ms-2"
                             >24</span
                           >
                         </div>
@@ -888,7 +966,9 @@
               >
                 <div class="accordion-body p-0">
                   <div class="list-group list-group-flush">
-                    <div class="list-group-item list-item-hover border rounded mb-2 p-3">
+                    <div
+                      class="list-group-item list-item-hover border rounded mb-2 p-3"
+                    >
                       <!-- start row -->
                       <div class="row align-items-center row-gap-3">
                         <div class="col-lg-6 col-md-7">
@@ -903,11 +983,14 @@
                             <div class="form-check form-check-md me-2">
                               <input class="form-check-input" type="checkbox" />
                             </div>
-                            <span class="me-2 rating-select d-flex align-items-center"
+                            <span
+                              class="me-2 rating-select d-flex align-items-center"
                               ><i class="ti ti-star"></i
                             ></span>
                             <div class="strike-info">
-                              <h4 class="fs-14 mb-0">Plan tasks for the next day</h4>
+                              <h4 class="fs-14 mb-0">
+                                Plan tasks for the next day
+                              </h4>
                             </div>
                             <span
                               class="badge badge-soft-info ms-2 d-inline-flex align-items-center p-1"
@@ -924,7 +1007,8 @@
                             <span class="badge bg-info me-2">Social</span>
                             <span
                               class="badge badge-soft-info d-flex align-items-center me-2"
-                              ><i class="fas fa-circle fs-6 me-1"></i>Pending</span
+                              ><i class="fas fa-circle fs-6 me-1"></i
+                              >Pending</span
                             >
                             <div class="d-flex align-items-center">
                               <div class="avatar-list-stacked avatar-group-sm">
@@ -1015,10 +1099,7 @@
 
     <!-- Start Footer-->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- End Footer-->
   </div>
@@ -1106,7 +1187,11 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-light me-2" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-light me-2"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
             <button type="submit" class="btn btn-primary">Add New Todo</button>
@@ -1200,7 +1285,11 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-light me-2" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-light me-2"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
             <button type="submit" class="btn btn-primary">Submit</button>
@@ -1216,7 +1305,9 @@
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header bg-dark">
-          <h4 class="modal-title text-white me-1">Respond to any pending messages</h4>
+          <h4 class="modal-title text-white me-1">
+            Respond to any pending messages
+          </h4>
           <span class="badge bg-danger d-inline-flex align-items-center me-1"
             ><i class="ti ti-square me-1"></i>Urgent</span
           >
@@ -1250,7 +1341,9 @@
               <div class="col-md-4">
                 <div class="text-center">
                   <span class="d-block mb-1">Status</span>
-                  <span class="badge badge-soft-success d-inline-flex align-items-center">
+                  <span
+                    class="badge badge-soft-success d-inline-flex align-items-center"
+                  >
                     <i class="fas fa-circle fs-6 me-1"></i>Completed
                   </span>
                 </div>
@@ -1260,11 +1353,12 @@
           <div class="mb-3">
             <h5 class="mb-2">Description</h5>
             <p>
-              Hiking is a long, vigorous walk, usually on trails or footpaths in the
-              countryside. Walking for pleasure developed in Europe during the eighteenth
-              century. Religious pilgrimages have existed much longer but they involve
-              walking long distances for a spiritual purpose associated with specific
-              religions and also we achieve inner peace while we hike at a local park.
+              Hiking is a long, vigorous walk, usually on trails or footpaths in
+              the countryside. Walking for pleasure developed in Europe during
+              the eighteenth century. Religious pilgrimages have existed much
+              longer but they involve walking long distances for a spiritual
+              purpose associated with specific religions and also we achieve
+              inner peace while we hike at a local park.
             </p>
           </div>
           <div class="mb-3">
@@ -1328,7 +1422,9 @@
               ><i class="ti ti-trash fs-24"></i
             ></span>
           </div>
-          <h5 class="fw-bold mb-1 position-relative z-1">Delete Confirmation</h5>
+          <h5 class="fw-bold mb-1 position-relative z-1">
+            Delete Confirmation
+          </h5>
           <p class="mb-3 position-relative z-1">Are you sure want to delete?</p>
           <div class="d-flex justify-content-center">
             <a

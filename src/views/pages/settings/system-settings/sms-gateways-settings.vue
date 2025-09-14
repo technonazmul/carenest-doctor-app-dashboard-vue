@@ -41,7 +41,8 @@
                         </div>
                         <div>
                           <p class="mb-0">
-                            Enables seamless communication through SMS, voice, and APIs.
+                            Enables seamless communication through SMS, voice,
+                            and APIs.
                           </p>
                         </div>
                       </div>
@@ -92,8 +93,8 @@
                         </div>
                         <div>
                           <p class="mb-0">
-                            2Factor offers simple sms integration API and sample code to
-                            send SMS
+                            2Factor offers simple sms integration API and sample
+                            code to send SMS
                           </p>
                         </div>
                       </div>
@@ -139,7 +140,8 @@
                         >
                           <img src="@/assets/img/icons/twilio.svg" alt="Img" />
                           <span class="badge bg-light fs-13 fw-medium text-dark"
-                            ><i class="ti ti-point-filled"></i>Not Connected</span
+                            ><i class="ti ti-point-filled"></i>Not
+                            Connected</span
                           >
                         </div>
                         <div>
@@ -196,10 +198,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
@@ -240,10 +239,18 @@
             </div>
           </div>
           <div class="modal-footer d-flex align-items-center gap-1">
-            <button type="button" class="btn btn-white border" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-white border"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
-            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
               Submit
             </button>
           </div>
@@ -272,7 +279,9 @@
           <div class="modal-body">
             <div class="mb-3">
               <label class="form-label"
-                >From Email Address<span class="text-danger ms-1">*</span></label
+                >From Email Address<span class="text-danger ms-1"
+                  >*</span
+                ></label
               >
               <input type="text" class="form-control" />
             </div>
@@ -296,10 +305,18 @@
             </div>
           </div>
           <div class="modal-footer d-flex align-items-center gap-1">
-            <button type="button" class="btn btn-white border" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-white border"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
-            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
               Submit
             </button>
           </div>
@@ -334,10 +351,18 @@
             </div>
           </div>
           <div class="modal-footer d-flex align-items-center gap-1">
-            <button type="button" class="btn btn-white border" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-white border"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
-            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
               Submit
             </button>
           </div>

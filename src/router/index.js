@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
+import { requireRole } from "@/middleware/roleGuard.js";
 
 const routes = [
   {
@@ -160,6 +161,11 @@ const routes = [
     component: () => import("@/views/pages/authentication/lock-screen.vue"),
   },
   {
+    path: "/error-403",
+    name: "error-403",
+    component: () => import("@/views/pages/authentication/error/error-403.vue"),
+  },
+  {
     path: "/error-404",
     name: "error-404",
     component: () => import("@/views/pages/authentication/error/error-404.vue"),
@@ -168,11 +174,6 @@ const routes = [
     path: "/error-500",
     name: "error-500",
     component: () => import("@/views/pages/authentication/error/error-500.vue"),
-  },
-  {
-    path: "/admin-dashboard",
-    name: "admin-dashboard",
-    component: () => import("@/views/pages/dashboard/admin-dashboard.vue"),
   },
   {
     path: "/notifications",
@@ -187,6 +188,18 @@ const routes = [
       {
         path: "admin-dashboard",
         component: () => import("@/views/pages/dashboard/admin-dashboard.vue"),
+        beforeEnter: requireRole([
+          "superadmin",
+          "manager",
+          "marketer",
+          "support",
+          "finance",
+        ]),
+      },
+      {
+        path: "settings",
+        component: () => import("@/views/pages/settings/main-settings.vue"),
+        beforeEnter: requireRole(["superadmin"]),
       },
     ],
   },
@@ -305,6 +318,7 @@ const routes = [
   {
     path: "/doctors",
     component: () => import("@/views/pages/doctors/doctors-index.vue"),
+    beforeEnter: requireRole(["superadmin", "manager", "support"]),
     children: [
       { path: "", redirect: "/doctors/doctors-grid" },
       {
@@ -336,6 +350,7 @@ const routes = [
   {
     path: "/patients",
     component: () => import("@/views/pages/patients/patients-index.vue"),
+    beforeEnter: requireRole(["superadmin", "manager", "support"]),
     children: [
       { path: "", redirect: "/patients/patients-list" },
       {
@@ -357,6 +372,145 @@ const routes = [
       {
         path: "edit-patient/:id",
         component: () => import("@/views/pages/patients/edit-patient.vue"),
+      },
+    ],
+  },
+  {
+    path: "/appointments",
+    component: () =>
+      import("@/views/pages/appointments/appointments-index.vue"),
+    beforeEnter: requireRole(["superadmin", "manager", "support"]),
+    children: [
+      { path: "", redirect: "/appointments/appointments-list" },
+      {
+        path: "appointments-list",
+        component: () =>
+          import("@/views/pages/appointments/appointments-list.vue"),
+      },
+      {
+        path: "chat-history/:appointmentId",
+        component: () =>
+          import("@/views/pages/appointments/appointment-chat-history.vue"),
+      },
+      {
+        path: "appointment-calendar",
+        component: () =>
+          import("@/views/pages/appointments/appointments-calendar.vue"),
+      },
+      {
+        path: "edit-appointment/:appointmentId",
+        component: () =>
+          import("@/views/pages/appointments/edit-appointment.vue"),
+      },
+      {
+        path: "appointment-consultations",
+        component: () =>
+          import("@/views/pages/appointments/appointment-consultations.vue"),
+      },
+    ],
+  },
+  {
+    path: "/clinic",
+    component: () => import("@/views/pages/clinic/clinic-index.vue"),
+    children: [
+      { path: "", redirect: "/clinic/messages" },
+      {
+        path: "messages",
+        component: () => import("@/views/pages/clinic/messages.vue"),
+      },
+      {
+        path: "activities",
+        component: () => import("@/views/pages/clinic/activities.vue"),
+      },
+      {
+        path: "assets",
+        component: () => import("@/views/pages/clinic/assets.vue"),
+      },
+      {
+        path: "specializations",
+        component: () => import("@/views/pages/clinic/specializations.vue"),
+        beforeEnter: requireRole(["superadmin", "manager"]),
+      },
+      {
+        path: "banners",
+        component: () => import("@/views/pages/clinic/banner/manage.vue"),
+        beforeEnter: requireRole(["superadmin", "marketer"]),
+      },
+      {
+        path: "notifications",
+        component: () =>
+          import("@/views/pages/clinic/notifications/manage.vue"),
+        beforeEnter: requireRole(["superadmin", "marketer"]),
+      },
+      {
+        path: "reviews",
+        component: () => import("@/views/pages/clinic/reviews/manage.vue"),
+        beforeEnter: requireRole([
+          "superadmin",
+          "manager",
+          "marketer",
+          "support",
+        ]),
+      },
+      {
+        path: "services",
+        component: () => import("@/views/pages/clinic/services.vue"),
+      },
+      {
+        path: "locations",
+        component: () => import("@/views/pages/clinic/locations.vue"),
+      },
+    ],
+  },
+  {
+    path: "/finance",
+    component: () => import("@/views/pages/finance/finance-index.vue"),
+    children: [
+      { path: "", redirect: "/finance/income" },
+      {
+        path: "income",
+        component: () => import("@/views/pages/finance/income.vue"),
+      },
+      {
+        path: "payments",
+        component: () => import("@/views/pages/finance/payments.vue"),
+      },
+      {
+        path: "transactions",
+        component: () => import("@/views/pages/finance/transactions.vue"),
+        beforeEnter: requireRole(["superadmin", "manager", "finance"]),
+      },
+    ],
+  },
+  {
+    path: "/withdrawals",
+    component: () => import("@/views/pages/withdrawals/withdrawals-list.vue"),
+    beforeEnter: requireRole(["superadmin", "manager", "finance"]),
+  },
+  {
+    path: "/withdraw-methods-management",
+    component: () =>
+      import("@/views/pages/withdraw-methods/withdraw-methods-index.vue"),
+    beforeEnter: requireRole(["superadmin"]),
+  },
+  {
+    path: "/users",
+    component: () => import("@/views/pages/users/users-index.vue"),
+    children: [
+      { path: "", redirect: "/users/admin-manage" },
+      {
+        path: "admin-manage",
+        component: () => import("@/views/pages/users/admin-manage.vue"),
+        beforeEnter: requireRole(["superadmin"]),
+      },
+      {
+        path: "permissions",
+        component: () => import("@/views/pages/users/permissions.vue"),
+      },
+      {
+        path: "delete-account-request",
+        component: () =>
+          import("@/views/pages/users/delete-account-request.vue"),
       },
     ],
   },
@@ -400,6 +554,7 @@ const routes = [
     path: "/website-settings",
     component: () =>
       import("@/views/pages/settings/website-settings/website-settings.vue"),
+    beforeEnter: requireRole(["superadmin"]),
     children: [
       { path: "", redirect: "/website-settings/organization-settings" },
       {
@@ -478,6 +633,7 @@ const routes = [
     path: "/clinic-settings",
     component: () =>
       import("@/views/pages/settings/clinic-settings/clinic-settings.vue"),
+    beforeEnter: requireRole(["superadmin", "manager"]),
     children: [
       { path: "", redirect: "/clinic-settings/appointment-settings" },
       {
@@ -507,6 +663,7 @@ const routes = [
     path: "/app-settings",
     component: () =>
       import("@/views/pages/settings/app-settings/app-settings.vue"),
+    beforeEnter: requireRole(["superadmin"]),
     children: [
       { path: "", redirect: "/app-settings/invoice-settings" },
       {
@@ -539,8 +696,9 @@ const routes = [
     path: "/system-settings",
     component: () =>
       import("@/views/pages/settings/system-settings/system-settings.vue"),
+    beforeEnter: requireRole(["superadmin"]),
     children: [
-      { path: "", redirect: "/system-settings/invoice-settings" },
+      { path: "", redirect: "/system-settings/email-settings" },
       {
         path: "email-settings",
         component: () =>
@@ -580,8 +738,9 @@ const routes = [
     path: "/finance-settings",
     component: () =>
       import("@/views/pages/settings/finance-settings/finance-settings.vue"),
+    beforeEnter: requireRole(["superadmin", "finance"]),
     children: [
-      { path: "", redirect: "/finance-settings/invoice-settings" },
+      { path: "", redirect: "/finance-settings/payment-methods-settings" },
       {
         path: "payment-methods-settings",
         component: () =>
@@ -616,8 +775,9 @@ const routes = [
     path: "/others-settings",
     component: () =>
       import("@/views/pages/settings/others-settings/others-settings.vue"),
+    beforeEnter: requireRole(["superadmin"]),
     children: [
-      { path: "", redirect: "/others-settings/invoice-settings" },
+      { path: "", redirect: "/others-settings/sitemap-settings" },
       {
         path: "sitemap-settings",
         component: () =>
@@ -671,6 +831,7 @@ const routes = [
   {
     path: "/content",
     component: () => import("@/views/pages/content/content-index.vue"),
+    beforeEnter: requireRole(["superadmin", "marketer"]),
     children: [
       { path: "", redirect: "/content/pages" },
       {
@@ -689,396 +850,9 @@ const routes = [
         path: "testimonials",
         component: () => import("@/views/pages/content/testimonials.vue"),
       },
-      { path: "faq", component: () => import("@/views/pages/content/faq.vue") },
-    ],
-  },
-  {
-    path: "/blogs",
-    component: () => import("@/views/pages/content/blogs/blogs-index.vue"),
-    children: [
-      { path: "", redirect: "/blogs/blogs" },
       {
-        path: "blogs",
-        component: () => import("@/views/pages/content/blogs/blogs.vue"),
-      },
-      {
-        path: "add-blog",
-        component: () => import("@/views/pages/content/blogs/add-blog.vue"),
-      },
-      {
-        path: "edit-blog",
-        component: () => import("@/views/pages/content/blogs/edit-blog.vue"),
-      },
-      {
-        path: "blog-categories",
-        component: () =>
-          import("@/views/pages/content/blogs/blog-categories.vue"),
-      },
-      {
-        path: "blog-comments",
-        component: () =>
-          import("@/views/pages/content/blogs/blog-comments.vue"),
-      },
-      {
-        path: "blog-details",
-        component: () => import("@/views/pages/content/blogs/blog-details.vue"),
-      },
-    ],
-  },
-  {
-    path: "/location",
-    component: () =>
-      import("@/views/pages/content/locations/locations-index.vue"),
-    children: [
-      { path: "", redirect: "/location/countries" },
-      {
-        path: "countries",
-        component: () =>
-          import("@/views/pages/content/locations/countries.vue"),
-      },
-      {
-        path: "states",
-        component: () => import("@/views/pages/content/locations/states.vue"),
-      },
-      {
-        path: "cities",
-        component: () => import("@/views/pages/content/locations/cities.vue"),
-      },
-    ],
-  },
-  {
-    path: "/support",
-    component: () => import("@/views/pages/support/support-index.vue"),
-    children: [
-      { path: "", redirect: "/support/contact-messages" },
-      {
-        path: "contact-messages",
-        component: () => import("@/views/pages/support/contact-messages.vue"),
-      },
-      {
-        path: "tickets",
-        component: () => import("@/views/pages/support/tickets.vue"),
-      },
-      {
-        path: "ticket-details",
-        component: () => import("@/views/pages/support/ticket-details.vue"),
-      },
-      {
-        path: "announcements",
-        component: () => import("@/views/pages/support/announcements.vue"),
-      },
-      {
-        path: "newsletters",
-        component: () => import("@/views/pages/support/newsletters.vue"),
-      },
-    ],
-  },
-  {
-    path: "/users",
-    component: () => import("@/views/pages/users/users-index.vue"),
-    children: [
-      { path: "", redirect: "/users/roles-and-permissions" },
-      {
-        path: "roles-and-permissions",
-        component: () =>
-          import("@/views/pages/users/roles-and-permissions.vue"),
-      },
-      {
-        path: "permissions",
-        component: () => import("@/views/pages/users/permissions.vue"),
-      },
-      {
-        path: "delete-account-request",
-        component: () =>
-          import("@/views/pages/users/delete-account-request.vue"),
-      },
-    ],
-  },
-  {
-    path: "/reports",
-    component: () => import("@/views/pages/reports/reports-index.vue"),
-    children: [
-      { path: "", redirect: "/reports/income-report" },
-      {
-        path: "income-report",
-        component: () => import("@/views/pages/reports/income-report.vue"),
-      },
-      {
-        path: "expense-report",
-        component: () => import("@/views/pages/reports/expense-report.vue"),
-      },
-      {
-        path: "profit-and-loss",
-        component: () => import("@/views/pages/reports/profit-and-loss.vue"),
-      },
-      {
-        path: "appointment-report",
-        component: () => import("@/views/pages/reports/appointment-report.vue"),
-      },
-      {
-        path: "patient-report",
-        component: () => import("@/views/pages/reports/patient-report.vue"),
-      },
-    ],
-  },
-  {
-    path: "/finance",
-    component: () => import("@/views/pages/finance/finance-index.vue"),
-    children: [
-      { path: "", redirect: "/finance/income" },
-      {
-        path: "income",
-        component: () => import("@/views/pages/finance/income.vue"),
-      },
-      {
-        path: "payments",
-        component: () => import("@/views/pages/finance/payments.vue"),
-      },
-      {
-        path: "transactions",
-        component: () => import("@/views/pages/finance/transactions.vue"),
-      },
-    ],
-  },
-  {
-    path: "/expenses",
-    component: () =>
-      import("@/views/pages/finance/expenses/expenses-index.vue"),
-    children: [
-      { path: "", redirect: "/expenses/expenses-list" },
-      {
-        path: "expenses-list",
-        component: () => import("@/views/pages/finance/expenses/expenses.vue"),
-      },
-      {
-        path: "expense-category",
-        component: () =>
-          import("@/views/pages/finance/expenses/expense-category.vue"),
-      },
-    ],
-  },
-  {
-    path: "/invoices",
-    component: () =>
-      import("@/views/pages/finance/invoices/invoices-index.vue"),
-    children: [
-      { path: "", redirect: "/invoices/invoices-list" },
-      {
-        path: "invoices-list",
-        component: () => import("@/views/pages/finance/invoices/invoices.vue"),
-      },
-      {
-        path: "add-invoices",
-        component: () =>
-          import("@/views/pages/finance/invoices/add-invoices.vue"),
-      },
-      {
-        path: "edit-invoices",
-        component: () =>
-          import("@/views/pages/finance/invoices/edit-invoices.vue"),
-      },
-      {
-        path: "invoices-details",
-        component: () =>
-          import("@/views/pages/finance/invoices/invoices-details.vue"),
-      },
-    ],
-  },
-  {
-    path: "/withdrawals",
-    component: () => import("@/views/pages/withdrawals/withdrawals-list.vue"),
-  },
-  {
-    path: "/dashboard/settings",
-    component: () => import("@/views/pages/settings/main-settings.vue"),
-  },
-  {
-    path: "/hrm",
-    component: () => import("@/views/pages/hrm/hrm-index.vue"),
-    children: [
-      { path: "", redirect: "/hrm/payroll" },
-      {
-        path: "payroll",
-        component: () => import("@/views/pages/hrm/payroll.vue"),
-      },
-      {
-        path: "payroll-2",
-        component: () => import("@/views/pages/hrm/payroll-2.vue"),
-      },
-      {
-        path: "holidays",
-        component: () => import("@/views/pages/hrm/holidays.vue"),
-      },
-    ],
-  },
-  {
-    path: "/leaves",
-    component: () => import("@/views/pages/hrm/leaves/leaves-index.vue"),
-    children: [
-      { path: "", redirect: "/leaves/leaves-list" },
-      {
-        path: "leaves-list",
-        component: () => import("@/views/pages/hrm/leaves/leaves.vue"),
-      },
-      {
-        path: "leave-type",
-        component: () => import("@/views/pages/hrm/leaves/leave-type.vue"),
-      },
-    ],
-  },
-  {
-    path: "/clinic",
-    component: () => import("@/views/pages/clinic/clinic-index.vue"),
-    children: [
-      { path: "", redirect: "/clinic/messages" },
-      {
-        path: "messages",
-        component: () => import("@/views/pages/clinic/messages.vue"),
-      },
-      {
-        path: "activities",
-        component: () => import("@/views/pages/clinic/activities.vue"),
-      },
-      {
-        path: "assets",
-        component: () => import("@/views/pages/clinic/assets.vue"),
-      },
-      {
-        path: "specializations",
-        component: () => import("@/views/pages/clinic/specializations.vue"),
-      },
-      {
-        path: "banners",
-        component: () => import("@/views/pages/clinic/banner/manage.vue"),
-      },
-      {
-        path: "notifications",
-        component: () =>
-          import("@/views/pages/clinic/notifications/manage.vue"),
-      },
-      {
-        path: "reviews",
-        component: () => import("@/views/pages/clinic/reviews/manage.vue"),
-      },
-
-      {
-        path: "services",
-        component: () => import("@/views/pages/clinic/services.vue"),
-      },
-      {
-        path: "locations",
-        component: () => import("@/views/pages/clinic/locations.vue"),
-      },
-    ],
-  },
-  {
-    path: "/appointments",
-    component: () =>
-      import("@/views/pages/appointments/appointments-index.vue"),
-    children: [
-      { path: "", redirect: "/appointments/appointments-list" },
-      {
-        path: "appointments-list",
-        component: () =>
-          import("@/views/pages/appointments/appointments-list.vue"),
-      },
-      {
-        path: "chat-history/:appointmentId",
-        component: () =>
-          import("@/views/pages/appointments/appointment-chat-history.vue"),
-      },
-      {
-        path: "appointment-calendar",
-        component: () =>
-          import("@/views/pages/appointments/appointments-calendar.vue"),
-      },
-      {
-        path: "new-appointment",
-        component: () =>
-          import("@/views/pages/appointments/new-appointment.vue"),
-      },
-      {
-        path: "appointment-consultations",
-        component: () =>
-          import("@/views/pages/appointments/appointment-consultations.vue"),
-      },
-    ],
-  },
-  {
-    path: "/hrm",
-    component: () => import("@/views/pages/hrm/hrm-index.vue"),
-    children: [
-      { path: "", redirect: "/hrm/payroll" },
-      {
-        path: "payroll",
-        component: () => import("@/views/pages/hrm/payroll.vue"),
-      },
-      {
-        path: "payroll-2",
-        component: () => import("@/views/pages/hrm/payroll-2.vue"),
-      },
-      {
-        path: "holidays",
-        component: () => import("@/views/pages/hrm/holidays.vue"),
-      },
-      {
-        path: "attendance",
-        component: () => import("@/views/pages/hrm/attendance.vue"),
-      },
-      {
-        path: "staffs",
-        component: () => import("@/views/pages/hrm/staffs.vue"),
-      },
-      {
-        path: "hrm-departments",
-        component: () => import("@/views/pages/hrm/hrm-departments.vue"),
-      },
-      {
-        path: "designation",
-        component: () => import("@/views/pages/hrm/designation.vue"),
-      },
-    ],
-  },
-  {
-    path: "/pages",
-    component: () => import("@/views/pages/pages/pages-index.vue"),
-    children: [
-      { path: "", redirect: "/pages/starter" },
-      {
-        path: "starter",
-        component: () => import("@/views/pages/pages/starter.vue"),
-      },
-      {
-        path: "profile",
-        component: () => import("@/views/pages/pages/profile.vue"),
-      },
-      {
-        path: "gallery",
-        component: () => import("@/views/pages/pages/gallery.vue"),
-      },
-      {
-        path: "timeline",
-        component: () => import("@/views/pages/pages/timeline.vue"),
-      },
-      {
-        path: "pricing",
-        component: () => import("@/views/pages/pages/pricing.vue"),
-      },
-      {
-        path: "coming-soon",
-        component: () => import("@/views/pages/pages/coming-soon.vue"),
-      },
-      {
-        path: "under-maintenance",
-        component: () => import("@/views/pages/pages/under-maintenance.vue"),
-      },
-      {
-        path: "privacy-policy",
-        component: () => import("@/views/pages/pages/privacy-policy.vue"),
-      },
-      {
-        path: "terms-and-conditions",
-        component: () => import("@/views/pages/pages/terms-and-conditions.vue"),
+        path: "faq",
+        component: () => import("@/views/pages/content/faq.vue"),
       },
     ],
   },
@@ -1141,586 +915,6 @@ const routes = [
           import("@/views/pages/doctor/doctors-notifications.vue"),
       },
     ],
-  },
-  {
-    path: "/doctor/settings",
-    component: () =>
-      import("@/views/pages/doctor/doctor-settings/doctor-settings.vue"),
-    children: [
-      { path: "", redirect: "/doctor/settings/doctors-profile-settings" },
-      {
-        path: "doctors-profile-settings",
-        component: () =>
-          import(
-            "@/views/pages/doctor/doctor-settings/doctors-profile-settings.vue"
-          ),
-      },
-      {
-        path: "doctors-password-settings",
-        component: () =>
-          import(
-            "@/views/pages/doctor/doctor-settings/doctors-password-settings.vue"
-          ),
-      },
-      {
-        path: "doctors-notification-settings",
-        component: () =>
-          import(
-            "@/views/pages/doctor/doctor-settings/doctors-notification-settings.vue"
-          ),
-      },
-    ],
-  },
-  {
-    path: "/calls",
-    component: () => import("@/views/pages/applications/calls/call-index.vue"),
-    children: [
-      { path: "", redirect: "/calls/voice-call" },
-      {
-        path: "voice-call",
-        component: () =>
-          import("@/views/pages/applications/calls/voice-call.vue"),
-      },
-      {
-        path: "video-call",
-        component: () =>
-          import("@/views/pages/applications/calls/video-call.vue"),
-      },
-      {
-        path: "outgoing-call",
-        component: () =>
-          import("@/views/pages/applications/calls/outgoing-call.vue"),
-      },
-      {
-        path: "incoming-call",
-        component: () =>
-          import("@/views/pages/applications/calls/incoming-call.vue"),
-      },
-      {
-        path: "call-history",
-        component: () =>
-          import("@/views/pages/applications/calls/call-history.vue"),
-      },
-    ],
-  },
-  {
-    path: "/invoice",
-    component: () =>
-      import("@/views/pages/applications/invoice/invoice-index.vue"),
-    children: [
-      { path: "", redirect: "/invoice/invoice-list" },
-      {
-        path: "invoice-list",
-        component: () =>
-          import("@/views/pages/applications/invoice/invoice-list.vue"),
-      },
-      {
-        path: "invoice-details",
-        component: () =>
-          import("@/views/pages/applications/invoice/invoice-details.vue"),
-      },
-    ],
-  },
-  {
-    path: "/applications",
-    component: () =>
-      import("@/views/pages/applications/applications-index.vue"),
-    children: [
-      { path: "", redirect: "/applications/chat" },
-      {
-        path: "chat",
-        component: () => import("@/views/pages/applications/chat-index.vue"),
-      },
-      {
-        path: "chat-inbox/:appointmentId",
-        component: () => import("@/views/pages/applications/inbox.vue"),
-      },
-      {
-        path: "calendar",
-        component: () => import("@/views/pages/applications/calendar.vue"),
-      },
-      {
-        path: "email",
-        component: () => import("@/views/pages/applications/email.vue"),
-      },
-      {
-        path: "email-reply",
-        component: () => import("@/views/pages/applications/email-reply.vue"),
-      },
-      {
-        path: "todo",
-        component: () => import("@/views/pages/applications/todo.vue"),
-      },
-      {
-        path: "todo-list",
-        component: () => import("@/views/pages/applications/todo-list.vue"),
-      },
-      {
-        path: "notes",
-        component: () => import("@/views/pages/applications/notes.vue"),
-      },
-      {
-        path: "social-feed",
-        component: () => import("@/views/pages/applications/social-feed.vue"),
-      },
-      {
-        path: "file-manager",
-        component: () => import("@/views/pages/applications/file-manager.vue"),
-      },
-      {
-        path: "kanban-view",
-        component: () =>
-          import("@/views/pages/applications/kanban/kanban-view.vue"),
-      },
-      {
-        path: "contacts",
-        component: () =>
-          import("@/views/pages/applications/contacts/contacts-list.vue"),
-      },
-      {
-        path: "search-list",
-        component: () =>
-          import("@/views/pages/applications/search-list/search-list.vue"),
-      },
-    ],
-  },
-  {
-    path: "/base-ui",
-    component: () =>
-      import("@/views/pages/uiinterface/baseui/baseui-index.vue"),
-    children: [
-      { path: "", redirect: "/base-ui/ui-accordion" },
-      {
-        path: "ui-accordion",
-        component: () =>
-          import("@/views/pages/uiinterface/baseui/ui-accordion.vue"),
-      },
-      {
-        path: "ui-alerts",
-        component: () =>
-          import("@/views/pages/uiinterface/baseui/ui-alerts.vue"),
-      },
-      {
-        path: "ui-avatar",
-        component: () =>
-          import("@/views/pages/uiinterface/baseui/ui-avatar.vue"),
-      },
-      {
-        path: "ui-badges",
-        component: () =>
-          import("@/views/pages/uiinterface/baseui/ui-badges.vue"),
-      },
-      {
-        path: "ui-breadcrumb",
-        component: () =>
-          import("@/views/pages/uiinterface/baseui/ui-breadcrumb.vue"),
-      },
-      {
-        path: "ui-buttons",
-        component: () =>
-          import("@/views/pages/uiinterface/baseui/ui-buttons.vue"),
-      },
-      {
-        path: "ui-buttons-group",
-        component: () =>
-          import("@/views/pages/uiinterface/baseui/ui-buttons-group.vue"),
-      },
-      {
-        path: "ui-cards",
-        component: () =>
-          import("@/views/pages/uiinterface/baseui/ui-cards.vue"),
-      },
-      {
-        path: "ui-carousel",
-        component: () =>
-          import("@/views/pages/uiinterface/baseui/ui-carousel.vue"),
-      },
-      {
-        path: "ui-collapse",
-        component: () =>
-          import("@/views/pages/uiinterface/baseui/ui-collapse.vue"),
-      },
-      {
-        path: "ui-dropdowns",
-        component: () =>
-          import("@/views/pages/uiinterface/baseui/ui-dropdowns.vue"),
-      },
-      {
-        path: "ui-ratio",
-        component: () =>
-          import("@/views/pages/uiinterface/baseui/ui-ratio.vue"),
-      },
-      {
-        path: "ui-grid",
-        component: () => import("@/views/pages/uiinterface/baseui/ui-grid.vue"),
-      },
-      {
-        path: "ui-images",
-        component: () =>
-          import("@/views/pages/uiinterface/baseui/ui-images.vue"),
-      },
-      {
-        path: "ui-links",
-        component: () =>
-          import("@/views/pages/uiinterface/baseui/ui-links.vue"),
-      },
-      {
-        path: "ui-list-group",
-        component: () =>
-          import("@/views/pages/uiinterface/baseui/ui-list-group.vue"),
-      },
-      {
-        path: "ui-modals",
-        component: () =>
-          import("@/views/pages/uiinterface/baseui/ui-modals.vue"),
-      },
-      {
-        path: "ui-offcanvas",
-        component: () =>
-          import("@/views/pages/uiinterface/baseui/ui-offcanvas.vue"),
-      },
-      {
-        path: "ui-pagination",
-        component: () =>
-          import("@/views/pages/uiinterface/baseui/ui-pagination.vue"),
-      },
-      {
-        path: "ui-placeholders",
-        component: () =>
-          import("@/views/pages/uiinterface/baseui/ui-placeholders.vue"),
-      },
-      {
-        path: "ui-popovers",
-        component: () =>
-          import("@/views/pages/uiinterface/baseui/ui-popovers.vue"),
-      },
-      {
-        path: "ui-progress",
-        component: () =>
-          import("@/views/pages/uiinterface/baseui/ui-progress.vue"),
-      },
-      {
-        path: "ui-scrollspy",
-        component: () =>
-          import("@/views/pages/uiinterface/baseui/ui-scrollspy.vue"),
-      },
-      {
-        path: "ui-spinner",
-        component: () =>
-          import("@/views/pages/uiinterface/baseui/ui-spinner.vue"),
-      },
-      {
-        path: "ui-nav-tabs",
-        component: () =>
-          import("@/views/pages/uiinterface/baseui/ui-nav-tabs.vue"),
-      },
-      {
-        path: "ui-toasts",
-        component: () =>
-          import("@/views/pages/uiinterface/baseui/ui-toasts.vue"),
-      },
-      {
-        path: "ui-tooltips",
-        component: () =>
-          import("@/views/pages/uiinterface/baseui/ui-tooltips.vue"),
-      },
-      {
-        path: "ui-typography",
-        component: () =>
-          import("@/views/pages/uiinterface/baseui/ui-typography.vue"),
-      },
-      {
-        path: "ui-utilities",
-        component: () =>
-          import("@/views/pages/uiinterface/baseui/ui-utilities.vue"),
-      },
-    ],
-  },
-  {
-    path: "/advance-ui",
-    component: () =>
-      import("@/views/pages/uiinterface/advancedui/advancedui-index.vue"),
-    children: [
-      { path: "", redirect: "/advancedui/extended-dragula" },
-      {
-        path: "extended-dragula",
-        component: () =>
-          import("@/views/pages/uiinterface/advancedui/extended-dragula.vue"),
-      },
-      {
-        path: "ui-clipboard",
-        component: () =>
-          import("@/views/pages/uiinterface/advancedui/ui-clipboard.vue"),
-      },
-      {
-        path: "ui-rangeslider",
-        component: () =>
-          import("@/views/pages/uiinterface/advancedui/ui-rangeslider.vue"),
-      },
-      {
-        path: "ui-sweetalerts",
-        component: () =>
-          import("@/views/pages/uiinterface/advancedui/ui-sweetalerts.vue"),
-      },
-      {
-        path: "ui-lightbox",
-        component: () =>
-          import("@/views/pages/uiinterface/advancedui/ui-lightbox.vue"),
-      },
-      {
-        path: "ui-rating",
-        component: () =>
-          import("@/views/pages/uiinterface/advancedui/ui-rating.vue"),
-      },
-      {
-        path: "ui-counter",
-        component: () =>
-          import("@/views/pages/uiinterface/advancedui/ui-counter.vue"),
-      },
-      {
-        path: "ui-scrollbar",
-        component: () =>
-          import("@/views/pages/uiinterface/advancedui/ui-scrollbar.vue"),
-      },
-    ],
-  },
-  {
-    path: "/form-elements",
-    component: () =>
-      import("@/views/pages/uiinterface/form/form-elements/form-elements.vue"),
-    children: [
-      { path: "", redirect: "/form-elements/form-basic-inputs" },
-      {
-        path: "form-basic-inputs",
-        component: () =>
-          import(
-            "@/views/pages/uiinterface/form/form-elements/form-basic-inputs.vue"
-          ),
-      },
-      {
-        path: "form-checkbox-radios",
-        component: () =>
-          import(
-            "@/views/pages/uiinterface/form/form-elements/form-checkbox-radios.vue"
-          ),
-      },
-      {
-        path: "form-input-groups",
-        component: () =>
-          import(
-            "@/views/pages/uiinterface/form/form-elements/form-input-groups.vue"
-          ),
-      },
-      {
-        path: "form-grid-gutters",
-        component: () =>
-          import(
-            "@/views/pages/uiinterface/form/form-elements/form-grid-gutters.vue"
-          ),
-      },
-      {
-        path: "form-mask",
-        component: () =>
-          import("@/views/pages/uiinterface/form/form-elements/form-mask.vue"),
-      },
-      {
-        path: "form-fileupload",
-        component: () =>
-          import(
-            "@/views/pages/uiinterface/form/form-elements/form-fileupload.vue"
-          ),
-      },
-    ],
-  },
-  {
-    path: "/form-layouts",
-    component: () =>
-      import("@/views/pages/uiinterface/form/form-layouts/form-layouts.vue"),
-    children: [
-      { path: "", redirect: "/form-layouts/form-horizontal" },
-      {
-        path: "form-horizontal",
-        component: () =>
-          import(
-            "@/views/pages/uiinterface/form/form-layouts/form-horizontal.vue"
-          ),
-      },
-      {
-        path: "form-vertical",
-        component: () =>
-          import(
-            "@/views/pages/uiinterface/form/form-layouts/form-vertical.vue"
-          ),
-      },
-      {
-        path: "form-floating-labels",
-        component: () =>
-          import(
-            "@/views/pages/uiinterface/form/form-layouts/form-floating-labels.vue"
-          ),
-      },
-    ],
-  },
-  {
-    path: "/forms",
-    component: () => import("@/views/pages/uiinterface/form/form-index.vue"),
-    children: [
-      { path: "", redirect: "/form/form-validation" },
-      {
-        path: "form-validation",
-        component: () =>
-          import("@/views/pages/uiinterface/form/form-validation.vue"),
-      },
-      {
-        path: "form-select2",
-        component: () =>
-          import("@/views/pages/uiinterface/form/form-select2.vue"),
-      },
-      {
-        path: "form-wizard",
-        component: () =>
-          import("@/views/pages/uiinterface/form/form-wizard.vue"),
-      },
-    ],
-  },
-  {
-    path: "/tables",
-    component: () =>
-      import("@/views/pages/uiinterface/tables/tables-index.vue"),
-    children: [
-      { path: "", redirect: "/tables/tables-basic" },
-      {
-        path: "tables-basic",
-        component: () =>
-          import("@/views/pages/uiinterface/tables/tables-basic.vue"),
-      },
-      {
-        path: "data-tables",
-        component: () =>
-          import("@/views/pages/uiinterface/tables/data-tables.vue"),
-      },
-    ],
-  },
-  {
-    path: "/charts",
-    component: () =>
-      import("@/views/pages/uiinterface/charts/charts-index.vue"),
-    children: [
-      { path: "", redirect: "/charts/chart-apex" },
-      {
-        path: "chart-apex",
-        component: () =>
-          import("@/views/pages/uiinterface/charts/apex/chart-apex.vue"),
-      },
-      {
-        path: "chart-c3",
-        component: () =>
-          import("@/views/pages/uiinterface/charts/c3/chart-c3.vue"),
-      },
-      {
-        path: "chart-js",
-        component: () =>
-          import("@/views/pages/uiinterface/charts/js/chart-js.vue"),
-      },
-      {
-        path: "chart-flot",
-        component: () =>
-          import("@/views/pages/uiinterface/charts/flot/chart-flot.vue"),
-      },
-      {
-        path: "chart-morris",
-        component: () =>
-          import("@/views/pages/uiinterface/charts/morris/chart-morris.vue"),
-      },
-    ],
-  },
-  {
-    path: "/icons",
-    component: () => import("@/views/pages/uiinterface/icons/icons-index.vue"),
-    children: [
-      { path: "", redirect: "/icons/icon-fontawesome" },
-      {
-        path: "icon-fontawesome",
-        component: () =>
-          import("@/views/pages/uiinterface/icons/icon-fontawesome.vue"),
-      },
-      {
-        path: "icon-tabler",
-        component: () =>
-          import("@/views/pages/uiinterface/icons/icon-tabler.vue"),
-      },
-      {
-        path: "icon-bootstrap",
-        component: () =>
-          import("@/views/pages/uiinterface/icons/icon-bootstrap.vue"),
-      },
-      {
-        path: "icon-remix",
-        component: () =>
-          import("@/views/pages/uiinterface/icons/icon-remix.vue"),
-      },
-      {
-        path: "icon-ionic",
-        component: () =>
-          import("@/views/pages/uiinterface/icons/icon-ionic.vue"),
-      },
-      {
-        path: "icon-material",
-        component: () =>
-          import("@/views/pages/uiinterface/icons/icon-material.vue"),
-      },
-      {
-        path: "icon-feather",
-        component: () =>
-          import("@/views/pages/uiinterface/icons/icon-feather.vue"),
-      },
-      {
-        path: "icon-pe7",
-        component: () => import("@/views/pages/uiinterface/icons/icon-pe7.vue"),
-      },
-      {
-        path: "icon-simpleline",
-        component: () =>
-          import("@/views/pages/uiinterface/icons/icon-simpleline.vue"),
-      },
-      {
-        path: "icon-weather",
-        component: () =>
-          import("@/views/pages/uiinterface/icons/icon-weather.vue"),
-      },
-      {
-        path: "icon-typicon",
-        component: () =>
-          import("@/views/pages/uiinterface/icons/icon-typicon.vue"),
-      },
-      {
-        path: "icon-flag",
-        component: () =>
-          import("@/views/pages/uiinterface/icons/icon-flag.vue"),
-      },
-    ],
-  },
-  {
-    path: "/maps",
-    component: () => import("@/views/pages/uiinterface/maps/map-index.vue"),
-    children: [
-      { path: "", redirect: "/maps/maps-vector" },
-      {
-        path: "maps-leaflet",
-        component: () =>
-          import("@/views/pages/uiinterface/maps/maps-leaflet.vue"),
-      },
-      {
-        path: "maps-vector",
-        component: () =>
-          import("@/views/pages/uiinterface/maps/maps-vector.vue"),
-      },
-    ],
-  },
-  {
-    path: "/withdraw-methods-management",
-    component: () =>
-      import("@/views/pages/withdraw-methods/withdraw-methods-index.vue"),
   },
 ];
 

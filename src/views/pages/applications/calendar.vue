@@ -10,7 +10,9 @@
     <!-- Start Content -->
     <div class="content content-two">
       <!-- Page Header -->
-      <div class="d-flex align-items-sm-center flex-sm-row flex-column gap-2 pb-3">
+      <div
+        class="d-flex align-items-sm-center flex-sm-row flex-column gap-2 pb-3"
+      >
         <div class="flex-grow-1">
           <h4 class="fs-18 fw-semibold mb-0">Calendar</h4>
         </div>
@@ -28,7 +30,9 @@
       </div>
       <!-- End Page Header -->
 
-      <div class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3">
+      <div
+        class="d-flex align-items-center justify-content-between flex-wrap gap-2 mb-3"
+      >
         <div class="dropdown">
           <a
             href="javascript:void(0);"
@@ -78,11 +82,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy;
-        <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All Rights
-        Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
@@ -174,7 +174,9 @@
             >
               Cancel
             </button>
-            <button type="submit" class="btn btn-md btn-primary">Add Event</button>
+            <button type="submit" class="btn btn-md btn-primary">
+              Add Event
+            </button>
           </div>
         </form>
       </div>
@@ -199,18 +201,20 @@
         </div>
         <div class="modal-body">
           <p class="d-flex align-items-center fw-medium text-black mb-3">
-            <i class="ti ti-calendar-check text-default me-2"></i>26 Jul,2024 to 31
-            Jul,2024
+            <i class="ti ti-calendar-check text-default me-2"></i>26 Jul,2024 to
+            31 Jul,2024
           </p>
           <p class="d-flex align-items-center fw-medium text-black mb-3">
-            <i class="ti ti-calendar-check text-default me-2"></i>11:00 AM to 12:15 PM
+            <i class="ti ti-calendar-check text-default me-2"></i>11:00 AM to
+            12:15 PM
           </p>
           <p class="d-flex align-items-center fw-medium text-black mb-3">
             <i class="ti ti-map-pin-bolt text-default me-2"></i>Las Vegas, US
           </p>
           <p class="d-flex align-items-center fw-medium text-black mb-0">
-            <i class="ti ti-calendar-check text-default me-2"></i>A recurring or repeating
-            event is simply any event that you will occur more than once on your calendar.
+            <i class="ti ti-calendar-check text-default me-2"></i>A recurring or
+            repeating event is simply any event that you will occur more than
+            once on your calendar.
           </p>
         </div>
       </div>
@@ -231,7 +235,8 @@ const valueThree = ref();
 
 // Define the getImageUrl function outside the component scope
 function getImageUrl(avatar) {
-  const imgPath = typeof avatar === "object" && avatar.img ? avatar.img : avatar;
+  const imgPath =
+    typeof avatar === "object" && avatar.img ? avatar.img : avatar;
 
   return new URL(`/src/assets/img/users/${imgPath}`, import.meta.url).href;
 }

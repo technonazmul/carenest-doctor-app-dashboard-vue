@@ -46,8 +46,8 @@
                       <tr>
                         <td>211.11.0.25</td>
                         <td>
-                          You can get on-demand services in order to find a nearby
-                          service.
+                          You can get on-demand services in order to find a
+                          nearby service.
                         </td>
                         <td>30 Apr 2025</td>
                         <td class="action-item">
@@ -82,7 +82,9 @@
                       </tr>
                       <tr>
                         <td>211.03.0.11</td>
-                        <td>Extract pricing information at inventory levels.</td>
+                        <td>
+                          Extract pricing information at inventory levels.
+                        </td>
                         <td>15 Apr 2025</td>
                         <td class="action-item">
                           <a
@@ -117,7 +119,8 @@
                       <tr>
                         <td>211.24.0.17</td>
                         <td>
-                          Fetching data for competitors to gain competitive advantage.
+                          Fetching data for competitors to gain competitive
+                          advantage.
                         </td>
                         <td>02 Apr 2025</td>
                         <td class="action-item">
@@ -153,8 +156,8 @@
                       <tr>
                         <td>211.12.0.34</td>
                         <td>
-                          Temporarily block to protect user accounts from internet
-                          fraudsters.
+                          Temporarily block to protect user accounts from
+                          internet fraudsters.
                         </td>
                         <td>27 Mar 2025</td>
                         <td class="action-item">
@@ -205,10 +208,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
@@ -247,10 +247,18 @@
             </div>
           </div>
           <div class="modal-footer d-flex align-items-center gap-1">
-            <button type="button" class="btn btn-white border" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-white border"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
-            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
               Add Ban IP Address
             </button>
           </div>
@@ -293,10 +301,18 @@ You can get on-demand services in order to find a nearby service.</textarea
             </div>
           </div>
           <div class="modal-footer d-flex align-items-center gap-1">
-            <button type="button" class="btn btn-white border" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-white border"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
-            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
               Save Changes
             </button>
           </div>

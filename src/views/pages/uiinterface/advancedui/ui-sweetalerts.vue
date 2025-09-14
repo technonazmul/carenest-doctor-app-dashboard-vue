@@ -9,13 +9,17 @@
     <!-- Start Content -->
     <div class="content pb-0">
       <!-- Page Header -->
-      <div class="d-flex align-items-sm-center flex-sm-row flex-column gap-2 pb-3">
+      <div
+        class="d-flex align-items-sm-center flex-sm-row flex-column gap-2 pb-3"
+      >
         <div class="flex-grow-1">
           <h4 class="fw-bold mb-0">Sweetalert</h4>
         </div>
         <div class="text-end">
           <ol class="breadcrumb m-0 py-0">
-            <li class="breadcrumb-item"><a href="javascript: void(0);">Home</a></li>
+            <li class="breadcrumb-item">
+              <a href="javascript: void(0);">Home</a>
+            </li>
 
             <li class="breadcrumb-item">
               <a href="javascript: void(0);">Advanced UI</a>
@@ -79,7 +83,9 @@
               <h4 class="header-title">HTML</h4>
             </div>
             <div class="card-body">
-              <p class="text-muted">Here's an example of SweetAlert with HTML content.</p>
+              <p class="text-muted">
+                Here's an example of SweetAlert with HTML content.
+              </p>
               <button
                 type="button"
                 @click="htmlAlert"
@@ -101,22 +107,40 @@
               <h4 class="header-title">All States</h4>
             </div>
             <div class="card-body">
-              <p class="text-muted">Here are examples for each of SweetAlert's states.</p>
+              <p class="text-muted">
+                Here are examples for each of SweetAlert's states.
+              </p>
 
               <div class="d-flex flex-wrap gap-2">
                 <button type="button" id="sweetalert-info" class="btn btn-info">
                   Toggle Info
                 </button>
-                <button type="button" id="sweetalert-warning" class="btn btn-warning">
+                <button
+                  type="button"
+                  id="sweetalert-warning"
+                  class="btn btn-warning"
+                >
                   Toggle Warning
                 </button>
-                <button type="button" id="sweetalert-error" class="btn btn-danger">
+                <button
+                  type="button"
+                  id="sweetalert-error"
+                  class="btn btn-danger"
+                >
                   Toggle Error
                 </button>
-                <button type="button" id="sweetalert-success" class="btn btn-success">
+                <button
+                  type="button"
+                  id="sweetalert-success"
+                  class="btn btn-success"
+                >
                   Toggle Success
                 </button>
-                <button type="button" id="sweetalert-question" class="btn btn-primary">
+                <button
+                  type="button"
+                  id="sweetalert-question"
+                  class="btn btn-primary"
+                >
                   Toggle Question
                 </button>
               </div>
@@ -133,9 +157,15 @@
               <h4 class="header-title">Long Content</h4>
             </div>
             <div class="card-body">
-              <p class="text-muted">A modal window with a long content inside.</p>
+              <p class="text-muted">
+                A modal window with a long content inside.
+              </p>
 
-              <button type="button" id="sweetalert-longcontent" class="btn btn-secondary">
+              <button
+                type="button"
+                id="sweetalert-longcontent"
+                class="btn btn-secondary"
+              >
                 Click Me
               </button>
             </div>
@@ -152,7 +182,8 @@
             </div>
             <div class="card-body">
               <p class="text-muted">
-                A warning message, with a function attached to the "Confirm"-button...
+                A warning message, with a function attached to the
+                "Confirm"-button...
               </p>
 
               <button
@@ -177,10 +208,15 @@
             </div>
             <div class="card-body">
               <p class="text-muted">
-                By passing a parameter, you can execute something else for "Cancel".
+                By passing a parameter, you can execute something else for
+                "Cancel".
               </p>
 
-              <button type="button" id="sweetalert-params" class="btn btn-secondary">
+              <button
+                type="button"
+                id="sweetalert-params"
+                class="btn btn-secondary"
+              >
                 Click Me
               </button>
             </div>
@@ -198,7 +234,11 @@
             <div class="card-body">
               <p class="text-muted">A message with custom Image Header.</p>
 
-              <button type="button" id="sweetalert-image" class="btn btn-secondary">
+              <button
+                type="button"
+                id="sweetalert-image"
+                class="btn btn-secondary"
+              >
                 Click Me
               </button>
             </div>
@@ -247,7 +287,9 @@
                 >
                   Top Start
                 </button>
-                <button class="btn btn-primary" id="position-top-end">Top End</button>
+                <button class="btn btn-primary" id="position-top-end">
+                  Top End
+                </button>
                 <button class="btn btn-primary" id="position-bottom-start">
                   Bottom Starts
                 </button>
@@ -308,10 +350,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>

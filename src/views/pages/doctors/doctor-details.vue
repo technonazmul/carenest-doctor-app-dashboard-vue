@@ -68,7 +68,7 @@
               <div>
                 <p class="mb-2">Consultation Charge</p>
                 <h6 class="fs-18 fw-bold mb-3">
-                  {{ doctor.fee || "0" }}
+                  {{ formatCurrency(doctor.fee || "0") }}
                 </h6>
               </div>
             </div>
@@ -255,16 +255,13 @@
 
     <!-- Footer -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy;
-        <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
   </div>
 </template>
 
 <script>
+import { useSettings } from "@/composables/useSettings";
 import axios from "axios";
 import { API_BASE } from "@/api/apiConfig";
 import Cookies from "js-cookie";
@@ -276,11 +273,14 @@ export default {
     const apiBase = API_BASE;
     const adminToken = Cookies.get("adminToken");
     const apiBaseUrl = `${apiBase}/api/backend`;
+    const { getCurrencySymbol, formatCurrency } = useSettings();
     console.log(adminToken);
 
     return {
       adminToken,
       apiBaseUrl,
+      getCurrencySymbol,
+      formatCurrency,
     };
   },
 

@@ -40,7 +40,9 @@
       </div>
       <!-- End Page Header -->
 
-      <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3">
+      <div
+        class="d-flex align-items-center justify-content-between flex-wrap row-gap-3"
+      >
         <div class="search-set mb-3">
           <div class="d-flex align-items-center flex-wrap gap-2">
             <div class="table-search d-flex align-items-center mb-0">
@@ -73,10 +75,14 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-end p-2">
               <li>
-                <a href="javascript:void(0);" class="dropdown-item rounded-1">Recent</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                  >Recent</a
+                >
               </li>
               <li>
-                <a href="javascript:void(0);" class="dropdown-item rounded-1">Oldest</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                  >Oldest</a
+                >
               </li>
             </ul>
           </div>
@@ -105,11 +111,13 @@
                           'badge',
                           {
                             'badge-soft-success': record.Status === 'Paid',
-                            'badge-soft-warning': record.Status === 'Partially Paid',
+                            'badge-soft-warning':
+                              record.Status === 'Partially Paid',
                             'badge-soft-danger': record.Status === 'UnPaid',
                           },
                         ]"
-                        ><i class="ti ti-point-filled me-1"></i>{{ record.Status }}
+                        ><i class="ti ti-point-filled me-1"></i
+                        >{{ record.Status }}
                       </span>
                     </template>
                     <template v-if="column.key === 'action'">
@@ -151,10 +159,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
@@ -179,7 +184,10 @@
               <label class="form-label"
                 >Edit Invoices<span class="text-danger ms-1">*</span></label
               >
-              <input type="text" class="form-control rounded-end h-auto py-2 bg-white" />
+              <input
+                type="text"
+                class="form-control rounded-end h-auto py-2 bg-white"
+              />
             </div>
             <div class="mb-2">
               <label class="form-label"
@@ -208,7 +216,11 @@
             </div>
           </div>
           <div class="modal-footer d-flex align-items-center gap-1">
-            <button type="button" class="btn btn-white border" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-white border"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
             <button type="submit" class="btn btn-primary">Save Changes</button>
@@ -239,7 +251,9 @@
               ><i class="ti ti-trash fs-24"></i
             ></span>
           </div>
-          <h5 class="fw-bold mb-1 position-relative z-1">Delete Confirmation</h5>
+          <h5 class="fw-bold mb-1 position-relative z-1">
+            Delete Confirmation
+          </h5>
           <p class="mb-3 position-relative z-1">Are you sure want to delete?</p>
           <div class="d-flex justify-content-center">
             <a
@@ -268,7 +282,8 @@ const columns = [
     dataIndex: "InvoiceID",
     key: "InvoiceID",
     sorter: {
-      compare: (a, b) => (a.InvoiceID.toLowerCase() > b.InvoiceID.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.InvoiceID.toLowerCase() > b.InvoiceID.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -294,7 +309,8 @@ const columns = [
     dataIndex: "DueDate",
     key: "DueDate",
     sorter: {
-      compare: (a, b) => (a.DueDate.toLowerCase() > b.DueDate.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.DueDate.toLowerCase() > b.DueDate.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -302,7 +318,8 @@ const columns = [
     dataIndex: "Amount",
     key: "Amount",
     sorter: {
-      compare: (a, b) => (a.Amount.toLowerCase() > b.Amount.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Amount.toLowerCase() > b.Amount.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -310,7 +327,8 @@ const columns = [
     dataIndex: "Status",
     key: "Status",
     sorter: {
-      compare: (a, b) => (a.Status.toLowerCase() > b.Status.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Status.toLowerCase() > b.Status.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -423,7 +441,8 @@ export default {
   },
   methods: {
     getImageUrl(imageName) {
-      return new URL(`/src/assets/img/doctors/${imageName}`, import.meta.url).href;
+      return new URL(`/src/assets/img/doctors/${imageName}`, import.meta.url)
+        .href;
     },
   },
   computed: {
@@ -461,10 +480,16 @@ export default {
             endDate: end,
             ranges: {
               Today: [moment(), moment()],
-              Yesterday: [moment().subtract(1, "days"), moment().subtract(1, "days")],
+              Yesterday: [
+                moment().subtract(1, "days"),
+                moment().subtract(1, "days"),
+              ],
               "Last 7 Days": [moment().subtract(6, "days"), moment()],
               "Last 30 Days": [moment().subtract(29, "days"), moment()],
-              "This Month": [moment().startOf("month"), moment().endOf("month")],
+              "This Month": [
+                moment().startOf("month"),
+                moment().endOf("month"),
+              ],
               "Last Month": [
                 moment().subtract(1, "month").startOf("month"),
                 moment().subtract(1, "month").endOf("month"),

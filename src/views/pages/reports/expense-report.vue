@@ -181,7 +181,11 @@
             <div class="col-md-6">
               <div class="mb-0">
                 <label class="form-label">Category</label>
-                <vue3-select v-model="selected" :options="CateExp" placeholder="Select" />
+                <vue3-select
+                  v-model="selected"
+                  :options="CateExp"
+                  placeholder="Select"
+                />
               </div>
             </div>
             <!-- end col -->
@@ -269,10 +273,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
@@ -284,7 +285,8 @@ const columns = [
     dataIndex: "Expense",
     key: "Expense",
     sorter: {
-      compare: (a, b) => (a.Expense.toLowerCase() > b.Expense.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Expense.toLowerCase() > b.Expense.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -292,7 +294,8 @@ const columns = [
     dataIndex: "Category",
     key: "Category",
     sorter: {
-      compare: (a, b) => (a.Category.toLowerCase() > b.Category.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Category.toLowerCase() > b.Category.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -300,7 +303,8 @@ const columns = [
     dataIndex: "Amount",
     key: "Amount",
     sorter: {
-      compare: (a, b) => (a.Amount.toLowerCase() > b.Amount.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Amount.toLowerCase() > b.Amount.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -325,7 +329,8 @@ const columns = [
     dataIndex: "Status",
     key: "Status",
     sorter: {
-      compare: (a, b) => (a.Status.toLowerCase() > b.Status.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Status.toLowerCase() > b.Status.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -501,10 +506,16 @@ export default {
             endDate: end,
             ranges: {
               Today: [moment(), moment()],
-              Yesterday: [moment().subtract(1, "days"), moment().subtract(1, "days")],
+              Yesterday: [
+                moment().subtract(1, "days"),
+                moment().subtract(1, "days"),
+              ],
               "Last 7 Days": [moment().subtract(6, "days"), moment()],
               "Last 30 Days": [moment().subtract(29, "days"), moment()],
-              "This Month": [moment().startOf("month"), moment().endOf("month")],
+              "This Month": [
+                moment().startOf("month"),
+                moment().endOf("month"),
+              ],
               "Last Month": [
                 moment().subtract(1, "month").startOf("month"),
                 moment().subtract(1, "month").endOf("month"),

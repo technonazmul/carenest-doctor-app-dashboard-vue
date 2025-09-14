@@ -10,7 +10,9 @@
     <!-- Start Content -->
     <div class="content pb-0">
       <!-- Page Header -->
-      <div class="d-flex align-items-sm-center flex-sm-row flex-column gap-2 pb-3">
+      <div
+        class="d-flex align-items-sm-center flex-sm-row flex-column gap-2 pb-3"
+      >
         <div class="flex-grow-1">
           <h4 class="fs-18 fw-semibold mb-0">Notes</h4>
         </div>
@@ -92,25 +94,34 @@
                     <a
                       href="javascript:void(0);"
                       class="text-info d-flex align-items-center mb-2"
-                      ><i class="ti ti-square-filled square-rotate fs-10 me-2"></i
+                      ><i
+                        class="ti ti-square-filled square-rotate fs-10 me-2"
+                      ></i
                       >Pending</a
                     >
                     <a
                       href="javascript:void(0);"
                       class="text-danger d-flex align-items-center mb-2"
-                      ><i class="ti ti-square-filled square-rotate fs-10 me-2"></i
+                      ><i
+                        class="ti ti-square-filled square-rotate fs-10 me-2"
+                      ></i
                       >Onhold</a
                     >
                     <a
                       href="javascript:void(0);"
                       class="text-warning d-flex align-items-center mb-2"
-                      ><i class="ti ti-square-filled square-rotate fs-10 me-2"></i
+                      ><i
+                        class="ti ti-square-filled square-rotate fs-10 me-2"
+                      ></i
                       >Inprogress</a
                     >
                     <a
                       href="javascript:void(0);"
                       class="text-success d-flex align-items-center"
-                      ><i class="ti ti-square-filled square-rotate fs-10 me-2"></i>Done</a
+                      ><i
+                        class="ti ti-square-filled square-rotate fs-10 me-2"
+                      ></i
+                      >Done</a
                     >
                   </div>
                 </div>
@@ -120,18 +131,26 @@
                     <a
                       href="javascript:void(0);"
                       class="text-warning d-flex align-items-center mb-2"
-                      ><i class="ti ti-square-filled square-rotate fs-10 me-2"></i
+                      ><i
+                        class="ti ti-square-filled square-rotate fs-10 me-2"
+                      ></i
                       >Medium</a
                     >
                     <a
                       href="javascript:void(0);"
                       class="text-success d-flex align-items-center mb-2"
-                      ><i class="ti ti-square-filled square-rotate fs-10 me-2"></i>High</a
+                      ><i
+                        class="ti ti-square-filled square-rotate fs-10 me-2"
+                      ></i
+                      >High</a
                     >
                     <a
                       href="javascript:void(0);"
                       class="text-danger d-flex align-items-center"
-                      ><i class="ti ti-square-filled square-rotate fs-10 me-2"></i>Low</a
+                      ><i
+                        class="ti ti-square-filled square-rotate fs-10 me-2"
+                      ></i
+                      >Low</a
                     >
                   </div>
                 </div>
@@ -170,13 +189,19 @@
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end">
                       <li>
-                        <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                          ><i class="ti ti-file-type-pdf me-1"></i>Export as PDF</a
+                        <a
+                          href="javascript:void(0);"
+                          class="dropdown-item rounded-1"
+                          ><i class="ti ti-file-type-pdf me-1"></i>Export as
+                          PDF</a
                         >
                       </li>
                       <li>
-                        <a href="javascript:void(0);" class="dropdown-item rounded-1"
-                          ><i class="ti ti-file-type-xls me-1"></i>Export as Excel
+                        <a
+                          href="javascript:void(0);"
+                          class="dropdown-item rounded-1"
+                          ><i class="ti ti-file-type-xls me-1"></i>Export as
+                          Excel
                         </a>
                       </li>
                     </ul>
@@ -229,10 +254,13 @@
                   <div class="col-md-4 d-flex">
                     <div class="card flex-fill">
                       <div class="card-body">
-                        <div class="d-flex align-items-center justify-content-between">
+                        <div
+                          class="d-flex align-items-center justify-content-between"
+                        >
                           <span
                             class="badge badge-outline-warning d-inline-flex align-items-center"
-                            ><i class="ti ti-circle-filled fs-7 me-1"></i>Medium</span
+                            ><i class="ti ti-circle-filled fs-7 me-1"></i
+                            >Medium</span
                           >
                           <div>
                             <a
@@ -241,22 +269,28 @@
                               aria-expanded="false"
                               ><i class="ti ti-dots-vertical"></i
                             ></a>
-                            <div class="dropdown-menu notes-menu dropdown-menu-end">
+                            <div
+                              class="dropdown-menu notes-menu dropdown-menu-end"
+                            >
                               <a
                                 href="#"
                                 class="dropdown-item"
                                 data-bs-toggle="modal"
                                 data-bs-target="#edit-note-units"
-                                ><span><i class="ti ti-edit me-1"></i></span>Edit</a
+                                ><span><i class="ti ti-edit me-1"></i></span
+                                >Edit</a
                               >
                               <a
                                 href="#"
                                 class="dropdown-item"
                                 data-bs-toggle="modal"
                                 data-bs-target="#delete_modal"
-                                ><span><i class="ti ti-trash me-1"></i></span>Delete</a
+                                ><span><i class="ti ti-trash me-1"></i></span
+                                >Delete</a
                               >
-                              <a href="javascript:void(0);" class="dropdown-item"
+                              <a
+                                href="javascript:void(0);"
+                                class="dropdown-item"
                                 ><span><i class="ti ti-star me-1"></i></span>Not
                                 Important</a
                               >
@@ -265,7 +299,8 @@
                                 class="dropdown-item"
                                 data-bs-toggle="modal"
                                 data-bs-target="#view-note-units"
-                                ><span><i class="ti ti-eye me-1"></i></span>View</a
+                                ><span><i class="ti ti-eye me-1"></i></span
+                                >View</a
                               >
                             </div>
                           </div>
@@ -280,15 +315,18 @@
                             <i class="ti ti-calendar me-1"></i>20 Jan 2024
                           </p>
                           <p class="text-truncate line-clamb-2 text-wrap">
-                            Space, the final frontier. These are the voyages of the
-                            Starship Enterprise.
+                            Space, the final frontier. These are the voyages of
+                            the Starship Enterprise.
                           </p>
                         </div>
                         <div
                           class="d-flex align-items-center justify-content-between border-top pt-3"
                         >
                           <div class="d-flex align-items-center">
-                            <a href="javascript:void(0);" class="avatar avatar-md me-2">
+                            <a
+                              href="javascript:void(0);"
+                              class="avatar avatar-md me-2"
+                            >
                               <img
                                 src="@/assets/img/profiles/avatar-01.jpg"
                                 alt="Profile"
@@ -296,20 +334,26 @@
                               />
                             </a>
                             <span class="text-info d-flex align-items-center"
-                              ><i class="ti ti-square-filled square-rotate fs-10 me-1"></i
+                              ><i
+                                class="ti ti-square-filled square-rotate fs-10 me-1"
+                              ></i
                               >Personal</span
                             >
                           </div>
                           <div class="d-flex align-items-center">
                             <a href="javascript:void(0);" class="me-2">
-                              <span><i class="ti ti-star text-warning"></i></span>
+                              <span
+                                ><i class="ti ti-star text-warning"></i
+                              ></span>
                             </a>
                             <a
                               href="javascript:void(0);"
                               data-bs-toggle="modal"
                               data-bs-target="#delete_modal"
                             >
-                              <span><i class="ti ti-trash text-danger"></i></span>
+                              <span
+                                ><i class="ti ti-trash text-danger"></i
+                              ></span>
                             </a>
                           </div>
                         </div>
@@ -323,10 +367,13 @@
                   <div class="col-md-4 d-flex">
                     <div class="card flex-fill">
                       <div class="card-body">
-                        <div class="d-flex align-items-center justify-content-between">
+                        <div
+                          class="d-flex align-items-center justify-content-between"
+                        >
                           <span
                             class="badge badge-outline-danger d-inline-flex align-items-center"
-                            ><i class="ti ti-circle-filled fs-7 me-1"></i>Low</span
+                            ><i class="ti ti-circle-filled fs-7 me-1"></i
+                            >Low</span
                           >
                           <div>
                             <a
@@ -336,22 +383,28 @@
                             >
                               <i class="ti ti-dots-vertical"></i>
                             </a>
-                            <div class="dropdown-menu notes-menu dropdown-menu-end">
+                            <div
+                              class="dropdown-menu notes-menu dropdown-menu-end"
+                            >
                               <a
                                 href="#"
                                 class="dropdown-item"
                                 data-bs-toggle="modal"
                                 data-bs-target="#edit-note-units"
-                                ><span><i class="ti ti-edit me-1"></i></span>Edit</a
+                                ><span><i class="ti ti-edit me-1"></i></span
+                                >Edit</a
                               >
                               <a
                                 href="#"
                                 class="dropdown-item"
                                 data-bs-toggle="modal"
                                 data-bs-target="#delete_modal"
-                                ><span><i class="ti ti-trash me-1"></i></span>Delete</a
+                                ><span><i class="ti ti-trash me-1"></i></span
+                                >Delete</a
                               >
-                              <a href="javascript:void(0);" class="dropdown-item"
+                              <a
+                                href="javascript:void(0);"
+                                class="dropdown-item"
                                 ><span><i class="ti ti-star me-1"></i></span>Not
                                 Important</a
                               >
@@ -360,27 +413,34 @@
                                 class="dropdown-item"
                                 data-bs-toggle="modal"
                                 data-bs-target="#view-note-units"
-                                ><span><i class="ti ti-eye me-1"></i></span>View</a
+                                ><span><i class="ti ti-eye me-1"></i></span
+                                >View</a
                               >
                             </div>
                           </div>
                         </div>
                         <div class="my-3">
                           <h6 class="fs-16 text-truncate mb-1">
-                            <a href="javascript:void(0);">Improve touch typing</a>
+                            <a href="javascript:void(0);"
+                              >Improve touch typing</a
+                            >
                           </h6>
                           <p class="mb-3 d-flex align-items-center text-dark">
                             <i class="ti ti-calendar me-1"></i>22 Jan 2024
                           </p>
                           <p class="text-truncate line-clamb-2 text-wrap">
-                            Well, the way they make shows is, they make one show.
+                            Well, the way they make shows is, they make one
+                            show.
                           </p>
                         </div>
                         <div
                           class="d-flex align-items-center justify-content-between border-top pt-3"
                         >
                           <div class="d-flex align-items-center">
-                            <a href="javascript:void(0);" class="avatar avatar-md me-2">
+                            <a
+                              href="javascript:void(0);"
+                              class="avatar avatar-md me-2"
+                            >
                               <img
                                 src="@/assets/img/profiles/avatar-02.jpg"
                                 alt="Profile"
@@ -388,20 +448,26 @@
                               />
                             </a>
                             <span class="text-success d-flex align-items-center"
-                              ><i class="ti ti-square-filled square-rotate fs-10 me-1"></i
+                              ><i
+                                class="ti ti-square-filled square-rotate fs-10 me-1"
+                              ></i
                               >Work</span
                             >
                           </div>
                           <div class="d-flex align-items-center">
                             <a href="javascript:void(0);" class="me-2">
-                              <span><i class="ti ti-star text-warning"></i></span>
+                              <span
+                                ><i class="ti ti-star text-warning"></i
+                              ></span>
                             </a>
                             <a
                               href="javascript:void(0);"
                               data-bs-toggle="modal"
                               data-bs-target="#delete_modal"
                             >
-                              <span><i class="ti ti-trash text-danger"></i></span>
+                              <span
+                                ><i class="ti ti-trash text-danger"></i
+                              ></span>
                             </a>
                           </div>
                         </div>
@@ -415,10 +481,13 @@
                   <div class="col-md-4 d-flex">
                     <div class="card flex-fill">
                       <div class="card-body">
-                        <div class="d-flex align-items-center justify-content-between">
+                        <div
+                          class="d-flex align-items-center justify-content-between"
+                        >
                           <span
                             class="badge badge-outline-danger d-inline-flex align-items-center"
-                            ><i class="ti ti-circle-filled fs-7 me-1"></i>Low</span
+                            ><i class="ti ti-circle-filled fs-7 me-1"></i
+                            >Low</span
                           >
                           <div>
                             <a
@@ -428,22 +497,28 @@
                             >
                               <i class="ti ti-dots-vertical"></i>
                             </a>
-                            <div class="dropdown-menu notes-menu dropdown-menu-end">
+                            <div
+                              class="dropdown-menu notes-menu dropdown-menu-end"
+                            >
                               <a
                                 href="#"
                                 class="dropdown-item"
                                 data-bs-toggle="modal"
                                 data-bs-target="#edit-note-units"
-                                ><span><i class="ti ti-edit me-1"></i></span>Edit</a
+                                ><span><i class="ti ti-edit me-1"></i></span
+                                >Edit</a
                               >
                               <a
                                 href="#"
                                 class="dropdown-item"
                                 data-bs-toggle="modal"
                                 data-bs-target="#delete_modal"
-                                ><span><i class="ti ti-trash me-1"></i></span>Delete</a
+                                ><span><i class="ti ti-trash me-1"></i></span
+                                >Delete</a
                               >
-                              <a href="javascript:void(0);" class="dropdown-item"
+                              <a
+                                href="javascript:void(0);"
+                                class="dropdown-item"
                                 ><span><i class="ti ti-star me-1"></i></span>Not
                                 Important</a
                               >
@@ -452,7 +527,8 @@
                                 class="dropdown-item"
                                 data-bs-toggle="modal"
                                 data-bs-target="#view-note-units"
-                                ><span><i class="ti ti-eye me-1"></i></span>View</a
+                                ><span><i class="ti ti-eye me-1"></i></span
+                                >View</a
                               >
                             </div>
                           </div>
@@ -465,15 +541,18 @@
                             <i class="ti ti-calendar me-1"></i>24 Jan 2024
                           </p>
                           <p class="text-truncate line-clamb-2 text-wrap">
-                            Calligraphy, the art of beautiful handwriting. It derive from
-                            Greek.
+                            Calligraphy, the art of beautiful handwriting. It
+                            derive from Greek.
                           </p>
                         </div>
                         <div
                           class="d-flex align-items-center justify-content-between border-top pt-3"
                         >
                           <div class="d-flex align-items-center">
-                            <a href="javascript:void(0);" class="avatar avatar-md me-2">
+                            <a
+                              href="javascript:void(0);"
+                              class="avatar avatar-md me-2"
+                            >
                               <img
                                 src="@/assets/img/profiles/avatar-03.jpg"
                                 alt="Profile"
@@ -481,20 +560,26 @@
                               />
                             </a>
                             <span class="text-info d-flex align-items-center"
-                              ><i class="ti ti-square-filled square-rotate fs-10 me-1"></i
+                              ><i
+                                class="ti ti-square-filled square-rotate fs-10 me-1"
+                              ></i
                               >Social</span
                             >
                           </div>
                           <div class="d-flex align-items-center">
                             <a href="javascript:void(0);" class="me-2">
-                              <span><i class="ti ti-star text-warning"></i></span>
+                              <span
+                                ><i class="ti ti-star text-warning"></i
+                              ></span>
                             </a>
                             <a
                               href="javascript:void(0);"
                               data-bs-toggle="modal"
                               data-bs-target="#delete_modal"
                             >
-                              <span><i class="ti ti-trash text-danger"></i></span>
+                              <span
+                                ><i class="ti ti-trash text-danger"></i
+                              ></span>
                             </a>
                           </div>
                         </div>
@@ -513,10 +598,13 @@
                 <div class="col-md-4 d-flex">
                   <div class="card flex-fill">
                     <div class="card-body">
-                      <div class="d-flex align-items-center justify-content-between">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
                         <span
                           class="badge badge-outline-success d-inline-flex align-items-center"
-                          ><i class="ti ti-circle-filled fs-7 me-1"></i>High</span
+                          ><i class="ti ti-circle-filled fs-7 me-1"></i
+                          >High</span
                         >
                         <div>
                           <a
@@ -526,20 +614,24 @@
                           >
                             <i class="ti ti-dots-vertical"></i>
                           </a>
-                          <div class="dropdown-menu notes-menu dropdown-menu-end">
+                          <div
+                            class="dropdown-menu notes-menu dropdown-menu-end"
+                          >
                             <a
                               href="#"
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#edit-note-units"
-                              ><span><i class="ti ti-edit me-1"></i></span>Edit</a
+                              ><span><i class="ti ti-edit me-1"></i></span
+                              >Edit</a
                             >
                             <a
                               href="#"
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#delete_modal"
-                              ><span><i class="ti ti-trash me-1"></i></span>Delete</a
+                              ><span><i class="ti ti-trash me-1"></i></span
+                              >Delete</a
                             >
                             <a href="javascript:void(0);" class="dropdown-item"
                               ><span><i class="ti ti-star me-1"></i></span>Not
@@ -550,7 +642,8 @@
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#view-note-units"
-                              ><span><i class="ti ti-eye me-1"></i></span>View</a
+                              ><span><i class="ti ti-eye me-1"></i></span
+                              >View</a
                             >
                           </div>
                         </div>
@@ -563,14 +656,18 @@
                           <i class="ti ti-calendar me-1"></i>20 Jan 2024
                         </p>
                         <p class="text-truncate line-clamb-2 text-wrap">
-                          Project files should be took backup before end of the day.
+                          Project files should be took backup before end of the
+                          day.
                         </p>
                       </div>
                       <div
                         class="d-flex align-items-center justify-content-between border-top pt-3"
                       >
                         <div class="d-flex align-items-center">
-                          <a href="javascript:void(0);" class="avatar avatar-md me-2">
+                          <a
+                            href="javascript:void(0);"
+                            class="avatar avatar-md me-2"
+                          >
                             <img
                               src="@/assets/img/profiles/avatar-05.jpg"
                               alt="Profile"
@@ -578,7 +675,9 @@
                             />
                           </a>
                           <span class="text-info d-flex align-items-center"
-                            ><i class="ti ti-square-filled square-rotate fs-10 me-1"></i
+                            ><i
+                              class="ti ti-square-filled square-rotate fs-10 me-1"
+                            ></i
                             >Personal</span
                           >
                         </div>
@@ -605,10 +704,13 @@
                 <div class="col-md-4 d-flex">
                   <div class="card flex-fill">
                     <div class="card-body">
-                      <div class="d-flex align-items-center justify-content-between">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
                         <span
                           class="badge badge-outline-danger d-inline-flex align-items-center"
-                          ><i class="ti ti-circle-filled fs-7 me-1"></i>Low</span
+                          ><i class="ti ti-circle-filled fs-7 me-1"></i
+                          >Low</span
                         >
                         <div>
                           <a
@@ -618,20 +720,24 @@
                           >
                             <i class="ti ti-dots-vertical"></i>
                           </a>
-                          <div class="dropdown-menu notes-menu dropdown-menu-end">
+                          <div
+                            class="dropdown-menu notes-menu dropdown-menu-end"
+                          >
                             <a
                               href="#"
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#edit-note-units"
-                              ><span><i class="ti ti-edit me-1"></i></span>Edit</a
+                              ><span><i class="ti ti-edit me-1"></i></span
+                              >Edit</a
                             >
                             <a
                               href="#"
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#delete_modal"
-                              ><span><i class="ti ti-trash me-1"></i></span>Delete</a
+                              ><span><i class="ti ti-trash me-1"></i></span
+                              >Delete</a
                             >
                             <a href="javascript:void(0);" class="dropdown-item"
                               ><span><i class="ti ti-star me-1"></i></span>Not
@@ -642,7 +748,8 @@
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#view-note-units"
-                              ><span><i class="ti ti-eye me-1"></i></span>View</a
+                              ><span><i class="ti ti-eye me-1"></i></span
+                              >View</a
                             >
                           </div>
                         </div>
@@ -655,15 +762,18 @@
                           <i class="ti ti-calendar me-1"></i>25 Jan 2024
                         </p>
                         <p class="text-truncate line-clamb-2 text-wrap">
-                          Server log is a text document that contains a record of all
-                          activity.
+                          Server log is a text document that contains a record
+                          of all activity.
                         </p>
                       </div>
                       <div
                         class="d-flex align-items-center justify-content-between border-top pt-3"
                       >
                         <div class="d-flex align-items-center">
-                          <a href="javascript:void(0);" class="avatar avatar-md me-2">
+                          <a
+                            href="javascript:void(0);"
+                            class="avatar avatar-md me-2"
+                          >
                             <img
                               src="@/assets/img/profiles/avatar-06.jpg"
                               alt="Profile"
@@ -671,7 +781,9 @@
                             />
                           </a>
                           <span class="text-success d-flex align-items-center"
-                            ><i class="ti ti-square-filled square-rotate fs-10 me-1"></i
+                            ><i
+                              class="ti ti-square-filled square-rotate fs-10 me-1"
+                            ></i
                             >Work</span
                           >
                         </div>
@@ -698,10 +810,13 @@
                 <div class="col-md-4 d-flex">
                   <div class="card flex-fill">
                     <div class="card-body">
-                      <div class="d-flex align-items-center justify-content-between">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
                         <span
                           class="badge badge-outline-warning d-inline-flex align-items-center"
-                          ><i class="ti ti-circle-filled fs-7 me-1"></i>Medium</span
+                          ><i class="ti ti-circle-filled fs-7 me-1"></i
+                          >Medium</span
                         >
                         <div>
                           <a
@@ -711,20 +826,24 @@
                           >
                             <i class="ti ti-dots-vertical"></i>
                           </a>
-                          <div class="dropdown-menu notes-menu dropdown-menu-end">
+                          <div
+                            class="dropdown-menu notes-menu dropdown-menu-end"
+                          >
                             <a
                               href="#"
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#edit-note-units"
-                              ><span><i class="ti ti-edit me-1"></i></span>Edit</a
+                              ><span><i class="ti ti-edit me-1"></i></span
+                              >Edit</a
                             >
                             <a
                               href="#"
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#delete_modal"
-                              ><span><i class="ti ti-trash me-1"></i></span>Delete</a
+                              ><span><i class="ti ti-trash me-1"></i></span
+                              >Delete</a
                             >
                             <a href="javascript:void(0);" class="dropdown-item"
                               ><span><i class="ti ti-star me-1"></i></span>Not
@@ -735,27 +854,34 @@
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#view-note-units"
-                              ><span><i class="ti ti-eye me-1"></i></span>View</a
+                              ><span><i class="ti ti-eye me-1"></i></span
+                              >View</a
                             >
                           </div>
                         </div>
                       </div>
                       <div class="my-3">
                         <h6 class="fs-16 text-truncate mb-1">
-                          <a href="javascript:void(0);">Team meet at Starbucks</a>
+                          <a href="javascript:void(0);"
+                            >Team meet at Starbucks</a
+                          >
                         </h6>
                         <p class="mb-3 d-flex align-items-center text-dark">
                           <i class="ti ti-calendar me-1"></i>26 Jan 2024
                         </p>
                         <p class="text-truncate line-clamb-2 text-wrap">
-                          Meeting all teamets at Starbucks for identifying them all.
+                          Meeting all teamets at Starbucks for identifying them
+                          all.
                         </p>
                       </div>
                       <div
                         class="d-flex align-items-center justify-content-between border-top pt-3"
                       >
                         <div class="d-flex align-items-center">
-                          <a href="javascript:void(0);" class="avatar avatar-md me-2">
+                          <a
+                            href="javascript:void(0);"
+                            class="avatar avatar-md me-2"
+                          >
                             <img
                               src="@/assets/img/profiles/avatar-07.jpg"
                               alt="Profile"
@@ -763,7 +889,9 @@
                             />
                           </a>
                           <span class="text-warning d-flex align-items-center"
-                            ><i class="ti ti-square-filled square-rotate fs-10 me-1"></i
+                            ><i
+                              class="ti ti-square-filled square-rotate fs-10 me-1"
+                            ></i
                             >Social</span
                           >
                         </div>
@@ -790,10 +918,13 @@
                 <div class="col-md-4 d-flex">
                   <div class="card flex-fill">
                     <div class="card-body">
-                      <div class="d-flex align-items-center justify-content-between">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
                         <span
                           class="badge badge-outline-success d-inline-flex align-items-center"
-                          ><i class="ti ti-circle-filled fs-7 me-1"></i>High</span
+                          ><i class="ti ti-circle-filled fs-7 me-1"></i
+                          >High</span
                         >
                         <div>
                           <a
@@ -803,20 +934,24 @@
                           >
                             <i class="ti ti-dots-vertical"></i>
                           </a>
-                          <div class="dropdown-menu notes-menu dropdown-menu-end">
+                          <div
+                            class="dropdown-menu notes-menu dropdown-menu-end"
+                          >
                             <a
                               href="#"
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#edit-note-units"
-                              ><span><i class="ti ti-edit me-1"></i></span>Edit</a
+                              ><span><i class="ti ti-edit me-1"></i></span
+                              >Edit</a
                             >
                             <a
                               href="#"
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#delete_modal"
-                              ><span><i class="ti ti-trash me-1"></i></span>Delete</a
+                              ><span><i class="ti ti-trash me-1"></i></span
+                              >Delete</a
                             >
                             <a href="javascript:void(0);" class="dropdown-item"
                               ><span><i class="ti ti-star me-1"></i></span>Not
@@ -827,28 +962,34 @@
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#view-note-units"
-                              ><span><i class="ti ti-eye me-1"></i></span>View</a
+                              ><span><i class="ti ti-eye me-1"></i></span
+                              >View</a
                             >
                           </div>
                         </div>
                       </div>
                       <div class="my-3">
                         <h6 class="fs-16 text-truncate mb-1">
-                          <a href="javascript:void(0);">Create a compost pile</a>
+                          <a href="javascript:void(0);"
+                            >Create a compost pile</a
+                          >
                         </h6>
                         <p class="mb-3 d-flex align-items-center text-dark">
                           <i class="ti ti-calendar me-1"></i>27 Jan 2024
                         </p>
                         <p class="text-truncate line-clamb-2 text-wrap">
-                          Compost pile refers to fruit and vegetable scraps, used tea
-                          etc..
+                          Compost pile refers to fruit and vegetable scraps,
+                          used tea etc..
                         </p>
                       </div>
                       <div
                         class="d-flex align-items-center justify-content-between border-top pt-3"
                       >
                         <div class="d-flex align-items-center">
-                          <a href="javascript:void(0);" class="avatar avatar-md me-2">
+                          <a
+                            href="javascript:void(0);"
+                            class="avatar avatar-md me-2"
+                          >
                             <img
                               src="@/assets/img/profiles/avatar-08.jpg"
                               alt="Profile"
@@ -856,7 +997,9 @@
                             />
                           </a>
                           <span class="text-warning d-flex align-items-center"
-                            ><i class="ti ti-square-filled square-rotate fs-10 me-1"></i
+                            ><i
+                              class="ti ti-square-filled square-rotate fs-10 me-1"
+                            ></i
                             >Social</span
                           >
                         </div>
@@ -883,10 +1026,13 @@
                 <div class="col-md-4 d-flex">
                   <div class="card flex-fill">
                     <div class="card-body">
-                      <div class="d-flex align-items-center justify-content-between">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
                         <span
                           class="badge badge-outline-danger d-inline-flex align-items-center"
-                          ><i class="ti ti-circle-filled fs-7 me-1"></i>Low</span
+                          ><i class="ti ti-circle-filled fs-7 me-1"></i
+                          >Low</span
                         >
                         <div>
                           <a
@@ -896,20 +1042,24 @@
                           >
                             <i class="ti ti-dots-vertical"></i>
                           </a>
-                          <div class="dropdown-menu notes-menu dropdown-menu-end">
+                          <div
+                            class="dropdown-menu notes-menu dropdown-menu-end"
+                          >
                             <a
                               href="#"
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#edit-note-units"
-                              ><span><i class="ti ti-edit me-1"></i></span>Edit</a
+                              ><span><i class="ti ti-edit me-1"></i></span
+                              >Edit</a
                             >
                             <a
                               href="#"
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#delete_modal"
-                              ><span><i class="ti ti-trash me-1"></i></span>Delete</a
+                              ><span><i class="ti ti-trash me-1"></i></span
+                              >Delete</a
                             >
                             <a href="javascript:void(0);" class="dropdown-item"
                               ><span><i class="ti ti-star me-1"></i></span>Not
@@ -920,27 +1070,34 @@
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#view-note-units"
-                              ><span><i class="ti ti-eye me-1"></i></span>View</a
+                              ><span><i class="ti ti-eye me-1"></i></span
+                              >View</a
                             >
                           </div>
                         </div>
                       </div>
                       <div class="my-3">
                         <h6 class="fs-16 text-truncate mb-1">
-                          <a href="javascript:void(0);">Take a hike at a local park</a>
+                          <a href="javascript:void(0);"
+                            >Take a hike at a local park</a
+                          >
                         </h6>
                         <p class="mb-3 d-flex align-items-center text-dark">
                           <i class="ti ti-calendar me-1"></i>28 Jan 2024
                         </p>
                         <p class="text-truncate line-clamb-2 text-wrap">
-                          Hiking involves a long energetic walk in a natural environment.
+                          Hiking involves a long energetic walk in a natural
+                          environment.
                         </p>
                       </div>
                       <div
                         class="d-flex align-items-center justify-content-between border-top pt-3"
                       >
                         <div class="d-flex align-items-center">
-                          <a href="javascript:void(0);" class="avatar avatar-md me-2">
+                          <a
+                            href="javascript:void(0);"
+                            class="avatar avatar-md me-2"
+                          >
                             <img
                               src="@/assets/img/profiles/avatar-09.jpg"
                               alt="Profile"
@@ -948,7 +1105,9 @@
                             />
                           </a>
                           <span class="text-info d-flex align-items-center"
-                            ><i class="ti ti-square-filled square-rotate fs-10 me-1"></i
+                            ><i
+                              class="ti ti-square-filled square-rotate fs-10 me-1"
+                            ></i
                             >Personal</span
                           >
                         </div>
@@ -975,10 +1134,13 @@
                 <div class="col-md-4 d-flex">
                   <div class="card flex-fill">
                     <div class="card-body">
-                      <div class="d-flex align-items-center justify-content-between">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
                         <span
                           class="badge badge-outline-info d-inline-flex align-items-center"
-                          ><i class="ti ti-circle-filled fs-7 me-1"></i>medium</span
+                          ><i class="ti ti-circle-filled fs-7 me-1"></i
+                          >medium</span
                         >
                         <div>
                           <a
@@ -988,20 +1150,24 @@
                           >
                             <i class="ti ti-dots-vertical"></i>
                           </a>
-                          <div class="dropdown-menu notes-menu dropdown-menu-end">
+                          <div
+                            class="dropdown-menu notes-menu dropdown-menu-end"
+                          >
                             <a
                               href="#"
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#edit-note-units"
-                              ><span><i class="ti ti-edit me-1"></i></span>Edit</a
+                              ><span><i class="ti ti-edit me-1"></i></span
+                              >Edit</a
                             >
                             <a
                               href="#"
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#delete_modal"
-                              ><span><i class="ti ti-trash me-1"></i></span>Delete</a
+                              ><span><i class="ti ti-trash me-1"></i></span
+                              >Delete</a
                             >
                             <a href="javascript:void(0);" class="dropdown-item"
                               ><span><i class="ti ti-star me-1"></i></span>Not
@@ -1012,27 +1178,34 @@
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#view-note-units"
-                              ><span><i class="ti ti-eye me-1"></i></span>View</a
+                              ><span><i class="ti ti-eye me-1"></i></span
+                              >View</a
                             >
                           </div>
                         </div>
                       </div>
                       <div class="my-3">
                         <h6 class="fs-16 text-truncate mb-1">
-                          <a href="javascript:void(0);">Research a topic interested</a>
+                          <a href="javascript:void(0);"
+                            >Research a topic interested</a
+                          >
                         </h6>
                         <p class="mb-3 d-flex align-items-center text-dark">
                           <i class="ti ti-calendar me-1"></i>28 Jan 2024
                         </p>
                         <p class="text-truncate line-clamb-2 text-wrap">
-                          Research a topic interested by listen actively and attentively.
+                          Research a topic interested by listen actively and
+                          attentively.
                         </p>
                       </div>
                       <div
                         class="d-flex align-items-center justify-content-between border-top pt-3"
                       >
                         <div class="d-flex align-items-center">
-                          <a href="javascript:void(0);" class="avatar avatar-md me-2">
+                          <a
+                            href="javascript:void(0);"
+                            class="avatar avatar-md me-2"
+                          >
                             <img
                               src="@/assets/img/profiles/avatar-10.jpg"
                               alt="Profile"
@@ -1040,7 +1213,9 @@
                             />
                           </a>
                           <span class="text-success d-flex align-items-center"
-                            ><i class="ti ti-square-filled square-rotate fs-10 me-1"></i
+                            ><i
+                              class="ti ti-square-filled square-rotate fs-10 me-1"
+                            ></i
                             >Work</span
                           >
                         </div>
@@ -1079,10 +1254,13 @@
                 <div class="col-md-4 d-flex">
                   <div class="card flex-fill">
                     <div class="card-body">
-                      <div class="d-flex align-items-center justify-content-between">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
                         <span
                           class="badge badge-outline-success d-inline-flex align-items-center"
-                          ><i class="ti ti-circle-filled fs-7 me-1"></i>High</span
+                          ><i class="ti ti-circle-filled fs-7 me-1"></i
+                          >High</span
                         >
                         <div>
                           <a
@@ -1092,20 +1270,24 @@
                           >
                             <i class="ti ti-dots-vertical"></i>
                           </a>
-                          <div class="dropdown-menu notes-menu dropdown-menu-end">
+                          <div
+                            class="dropdown-menu notes-menu dropdown-menu-end"
+                          >
                             <a
                               href="#"
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#edit-note-units"
-                              ><span><i class="ti ti-edit me-1"></i></span>Edit</a
+                              ><span><i class="ti ti-edit me-1"></i></span
+                              >Edit</a
                             >
                             <a
                               href="#"
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#delete_modal"
-                              ><span><i class="ti ti-trash me-1"></i></span>Delete</a
+                              ><span><i class="ti ti-trash me-1"></i></span
+                              >Delete</a
                             >
                             <a href="javascript:void(0);" class="dropdown-item"
                               ><span><i class="ti ti-star me-1"></i></span>Not
@@ -1116,7 +1298,8 @@
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#view-note-units"
-                              ><span><i class="ti ti-eye me-1"></i></span>View</a
+                              ><span><i class="ti ti-eye me-1"></i></span
+                              >View</a
                             >
                           </div>
                         </div>
@@ -1129,14 +1312,18 @@
                           <i class="ti ti-calendar me-1"></i>20 Jan 2024
                         </p>
                         <p class="text-truncate line-clamb-2 text-wrap">
-                          Project files should be took backup before end of the day.
+                          Project files should be took backup before end of the
+                          day.
                         </p>
                       </div>
                       <div
                         class="d-flex align-items-center justify-content-between border-top pt-3"
                       >
                         <div class="d-flex align-items-center">
-                          <a href="javascript:void(0);" class="avatar avatar-md me-2">
+                          <a
+                            href="javascript:void(0);"
+                            class="avatar avatar-md me-2"
+                          >
                             <img
                               src="@/assets/img/profiles/avatar-05.jpg"
                               alt="Profile"
@@ -1144,7 +1331,9 @@
                             />
                           </a>
                           <span class="text-info d-flex align-items-center"
-                            ><i class="ti ti-square-filled square-rotate fs-10 me-1"></i
+                            ><i
+                              class="ti ti-square-filled square-rotate fs-10 me-1"
+                            ></i
                             >Personal</span
                           >
                         </div>
@@ -1171,10 +1360,13 @@
                 <div class="col-md-4 d-flex">
                   <div class="card flex-fill">
                     <div class="card-body">
-                      <div class="d-flex align-items-center justify-content-between">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
                         <span
                           class="badge badge-outline-danger d-inline-flex align-items-center"
-                          ><i class="ti ti-circle-filled fs-7 me-1"></i>Low</span
+                          ><i class="ti ti-circle-filled fs-7 me-1"></i
+                          >Low</span
                         >
                         <div>
                           <a
@@ -1184,20 +1376,24 @@
                           >
                             <i class="ti ti-dots-vertical"></i>
                           </a>
-                          <div class="dropdown-menu notes-menu dropdown-menu-end">
+                          <div
+                            class="dropdown-menu notes-menu dropdown-menu-end"
+                          >
                             <a
                               href="#"
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#edit-note-units"
-                              ><span><i class="ti ti-edit me-1"></i></span>Edit</a
+                              ><span><i class="ti ti-edit me-1"></i></span
+                              >Edit</a
                             >
                             <a
                               href="#"
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#delete_modal"
-                              ><span><i class="ti ti-trash me-1"></i></span>Delete</a
+                              ><span><i class="ti ti-trash me-1"></i></span
+                              >Delete</a
                             >
                             <a href="javascript:void(0);" class="dropdown-item"
                               ><span><i class="ti ti-star me-1"></i></span>Not
@@ -1208,7 +1404,8 @@
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#view-note-units"
-                              ><span><i class="ti ti-eye me-1"></i></span>View</a
+                              ><span><i class="ti ti-eye me-1"></i></span
+                              >View</a
                             >
                           </div>
                         </div>
@@ -1221,15 +1418,18 @@
                           <i class="ti ti-calendar me-1"></i>25 Jan 2024
                         </p>
                         <p class="text-truncate line-clamb-2 text-wrap">
-                          Server log is a text document that contains a record of all
-                          activity.
+                          Server log is a text document that contains a record
+                          of all activity.
                         </p>
                       </div>
                       <div
                         class="d-flex align-items-center justify-content-between border-top pt-3"
                       >
                         <div class="d-flex align-items-center">
-                          <a href="javascript:void(0);" class="avatar avatar-md me-2">
+                          <a
+                            href="javascript:void(0);"
+                            class="avatar avatar-md me-2"
+                          >
                             <img
                               src="@/assets/img/profiles/avatar-06.jpg"
                               alt="Profile"
@@ -1237,7 +1437,9 @@
                             />
                           </a>
                           <span class="text-success d-flex align-items-center"
-                            ><i class="ti ti-square-filled square-rotate fs-10 me-1"></i
+                            ><i
+                              class="ti ti-square-filled square-rotate fs-10 me-1"
+                            ></i
                             >Work</span
                           >
                         </div>
@@ -1264,10 +1466,13 @@
                 <div class="col-md-4 d-flex">
                   <div class="card flex-fill">
                     <div class="card-body">
-                      <div class="d-flex align-items-center justify-content-between">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
                         <span
                           class="badge badge-outline-warning d-inline-flex align-items-center"
-                          ><i class="ti ti-circle-filled fs-7 me-1"></i>Medium</span
+                          ><i class="ti ti-circle-filled fs-7 me-1"></i
+                          >Medium</span
                         >
                         <div>
                           <a
@@ -1277,20 +1482,24 @@
                           >
                             <i class="ti ti-dots-vertical"></i>
                           </a>
-                          <div class="dropdown-menu notes-menu dropdown-menu-end">
+                          <div
+                            class="dropdown-menu notes-menu dropdown-menu-end"
+                          >
                             <a
                               href="#"
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#edit-note-units"
-                              ><span><i class="ti ti-edit me-1"></i></span>Edit</a
+                              ><span><i class="ti ti-edit me-1"></i></span
+                              >Edit</a
                             >
                             <a
                               href="#"
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#delete_modal"
-                              ><span><i class="ti ti-trash me-1"></i></span>Delete</a
+                              ><span><i class="ti ti-trash me-1"></i></span
+                              >Delete</a
                             >
                             <a href="javascript:void(0);" class="dropdown-item"
                               ><span><i class="ti ti-star me-1"></i></span>Not
@@ -1301,27 +1510,34 @@
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#view-note-units"
-                              ><span><i class="ti ti-eye me-1"></i></span>View</a
+                              ><span><i class="ti ti-eye me-1"></i></span
+                              >View</a
                             >
                           </div>
                         </div>
                       </div>
                       <div class="my-3">
                         <h6 class="fs-16 text-truncate mb-1">
-                          <a href="javascript:void(0);">Team meet at Starbucks</a>
+                          <a href="javascript:void(0);"
+                            >Team meet at Starbucks</a
+                          >
                         </h6>
                         <p class="mb-3 d-flex align-items-center text-dark">
                           <i class="ti ti-calendar me-1"></i>26 Jan 2024
                         </p>
                         <p class="text-truncate line-clamb-2 text-wrap">
-                          Meeting all teamets at Starbucks for identifying them all.
+                          Meeting all teamets at Starbucks for identifying them
+                          all.
                         </p>
                       </div>
                       <div
                         class="d-flex align-items-center justify-content-between border-top pt-3"
                       >
                         <div class="d-flex align-items-center">
-                          <a href="javascript:void(0);" class="avatar avatar-md me-2">
+                          <a
+                            href="javascript:void(0);"
+                            class="avatar avatar-md me-2"
+                          >
                             <img
                               src="@/assets/img/profiles/avatar-07.jpg"
                               alt="Profile"
@@ -1329,7 +1545,9 @@
                             />
                           </a>
                           <span class="text-warning d-flex align-items-center"
-                            ><i class="ti ti-square-filled square-rotate fs-10 me-1"></i
+                            ><i
+                              class="ti ti-square-filled square-rotate fs-10 me-1"
+                            ></i
                             >Social</span
                           >
                         </div>
@@ -1356,10 +1574,13 @@
                 <div class="col-md-4 d-flex">
                   <div class="card flex-fill">
                     <div class="card-body">
-                      <div class="d-flex align-items-center justify-content-between">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
                         <span
                           class="badge badge-outline-success d-inline-flex align-items-center"
-                          ><i class="ti ti-circle-filled fs-7 me-1"></i>High</span
+                          ><i class="ti ti-circle-filled fs-7 me-1"></i
+                          >High</span
                         >
                         <div>
                           <a
@@ -1369,20 +1590,24 @@
                           >
                             <i class="ti ti-dots-vertical"></i>
                           </a>
-                          <div class="dropdown-menu notes-menu dropdown-menu-end">
+                          <div
+                            class="dropdown-menu notes-menu dropdown-menu-end"
+                          >
                             <a
                               href="#"
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#edit-note-units"
-                              ><span><i class="ti ti-edit me-1"></i></span>Edit</a
+                              ><span><i class="ti ti-edit me-1"></i></span
+                              >Edit</a
                             >
                             <a
                               href="#"
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#delete_modal"
-                              ><span><i class="ti ti-trash me-1"></i></span>Delete</a
+                              ><span><i class="ti ti-trash me-1"></i></span
+                              >Delete</a
                             >
                             <a href="javascript:void(0);" class="dropdown-item"
                               ><span><i class="ti ti-star me-1"></i></span>Not
@@ -1393,28 +1618,34 @@
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#view-note-units"
-                              ><span><i class="ti ti-eye me-1"></i></span>View</a
+                              ><span><i class="ti ti-eye me-1"></i></span
+                              >View</a
                             >
                           </div>
                         </div>
                       </div>
                       <div class="my-3">
                         <h6 class="fs-16 text-truncate mb-1">
-                          <a href="javascript:void(0);">Create a compost pile</a>
+                          <a href="javascript:void(0);"
+                            >Create a compost pile</a
+                          >
                         </h6>
                         <p class="mb-3 d-flex align-items-center text-dark">
                           <i class="ti ti-calendar me-1"></i>27 Jan 2024
                         </p>
                         <p class="text-truncate line-clamb-2 text-wrap">
-                          Compost pile refers to fruit and vegetable scraps, used tea
-                          etc..
+                          Compost pile refers to fruit and vegetable scraps,
+                          used tea etc..
                         </p>
                       </div>
                       <div
                         class="d-flex align-items-center justify-content-between border-top pt-3"
                       >
                         <div class="d-flex align-items-center">
-                          <a href="javascript:void(0);" class="avatar avatar-md me-2">
+                          <a
+                            href="javascript:void(0);"
+                            class="avatar avatar-md me-2"
+                          >
                             <img
                               src="@/assets/img/profiles/avatar-08.jpg"
                               alt="Profile"
@@ -1422,7 +1653,9 @@
                             />
                           </a>
                           <span class="text-warning d-flex align-items-center"
-                            ><i class="ti ti-square-filled square-rotate fs-10 me-1"></i
+                            ><i
+                              class="ti ti-square-filled square-rotate fs-10 me-1"
+                            ></i
                             >Social</span
                           >
                         </div>
@@ -1449,10 +1682,13 @@
                 <div class="col-md-4 d-flex">
                   <div class="card flex-fill">
                     <div class="card-body">
-                      <div class="d-flex align-items-center justify-content-between">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
                         <span
                           class="badge badge-outline-danger d-inline-flex align-items-center"
-                          ><i class="ti ti-circle-filled fs-7 me-1"></i>Low</span
+                          ><i class="ti ti-circle-filled fs-7 me-1"></i
+                          >Low</span
                         >
                         <div>
                           <a
@@ -1462,20 +1698,24 @@
                           >
                             <i class="ti ti-dots-vertical"></i>
                           </a>
-                          <div class="dropdown-menu notes-menu dropdown-menu-end">
+                          <div
+                            class="dropdown-menu notes-menu dropdown-menu-end"
+                          >
                             <a
                               href="#"
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#edit-note-units"
-                              ><span><i class="ti ti-edit me-1"></i></span>Edit</a
+                              ><span><i class="ti ti-edit me-1"></i></span
+                              >Edit</a
                             >
                             <a
                               href="#"
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#delete_modal"
-                              ><span><i class="ti ti-trash me-1"></i></span>Delete</a
+                              ><span><i class="ti ti-trash me-1"></i></span
+                              >Delete</a
                             >
                             <a href="javascript:void(0);" class="dropdown-item"
                               ><span><i class="ti ti-star me-1"></i></span>Not
@@ -1486,27 +1726,34 @@
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#view-note-units"
-                              ><span><i class="ti ti-eye me-1"></i></span>View</a
+                              ><span><i class="ti ti-eye me-1"></i></span
+                              >View</a
                             >
                           </div>
                         </div>
                       </div>
                       <div class="my-3">
                         <h6 class="fs-16 text-truncate mb-1">
-                          <a href="javascript:void(0);">Take a hike at a local park</a>
+                          <a href="javascript:void(0);"
+                            >Take a hike at a local park</a
+                          >
                         </h6>
                         <p class="mb-3 d-flex align-items-center text-dark">
                           <i class="ti ti-calendar me-1"></i>28 Jan 2024
                         </p>
                         <p class="text-truncate line-clamb-2 text-wrap">
-                          Hiking involves a long energetic walk in a natural environment.
+                          Hiking involves a long energetic walk in a natural
+                          environment.
                         </p>
                       </div>
                       <div
                         class="d-flex align-items-center justify-content-between border-top pt-3"
                       >
                         <div class="d-flex align-items-center">
-                          <a href="javascript:void(0);" class="avatar avatar-md me-2">
+                          <a
+                            href="javascript:void(0);"
+                            class="avatar avatar-md me-2"
+                          >
                             <img
                               src="@/assets/img/profiles/avatar-09.jpg"
                               alt="Profile"
@@ -1514,7 +1761,9 @@
                             />
                           </a>
                           <span class="text-info d-flex align-items-center"
-                            ><i class="ti ti-square-filled square-rotate fs-10 me-1"></i
+                            ><i
+                              class="ti ti-square-filled square-rotate fs-10 me-1"
+                            ></i
                             >Personal</span
                           >
                         </div>
@@ -1541,10 +1790,13 @@
                 <div class="col-md-4 d-flex">
                   <div class="card flex-fill">
                     <div class="card-body">
-                      <div class="d-flex align-items-center justify-content-between">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
                         <span
                           class="badge badge-outline-info d-inline-flex align-items-center"
-                          ><i class="ti ti-circle-filled fs-7 me-1"></i>medium</span
+                          ><i class="ti ti-circle-filled fs-7 me-1"></i
+                          >medium</span
                         >
                         <div>
                           <a
@@ -1554,20 +1806,24 @@
                           >
                             <i class="ti ti-dots-vertical"></i>
                           </a>
-                          <div class="dropdown-menu notes-menu dropdown-menu-end">
+                          <div
+                            class="dropdown-menu notes-menu dropdown-menu-end"
+                          >
                             <a
                               href="#"
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#edit-note-units"
-                              ><span><i class="ti ti-edit me-1"></i></span>Edit</a
+                              ><span><i class="ti ti-edit me-1"></i></span
+                              >Edit</a
                             >
                             <a
                               href="#"
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#delete_modal"
-                              ><span><i class="ti ti-trash me-1"></i></span>Delete</a
+                              ><span><i class="ti ti-trash me-1"></i></span
+                              >Delete</a
                             >
                             <a href="javascript:void(0);" class="dropdown-item"
                               ><span><i class="ti ti-star me-1"></i></span>Not
@@ -1578,27 +1834,34 @@
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#view-note-units"
-                              ><span><i class="ti ti-eye me-1"></i></span>View</a
+                              ><span><i class="ti ti-eye me-1"></i></span
+                              >View</a
                             >
                           </div>
                         </div>
                       </div>
                       <div class="my-3">
                         <h6 class="fs-16 text-truncate mb-1">
-                          <a href="javascript:void(0);">Research a topic interested</a>
+                          <a href="javascript:void(0);"
+                            >Research a topic interested</a
+                          >
                         </h6>
                         <p class="mb-3 d-flex align-items-center text-dark">
                           <i class="ti ti-calendar me-1"></i>28 Jan 2024
                         </p>
                         <p class="text-truncate line-clamb-2 text-wrap">
-                          Research a topic interested by listen actively and attentively.
+                          Research a topic interested by listen actively and
+                          attentively.
                         </p>
                       </div>
                       <div
                         class="d-flex align-items-center justify-content-between border-top pt-3"
                       >
                         <div class="d-flex align-items-center">
-                          <a href="javascript:void(0);" class="avatar avatar-md me-2">
+                          <a
+                            href="javascript:void(0);"
+                            class="avatar avatar-md me-2"
+                          >
                             <img
                               src="@/assets/img/profiles/avatar-10.jpg"
                               alt="Profile"
@@ -1606,7 +1869,9 @@
                             />
                           </a>
                           <span class="text-success d-flex align-items-center"
-                            ><i class="ti ti-square-filled square-rotate fs-10 me-1"></i
+                            ><i
+                              class="ti ti-square-filled square-rotate fs-10 me-1"
+                            ></i
                             >Work</span
                           >
                         </div>
@@ -1641,9 +1906,12 @@
               aria-labelledby="v-pills-settings-tab"
             >
               <div class="row">
-                <div class="col-12 d-flex align-items-center justify-content-end">
+                <div
+                  class="col-12 d-flex align-items-center justify-content-end"
+                >
                   <a href="#" class="btn btn-danger mb-3">
-                    <span> <i class="ti ti-trash f-20 me-2"></i> </span> Restore all
+                    <span> <i class="ti ti-trash f-20 me-2"></i> </span> Restore
+                    all
                   </a>
                 </div>
               </div>
@@ -1653,10 +1921,13 @@
                 <div class="col-md-4 d-flex">
                   <div class="card flex-fill">
                     <div class="card-body">
-                      <div class="d-flex align-items-center justify-content-between">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
                         <span
                           class="badge badge-outline-success d-inline-flex align-items-center"
-                          ><i class="ti ti-circle-filled fs-7 me-1"></i>High</span
+                          ><i class="ti ti-circle-filled fs-7 me-1"></i
+                          >High</span
                         >
                         <div>
                           <a
@@ -1666,20 +1937,24 @@
                           >
                             <i class="ti ti-dots-vertical"></i>
                           </a>
-                          <div class="dropdown-menu notes-menu dropdown-menu-end">
+                          <div
+                            class="dropdown-menu notes-menu dropdown-menu-end"
+                          >
                             <a
                               href="#"
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#edit-note-units"
-                              ><span><i class="ti ti-edit me-1"></i></span>Edit</a
+                              ><span><i class="ti ti-edit me-1"></i></span
+                              >Edit</a
                             >
                             <a
                               href="#"
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#delete_modal"
-                              ><span><i class="ti ti-trash me-1"></i></span>Delete</a
+                              ><span><i class="ti ti-trash me-1"></i></span
+                              >Delete</a
                             >
                             <a href="javascript:void(0);" class="dropdown-item"
                               ><span><i class="ti ti-star me-1"></i></span>Not
@@ -1690,28 +1965,34 @@
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#view-note-units"
-                              ><span><i class="ti ti-eye me-1"></i></span>View</a
+                              ><span><i class="ti ti-eye me-1"></i></span
+                              >View</a
                             >
                           </div>
                         </div>
                       </div>
                       <div class="my-3">
                         <h6 class="fs-16 text-truncate mb-1">
-                          <a href="javascript:void(0);">Create a compost pile</a>
+                          <a href="javascript:void(0);"
+                            >Create a compost pile</a
+                          >
                         </h6>
                         <p class="mb-3 d-flex align-items-center text-dark">
                           <i class="ti ti-calendar me-1"></i>27 Jan 2024
                         </p>
                         <p class="text-truncate line-clamb-2 text-wrap">
-                          Compost pile refers to fruit and vegetable scraps, used tea
-                          etc..
+                          Compost pile refers to fruit and vegetable scraps,
+                          used tea etc..
                         </p>
                       </div>
                       <div
                         class="d-flex align-items-center justify-content-between border-top pt-3"
                       >
                         <div class="d-flex align-items-center">
-                          <a href="javascript:void(0);" class="avatar avatar-md me-2">
+                          <a
+                            href="javascript:void(0);"
+                            class="avatar avatar-md me-2"
+                          >
                             <img
                               src="@/assets/img/profiles/avatar-08.jpg"
                               alt="Profile"
@@ -1719,7 +2000,9 @@
                             />
                           </a>
                           <span class="text-warning d-flex align-items-center"
-                            ><i class="ti ti-square-filled square-rotate fs-10 me-1"></i
+                            ><i
+                              class="ti ti-square-filled square-rotate fs-10 me-1"
+                            ></i
                             >Social</span
                           >
                         </div>
@@ -1746,10 +2029,13 @@
                 <div class="col-md-4 d-flex">
                   <div class="card flex-fill">
                     <div class="card-body">
-                      <div class="d-flex align-items-center justify-content-between">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
                         <span
                           class="badge badge-outline-danger d-inline-flex align-items-center"
-                          ><i class="ti ti-circle-filled fs-7 me-1"></i>Low</span
+                          ><i class="ti ti-circle-filled fs-7 me-1"></i
+                          >Low</span
                         >
                         <div>
                           <a
@@ -1759,20 +2045,24 @@
                           >
                             <i class="ti ti-dots-vertical"></i>
                           </a>
-                          <div class="dropdown-menu notes-menu dropdown-menu-end">
+                          <div
+                            class="dropdown-menu notes-menu dropdown-menu-end"
+                          >
                             <a
                               href="#"
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#edit-note-units"
-                              ><span><i class="ti ti-edit me-1"></i></span>Edit</a
+                              ><span><i class="ti ti-edit me-1"></i></span
+                              >Edit</a
                             >
                             <a
                               href="#"
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#delete_modal"
-                              ><span><i class="ti ti-trash me-1"></i></span>Delete</a
+                              ><span><i class="ti ti-trash me-1"></i></span
+                              >Delete</a
                             >
                             <a href="javascript:void(0);" class="dropdown-item"
                               ><span><i class="ti ti-star me-1"></i></span>Not
@@ -1783,27 +2073,34 @@
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#view-note-units"
-                              ><span><i class="ti ti-eye me-1"></i></span>View</a
+                              ><span><i class="ti ti-eye me-1"></i></span
+                              >View</a
                             >
                           </div>
                         </div>
                       </div>
                       <div class="my-3">
                         <h6 class="fs-16 text-truncate mb-1">
-                          <a href="javascript:void(0);">Take a hike at a local park</a>
+                          <a href="javascript:void(0);"
+                            >Take a hike at a local park</a
+                          >
                         </h6>
                         <p class="mb-3 d-flex align-items-center text-dark">
                           <i class="ti ti-calendar me-1"></i>28 Jan 2024
                         </p>
                         <p class="text-truncate line-clamb-2 text-wrap">
-                          Hiking involves a long energetic walk in a natural environment.
+                          Hiking involves a long energetic walk in a natural
+                          environment.
                         </p>
                       </div>
                       <div
                         class="d-flex align-items-center justify-content-between border-top pt-3"
                       >
                         <div class="d-flex align-items-center">
-                          <a href="javascript:void(0);" class="avatar avatar-md me-2">
+                          <a
+                            href="javascript:void(0);"
+                            class="avatar avatar-md me-2"
+                          >
                             <img
                               src="@/assets/img/profiles/avatar-09.jpg"
                               alt="Profile"
@@ -1811,7 +2108,9 @@
                             />
                           </a>
                           <span class="text-info d-flex align-items-center"
-                            ><i class="ti ti-square-filled square-rotate fs-10 me-1"></i
+                            ><i
+                              class="ti ti-square-filled square-rotate fs-10 me-1"
+                            ></i
                             >Personal</span
                           >
                         </div>
@@ -1838,10 +2137,13 @@
                 <div class="col-md-4 d-flex">
                   <div class="card flex-fill">
                     <div class="card-body">
-                      <div class="d-flex align-items-center justify-content-between">
+                      <div
+                        class="d-flex align-items-center justify-content-between"
+                      >
                         <span
                           class="badge badge-outline-info d-inline-flex align-items-center"
-                          ><i class="ti ti-circle-filled fs-7 me-1"></i>medium</span
+                          ><i class="ti ti-circle-filled fs-7 me-1"></i
+                          >medium</span
                         >
                         <div>
                           <a
@@ -1851,20 +2153,24 @@
                           >
                             <i class="ti ti-dots-vertical"></i>
                           </a>
-                          <div class="dropdown-menu notes-menu dropdown-menu-end">
+                          <div
+                            class="dropdown-menu notes-menu dropdown-menu-end"
+                          >
                             <a
                               href="#"
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#edit-note-units"
-                              ><span><i class="ti ti-edit me-1"></i></span>Edit</a
+                              ><span><i class="ti ti-edit me-1"></i></span
+                              >Edit</a
                             >
                             <a
                               href="#"
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#delete_modal"
-                              ><span><i class="ti ti-trash me-1"></i></span>Delete</a
+                              ><span><i class="ti ti-trash me-1"></i></span
+                              >Delete</a
                             >
                             <a href="javascript:void(0);" class="dropdown-item"
                               ><span><i class="ti ti-star me-1"></i></span>Not
@@ -1875,27 +2181,34 @@
                               class="dropdown-item"
                               data-bs-toggle="modal"
                               data-bs-target="#view-note-units"
-                              ><span><i class="ti ti-eye me-1"></i></span>View</a
+                              ><span><i class="ti ti-eye me-1"></i></span
+                              >View</a
                             >
                           </div>
                         </div>
                       </div>
                       <div class="my-3">
                         <h6 class="fs-16 text-truncate mb-1">
-                          <a href="javascript:void(0);">Research a topic interested</a>
+                          <a href="javascript:void(0);"
+                            >Research a topic interested</a
+                          >
                         </h6>
                         <p class="mb-3 d-flex align-items-center text-dark">
                           <i class="ti ti-calendar me-1"></i>28 Jan 2024
                         </p>
                         <p class="text-truncate line-clamb-2 text-wrap">
-                          Research a topic interested by listen actively and attentively.
+                          Research a topic interested by listen actively and
+                          attentively.
                         </p>
                       </div>
                       <div
                         class="d-flex align-items-center justify-content-between border-top pt-3"
                       >
                         <div class="d-flex align-items-center">
-                          <a href="javascript:void(0);" class="avatar avatar-md me-2">
+                          <a
+                            href="javascript:void(0);"
+                            class="avatar avatar-md me-2"
+                          >
                             <img
                               src="@/assets/img/profiles/avatar-10.jpg"
                               alt="Profile"
@@ -1903,7 +2216,9 @@
                             />
                           </a>
                           <span class="text-success d-flex align-items-center"
-                            ><i class="ti ti-square-filled square-rotate fs-10 me-1"></i
+                            ><i
+                              class="ti ti-square-filled square-rotate fs-10 me-1"
+                            ></i
                             >Work</span
                           >
                         </div>
@@ -1941,10 +2256,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
@@ -2044,7 +2356,11 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-light me-2" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-light me-2"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
             <button type="submit" class="btn btn-primary">Submit</button>
@@ -2150,7 +2466,11 @@
             </div>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-light me-2" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-light me-2"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
             <button type="submit" class="btn btn-primary">Save Changes</button>
@@ -2181,7 +2501,9 @@
               ><i class="ti ti-trash fs-24"></i
             ></span>
           </div>
-          <h5 class="fw-bold mb-1 position-relative z-1">Delete Confirmation</h5>
+          <h5 class="fw-bold mb-1 position-relative z-1">
+            Delete Confirmation
+          </h5>
           <p class="mb-3 position-relative z-1">Are you sure want to delete?</p>
           <div class="d-flex justify-content-center">
             <a
@@ -2226,12 +2548,13 @@
                   <div>
                     <h4 class="mb-2">Meet Lisa to discuss project details</h4>
                     <p>
-                      Hiking is a long, vigorous walk, usually on trails or footpaths in
-                      the countryside. Walking for pleasure developed in Europe during the
-                      eighteenth century. Religious pilgrimages have existed much longer
-                      but they involve walking long distances for a spiritual purpose
-                      associated with specific religions and also we achieve inner peace
-                      while we hike at a local park.
+                      Hiking is a long, vigorous walk, usually on trails or
+                      footpaths in the countryside. Walking for pleasure
+                      developed in Europe during the eighteenth century.
+                      Religious pilgrimages have existed much longer but they
+                      involve walking long distances for a spiritual purpose
+                      associated with specific religions and also we achieve
+                      inner peace while we hike at a local park.
                     </p>
                     <p
                       class="badge badge-outline-danger d-inline-flex align-items-center mb-0"
@@ -2243,7 +2566,9 @@
               </div>
             </div>
             <div class="modal-footer">
-              <a href="#" class="btn btn-primary" data-bs-dismiss="modal">Close</a>
+              <a href="#" class="btn btn-primary" data-bs-dismiss="modal"
+                >Close</a
+              >
             </div>
           </div>
         </div>

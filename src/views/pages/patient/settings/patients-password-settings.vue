@@ -20,13 +20,15 @@
                   to="/patient/settings/patient-profile-settings"
                   class="btn btn-md rounded fs-14 fw-medium text-dark mb-1 w-100 justify-content-start"
                 >
-                  <i class="ti ti-user-cog me-2 text-primary"> </i> Profile Settings
+                  <i class="ti ti-user-cog me-2 text-primary"> </i> Profile
+                  Settings
                 </router-link>
                 <router-link
                   to="/patient/settings/patient-password-settings"
                   class="d-block w-100 btn btn-md border rounded fs-14 fw-medium text-primary text-start mb-1 active w-100 justify-content-start"
                 >
-                  <i class="ti ti-lock-star me-2 text-dark"> </i> Change Password
+                  <i class="ti ti-lock-star me-2 text-dark"> </i> Change
+                  Password
                 </router-link>
                 <router-link
                   to="/patient/settings/patient-notifications-settings"
@@ -40,7 +42,9 @@
 
             <div class="col-lg-9">
               <div class="border-1 border-start ps-4">
-                <h5 class="fw-bold pb-3 mb-4 border-1 border-bottom">Change Password</h5>
+                <h5 class="fw-bold pb-3 mb-4 border-1 border-bottom">
+                  Change Password
+                </h5>
 
                 <!-- start row -->
                 <div class="row border-bottom mb-3">
@@ -71,7 +75,9 @@
                               @click="togglePassword"
                             >
                               <i
-                                :class="showPassword ? 'ti ti-eye' : 'ti ti-eye-off'"
+                                :class="
+                                  showPassword ? 'ti ti-eye' : 'ti ti-eye-off'
+                                "
                                 class="text-dark fs-14"
                               ></i>
                             </span>
@@ -88,7 +94,8 @@
                     <div class="row align-items-center mb-3">
                       <div class="col-lg-5">
                         <label class="form-label mb-0"
-                          >Confirm Password <span class="text-danger">*</span></label
+                          >Confirm Password
+                          <span class="text-danger">*</span></label
                         >
                       </div>
                       <!-- end col -->
@@ -110,7 +117,11 @@
                               @click="togglePasswordOne"
                             >
                               <i
-                                :class="showPasswordOne ? 'ti ti-eye' : 'ti ti-eye-off'"
+                                :class="
+                                  showPasswordOne
+                                    ? 'ti ti-eye'
+                                    : 'ti ti-eye-off'
+                                "
                                 class="text-dark fs-14"
                               ></i>
                             </span>
@@ -125,11 +136,19 @@
                 </div>
                 <!-- end row -->
 
-                <div class="d-flex justify-content-end align-items-center gap-2">
-                  <a href="" class="btn btn-light btn-md fs-13 fw-medium rounded">
+                <div
+                  class="d-flex justify-content-end align-items-center gap-2"
+                >
+                  <a
+                    href=""
+                    class="btn btn-light btn-md fs-13 fw-medium rounded"
+                  >
                     Cancel
                   </a>
-                  <a href="" class="btn btn-primary btn-md fs-13 fw-medium rounded">
+                  <a
+                    href=""
+                    class="btn btn-primary btn-md fs-13 fw-medium rounded"
+                  >
                     Save Changes
                   </a>
                 </div>
@@ -146,10 +165,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>

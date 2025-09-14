@@ -12,14 +12,17 @@
       <div class="mb-3 pb-3 border-bottom">
         <div class="d-flex align-items-center">
           <h4 class="fw-bold mb-0 me-2">Newsletter</h4>
-          <span class="badge badge-soft-primary border pt-1 px-2 border-primary fw-medium"
+          <span
+            class="badge badge-soft-primary border pt-1 px-2 border-primary fw-medium"
             >Total Newsletter : 565</span
           >
         </div>
       </div>
       <!-- End Page Header -->
 
-      <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3">
+      <div
+        class="d-flex align-items-center justify-content-between flex-wrap row-gap-3"
+      >
         <div class="search-set mb-3">
           <div class="d-flex align-items-center flex-wrap gap-2">
             <div class="table-search d-flex align-items-center mb-0">
@@ -52,10 +55,14 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-end p-2">
               <li>
-                <a href="javascript:void(0);" class="dropdown-item rounded-1">Recent</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                  >Recent</a
+                >
               </li>
               <li>
-                <a href="javascript:void(0);" class="dropdown-item rounded-1">Oldest</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                  >Oldest</a
+                >
               </li>
             </ul>
           </div>
@@ -82,10 +89,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
@@ -143,7 +147,8 @@ const columns = [
     dataIndex: "Email",
     key: "Email",
     sorter: {
-      compare: (a, b) => (a.Email.toLowerCase() > b.Email.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Email.toLowerCase() > b.Email.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -151,7 +156,8 @@ const columns = [
     dataIndex: "CreatedOn",
     key: "CreatedOn",
     sorter: {
-      compare: (a, b) => (a.CreatedOn.toLowerCase() > b.CreatedOn.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.CreatedOn.toLowerCase() > b.CreatedOn.toLowerCase() ? -1 : 1,
     },
   },
 ];
@@ -207,7 +213,8 @@ export default {
   },
   methods: {
     getImageUrl(imageName) {
-      return new URL(`/src/assets/img/users/${imageName}`, import.meta.url).href;
+      return new URL(`/src/assets/img/users/${imageName}`, import.meta.url)
+        .href;
     },
   },
   computed: {

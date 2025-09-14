@@ -32,13 +32,15 @@
                         <div class="d-flex border-0 mb-0 pb-0">
                           <span
                             class="avatar avatar-lg p-2 bg-light rounded flex-shrink-0 me-2"
-                            ><img src="@/assets/img/icons/google-logo.svg" alt="Img"
+                            ><img
+                              src="@/assets/img/icons/google-logo.svg"
+                              alt="Img"
                           /></span>
                           <div>
                             <p class="fw-medium text-dark mb-1">Google</p>
                             <p class="mb-0">
-                              Streamline your access using your Google account for secure
-                              and efficient login.
+                              Streamline your access using your Google account
+                              for secure and efficient login.
                             </p>
                           </div>
                         </div>
@@ -83,13 +85,15 @@
                         <div class="d-flex border-0 mb-0 pb-0">
                           <span
                             class="avatar avatar-lg p-2 bg-light rounded flex-shrink-0 me-2"
-                            ><img src="@/assets/img/icons/facebook.svg" alt="Img"
+                            ><img
+                              src="@/assets/img/icons/facebook.svg"
+                              alt="Img"
                           /></span>
                           <div>
                             <p class="fw-medium text-dark mb-1">Facebook</p>
                             <p class="mb-0">
-                              Quickly log in or register using your Facebook account,
-                              manage operations
+                              Quickly log in or register using your Facebook
+                              account, manage operations
                             </p>
                           </div>
                         </div>
@@ -139,8 +143,8 @@
                           <div>
                             <p class="fw-medium text-dark mb-1">Apple</p>
                             <p class="mb-0">
-                              Allows users to sign in using their Apple ID, offering
-                              secure and privacy access.
+                              Allows users to sign in using their Apple ID,
+                              offering secure and privacy access.
                             </p>
                           </div>
                         </div>
@@ -190,8 +194,8 @@
                           <div>
                             <p class="fw-medium text-dark mb-1">SSO</p>
                             <p class="mb-0">
-                              Enables users to access multiple applications or systems
-                              with one set of login credentials
+                              Enables users to access multiple applications or
+                              systems with one set of login credentials
                             </p>
                           </div>
                         </div>
@@ -243,10 +247,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
@@ -282,16 +283,26 @@
             </div>
             <div class="mb-0">
               <label class="form-label"
-                >Login Redirect URL<span class="text-danger ms-1">*</span></label
+                >Login Redirect URL<span class="text-danger ms-1"
+                  >*</span
+                ></label
               >
               <input type="text" class="form-control" />
             </div>
           </div>
           <div class="modal-footer d-flex align-items-center gap-1">
-            <button type="button" class="btn btn-white border" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-white border"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
-            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
               Submit
             </button>
           </div>
@@ -332,16 +343,26 @@
             </div>
             <div class="mb-0">
               <label class="form-label"
-                >Login Redirect URL<span class="text-danger ms-1">*</span></label
+                >Login Redirect URL<span class="text-danger ms-1"
+                  >*</span
+                ></label
               >
               <input type="text" class="form-control" />
             </div>
           </div>
           <div class="modal-footer d-flex align-items-center gap-1">
-            <button type="button" class="btn btn-white border" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-white border"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
-            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
               Submit
             </button>
           </div>

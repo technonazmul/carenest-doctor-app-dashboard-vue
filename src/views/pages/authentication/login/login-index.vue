@@ -20,10 +20,18 @@
                 class="d-flex flex-column justify-content-lg-center p-4 p-lg-0 pb-0 flex-fill"
               >
                 <div class="mx-auto mb-4 text-center">
+                  <!-- Loading state -->
+                  <div v-if="loading" class="logo-loading">
+                    <i class="ti ti-loader-2 animate-spin"></i>
+                    <span class="ms-2">Loading...</span>
+                  </div>
+                  <!-- Logo from API or fallback -->
                   <img
-                    src="@/assets/img/logo.svg"
+                    v-else
+                    :src="logoUrl || '@/assets/img/logo.svg'"
                     class="img-fluid"
                     alt="Logo"
+                    @error="handleImageError"
                   />
                 </div>
                 <div class="card border-1 p-lg-3 shadow-md rounded-3 mb-4">
@@ -67,8 +75,8 @@
                             name="password"
                             :type="showPassword ? 'text' : 'password'"
                             class="pass-input form-control ps-0 border-0"
-                            value="123456"
                             :class="{ 'is-invalid': errors.password }"
+                            placeholder="Enter Password"
                           />
                           <span class="input-group-text bg-white border-0">
                             <i
@@ -92,29 +100,7 @@
                         </div>
                       </div>
                     </div>
-                    <div
-                      class="d-flex align-items-center justify-content-between mb-3"
-                    >
-                      <div class="d-flex align-items-center">
-                        <div class="form-check form-check-md mb-0">
-                          <input
-                            class="form-check-input"
-                            id="remember_me"
-                            type="checkbox"
-                          />
-                          <label
-                            for="remember_me"
-                            class="form-check-label mt-0 text-dark"
-                            >Remember Me</label
-                          >
-                        </div>
-                      </div>
-                      <div class="text-end">
-                        <router-link to="/forgot-password" class="text-danger"
-                          >Forgot Password?</router-link
-                        >
-                      </div>
-                    </div>
+
                     <div class="mb-2">
                       <button
                         type="submit"
@@ -123,59 +109,6 @@
                         Login
                       </button>
                     </div>
-                    <div class="login-or position-relative mb-3">
-                      <span class="span-or">OR</span>
-                    </div>
-                    <div class="mb-3">
-                      <div
-                        class="d-flex align-items-center justify-content-center flex-wrap"
-                      >
-                        <div class="text-center me-2 flex-fill">
-                          <a
-                            href="javascript:void(0);"
-                            class="br-10 p-1 btn btn-outline-light border d-flex align-items-center justify-content-center"
-                          >
-                            <img
-                              class="img-fluid m-1"
-                              src="@/assets/img/icons/facebook-logo.svg"
-                              alt="Facebook"
-                            />
-                          </a>
-                        </div>
-                        <div class="text-center me-2 flex-fill">
-                          <a
-                            href="javascript:void(0);"
-                            class="br-10 p-1 btn btn-outline-light border d-flex align-items-center justify-content-center"
-                          >
-                            <img
-                              class="img-fluid m-1"
-                              src="@/assets/img/icons/google-logo.svg"
-                              alt="Google"
-                            />
-                          </a>
-                        </div>
-                        <div class="text-center me-2 flex-fill">
-                          <a
-                            href="javascript:void(0);"
-                            class="br-10 p-1 btn btn-outline-light border d-flex align-items-center justify-content-center"
-                          >
-                            <img
-                              class="img-fluid m-1"
-                              src="@/assets/img/icons/apple-logo.svg"
-                              alt="apple"
-                            />
-                          </a>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="text-center">
-                      <h6 class="fw-normal fs-14 text-dark mb-0">
-                        Don’t have an account yet?
-                        <router-link to="/register" class="hover-a">
-                          Register</router-link
-                        >
-                      </h6>
-                    </div>
                   </div>
                   <!-- end card body -->
                 </div>
@@ -183,7 +116,7 @@
               </div>
             </Form>
             <p class="text-dark text-center">
-              Copyright &copy; {{ new Date().getFullYear() }} - Preclinic
+              Copyright &copy; {{ new Date().getFullYear() }}
             </p>
           </div>
           <!-- end col -->
@@ -194,13 +127,16 @@
     <!-- End Content -->
   </div>
 </template>
+
 <script>
 import { ref } from "vue";
 import { useRouter } from "vue-router";
 import { Form, Field } from "vee-validate";
 import * as Yup from "yup";
-import Cookies from "js-cookie"; // ✅ for token storage (alternative: localStorage)
+import Cookies from "js-cookie";
+import axios from "axios";
 import { API_BASE } from "@/api/apiConfig";
+import { useSettings } from "@/composables/useSettings";
 
 export default {
   components: {
@@ -210,15 +146,55 @@ export default {
   data() {
     return {
       showPassword: false,
+      logoUrl: null,
+      settings: null,
+      loading: true,
     };
+  },
+  async mounted() {
+    await this.fetchSettings();
   },
   methods: {
     toggleShow() {
       this.showPassword = !this.showPassword;
     },
+
+    async fetchSettings() {
+      try {
+        this.loading = true;
+        const response = await axios.get(`${this.apiBaseUrl}/settings`, {
+          headers: {
+            "Content-Type": "application/json",
+          },
+        });
+
+        if (response.data.success && response.data.data) {
+          this.settings = response.data.data;
+
+          // Set logo URL from API response
+          if (this.settings.general?.logo?.filename) {
+            this.logoUrl = `${this.apiBase}/uploads/settings/${this.settings.general.logo.filename}`;
+          }
+        }
+      } catch (error) {
+        console.error("Error fetching settings:", error);
+        // Keep logoUrl as null to fallback to default images
+      } finally {
+        this.loading = false;
+      }
+    },
+
+    handleImageError(event) {
+      // Fallback to default logo if API logo fails to load
+      console.warn("Failed to load logo from API, falling back to default");
+      event.target.src = "@/assets/img/logo.svg";
+    },
   },
   setup() {
     const router = useRouter();
+    const apiBase = API_BASE;
+    const apiBaseUrl = `${apiBase}/api/backend`;
+    const { getCurrencySymbol, formatCurrency } = useSettings();
 
     const schema = Yup.object().shape({
       username: Yup.string().required("Username is required"),
@@ -230,7 +206,6 @@ export default {
     const onSubmit = async (values, { setErrors }) => {
       // Clear old messages
       document.getElementById("username").innerHTML = "";
-
       document.getElementById("password").innerHTML = "";
 
       try {
@@ -256,12 +231,17 @@ export default {
           return;
         }
 
-        // ✅ Store token in cookie (secure in prod)
+        // ✅ Store token securely
         Cookies.set("adminToken", data.token, {
           expires: 1,
           sameSite: "Strict",
           secure: true,
         });
+
+        // ✅ Store role for sidebar filtering
+        if (data.user && data.user.role) {
+          localStorage.setItem("role", data.user.role);
+        }
 
         // ✅ Redirect on success
         router.push("/dashboard");
@@ -275,7 +255,35 @@ export default {
       schema,
       onSubmit,
       checked: ref(false),
+      apiBase,
+      apiBaseUrl,
+      getCurrencySymbol,
+      formatCurrency,
     };
   },
 };
 </script>
+
+<style scoped>
+.logo-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6c757d;
+  font-size: 1.2rem;
+  min-height: 40px; /* Adjust based on your logo height */
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+</style>

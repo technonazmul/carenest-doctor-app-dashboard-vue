@@ -13,25 +13,31 @@
       <div class="card mb-0">
         <div class="card-body">
           <div class="d-flex align-items-center">
-            <p class="text-dark me-4 mb-0 timeline-date flex-shrink-0">24 Sep 2024</p>
+            <p class="text-dark me-4 mb-0 timeline-date flex-shrink-0">
+              24 Sep 2024
+            </p>
             <div class="border-start ps-4 py-4 border-circle position-relative">
               <p class="text-dark fw-semibold mb-1">
                 Completed the Patient visit at Glory Hospital in Florida, USA .
               </p>
               <p>
-                The patient successfully completed a scheduled visit. All clinical notes,
-                diagnostics, and visit outcomes have been recorded and stored in the
-                medical record.
+                The patient successfully completed a scheduled visit. All
+                clinical notes, diagnostics, and visit outcomes have been
+                recorded and stored in the medical record.
               </p>
             </div>
           </div>
           <div class="d-flex align-items-center">
-            <p class="text-dark me-4 mb-0 timeline-date flex-shrink-0">20 Sep 2024</p>
+            <p class="text-dark me-4 mb-0 timeline-date flex-shrink-0">
+              20 Sep 2024
+            </p>
             <div class="border-start ps-4 py-4 border-circle position-relative">
               <p class="text-dark fw-semibold mb-1">
                 Bernardo James Uploaded 4 new photos for World Safety Event
               </p>
-              <p>02:30 AM, April 9 - 2025, Bernardo James, Uploaded 4 new photos</p>
+              <p>
+                02:30 AM, April 9 - 2025, Bernardo James, Uploaded 4 new photos
+              </p>
 
               <!-- start row -->
               <div class="row">
@@ -80,30 +86,40 @@
             </div>
           </div>
           <div class="d-flex align-items-center">
-            <p class="text-dark me-4 mb-0 timeline-date flex-shrink-0">10 Sep 2024</p>
+            <p class="text-dark me-4 mb-0 timeline-date flex-shrink-0">
+              10 Sep 2024
+            </p>
             <div class="border-start ps-4 py-4 border-circle position-relative">
               <p class="text-dark fw-semibold mb-1">
                 Dr. Linda Carpenter Doctors Meeting
               </p>
               <p>
-                April 12, 2025, 10:00 AM – 12:30 PM, Conference Room B / Virtual via Zoom
+                April 12, 2025, 10:00 AM – 12:30 PM, Conference Room B / Virtual
+                via Zoom
               </p>
             </div>
           </div>
           <div class="d-flex align-items-center">
-            <p class="text-dark me-4 mb-0 timeline-date flex-shrink-0">02 Sep 2024</p>
+            <p class="text-dark me-4 mb-0 timeline-date flex-shrink-0">
+              02 Sep 2024
+            </p>
             <div class="border-start ps-4 py-4 border-circle position-relative">
               <p class="text-dark fw-semibold mb-1">
                 Dr.Markhay smith was Completed the Operation With in Deadline
               </p>
               <p>
-                The operation was successfully completed within the scheduled deadline.
+                The operation was successfully completed within the scheduled
+                deadline.
               </p>
             </div>
           </div>
           <div class="d-flex align-items-center">
-            <p class="text-dark me-4 mb-0 timeline-date flex-shrink-0">01 Sep 2024</p>
-            <div class="border-start ps-4 py-4 border-circle position-relative pb-0">
+            <p class="text-dark me-4 mb-0 timeline-date flex-shrink-0">
+              01 Sep 2024
+            </p>
+            <div
+              class="border-start ps-4 py-4 border-circle position-relative pb-0"
+            >
               <p class="text-dark fw-semibold mb-1">
                 Rio Williams Posted a Blog about Corona Safety Measurements
               </p>
@@ -124,9 +140,9 @@
                     </div>
                     <p>Rio Williams posted a new blog</p>
                     <p class="mb-2">
-                      “Stay informed on how to keep your clinic environment safe. Rio
-                      shares essential COVID-19 safety protocols, from sanitization tips
-                      to patient screening procedures.”
+                      “Stay informed on how to keep your clinic environment
+                      safe. Rio shares essential COVID-19 safety protocols, from
+                      sanitization tips to patient screening procedures.”
                     </p>
                     <a href="javascript:void(0);" class="btn btn-primary"
                       >Read more <i class="ti ti-chevron-right ms-1"></i
@@ -146,10 +162,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>

@@ -36,7 +36,9 @@
                 <div>
                   <p>Total Present</p>
                   <div class="d-flex align-items-center">
-                    <p class="mb-0 me-2"><span class="text-dark fw-bold">180</span></p>
+                    <p class="mb-0 me-2">
+                      <span class="text-dark fw-bold">180</span>
+                    </p>
                     <span class="badge badge-soft-success fs-12 fw-normal"
                       >+10.6%<i class="ti ti-arrow-up-right ms-1"></i
                     ></span>
@@ -65,7 +67,9 @@
                 <div>
                   <p>Planned Leaves</p>
                   <div class="d-flex align-items-center">
-                    <p class="mb-0 me-2"><span class="text-dark fw-bold">10</span></p>
+                    <p class="mb-0 me-2">
+                      <span class="text-dark fw-bold">10</span>
+                    </p>
                     <span class="badge badge-soft-success fs-12 fw-normal"
                       >+8.95%<i class="ti ti-arrow-up-right ms-1"></i
                     ></span>
@@ -94,7 +98,9 @@
                 <div>
                   <p>Unplanned Leaves</p>
                   <div class="d-flex align-items-center">
-                    <p class="mb-0 me-2"><span class="text-dark fw-bold">50</span></p>
+                    <p class="mb-0 me-2">
+                      <span class="text-dark fw-bold">50</span>
+                    </p>
                     <span class="badge badge-soft-success fs-12 fw-normal"
                       >+3.78%<i class="ti ti-arrow-up-right ms-1"></i
                     ></span>
@@ -123,7 +129,9 @@
                 <div>
                   <p>Pending Requests</p>
                   <div class="d-flex align-items-center">
-                    <p class="mb-0 me-2"><span class="text-dark fw-bold">15</span></p>
+                    <p class="mb-0 me-2">
+                      <span class="text-dark fw-bold">15</span>
+                    </p>
                     <span class="badge badge-soft-success fs-12 fw-normal"
                       >+7.65%<i class="ti ti-arrow-up-right ms-1"></i
                     ></span>
@@ -148,7 +156,9 @@
       </div>
       <!-- end row -->
 
-      <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3">
+      <div
+        class="d-flex align-items-center justify-content-between flex-wrap row-gap-3"
+      >
         <div class="search-set mb-3">
           <div class="d-flex align-items-center">
             <div class="table-search d-flex align-items-center mb-0 me-2">
@@ -169,7 +179,9 @@
                 ref="dateRangeInput"
               >
                 <i class="ti ti-calendar text-gray-5 fs-14 me-1"></i
-                ><span class="reportrange-picker-field">16 Apr 25 - 16 Apr 25</span>
+                ><span class="reportrange-picker-field"
+                  >16 Apr 25 - 16 Apr 25</span
+                >
               </div>
             </div>
           </div>
@@ -205,9 +217,13 @@
               <form action="#">
                 <div class="filter-body pb-0">
                   <div class="mb-3">
-                    <div class="d-flex align-items-center justify-content-between">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
                       <label class="form-label">Employee</label>
-                      <a href="javascript:void(0);" class="link-primary mb-1">Reset</a>
+                      <a href="javascript:void(0);" class="link-primary mb-1"
+                        >Reset</a
+                      >
                     </div>
                     <vue-multiselect
                       v-model="selectedEmp"
@@ -218,9 +234,13 @@
                     />
                   </div>
                   <div class="mb-3">
-                    <div class="d-flex align-items-center justify-content-between">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
                       <label class="form-label">Leave Type</label>
-                      <a href="javascript:void(0);" class="link-primary mb-1">Reset</a>
+                      <a href="javascript:void(0);" class="link-primary mb-1"
+                        >Reset</a
+                      >
                     </div>
                     <vue-multiselect
                       v-model="selectedType"
@@ -231,7 +251,9 @@
                     />
                   </div>
                   <div class="mb-3">
-                    <label class="form-label mb-1 text-dark fs-14 fw-medium">Date</label>
+                    <label class="form-label mb-1 text-dark fs-14 fw-medium"
+                      >Date</label
+                    >
                     <div class="input-icon-end position-relative">
                       <a-date-picker
                         v-model:value="valueOne"
@@ -244,9 +266,13 @@
                     </div>
                   </div>
                   <div class="mb-3">
-                    <div class="d-flex align-items-center justify-content-between">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
                       <label class="form-label">Status</label>
-                      <a href="javascript:void(0);" class="link-primary mb-1">Reset</a>
+                      <a href="javascript:void(0);" class="link-primary mb-1"
+                        >Reset</a
+                      >
                     </div>
                     <vue-multiselect
                       v-model="selectedSta"
@@ -266,7 +292,9 @@
                     id="close-filter"
                     >Close</a
                   >
-                  <button type="submit" class="btn btn-primary btn-md">Filter</button>
+                  <button type="submit" class="btn btn-primary btn-md">
+                    Filter
+                  </button>
                 </div>
               </form>
             </div>
@@ -281,10 +309,14 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-end p-2">
               <li>
-                <a href="javascript:void(0);" class="dropdown-item rounded-1">Recent</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                  >Recent</a
+                >
               </li>
               <li>
-                <a href="javascript:void(0);" class="dropdown-item rounded-1">Oldest</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                  >Oldest</a
+                >
               </li>
             </ul>
           </div>
@@ -374,10 +406,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
@@ -512,10 +541,18 @@
             <!-- end row -->
           </div>
           <div class="modal-footer d-flex align-items-center gap-1">
-            <button type="button" class="btn btn-white border" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-white border"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
-            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
               Add New Leave
             </button>
           </div>
@@ -665,10 +702,18 @@ Not feeling well due to cold and fatigue, taking rest as advised by family docto
             <!-- end row -->
           </div>
           <div class="modal-footer d-flex align-items-center gap-1">
-            <button type="button" class="btn btn-white border" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-white border"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
-            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
               Save Changes
             </button>
           </div>
@@ -735,7 +780,8 @@ const columns = [
     dataIndex: "Employee",
     key: "Employee",
     sorter: {
-      compare: (a, b) => (a.Employee.toLowerCase() > b.Employee.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Employee.toLowerCase() > b.Employee.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -743,7 +789,8 @@ const columns = [
     dataIndex: "LeaveType",
     key: "LeaveType",
     sorter: {
-      compare: (a, b) => (a.LeaveType.toLowerCase() > b.LeaveType.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.LeaveType.toLowerCase() > b.LeaveType.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -767,7 +814,8 @@ const columns = [
     dataIndex: "AppliedOn",
     key: "AppliedOn",
     sorter: {
-      compare: (a, b) => (a.AppliedOn.toLowerCase() > b.AppliedOn.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.AppliedOn.toLowerCase() > b.AppliedOn.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -775,7 +823,8 @@ const columns = [
     dataIndex: "Status",
     key: "Status",
     sorter: {
-      compare: (a, b) => (a.Status.toLowerCase() > b.Status.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Status.toLowerCase() > b.Status.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -1002,7 +1051,8 @@ export default {
   },
   methods: {
     getImageUrl(imageName) {
-      return new URL(`/src/assets/img/users/${imageName}`, import.meta.url).href;
+      return new URL(`/src/assets/img/users/${imageName}`, import.meta.url)
+        .href;
     },
   },
   computed: {
@@ -1040,10 +1090,16 @@ export default {
             endDate: end,
             ranges: {
               Today: [moment(), moment()],
-              Yesterday: [moment().subtract(1, "days"), moment().subtract(1, "days")],
+              Yesterday: [
+                moment().subtract(1, "days"),
+                moment().subtract(1, "days"),
+              ],
               "Last 7 Days": [moment().subtract(6, "days"), moment()],
               "Last 30 Days": [moment().subtract(29, "days"), moment()],
-              "This Month": [moment().startOf("month"), moment().endOf("month")],
+              "This Month": [
+                moment().startOf("month"),
+                moment().endOf("month"),
+              ],
               "Last Month": [
                 moment().subtract(1, "month").startOf("month"),
                 moment().subtract(1, "month").endOf("month"),

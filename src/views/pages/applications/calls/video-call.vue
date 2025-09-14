@@ -9,7 +9,9 @@
     <!-- Start Content -->
     <div class="content">
       <!-- Page Header -->
-      <div class="d-flex align-items-sm-center flex-sm-row flex-column gap-2 pb-3">
+      <div
+        class="d-flex align-items-sm-center flex-sm-row flex-column gap-2 pb-3"
+      >
         <div class="flex-grow-1">
           <h4 class="fs-18 fw-semibold mb-0">Video Call</h4>
         </div>
@@ -21,7 +23,9 @@
             <li class="breadcrumb-item">
               <a href="javascript:void(0);">Applications</a>
             </li>
-            <li class="breadcrumb-item active" aria-current="page">Video Call</li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Video Call
+            </li>
           </ol>
         </div>
       </div>
@@ -32,7 +36,11 @@
         <div class="col-xxl-12">
           <div class="single-video d-flex">
             <div class="join-video flex-fill position-relative">
-              <img src="@/assets/img/media/video.jpg" class="img-fluid" alt="Logo" />
+              <img
+                src="@/assets/img/media/video.jpg"
+                class="img-fluid"
+                alt="Logo"
+              />
               <div class="chat-active-users">
                 <div class="video-avatar position-absolute p-2 top-0v end-0">
                   <img
@@ -40,7 +48,9 @@
                     class="img-fluid rounded border border-primary"
                     alt="Logo"
                   />
-                  <div class="position-absolute start-0 bottom-0 w-100 text-center py-2">
+                  <div
+                    class="position-absolute start-0 bottom-0 w-100 text-center py-2"
+                  >
                     <span
                       class="bg-white text-dark d-inline-block fw-medium rounded p-1 my-2"
                       >Joe Lewis</span
@@ -109,10 +119,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>

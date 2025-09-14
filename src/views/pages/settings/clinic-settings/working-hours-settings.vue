@@ -31,7 +31,9 @@
                   class="d-flex align-items-center justify-content-between pb-3 mb-3 border-bottom"
                 >
                   <h6 class="fs-14 fw-medium">
-                    Expected Productive Time<span class="text-danger ms-1">*</span>
+                    Expected Productive Time<span class="text-danger ms-1"
+                      >*</span
+                    >
                   </h6>
                   <div class="d-flex align-items-center">
                     <div class="input-icon-end position-relative me-2">
@@ -44,14 +46,18 @@
                         <i class="ti ti-clock text-gray-7"></i>
                       </span>
                     </div>
-                    <span class="flex-shrink-0 align-items-center">Hours / Day</span>
+                    <span class="flex-shrink-0 align-items-center"
+                      >Hours / Day</span
+                    >
                   </div>
                 </div>
                 <div>
                   <h5 class="fw-bold mb-3">Working Days</h5>
 
                   <!-- start row -->
-                  <div class="row align-items-center row-gap-2 pb-3 mb-3 border-bottom">
+                  <div
+                    class="row align-items-center row-gap-2 pb-3 mb-3 border-bottom"
+                  >
                     <div class="col-lg-6">
                       <div class="form-check form-switch">
                         <input
@@ -256,14 +262,22 @@
                     <div class="col-lg-6">
                       <div class="d-flex align-items-center">
                         <div class="input-icon-end position-relative me-2">
-                          <input type="text" disabled class="form-control timepicker" />
+                          <input
+                            type="text"
+                            disabled
+                            class="form-control timepicker"
+                          />
                           <span class="input-icon-addon">
                             <i class="ti ti-clock text-gray-7"></i>
                           </span>
                         </div>
                         <span class="text-dark me-2">to</span>
                         <div class="input-icon-end position-relative">
-                          <input type="text" disabled class="form-control timepicker" />
+                          <input
+                            type="text"
+                            disabled
+                            class="form-control timepicker"
+                          />
                           <span class="input-icon-addon">
                             <i class="ti ti-clock text-gray-7"></i>
                           </span>
@@ -285,14 +299,22 @@
                     <div class="col-lg-6">
                       <div class="d-flex align-items-center">
                         <div class="input-icon-end position-relative me-2">
-                          <input type="text" disabled class="form-control timepicker" />
+                          <input
+                            type="text"
+                            disabled
+                            class="form-control timepicker"
+                          />
                           <span class="input-icon-addon">
                             <i class="ti ti-clock text-gray-7"></i>
                           </span>
                         </div>
                         <span class="text-dark me-2">to</span>
                         <div class="input-icon-end position-relative">
-                          <input type="text" disabled class="form-control timepicker" />
+                          <input
+                            type="text"
+                            disabled
+                            class="form-control timepicker"
+                          />
                           <span class="input-icon-addon">
                             <i class="ti ti-clock text-gray-7"></i>
                           </span>
@@ -304,9 +326,14 @@
                   <!-- end row -->
 
                   <div class="pb-3 mb-3 border-bottom">
-                    <div class="d-flex align-items-center justify-content-between mb-3">
+                    <div
+                      class="d-flex align-items-center justify-content-between mb-3"
+                    >
                       <h5 class="fw-bold">Break Hours</h5>
-                      <a href="javascript:void(0);" @click="addBreak" class="add-break"
+                      <a
+                        href="javascript:void(0);"
+                        @click="addBreak"
+                        class="add-break"
                         ><i class="ti ti-plus me-1"></i>Add New</a
                       >
                     </div>
@@ -318,7 +345,9 @@
                       :key="index"
                     >
                       <div class="col-lg-6">
-                        <p class="text-dark fw-medium mb-0">{{ breakItem.label }}</p>
+                        <p class="text-dark fw-medium mb-0">
+                          {{ breakItem.label }}
+                        </p>
                       </div>
 
                       <div class="col-lg-6">
@@ -364,7 +393,9 @@
                   </div>
 
                   <div class="pb-3 mb-3 border-bottom">
-                    <div class="d-flex align-items-center justify-content-between mb-3">
+                    <div
+                      class="d-flex align-items-center justify-content-between mb-3"
+                    >
                       <h5 class="fw-bold">Lunch Hours</h5>
                     </div>
 
@@ -382,7 +413,9 @@
                             placeholder="45 Mins"
                           />
 
-                          <span class="text-dark flex-shrink-0 mx-2">Lunch at</span>
+                          <span class="text-dark flex-shrink-0 mx-2"
+                            >Lunch at</span
+                          >
                           <vue3-select
                             v-model="selectedOne"
                             :options="Workhourone"
@@ -396,8 +429,12 @@
                   </div>
 
                   <div class="d-flex align-items-center justify-content-end">
-                    <a href="javascript:void(0);" class="btn btn-light me-2">Cancel</a>
-                    <a href="javascript:void(0);" class="btn btn-primary">Save Changes</a>
+                    <a href="javascript:void(0);" class="btn btn-light me-2"
+                      >Cancel</a
+                    >
+                    <a href="javascript:void(0);" class="btn btn-primary"
+                      >Save Changes</a
+                    >
                   </div>
                 </div>
               </div>
@@ -412,10 +449,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>

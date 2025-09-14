@@ -40,7 +40,9 @@
         <div class="col-xl-3 col-md-6 d-flex">
           <div class="card shadow-sm flex-fill w-100 z-0">
             <div class="card-body">
-              <div class="d-flex justify-content-between align-items-center mb-3">
+              <div
+                class="d-flex justify-content-between align-items-center mb-3"
+              >
                 <span
                   class="avatar avatar-sm bg-soft-primary border border-primary text-primary rounded-2 flex-shrink-0"
                   ><i class="ti ti-calendar-time fs-14"></i
@@ -66,7 +68,9 @@
         <div class="col-xl-3 col-md-6 d-flex">
           <div class="card shadow-sm flex-fill w-100 z-0">
             <div class="card-body">
-              <div class="d-flex justify-content-between align-items-center mb-3">
+              <div
+                class="d-flex justify-content-between align-items-center mb-3"
+              >
                 <span
                   class="avatar avatar-sm bg-soft-success border border-success text-success rounded-2 flex-shrink-0"
                   ><i class="ti ti-calendar-up fs-14"></i
@@ -92,7 +96,9 @@
         <div class="col-xl-3 col-md-6 d-flex">
           <div class="card shadow-sm flex-fill w-100 z-0">
             <div class="card-body">
-              <div class="d-flex justify-content-between align-items-center mb-3">
+              <div
+                class="d-flex justify-content-between align-items-center mb-3"
+              >
                 <span
                   class="avatar avatar-sm bg-soft-warning border border-warning text-warning rounded-2 flex-shrink-0"
                   ><i class="ti ti-calendar-down fs-14"></i
@@ -118,7 +124,9 @@
         <div class="col-xl-3 col-md-6 d-flex">
           <div class="card shadow-sm flex-fill w-100 z-0">
             <div class="card-body">
-              <div class="d-flex justify-content-between align-items-center mb-3">
+              <div
+                class="d-flex justify-content-between align-items-center mb-3"
+              >
                 <span
                   class="avatar avatar-sm bg-soft-danger border border-danger text-danger rounded-2 flex-shrink-0"
                   ><i class="ti ti-calendar-repeat fs-14"></i
@@ -165,7 +173,11 @@
             <div class="col-lg-4">
               <div class="mb-0">
                 <label class="form-label">Patient</label>
-                <vue3-select v-model="selected" :options="PatiApp" placeholder="Select" />
+                <vue3-select
+                  v-model="selected"
+                  :options="PatiApp"
+                  placeholder="Select"
+                />
               </div>
             </div>
             <!-- end col -->
@@ -272,10 +284,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
@@ -287,7 +296,8 @@ const columns = [
     dataIndex: "Patient",
     key: "Patient",
     sorter: {
-      compare: (a, b) => (a.Patient.toLowerCase() > b.Patient.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Patient.toLowerCase() > b.Patient.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -295,7 +305,8 @@ const columns = [
     dataIndex: "DateTime",
     key: "DateTime",
     sorter: {
-      compare: (a, b) => (a.DateTime.toLowerCase() > b.DateTime.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.DateTime.toLowerCase() > b.DateTime.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -303,7 +314,8 @@ const columns = [
     dataIndex: "InvoiceID",
     key: "InvoiceID",
     sorter: {
-      compare: (a, b) => (a.InvoiceID.toLowerCase() > b.InvoiceID.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.InvoiceID.toLowerCase() > b.InvoiceID.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -320,7 +332,8 @@ const columns = [
     dataIndex: "Location",
     key: "Location",
     sorter: {
-      compare: (a, b) => (a.Location.toLowerCase() > b.Location.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Location.toLowerCase() > b.Location.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -328,7 +341,8 @@ const columns = [
     dataIndex: "Status",
     key: "Status",
     sorter: {
-      compare: (a, b) => (a.Status.toLowerCase() > b.Status.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Status.toLowerCase() > b.Status.toLowerCase() ? -1 : 1,
     },
   },
 ];
@@ -515,10 +529,16 @@ export default {
             endDate: end,
             ranges: {
               Today: [moment(), moment()],
-              Yesterday: [moment().subtract(1, "days"), moment().subtract(1, "days")],
+              Yesterday: [
+                moment().subtract(1, "days"),
+                moment().subtract(1, "days"),
+              ],
               "Last 7 Days": [moment().subtract(6, "days"), moment()],
               "Last 30 Days": [moment().subtract(29, "days"), moment()],
-              "This Month": [moment().startOf("month"), moment().endOf("month")],
+              "This Month": [
+                moment().startOf("month"),
+                moment().endOf("month"),
+              ],
               "Last Month": [
                 moment().subtract(1, "month").startOf("month"),
                 moment().subtract(1, "month").endOf("month"),

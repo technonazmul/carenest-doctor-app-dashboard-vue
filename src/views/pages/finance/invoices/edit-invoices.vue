@@ -5,11 +5,14 @@
     <!-- Start Content -->
     <div class="content">
       <!-- Start Page Header -->
-      <div class="d-flex align-items-sm-center flex-sm-row flex-column gap-2 mb-3">
+      <div
+        class="d-flex align-items-sm-center flex-sm-row flex-column gap-2 mb-3"
+      >
         <div class="flex-grow-1">
           <h6 class="fw-bold mb-0 d-flex align-items-center">
             <router-link to="/invoices/invoices-list" class=""
-              ><i class="ti ti-chevron-left me-1 fs-14"></i>Invoices</router-link
+              ><i class="ti ti-chevron-left me-1 fs-14"></i
+              >Invoices</router-link
             >Invoices
           </h6>
         </div>
@@ -32,7 +35,11 @@
                     >Patient Name <span class="text-danger">*</span></label
                   >
                   <div class="input-group">
-                    <input type="text" class="form-control" value="Bernardo James" />
+                    <input
+                      type="text"
+                      class="form-control"
+                      value="Bernardo James"
+                    />
                   </div>
                 </div>
               </div>
@@ -76,7 +83,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center rounded-1"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           General Medicine
                         </label>
                       </li>
@@ -84,7 +94,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center rounded-1"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           Pediatrics
                         </label>
                       </li>
@@ -92,7 +105,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center rounded-1"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           Gynecology
                         </label>
                       </li>
@@ -100,7 +116,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center rounded-1"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           Cardiology
                         </label>
                       </li>
@@ -108,7 +127,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center rounded-1"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           Orthopedics
                         </label>
                       </li>
@@ -116,7 +138,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center rounded-1"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           Dermatology
                         </label>
                       </li>
@@ -124,7 +149,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center rounded-1"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           ENT
                         </label>
                       </li>
@@ -132,7 +160,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center rounded-1"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           Neurology
                         </label>
                       </li>
@@ -140,7 +171,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center rounded-1"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           Psychiatry
                         </label>
                       </li>
@@ -148,7 +182,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center rounded-1"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           Pulmonology
                         </label>
                       </li>
@@ -180,7 +217,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center rounded-1"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           GST
                         </label>
                       </li>
@@ -188,7 +228,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center rounded-1"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           VAT
                         </label>
                       </li>
@@ -196,7 +239,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center rounded-1"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           Professional
                         </label>
                       </li>
@@ -204,7 +250,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center rounded-1"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           Income
                         </label>
                       </li>
@@ -212,7 +261,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center rounded-1"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           TDS
                         </label>
                       </li>
@@ -316,7 +368,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center rounded-1"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           PayPal
                         </label>
                       </li>
@@ -324,7 +379,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center rounded-1"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           Options Enhanced
                         </label>
                       </li>
@@ -332,7 +390,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center rounded-1"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           Cheque
                         </label>
                       </li>
@@ -364,7 +425,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center rounded-1"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           Inporgress
                         </label>
                       </li>
@@ -372,7 +436,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center rounded-1"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           Completed
                         </label>
                       </li>
@@ -380,7 +447,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center rounded-1"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           Pending
                         </label>
                       </li>
@@ -463,8 +533,8 @@
                             type="button"
                             class="btn add-invoices border-0 text-dark d-felx align-items-center fs-14"
                           >
-                            <i class="ti ti-circle-plus text-primary me-1"></i> Add
-                            Invoice
+                            <i class="ti ti-circle-plus text-primary me-1"></i>
+                            Add Invoice
                           </button>
                         </td>
                         <td colspan="5"></td>
@@ -480,24 +550,36 @@
 
               <div class="col-lg-4">
                 <div class="">
-                  <div class="d-flex align-items-center justify-content-between mb-2">
+                  <div
+                    class="d-flex align-items-center justify-content-between mb-2"
+                  >
                     <h6 class="fs-14 fw-normal text-dark">Amount</h6>
                     <h6 class="fs-14 fw-semibold text-dark">$0</h6>
                   </div>
-                  <div class="d-flex align-items-center justify-content-between mb-2">
+                  <div
+                    class="d-flex align-items-center justify-content-between mb-2"
+                  >
                     <h6 class="fs-14 fw-normal text-dark">Tax (0%)</h6>
                     <h6 class="fs-14 fw-semibold text-dark">$0</h6>
                   </div>
-                  <div class="d-flex align-items-center justify-content-between mb-2">
+                  <div
+                    class="d-flex align-items-center justify-content-between mb-2"
+                  >
                     <h6 class="fs-14 fw-normal text-dark">Discount</h6>
                     <h6 class="fs-14 fw-semibold text-dark">
-                      <vue3-select v-model="selected" :options="DisCo" placeholder="0%" />
+                      <vue3-select
+                        v-model="selected"
+                        :options="DisCo"
+                        placeholder="0%"
+                      />
                     </h6>
                   </div>
                   <div
                     class="d-flex align-items-center justify-content-between border-bottom pb-3 mb-3"
                   >
-                    <h6 class="fs-14 fw-normal text-dark d-flex align-items-center">
+                    <h6
+                      class="fs-14 fw-normal text-dark d-flex align-items-center"
+                    >
                       <label class="d-flex align-items-center form-switch ps-1">
                         <input
                           class="form-check-input m-0 me-2"
@@ -509,7 +591,9 @@
                     </h6>
                     <h6 class="fs-14 fw-semibold text-dark">$0</h6>
                   </div>
-                  <div class="d-flex align-items-center justify-content-between mb-2">
+                  <div
+                    class="d-flex align-items-center justify-content-between mb-2"
+                  >
                     <h6 class="fs-18 fw-bold">Total (USD)</h6>
                     <h6 class="fs-18 fw-bold">$0</h6>
                   </div>
@@ -559,10 +643,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>

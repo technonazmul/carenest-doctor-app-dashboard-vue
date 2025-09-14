@@ -29,11 +29,15 @@
                   <div class="col-md-6">
                     <div class="card shadow-none">
                       <div class="card-body">
-                        <div class="d-flex align-items-center justify-content-between">
+                        <div
+                          class="d-flex align-items-center justify-content-between"
+                        >
                           <div class="d-flex align-items-center">
                             <span
                               class="avatar avatar-lg p-2 bg-light rounded flex-shrink-0 me-2"
-                              ><img src="@/assets/img/icons/local-storage.svg" alt="Img"
+                              ><img
+                                src="@/assets/img/icons/local-storage.svg"
+                                alt="Img"
                             /></span>
                             <p class="text-dark fw-medium">Local Storage</p>
                           </div>
@@ -54,7 +58,9 @@
                   <div class="col-md-6">
                     <div class="card shadow-none">
                       <div class="card-body">
-                        <div class="d-flex align-items-center justify-content-between">
+                        <div
+                          class="d-flex align-items-center justify-content-between"
+                        >
                           <div class="d-flex align-items-center">
                             <span
                               class="avatar avatar-lg p-2 bg-light rounded flex-shrink-0 me-2"
@@ -101,10 +107,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
@@ -157,10 +160,18 @@
             </div>
           </div>
           <div class="modal-footer d-flex align-items-center gap-1">
-            <button type="button" class="btn btn-white border" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-white border"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
-            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
               Submit
             </button>
           </div>

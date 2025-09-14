@@ -7,7 +7,9 @@
         <router-link to="/dashboard/" class="logo">
           <!-- Logo Normal -->
           <span class="logo-light">
-            <span class="logo-lg"><img src="@/assets/img/logo.svg" alt="logo" /></span>
+            <span class="logo-lg"
+              ><img src="@/assets/img/logo.svg" alt="logo"
+            /></span>
             <span class="logo-sm"
               ><img src="@/assets/img/logo-small.svg" alt="small logo"
             /></span>
@@ -22,54 +24,30 @@
         </router-link>
 
         <!-- Sidebar Mobile Button -->
-        <a id="mobile_btn" class="mobile-btn" href="#sidebar" @click="toggleSidebar1">
+        <a
+          id="mobile_btn"
+          class="mobile-btn"
+          href="#sidebar"
+          @click="toggleSidebar1"
+        >
           <i class="ti ti-menu-deep fs-24"></i>
         </a>
 
-        <button class="sidenav-toggle-btn btn border-0 p-0 active" id="toggle_btn2">
+        <button
+          class="sidenav-toggle-btn btn border-0 p-0 active"
+          id="toggle_btn2"
+        >
           <i class="ti ti-arrow-right"></i>
         </button>
-
-        <!-- Search -->
-        <div class="me-auto d-flex align-items-center header-search d-lg-flex d-none">
-          <!-- Search -->
-          <div class="input-icon-start position-relative me-2">
-            <span class="input-icon-addon">
-              <i class="ti ti-search"></i>
-            </span>
-            <input type="text" class="form-control shadow-sm" placeholder="Search" />
-            <span
-              class="input-icon-addon text-dark shadow fs-18 d-inline-flex p-0 header-search-icon"
-              ><i class="ti ti-command"></i
-            ></span>
-          </div>
-          <!-- /Search -->
-        </div>
       </div>
 
       <div class="d-flex align-items-center">
-        <!-- Search for Mobile -->
-        <div class="header-item d-flex d-lg-none me-2">
-          <button
-            class="topbar-link btn btn-icon"
-            data-bs-toggle="modal"
-            data-bs-target="#searchModal"
-            type="button"
-          >
-            <i class="ti ti-search fs-16"></i>
-          </button>
-        </div>
-
-        <!-- AI Assistance -->
-        <a href="javascript:void(0);" class="btn btn-liner-gradient me-3 d-lg-flex d-none"
-          >AI Assistance<i class="ti ti-chart-bubble-filled ms-1"></i
-        ></a>
-        <!-- AI Assistance -->
-
         <!-- Appointment -->
         <div class="header-item">
           <div class="dropdown me-2">
-            <router-link to="/appointments/new-appointment" class="btn topbar-link"
+            <router-link
+              to="/appointments/appointments-list"
+              class="btn topbar-link"
               ><i class="ti ti-calendar-due"></i
             ></router-link>
           </div>
@@ -79,7 +57,9 @@
         <!-- Settings -->
         <div class="header-item">
           <div class="dropdown me-2">
-            <router-link to="/account-settings/profile-settings" class="btn topbar-link"
+            <router-link
+              to="/account-settings/profile-settings"
+              class="btn topbar-link"
               ><i class="ti ti-settings-2"></i
             ></router-link>
           </div>
@@ -91,9 +71,13 @@
           <button
             class="topbar-link btn btn-icon topbar-link"
             id="light-dark-mode"
-            type="button" @click="toggleDarkMode"
+            type="button"
+            @click="toggleDarkMode"
           >
-            <i class="fs-16 ti" :class="[isDarkMode ? 'ti-sun' : 'ti-moon']"></i>
+            <i
+              class="fs-16 ti"
+              :class="[isDarkMode ? 'ti-sun' : 'ti-moon']"
+            ></i>
           </button>
         </div>
 
@@ -146,9 +130,12 @@
                       <p class="mb-0 fw-medium text-dark">Dr. Smith</p>
                       <p class="mb-1 text-wrap">
                         updated the
-                        <span class="fw-medium text-dark">surgery</span> schedule.
+                        <span class="fw-medium text-dark">surgery</span>
+                        schedule.
                       </p>
-                      <div class="d-flex justify-content-between align-items-center">
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
                         <span class="fs-12"
                           ><i class="ti ti-clock me-1"></i>4 min ago</span
                         >
@@ -192,10 +179,13 @@
                       <p class="mb-0 fw-medium text-dark">Dr. Patel</p>
                       <p class="mb-1 text-wrap">
                         completed a
-                        <span class="fw-medium text-dark">follow-up</span> report for
-                        patient <span class="fw-medium text-dark">Emily</span>.
+                        <span class="fw-medium text-dark">follow-up</span>
+                        report for patient
+                        <span class="fw-medium text-dark">Emily</span>.
                       </p>
-                      <div class="d-flex justify-content-between align-items-center">
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
                         <span class="fs-12"
                           ><i class="ti ti-clock me-1"></i>8 min ago</span
                         >
@@ -242,7 +232,9 @@
                         <span class="fw-medium text-dark">Dr. Patel</span> for
                         <span class="fw-medium text-dark">April 15</span>
                       </p>
-                      <div class="d-flex justify-content-between align-items-center">
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
                         <span class="fs-12"
                           ><i class="ti ti-clock me-1"></i>15 min ago</span
                         >
@@ -286,10 +278,12 @@
                       <p class="mb-0 fw-medium text-dark">Amelia</p>
                       <p class="mb-1 text-wrap">
                         completed the
-                        <span class="fw-medium text-dark">pre-visit</span> health
-                        questionnaire.
+                        <span class="fw-medium text-dark">pre-visit</span>
+                        health questionnaire.
                       </p>
-                      <div class="d-flex justify-content-between align-items-center">
+                      <div
+                        class="d-flex justify-content-between align-items-center"
+                      >
                         <span class="fs-12"
                           ><i class="ti ti-clock me-1"></i>20 min ago</span
                         >
@@ -355,46 +349,14 @@
             ></span>
           </a>
           <div class="dropdown-menu dropdown-menu-end dropdown-menu-md p-2">
-            <div class="d-flex align-items-center bg-light rounded-3 p-2 mb-2">
-              <img
-                src="@/assets/img/users/user-01.jpg"
-                class="rounded-circle"
-                width="42"
-                height="42"
-                alt=""
-              />
-              <div class="ms-2">
-                <p class="fw-medium text-dark mb-0">Jimmy Anderson</p>
-                <span class="d-block fs-13">Administrator</span>
-              </div>
-            </div>
-
             <!-- Item-->
-            <router-link to="/account-settings/profile-settings" class="dropdown-item">
-              <i class="ti ti-user-circle me-1 align-middle"></i>
-              <span class="align-middle">Profile Settings</span>
-            </router-link>
-
-            <!-- Item-->
-            <router-link to="/account-settings/profile-settings" class="dropdown-item">
-              <i class="ti ti-settings me-1 align-middle"></i>
-              <span class="align-middle">Account Settings</span>
-            </router-link>
-
-            <!-- item -->
-            <div
-              class="form-check form-switch form-check-reverse d-flex align-items-center justify-content-between dropdown-item mb-0"
+            <router-link
+              to="/account-settings/profile-settings"
+              class="dropdown-item"
             >
-              <label class="form-check-label" for="notify"
-                ><i class="ti ti-bell me-1"></i>Notifications</label
-              >
-              <input
-                class="form-check-input me-0"
-                type="checkbox"
-                role="switch"
-                id="notify"
-              />
-            </div>
+              <i class="ti ti-settings me-1 align-middle"></i>
+              <span class="align-middle">Change Password</span>
+            </router-link>
 
             <!-- Item-->
             <router-link to="/finance/transactions" class="dropdown-item">
@@ -404,10 +366,22 @@
 
             <!-- Item-->
             <div class="pt-2 mt-2 border-top">
-              <router-link to="/" class="dropdown-item text-danger">
-                <i class="ti ti-logout me-1 fs-17 align-middle"></i>
-                <span class="align-middle">Log Out</span>
-              </router-link>
+              <a
+                href="javascript:void(0);"
+                class="dropdown-item text-danger"
+                @click="handleLogout"
+                :class="{ disabled: isLoggingOut }"
+              >
+                <span
+                  v-if="isLoggingOut"
+                  class="spinner-border spinner-border-sm me-2"
+                  role="status"
+                ></span>
+                <i v-else class="ti ti-logout me-1 fs-17 align-middle"></i>
+                <span class="align-middle">{{
+                  isLoggingOut ? "Logging Out..." : "Log Out"
+                }}</span>
+              </a>
             </div>
           </div>
         </div>
@@ -421,22 +395,21 @@
 
 <script>
 import { ref, onMounted } from "vue";
+import { useRouter } from "vue-router";
+import Cookies from "js-cookie";
 
 export default {
-  data() {
-    return {};
-  },
-  methods: {
-    toggleSidebar1() {
-      const body = document.body;
-      body.classList.toggle("slide-nav");
-    },
-  },
+  name: "LayoutsHeader",
   setup() {
+    const router = useRouter();
     const isDarkMode = ref(false);
+    const isLoggingOut = ref(false);
 
     const setThemeAttribute = (enabled) => {
-      document.documentElement.setAttribute("data-bs-theme", enabled ? "dark" : "light");
+      document.documentElement.setAttribute(
+        "data-bs-theme",
+        enabled ? "dark" : "light"
+      );
     };
 
     const toggleDarkMode = () => {
@@ -451,14 +424,97 @@ export default {
       setThemeAttribute(isDarkMode.value);
     };
 
+    const handleLogout = async () => {
+      if (isLoggingOut.value) return;
+
+      try {
+        isLoggingOut.value = true;
+
+        // Clear all authentication-related cookies and localStorage
+        clearAuthData();
+
+        // Show success message if toast is available
+        if (window.showToast) {
+          window.showToast("Successfully logged out", "success");
+        }
+
+        // Small delay to show the logout message
+        setTimeout(() => {
+          // Redirect to login page
+          router.push("/").then(() => {
+            // Force page reload to clear any remaining state
+            window.location.reload();
+          });
+        }, 500);
+      } catch (error) {
+        console.error("Error during logout:", error);
+
+        // Even if there's an error, still clear data and redirect
+        clearAuthData();
+
+        if (window.showToast) {
+          window.showToast("Logged out", "info");
+        }
+
+        router.push("/");
+      } finally {
+        isLoggingOut.value = false;
+      }
+    };
+
+    const clearAuthData = () => {
+      // Clear cookies
+      Cookies.remove("adminToken");
+      Cookies.remove("userToken");
+      Cookies.remove("authToken");
+
+      // Clear localStorage items that might contain auth data
+      localStorage.removeItem("adminToken");
+      localStorage.removeItem("userToken");
+      localStorage.removeItem("authToken");
+      localStorage.removeItem("user");
+      localStorage.removeItem("adminUser");
+
+      // Clear sessionStorage as well
+      sessionStorage.removeItem("adminToken");
+      sessionStorage.removeItem("userToken");
+      sessionStorage.removeItem("authToken");
+      sessionStorage.removeItem("user");
+      sessionStorage.removeItem("adminUser");
+    };
+
+    const toggleSidebar1 = () => {
+      const body = document.body;
+      body.classList.toggle("slide-nav");
+    };
+
     onMounted(() => {
       initializeDarkMode();
     });
 
     return {
       isDarkMode,
+      isLoggingOut,
       toggleDarkMode,
+      handleLogout,
+      toggleSidebar1,
     };
   },
 };
 </script>
+
+<style scoped>
+.disabled {
+  opacity: 0.6;
+  cursor: not-allowed !important;
+}
+
+.spinner-border-sm {
+  width: 1rem;
+  height: 1rem;
+}
+
+.dropdown-item.disabled:hover {
+  background-color: transparent;
+}
+</style>

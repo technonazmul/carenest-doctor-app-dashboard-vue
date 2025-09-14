@@ -38,27 +38,34 @@
         <div
           class="card-body d-flex align-items-center justify-content-between flex-wrap row-gap-3"
         >
-          <div class="d-flex align-items-center flex-sm-nowrap flex-wrap row-gap-3">
+          <div
+            class="d-flex align-items-center flex-sm-nowrap flex-wrap row-gap-3"
+          >
             <div class="me-3 doctor-profile-img">
               <router-link to="/doctors/doctor-details"
-                ><img src="@/assets/img/doctors/doctor-06.jpg" class="rounded" alt=""
+                ><img
+                  src="@/assets/img/doctors/doctor-06.jpg"
+                  class="rounded"
+                  alt=""
               /></router-link>
             </div>
             <div class="flex-fill">
               <div class="d-flex align-items-center mb-1">
                 <h6 class="mb-0 fw-semibold">Dr. John Smith</h6>
                 <span class="badge border bg-white text-dark fw-medium ms-2"
-                  ><i class="ti ti-point-filled me-1 text-info"></i>Cardiology</span
+                  ><i class="ti ti-point-filled me-1 text-info"></i
+                  >Cardiology</span
                 >
               </div>
               <span class="d-block mb-3 fs-13">MBBS, M.D, Cardiology</span>
               <div class="d-flex align-items-center">
                 <p class="mb-0 fs-13">
-                  <i class="ti ti-building-hospital me-1"></i>Clinic : Downtown Medical
-                  Clinic
+                  <i class="ti ti-building-hospital me-1"></i>Clinic : Downtown
+                  Medical Clinic
                 </p>
                 <span class="badge badge-soft-success fw-medium ms-2"
-                  ><i class="ti ti-point-filled me-1 text-success"></i>Available</span
+                  ><i class="ti ti-point-filled me-1 text-success"></i
+                  >Available</span
                 >
               </div>
             </div>
@@ -68,8 +75,11 @@
             <h6 class="fs-18 fw-bold mb-3">
               $499 <span class="fw-normal text-body fs-14"> / 30 Min</span>
             </h6>
-            <router-link to="/patient/patient-appointment-details" class="btn btn-primary"
-              ><i class="ti ti-calendar-event me-1"></i>Book Apppointment</router-link
+            <router-link
+              to="/patient/patient-appointment-details"
+              class="btn btn-primary"
+              ><i class="ti ti-calendar-event me-1"></i>Book
+              Apppointment</router-link
             >
           </div>
         </div>
@@ -177,7 +187,11 @@
                       >
                     </div>
                   </div>
-                  <div class="tab-pane fade" id="available-tab-2" role="tabpanel">
+                  <div
+                    class="tab-pane fade"
+                    id="available-tab-2"
+                    role="tabpanel"
+                  >
                     <div class="d-flex align-items-center flex-wrap gap-2">
                       <a
                         href="#"
@@ -221,7 +235,11 @@
                       >
                     </div>
                   </div>
-                  <div class="tab-pane fade" id="available-tab-3" role="tabpanel">
+                  <div
+                    class="tab-pane fade"
+                    id="available-tab-3"
+                    role="tabpanel"
+                  >
                     <div class="d-flex align-items-center flex-wrap gap-2">
                       <a
                         href="#"
@@ -265,7 +283,11 @@
                       >
                     </div>
                   </div>
-                  <div class="tab-pane fade" id="available-tab-4" role="tabpanel">
+                  <div
+                    class="tab-pane fade"
+                    id="available-tab-4"
+                    role="tabpanel"
+                  >
                     <div class="d-flex align-items-center flex-wrap gap-2">
                       <a
                         href="#"
@@ -309,7 +331,11 @@
                       >
                     </div>
                   </div>
-                  <div class="tab-pane fade" id="available-tab-5" role="tabpanel">
+                  <div
+                    class="tab-pane fade"
+                    id="available-tab-5"
+                    role="tabpanel"
+                  >
                     <div class="d-flex align-items-center flex-wrap gap-2">
                       <a
                         href="#"
@@ -360,23 +386,25 @@
               <div class="card-body">
                 <h5 class="fw-bold mb-3">Short Bio</h5>
                 <p>
-                  Dr. John Smith has been practicing family medicine for over 10 years.
-                  She has extensive experience in managing chronic illnesses, preventive
-                  care, and treating a wide range of medical conditions for patients of
-                  all ages.
+                  Dr. John Smith has been practicing family medicine for over 10
+                  years. She has extensive experience in managing chronic
+                  illnesses, preventive care, and treating a wide range of
+                  medical conditions for patients of all ages.
                 </p>
                 <div>
                   <div class="more-menu">
                     <p>
-                      Dr. Smith is dedicated to providing patient-centered care and
-                      emphasizes building long-term relationships with her patients.
+                      Dr. Smith is dedicated to providing patient-centered care
+                      and emphasizes building long-term relationships with her
+                      patients.
                     </p>
                   </div>
                   <div class="view-all mt-2">
                     <a
                       href="javascript:void(0);"
                       class="viewall-button text-primary fw-medium"
-                      ><span>See More</span><i class="ti ti-chevron-down fs-10 ms-2"></i
+                      ><span>See More</span
+                      ><i class="ti ti-chevron-down fs-10 ms-2"></i
                     ></a>
                   </div>
                 </div>
@@ -387,11 +415,15 @@
                 <h5 class="fw-bold mb-3">Education Information</h5>
                 <ul class="activity-feed rounded">
                   <li class="feed-item timeline-item">
-                    <h6 class="fw-bold mb-2">Boston Medicine Institutuion - MD</h6>
+                    <h6 class="fw-bold mb-2">
+                      Boston Medicine Institutuion - MD
+                    </h6>
                     <p>25 May 1990 - 29 Jan 1992</p>
                   </li>
                   <li class="feed-item timeline-item">
-                    <h6 class="fw-bold mb-2">Harvard Medical School, Boston - MBBS</h6>
+                    <h6 class="fw-bold mb-2">
+                      Harvard Medical School, Boston - MBBS
+                    </h6>
                     <p>25 May 1985 - 29 Jan 1990</p>
                   </li>
                 </ul>
@@ -406,8 +438,8 @@
                     <h6 class="mb-0 fw-bold">Top Doctor Award (2023)</h6>
                   </div>
                   <p>
-                    Recognized by U.S. News & World Report for outstanding achievements in
-                    family medicine.
+                    Recognized by U.S. News & World Report for outstanding
+                    achievements in family medicine.
                   </p>
                 </div>
                 <div>
@@ -416,8 +448,8 @@
                     <h6 class="mb-0 fw-bold">Patient Choice Award (2022)</h6>
                   </div>
                   <p>
-                    Awarded by Vitals.com for consistently receiving high patient ratings
-                    in satisfaction and care.
+                    Awarded by Vitals.com for consistently receiving high
+                    patient ratings in satisfaction and care.
                   </p>
                 </div>
               </div>
@@ -429,22 +461,26 @@
                   <div class="d-flex align-items-center mb-2">
                     <span class="me-2"><i class="ti ti-award"></i></span>
                     <h6 class="mb-0 fw-bold">
-                      Certification by the American Board of Family Medicine (ABFM), 2015
+                      Certification by the American Board of Family Medicine
+                      (ABFM), 2015
                     </h6>
                   </div>
                   <p>
-                    Demonstrates mastery of comprehensive, ongoing care for individuals
-                    and families, across all ages and genders.
+                    Demonstrates mastery of comprehensive, ongoing care for
+                    individuals and families, across all ages and genders.
                   </p>
                 </div>
                 <div>
                   <div class="d-flex align-items-center mb-2">
                     <span class="me-2"><i class="ti ti-award"></i></span>
-                    <h6 class="mb-0 fw-bold">American Heart Association, 2024</h6>
+                    <h6 class="mb-0 fw-bold">
+                      American Heart Association, 2024
+                    </h6>
                   </div>
                   <p>
-                    Certification in performing life-saving techniques, including CPR and
-                    emergency cardiac care for adults and children.
+                    Certification in performing life-saving techniques,
+                    including CPR and emergency cardiac care for adults and
+                    children.
                   </p>
                 </div>
               </div>
@@ -462,7 +498,9 @@
                     ><i class="ti ti-file"></i
                   ></span>
                   <div>
-                    <h6 class="fw-semibold fs-13 mb-1">Medical Liscence Number</h6>
+                    <h6 class="fw-semibold fs-13 mb-1">
+                      Medical Liscence Number
+                    </h6>
                     <p>ML566659898</p>
                   </div>
                 </div>
@@ -546,15 +584,16 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
   <!-- Start View Details -->
-  <div class="offcanvas offcanvas-offset offcanvas-end" tabindex="-1" id="view_details">
+  <div
+    class="offcanvas offcanvas-offset offcanvas-end"
+    tabindex="-1"
+    id="view_details"
+  >
     <div class="offcanvas-header d-block pb-0 px-0">
       <div
         class="border-bottom d-flex align-items-center justify-content-between pb-3 px-3"
@@ -592,7 +631,9 @@
             </a>
             <a href="javascript:void(0);" class="text-dark fw-semibold"
               >Dr. Emily Carter
-              <span class="text-body fs-13 fw-normal d-block">Pediatrician </span>
+              <span class="text-body fs-13 fw-normal d-block"
+                >Pediatrician
+              </span>
             </a>
           </div>
           <div class="flex-shrink-0">
@@ -613,7 +654,8 @@
         <p
           class="text-dark mb-3 fw-semibold d-flex align-items-center justify-content-between"
         >
-          Appointment On <span class="text-body fw-normal"> Saturday, 25 Apr 2025 </span>
+          Appointment On
+          <span class="text-body fw-normal"> Saturday, 25 Apr 2025 </span>
         </p>
         <p
           class="text-dark mb-3 fw-semibold d-flex align-items-center justify-content-between"
@@ -628,7 +670,8 @@
         <p
           class="text-dark mb-3 fw-semibold d-flex align-items-center justify-content-between"
         >
-          Appointment Type <span class="text-body fw-normal"> Online Consultation </span>
+          Appointment Type
+          <span class="text-body fw-normal"> Online Consultation </span>
         </p>
         <div
           class="text-dark mb-3 fw-semibold d-flex align-items-center justify-content-between"
@@ -652,7 +695,11 @@
           <div class="d-flex align-items-center">
             Telehealth
             <label class="d-flex align-items-center form-switch ps-1">
-              <input class="form-check-input m-0 me-2" type="checkbox" checked />
+              <input
+                class="form-check-input m-0 me-2"
+                type="checkbox"
+                checked
+              />
             </label>
           </div>
           <div>
@@ -699,7 +746,10 @@
                       <label
                         class="dropdown-item px-2 d-flex align-items-center text-dark"
                       >
-                        <input class="form-check-input m-0 me-2" type="checkbox" />
+                        <input
+                          class="form-check-input m-0 me-2"
+                          type="checkbox"
+                        />
                         Checked Out
                       </label>
                     </li>
@@ -719,7 +769,10 @@
                       <label
                         class="dropdown-item px-2 d-flex align-items-center text-dark"
                       >
-                        <input class="form-check-input m-0 me-2" type="checkbox" />
+                        <input
+                          class="form-check-input m-0 me-2"
+                          type="checkbox"
+                        />
                         Cancelled
                       </label>
                     </li>
@@ -727,7 +780,10 @@
                       <label
                         class="dropdown-item px-2 d-flex align-items-center text-dark"
                       >
-                        <input class="form-check-input m-0 me-2" type="checkbox" />
+                        <input
+                          class="form-check-input m-0 me-2"
+                          type="checkbox"
+                        />
                         Scheduled
                       </label>
                     </li>
@@ -762,7 +818,9 @@
               ><i class="ti ti-trash fs-24"></i
             ></span>
           </div>
-          <h5 class="fw-bold mb-1 position-relative z-1">Delete Confirmation</h5>
+          <h5 class="fw-bold mb-1 position-relative z-1">
+            Delete Confirmation
+          </h5>
           <p class="mb-3 position-relative z-1">Are you sure want to delete?</p>
           <div class="d-flex justify-content-center">
             <a

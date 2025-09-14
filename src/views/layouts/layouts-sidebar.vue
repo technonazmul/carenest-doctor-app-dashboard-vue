@@ -6,17 +6,32 @@
       <div>
         <!-- Logo Normal -->
         <router-link to="/dashboard/" class="logo logo-normal">
-          <img src="@/assets/img/logo.svg" alt="Logo" />
+          <img
+            :src="logoUrl"
+            alt="Logo"
+            @error="handleImageError"
+            v-if="!loading"
+          />
         </router-link>
 
         <!-- Logo Small -->
         <router-link to="/dashboard/" class="logo-small">
-          <img src="@/assets/img/logo-small.svg" alt="Logo" />
+          <img
+            :src="logoUrl"
+            alt="Logo"
+            @error="handleImageError"
+            v-if="!loading"
+          />
         </router-link>
 
         <!-- Logo Dark -->
         <router-link to="/dashboard/" class="dark-logo">
-          <img src="@/assets/img/logo-white.svg" alt="Logo" />
+          <img
+            :src="logoUrl"
+            alt="Logo"
+            @error="handleImageError"
+            v-if="!loading"
+          />
         </router-link>
       </div>
       <button
@@ -36,27 +51,9 @@
 
     <!-- Sidenav Menu -->
     <div class="sidebar-inner" data-simplebar>
-      <simplebar id="scrollbar" class="h-100" ref="scrollbar">
+      <simplebar id="scrollbar" class="h-100 pb-5" ref="scrollbar">
         <div id="sidebar-menu" class="sidebar-menu">
           <sidebar-menu></sidebar-menu>
-        </div>
-        <div class="sidebar-footer border-top mt-3">
-          <div class="trial-item mt-0 p-3 text-center">
-            <div
-              class="trial-item-icon rounded-4 mb-3 p-2 text-center shadow-sm d-inline-flex"
-            >
-              <img src="@/assets/img/icons/sidebar-icon.svg" alt="img" />
-            </div>
-            <div>
-              <h6 class="fs-14 fw-semibold mb-1">Upgrade To Pro</h6>
-              <p class="fs-13 mb-0">
-                Check 1 min video and begin use Preclinic like a pro
-              </p>
-            </div>
-            <a href="javascript:void(0);" class="close-icon shadow-sm"
-              ><i class="ti ti-x"></i
-            ></a>
-          </div>
         </div>
       </simplebar>
     </div>
@@ -67,29 +64,88 @@
 <script>
 import simplebar from "simplebar-vue";
 import "simplebar-vue/dist/simplebar.min.css";
+import { useSettings } from "@/composables/useSettings";
+import axios from "axios";
+import Cookies from "js-cookie";
+import { API_BASE } from "@/api/apiConfig";
 
 export default {
   components: {
     simplebar,
   },
-  data() {
-    return {};
+  setup() {
+    const apiBase = API_BASE;
+    const adminToken = Cookies.get("adminToken");
+    const apiBaseUrl = `${apiBase}/api/backend`;
+    const { getCurrencySymbol, formatCurrency } = useSettings();
+
+    return {
+      apiBase,
+      adminToken,
+      apiBaseUrl,
+      getCurrencySymbol,
+      formatCurrency,
+    };
   },
-  mounted() {
+  data() {
+    return {
+      logoUrl: null,
+      settings: null,
+      loading: true,
+    };
+  },
+  async mounted() {
     this.initMouseoverListener();
+    await this.fetchSettings();
   },
   methods: {
+    async fetchSettings() {
+      try {
+        this.loading = true;
+        const response = await axios.get(`${this.apiBaseUrl}/settings`, {
+          headers: {
+            Authorization: `Bearer ${this.adminToken}`,
+            "Content-Type": "application/json",
+          },
+        });
+
+        if (response.data.success && response.data.data) {
+          this.settings = response.data.data;
+
+          // Set logo URL from API response
+          if (this.settings.general?.logo?.filename) {
+            // Construct the logo URL - you may need to adjust this based on your server setup
+            this.logoUrl = `${this.apiBase}/uploads/settings/${this.settings.general.logo.filename}`;
+          }
+        }
+      } catch (error) {
+        console.error("Error fetching settings:", error);
+        // Keep logoUrl as null to fallback to default images
+      } finally {
+        this.loading = false;
+      }
+    },
+
+    handleImageError(event) {
+      // Fallback to default logo if API logo fails to load
+      console.warn("Failed to load logo from API, falling back to default");
+      event.target.src = "@/assets/img/logo.svg";
+    },
+
     toggleSidebar() {
       const body = document.body;
       body.classList.toggle("mini-sidebar");
     },
+
     closeSidebar() {
       const body = document.body;
       body.classList.remove("slide-nav");
     },
+
     initMouseoverListener() {
       document.addEventListener("mouseover", this.handleMouseover);
     },
+
     handleMouseover(e) {
       e.stopPropagation();
 
@@ -109,8 +165,44 @@ export default {
       }
     },
   },
+
   beforeUnmount() {
     document.removeEventListener("mouseover", this.handleMouseover);
   },
 };
 </script>
+
+<style scoped>
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 40px; /* Adjust based on your logo height */
+}
+
+.logo-loading {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #6c757d;
+  font-size: 1.2rem;
+}
+
+.animate-spin {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.logo-container img {
+  max-width: 100%;
+  height: auto;
+}
+</style>

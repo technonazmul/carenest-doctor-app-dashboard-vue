@@ -9,7 +9,9 @@
   <div class="page-wrapper">
     <!-- Start Content -->
     <div class="content">
-      <div class="d-flex align-items-sm-center flex-sm-row flex-column gap-2 pb-3">
+      <div
+        class="d-flex align-items-sm-center flex-sm-row flex-column gap-2 pb-3"
+      >
         <div class="flex-grow-1">
           <h4 class="fs-18 fw-semibold mb-0">Social Feed</h4>
         </div>
@@ -37,9 +39,14 @@
                       href="javascript:void(0);"
                       class="avatar avatar-xl online avatar-rounded"
                     >
-                      <img src="@/assets/img/profiles/avatar-02.jpg" alt="Img" />
+                      <img
+                        src="@/assets/img/profiles/avatar-02.jpg"
+                        alt="Img"
+                      />
                     </a>
-                    <h6 class="mb-1"><a href="javascript:void(0);">James Hong </a></h6>
+                    <h6 class="mb-1">
+                      <a href="javascript:void(0);">James Hong </a>
+                    </h6>
                     <p class="fs-13 mb-0">@James Hong324</p>
                   </div>
                   <div class="row g-2">
@@ -69,8 +76,12 @@
                     href="javscript:void(0);"
                     class="d-flex align-items-center justify-content-between active fw-medium p-2"
                   >
-                    <span><i class="ti ti-brand-feedly me-2"></i>All Feeds</span>
-                    <span class="badge bg-danger badge-xs rounded-pill">56</span>
+                    <span
+                      ><i class="ti ti-brand-feedly me-2"></i>All Feeds</span
+                    >
+                    <span class="badge bg-danger badge-xs rounded-pill"
+                      >56</span
+                    >
                   </a>
                   <a
                     href="javscript:void(0);"
@@ -123,7 +134,11 @@
                     class="fw-medium d-flex align-items-center justify-content-between text-dark py-1 mb-2"
                   >
                     <span class="d-inline-flex align-items-center">
-                      <img :src="getImageUrl(item.Image)" class="me-2" alt="Img" />
+                      <img
+                        :src="getImageUrl(item.Image)"
+                        class="me-2"
+                        alt="Img"
+                      />
                       {{ item.title }}
                     </span>
                     <span class="btn btn-icon btn-sm">
@@ -139,7 +154,11 @@
                       class="fw-medium d-flex align-items-center justify-content-between text-dark py-1 mb-2"
                     >
                       <span class="d-inline-flex align-items-center">
-                        <img :src="getImageUrl(item.Image)" class="me-2" alt="Img" />
+                        <img
+                          :src="getImageUrl(item.Image)"
+                          class="me-2"
+                          alt="Img"
+                        />
                         {{ item.title }}
                       </span>
                       <span class="btn btn-icon btn-sm">
@@ -306,7 +325,8 @@
                       </h6>
                       <p class="d-flex align-items-center mb-0">
                         <span class="text-info">@jason118</span>
-                        <i class="ti ti-circle-filled fs-7 mx-2"></i> United Kingdom
+                        <i class="ti ti-circle-filled fs-7 mx-2"></i> United
+                        Kingdom
                       </p>
                     </div>
                   </div>
@@ -323,10 +343,14 @@
                       </button>
                       <ul class="dropdown-menu dropdown-menu-end">
                         <li>
-                          <a class="dropdown-item" href="javascript:void(0);">Private</a>
+                          <a class="dropdown-item" href="javascript:void(0);"
+                            >Private</a
+                          >
                         </li>
                         <li>
-                          <a class="dropdown-item" href="javascript:void(0);">Public</a>
+                          <a class="dropdown-item" href="javascript:void(0);"
+                            >Public</a
+                          >
                         </li>
                       </ul>
                     </div>
@@ -341,22 +365,30 @@
                       </a>
                       <ul class="dropdown-menu dropdown-menu-end p-3">
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-edit me-2"></i>Edit</a
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-eye me-2"></i>Hide Post</a
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-report me-2"></i>Report</a
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-trash-x me-2"></i>Delete</a
                           >
                         </li>
@@ -390,7 +422,8 @@
                   <div class="card-body p-2">
                     <h6 class="mb-1 text-truncate">
                       <a href="javascript:void(0);"
-                        >Drinking water boosts skin health and beauty. Stay hydrated!💧</a
+                        >Drinking water boosts skin health and beauty. Stay
+                        hydrated!💧</a
                       >
                     </h6>
                     <a href="javascript:void(0);">Health.com</a>
@@ -453,7 +486,8 @@
                   class="d-flex align-items-center justify-content-between border-bottom flex-wrap row-gap-3 pb-3"
                 >
                   <div class="d-flex align-items-center">
-                    <span class="avatar avatar-lg avatar-rounded flex-shrink-0 me-2"
+                    <span
+                      class="avatar avatar-lg avatar-rounded flex-shrink-0 me-2"
                       ><img src="@/assets/img/profiles/avatar-04.jpg" alt="Img"
                     /></span>
                     <div>
@@ -465,7 +499,8 @@
                       </h6>
                       <p class="d-flex align-items-center mb-0">
                         <span class="text-info">@sophie241</span>
-                        <i class="ti ti-circle-filled fs-7 mx-2"></i> United Kingdom
+                        <i class="ti ti-circle-filled fs-7 mx-2"></i> United
+                        Kingdom
                       </p>
                     </div>
                   </div>
@@ -482,10 +517,14 @@
                       </button>
                       <ul class="dropdown-menu dropdown-menu-end">
                         <li>
-                          <a class="dropdown-item" href="javascript:void(0);">Private</a>
+                          <a class="dropdown-item" href="javascript:void(0);"
+                            >Private</a
+                          >
                         </li>
                         <li>
-                          <a class="dropdown-item" href="javascript:void(0);">Public</a>
+                          <a class="dropdown-item" href="javascript:void(0);"
+                            >Public</a
+                          >
                         </li>
                       </ul>
                     </div>
@@ -500,22 +539,30 @@
                       </a>
                       <ul class="dropdown-menu dropdown-menu-end p-3">
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-edit me-2"></i>Edit</a
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-eye me-2"></i>Hide Post</a
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-report me-2"></i>Report</a
                           >
                         </li>
                         <li>
-                          <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                          <a
+                            href="javascript:void(0);"
+                            class="dropdown-item rounded-1"
                             ><i class="ti ti-trash-x me-2"></i>Delete</a
                           >
                         </li>
@@ -527,8 +574,8 @@
               <div class="card-body">
                 <div class="mb-2">
                   <p class="text-dark fw-medium">
-                    Excited to announce the launch of our new product! Get yours now and
-                    enjoy a special discount.
+                    Excited to announce the launch of our new product! Get yours
+                    now and enjoy a special discount.
                     <a href="javascript:void(0);" class="text-info link-hover"
                       >#NewRelease
                     </a>
@@ -606,10 +653,13 @@
                       <span class="ms-2">12:45 PM</span>
                     </div>
                     <p class="mb-1">
-                      Congratulations on the launch! I've been eagerly waiting for this
-                      product, and the special discount makes it even more exciting.
+                      Congratulations on the launch! I've been eagerly waiting
+                      for this product, and the special discount makes it even
+                      more exciting.
                     </p>
-                    <a href="javascript:void(0);" class="d-inline-flex align-items-center"
+                    <a
+                      href="javascript:void(0);"
+                      class="d-inline-flex align-items-center"
                       ><i class="ti ti-share-3 me-2"></i>Reply</a
                     >
                   </div>
@@ -628,8 +678,12 @@
                       </h6>
                       <span class="ms-2">12:45 PM</span>
                     </div>
-                    <p class="mb-1">Thank you so much for your enthusiasm and support!</p>
-                    <a href="javascript:void(0);" class="d-inline-flex align-items-center"
+                    <p class="mb-1">
+                      Thank you so much for your enthusiasm and support!
+                    </p>
+                    <a
+                      href="javascript:void(0);"
+                      class="d-inline-flex align-items-center"
                       ><i class="ti ti-share-3 me-2"></i>Reply</a
                     >
                   </div>
@@ -649,10 +703,13 @@
                       <span class="ms-2">12:40 PM</span>
                     </div>
                     <p class="mb-1">
-                      So thrilled to see this product finally launched! I've heard amazing
-                      things about it and am excited to see how it lives up to the hype.
+                      So thrilled to see this product finally launched! I've
+                      heard amazing things about it and am excited to see how it
+                      lives up to the hype.
                     </p>
-                    <a href="javascript:void(0);" class="d-inline-flex align-items-center"
+                    <a
+                      href="javascript:void(0);"
+                      class="d-inline-flex align-items-center"
                       ><i class="ti ti-share-3 me-2"></i>Reply</a
                     >
                   </div>
@@ -664,7 +721,10 @@
                         href="javascript:void(0);"
                         class="avatar avatar-rounded flex-shrink-0 me-2"
                       >
-                        <img src="@/assets/img/profiles/avatar-05.jpg" alt="Img" />
+                        <img
+                          src="@/assets/img/profiles/avatar-05.jpg"
+                          alt="Img"
+                        />
                       </a>
                       <div class="bg-light rounded flex-fill p-2">
                         <div class="d-flex align-items-center mb-1">
@@ -674,9 +734,9 @@
                           <span class="ms-2">12:40 PM</span>
                         </div>
                         <p class="mb-1">
-                          So thrilled to see this product finally launched! I've heard
-                          amazing things about it and am excited to see how it lives up to
-                          the hype.
+                          So thrilled to see this product finally launched! I've
+                          heard amazing things about it and am excited to see
+                          how it lives up to the hype.
                         </p>
                         <a
                           href="javascript:void(0);"
@@ -690,7 +750,10 @@
                         href="javascript:void(0);"
                         class="avatar avatar-rounded flex-shrink-0 me-2"
                       >
-                        <img src="@/assets/img/profiles/avatar-06.jpg" alt="Img" />
+                        <img
+                          src="@/assets/img/profiles/avatar-06.jpg"
+                          alt="Img"
+                        />
                       </a>
                       <div class="bg-light rounded flex-fill p-2">
                         <div class="d-flex align-items-center mb-1">
@@ -700,9 +763,9 @@
                           <span class="ms-2">12:40 PM</span>
                         </div>
                         <p class="mb-1">
-                          So thrilled to see this product finally launched! I've heard
-                          amazing things about it and am excited to see how it lives up to
-                          the hype.
+                          So thrilled to see this product finally launched! I've
+                          heard amazing things about it and am excited to see
+                          how it lives up to the hype.
                         </p>
                         <a
                           href="javascript:void(0);"
@@ -722,7 +785,11 @@
                   <span class="avatar avatar-rounded me-2 flex-shrink-0"
                     ><img src="@/assets/img/profiles/avatar-05.jpg" alt="Img"
                   /></span>
-                  <input type="text" class="form-control" placeholder="Enter Comments" />
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Enter Comments"
+                  />
                 </div>
               </div>
               <!-- end card body -->
@@ -736,7 +803,11 @@
             <div class="card">
               <div class="card-body">
                 <h6 class="fs-16 mb-3">Peoples</h6>
-                <ul class="nav nav-pills d-flex mb-3" id="pills-tab" role="tablist">
+                <ul
+                  class="nav nav-pills d-flex mb-3"
+                  id="pills-tab"
+                  role="tablist"
+                >
                   <li class="nav-item flex-fill" role="presentation">
                     <button
                       class="nav-link btn active w-100"
@@ -763,37 +834,55 @@
                   </li>
                 </ul>
                 <div class="tab-content">
-                  <div class="tab-pane fade show active" id="pills-home" role="tabpanel">
+                  <div
+                    class="tab-pane fade show active"
+                    id="pills-home"
+                    role="tabpanel"
+                  >
                     <div>
-                      <div class="d-flex align-items-center justify-content-between mb-3">
+                      <div
+                        class="d-flex align-items-center justify-content-between mb-3"
+                      >
                         <div class="d-flex align-items-center">
                           <a
                             href="javascript:void(0);"
                             class="avatar avatar-rounded flex-shrink-0 me-2"
                           >
-                            <img src="@/assets/img/profiles/avatar-01.jpg" alt="Img" />
+                            <img
+                              src="@/assets/img/profiles/avatar-01.jpg"
+                              alt="Img"
+                            />
                           </a>
                           <div>
                             <h6
                               class="d-inline-flex align-items-center fs-14 fw-medium mb-1"
                             >
                               <a href="javascript:void(0);">Anthony Lewis</a>
-                              <i class="ti ti-circle-check-filled text-success ms-1"></i>
+                              <i
+                                class="ti ti-circle-check-filled text-success ms-1"
+                              ></i>
                             </h6>
                             <span class="fs-12 d-block">United States</span>
                           </div>
                         </div>
-                        <a href="javascript:void(0);" class="btn btn-sm btn-icon"
+                        <a
+                          href="javascript:void(0);"
+                          class="btn btn-sm btn-icon"
                           ><i class="ti ti-user-x"></i
                         ></a>
                       </div>
-                      <div class="d-flex align-items-center justify-content-between mb-3">
+                      <div
+                        class="d-flex align-items-center justify-content-between mb-3"
+                      >
                         <div class="d-flex align-items-center">
                           <a
                             href="javascript:void(0);"
                             class="avatar avatar-rounded flex-shrink-0 me-2"
                           >
-                            <img src="@/assets/img/profiles/avatar-02.jpg" alt="Img" />
+                            <img
+                              src="@/assets/img/profiles/avatar-02.jpg"
+                              alt="Img"
+                            />
                           </a>
                           <div>
                             <h6
@@ -804,17 +893,24 @@
                             <span class="fs-12 d-block">Ukrain</span>
                           </div>
                         </div>
-                        <a href="javascript:void(0);" class="btn btn-sm btn-icon"
+                        <a
+                          href="javascript:void(0);"
+                          class="btn btn-sm btn-icon"
                           ><i class="ti ti-user-x"></i
                         ></a>
                       </div>
-                      <div class="d-flex align-items-center justify-content-between mb-3">
+                      <div
+                        class="d-flex align-items-center justify-content-between mb-3"
+                      >
                         <div class="d-flex align-items-center">
                           <a
                             href="javascript:void(0);"
                             class="avatar avatar-rounded flex-shrink-0 me-2"
                           >
-                            <img src="@/assets/img/profiles/avatar-03.jpg" alt="Img" />
+                            <img
+                              src="@/assets/img/profiles/avatar-03.jpg"
+                              alt="Img"
+                            />
                           </a>
                           <div>
                             <h6
@@ -825,17 +921,24 @@
                             <span class="fs-12 d-block">Isreal</span>
                           </div>
                         </div>
-                        <a href="javascript:void(0);" class="btn btn-sm btn-icon"
+                        <a
+                          href="javascript:void(0);"
+                          class="btn btn-sm btn-icon"
                           ><i class="ti ti-user-x"></i
                         ></a>
                       </div>
-                      <div class="d-flex align-items-center justify-content-between mb-3">
+                      <div
+                        class="d-flex align-items-center justify-content-between mb-3"
+                      >
                         <div class="d-flex align-items-center">
                           <a
                             href="javascript:void(0);"
                             class="avatar avatar-rounded flex-shrink-0 me-2"
                           >
-                            <img src="@/assets/img/profiles/avatar-02.jpg" alt="Img" />
+                            <img
+                              src="@/assets/img/profiles/avatar-02.jpg"
+                              alt="Img"
+                            />
                           </a>
                           <div>
                             <h6
@@ -846,39 +949,55 @@
                             <span class="fs-12 d-block">Belgium</span>
                           </div>
                         </div>
-                        <a href="javascript:void(0);" class="btn btn-sm btn-icon"
+                        <a
+                          href="javascript:void(0);"
+                          class="btn btn-sm btn-icon"
                           ><i class="ti ti-user-x"></i
                         ></a>
                       </div>
-                      <div class="d-flex align-items-center justify-content-between mb-3">
+                      <div
+                        class="d-flex align-items-center justify-content-between mb-3"
+                      >
                         <div class="d-flex align-items-center">
                           <a
                             href="javascript:void(0);"
                             class="avatar avatar-rounded flex-shrink-0 me-2"
                           >
-                            <img src="@/assets/img/profiles/avatar-09.jpg" alt="Img" />
+                            <img
+                              src="@/assets/img/profiles/avatar-09.jpg"
+                              alt="Img"
+                            />
                           </a>
                           <div>
                             <h6
                               class="d-inline-flex align-items-center fs-14 fw-medium mb-1"
                             >
                               <a href="javascript:void(0);">Brian Villalobos</a>
-                              <i class="ti ti-circle-check-filled text-success ms-1"></i>
+                              <i
+                                class="ti ti-circle-check-filled text-success ms-1"
+                              ></i>
                             </h6>
                             <span class="fs-12 d-block">United Kingdom</span>
                           </div>
                         </div>
-                        <a href="javascript:void(0);" class="btn btn-sm btn-icon"
+                        <a
+                          href="javascript:void(0);"
+                          class="btn btn-sm btn-icon"
                           ><i class="ti ti-user-x"></i
                         ></a>
                       </div>
-                      <div class="d-flex align-items-center justify-content-between mb-3">
+                      <div
+                        class="d-flex align-items-center justify-content-between mb-3"
+                      >
                         <div class="d-flex align-items-center">
                           <a
                             href="javascript:void(0);"
                             class="avatar avatar-rounded flex-shrink-0 me-2"
                           >
-                            <img src="@/assets/img/profiles/avatar-02.jpg" alt="Img" />
+                            <img
+                              src="@/assets/img/profiles/avatar-02.jpg"
+                              alt="Img"
+                            />
                           </a>
                           <div>
                             <h6
@@ -889,7 +1008,9 @@
                             <span class="fs-12 d-block">Argentina</span>
                           </div>
                         </div>
-                        <a href="javascript:void(0);" class="btn btn-sm btn-icon"
+                        <a
+                          href="javascript:void(0);"
+                          class="btn btn-sm btn-icon"
                           ><i class="ti ti-user-x"></i
                         ></a>
                       </div>
@@ -904,35 +1025,49 @@
                   </div>
                   <div class="tab-pane fade" id="pills-profile" role="tabpanel">
                     <div>
-                      <div class="d-flex align-items-center justify-content-between mb-3">
+                      <div
+                        class="d-flex align-items-center justify-content-between mb-3"
+                      >
                         <div class="d-flex align-items-center">
                           <a
                             href="javascript:void(0);"
                             class="avatar avatar-rounded flex-shrink-0 me-2"
                           >
-                            <img src="@/assets/img/profiles/avatar-11.jpg" alt="Img" />
+                            <img
+                              src="@/assets/img/profiles/avatar-11.jpg"
+                              alt="Img"
+                            />
                           </a>
                           <div>
                             <h6
                               class="d-inline-flex fs-14 align-items-center fw-medium mb-1"
                             >
                               <a href="javascript:void(0);">Anthony Lewis</a>
-                              <i class="ti ti-circle-check-filled text-success ms-1"></i>
+                              <i
+                                class="ti ti-circle-check-filled text-success ms-1"
+                              ></i>
                             </h6>
                             <span class="fs-12 d-block">United States</span>
                           </div>
                         </div>
-                        <a href="javascript:void(0);" class="btn btn-sm btn-icon"
+                        <a
+                          href="javascript:void(0);"
+                          class="btn btn-sm btn-icon"
                           ><i class="ti ti-user-x"></i
                         ></a>
                       </div>
-                      <div class="d-flex align-items-center justify-content-between mb-3">
+                      <div
+                        class="d-flex align-items-center justify-content-between mb-3"
+                      >
                         <div class="d-flex align-items-center">
                           <a
                             href="javascript:void(0);"
                             class="avatar avatar-rounded flex-shrink-0 me-2"
                           >
-                            <img src="@/assets/img/profiles/avatar-10.jpg" alt="Img" />
+                            <img
+                              src="@/assets/img/profiles/avatar-10.jpg"
+                              alt="Img"
+                            />
                           </a>
                           <div>
                             <h6
@@ -943,17 +1078,24 @@
                             <span class="fs-12 d-block">Ukrain</span>
                           </div>
                         </div>
-                        <a href="javascript:void(0);" class="btn btn-sm btn-icon"
+                        <a
+                          href="javascript:void(0);"
+                          class="btn btn-sm btn-icon"
                           ><i class="ti ti-user-x"></i
                         ></a>
                       </div>
-                      <div class="d-flex align-items-center justify-content-between mb-3">
+                      <div
+                        class="d-flex align-items-center justify-content-between mb-3"
+                      >
                         <div class="d-flex align-items-center">
                           <a
                             href="javascript:void(0);"
                             class="avatar avatar-rounded flex-shrink-0 me-2"
                           >
-                            <img src="@/assets/img/profiles/avatar-09.jpg" alt="Img" />
+                            <img
+                              src="@/assets/img/profiles/avatar-09.jpg"
+                              alt="Img"
+                            />
                           </a>
                           <div>
                             <h6
@@ -964,17 +1106,24 @@
                             <span class="fs-12 d-block">Isreal</span>
                           </div>
                         </div>
-                        <a href="javascript:void(0);" class="btn btn-sm btn-icon"
+                        <a
+                          href="javascript:void(0);"
+                          class="btn btn-sm btn-icon"
                           ><i class="ti ti-user-x"></i
                         ></a>
                       </div>
-                      <div class="d-flex align-items-center justify-content-between mb-3">
+                      <div
+                        class="d-flex align-items-center justify-content-between mb-3"
+                      >
                         <div class="d-flex align-items-center">
                           <a
                             href="javascript:void(0);"
                             class="avatar avatar-rounded flex-shrink-0 me-2"
                           >
-                            <img src="@/assets/img/profiles/avatar-08.jpg" alt="Img" />
+                            <img
+                              src="@/assets/img/profiles/avatar-08.jpg"
+                              alt="Img"
+                            />
                           </a>
                           <div>
                             <h6
@@ -985,39 +1134,55 @@
                             <span class="fs-12 d-block">Belgium</span>
                           </div>
                         </div>
-                        <a href="javascript:void(0);" class="btn btn-sm btn-icon"
+                        <a
+                          href="javascript:void(0);"
+                          class="btn btn-sm btn-icon"
                           ><i class="ti ti-user-x"></i
                         ></a>
                       </div>
-                      <div class="d-flex align-items-center justify-content-between mb-3">
+                      <div
+                        class="d-flex align-items-center justify-content-between mb-3"
+                      >
                         <div class="d-flex align-items-center">
                           <a
                             href="javascript:void(0);"
                             class="avatar avatar-rounded flex-shrink-0 me-2"
                           >
-                            <img src="@/assets/img/profiles/avatar-07.jpg" alt="Img" />
+                            <img
+                              src="@/assets/img/profiles/avatar-07.jpg"
+                              alt="Img"
+                            />
                           </a>
                           <div>
                             <h6
                               class="d-inline-flex fs-14 align-items-center fw-medium mb-1"
                             >
                               <a href="javascript:void(0);">Brian Villalobos</a>
-                              <i class="ti ti-circle-check-filled text-success ms-1"></i>
+                              <i
+                                class="ti ti-circle-check-filled text-success ms-1"
+                              ></i>
                             </h6>
                             <span class="fs-12 d-block">United Kingdom</span>
                           </div>
                         </div>
-                        <a href="javascript:void(0);" class="btn btn-sm btn-icon"
+                        <a
+                          href="javascript:void(0);"
+                          class="btn btn-sm btn-icon"
                           ><i class="ti ti-user-x"></i
                         ></a>
                       </div>
-                      <div class="d-flex align-items-center justify-content-between mb-3">
+                      <div
+                        class="d-flex align-items-center justify-content-between mb-3"
+                      >
                         <div class="d-flex align-items-center">
                           <a
                             href="javascript:void(0);"
                             class="avatar avatar-rounded flex-shrink-0 me-2"
                           >
-                            <img src="@/assets/img/profiles/avatar-06.jpg" alt="Img" />
+                            <img
+                              src="@/assets/img/profiles/avatar-06.jpg"
+                              alt="Img"
+                            />
                           </a>
                           <div>
                             <h6
@@ -1028,7 +1193,9 @@
                             <span class="fs-12 d-block">Argentina</span>
                           </div>
                         </div>
-                        <a href="javascript:void(0);" class="btn btn-sm btn-icon"
+                        <a
+                          href="javascript:void(0);"
+                          class="btn btn-sm btn-icon"
                           ><i class="ti ti-user-x"></i
                         ></a>
                       </div>
@@ -1051,8 +1218,13 @@
                 <h6 class="fs-16 mb-3">Saved Feeds</h6>
 
                 <div class="bg-light rounded p-2 mb-2">
-                  <div class="d-flex align-items-center justify-content-between mb-1">
-                    <a href="javascript:void(0);" class="d-flex align-items-center">
+                  <div
+                    class="d-flex align-items-center justify-content-between mb-1"
+                  >
+                    <a
+                      href="javascript:void(0);"
+                      class="d-flex align-items-center"
+                    >
                       <span
                         ><img
                           src="@/assets/img/icons/feeds-01.svg"
@@ -1073,8 +1245,13 @@
                 </div>
 
                 <div class="bg-light rounded p-2 mb-2">
-                  <div class="d-flex align-items-center justify-content-between mb-1">
-                    <a href="javascript:void(0);" class="d-flex align-items-center">
+                  <div
+                    class="d-flex align-items-center justify-content-between mb-1"
+                  >
+                    <a
+                      href="javascript:void(0);"
+                      class="d-flex align-items-center"
+                    >
                       <span
                         ><img
                           src="@/assets/img/icons/feeds-02.svg"
@@ -1095,8 +1272,13 @@
                 </div>
 
                 <div class="bg-light rounded p-2 mb-2">
-                  <div class="d-flex align-items-center justify-content-between mb-1">
-                    <a href="javascript:void(0);" class="d-flex align-items-center">
+                  <div
+                    class="d-flex align-items-center justify-content-between mb-1"
+                  >
+                    <a
+                      href="javascript:void(0);"
+                      class="d-flex align-items-center"
+                    >
                       <span
                         ><img
                           src="@/assets/img/icons/feeds-03.svg"
@@ -1117,8 +1299,13 @@
                 </div>
 
                 <div class="bg-light rounded p-2">
-                  <div class="d-flex align-items-center justify-content-between mb-1">
-                    <a href="javascript:void(0);" class="d-flex align-items-center">
+                  <div
+                    class="d-flex align-items-center justify-content-between mb-1"
+                  >
+                    <a
+                      href="javascript:void(0);"
+                      class="d-flex align-items-center"
+                    >
                       <span
                         ><img
                           src="@/assets/img/icons/feeds-04.svg"
@@ -1132,7 +1319,9 @@
                     ></a>
                   </div>
                   <p class="text-dark fw-medium mb-0">
-                    <a href="javascript:void(0);">Sony Just Destroyed the Competition</a>
+                    <a href="javascript:void(0);"
+                      >Sony Just Destroyed the Competition</a
+                    >
                   </p>
                 </div>
 
@@ -1152,16 +1341,24 @@
               <div class="card-body">
                 <h6 class="fs-16 mb-3">Trending Hastags</h6>
                 <div class="d-flex align-items-center flex-wrap gap-1">
-                  <a href="javascript:void(0);" class="text-info d-inline-flex link-hover"
+                  <a
+                    href="javascript:void(0);"
+                    class="text-info d-inline-flex link-hover"
                     >#HealthTips</a
                   >
-                  <a href="javascript:void(0);" class="text-info d-inline-flex link-hover"
+                  <a
+                    href="javascript:void(0);"
+                    class="text-info d-inline-flex link-hover"
                     >#Wellness</a
                   >
-                  <a href="javascript:void(0);" class="text-info d-inline-flex link-hover"
+                  <a
+                    href="javascript:void(0);"
+                    class="text-info d-inline-flex link-hover"
                     >#Motivation</a
                   >
-                  <a href="javascript:void(0);" class="text-info d-inline-flex link-hover"
+                  <a
+                    href="javascript:void(0);"
+                    class="text-info d-inline-flex link-hover"
                     >#Inspiration
                   </a>
                 </div>
@@ -1215,10 +1412,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
@@ -1267,7 +1461,8 @@ export default {
       this.showMore = !this.showMore;
     },
     getImageUrl(imageName) {
-      return new URL(`/src/assets/img/icons/${imageName}`, import.meta.url).href;
+      return new URL(`/src/assets/img/icons/${imageName}`, import.meta.url)
+        .href;
     },
   },
 };

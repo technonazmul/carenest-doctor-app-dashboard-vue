@@ -87,7 +87,8 @@
                     <a
                       href="javascript:void(0);"
                       class="btn btn-outline-white d-inline-flex align-items-center me-2 fw-normal"
-                      ><i class="ti ti-arrow-left me-1"></i>Back to Translations</a
+                      ><i class="ti ti-arrow-left me-1"></i>Back to
+                      Translations</a
                     >
                     <a
                       href="javascript:void(0);"
@@ -120,7 +121,9 @@
                 </div>
 
                 <!-- Start Table -->
-                <div class="custom-datatable-filter table-responsive border rounded mb-3">
+                <div
+                  class="custom-datatable-filter table-responsive border rounded mb-3"
+                >
                   <table class="table mb-0">
                     <thead>
                       <tr>
@@ -211,10 +214,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>

@@ -14,7 +14,8 @@
       >
         <div class="d-flex align-items-center">
           <h4 class="fw-bold mb-0 me-2">Tickets</h4>
-          <span class="badge badge-soft-primary border pt-1 px-2 border-primary fw-medium"
+          <span
+            class="badge badge-soft-primary border pt-1 px-2 border-primary fw-medium"
             >Total Announcements : 582</span
           >
         </div>
@@ -30,7 +31,9 @@
       </div>
       <!-- End Page Header -->
 
-      <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3">
+      <div
+        class="d-flex align-items-center justify-content-between flex-wrap row-gap-3"
+      >
         <div class="search-set mb-3">
           <div class="d-flex align-items-center flex-wrap gap-2">
             <div class="table-search d-flex align-items-center mb-0">
@@ -92,7 +95,9 @@
                       >
                         Select
                       </a>
-                      <div class="dropdown-menu shadow-lg w-100 dropdown-info p-3">
+                      <div
+                        class="dropdown-menu shadow-lg w-100 dropdown-info p-3"
+                      >
                         <div class="mb-3">
                           <div class="input-icon-start position-relative">
                             <span class="input-icon-addon fs-12">
@@ -109,7 +114,9 @@
                           <li
                             class="d-flex align-items-center justify-content-between mb-3"
                           >
-                            <label class="d-inline-flex align-items-center text-gray-9">
+                            <label
+                              class="d-inline-flex align-items-center text-gray-9"
+                            >
                               <input
                                 class="form-check-input select-all m-0 me-2"
                                 type="checkbox"
@@ -126,7 +133,10 @@
                             <label
                               class="dropdown-item px-2 d-flex align-items-center text-dark"
                             >
-                              <input class="form-check-input m-0 me-2" type="checkbox" />
+                              <input
+                                class="form-check-input m-0 me-2"
+                                type="checkbox"
+                              />
                               <span class="avatar avatar-sm rounded-circle me-2"
                                 ><img
                                   src="@/assets/img/users/user-33.jpg"
@@ -139,7 +149,10 @@
                             <label
                               class="dropdown-item px-2 d-flex align-items-center text-dark"
                             >
-                              <input class="form-check-input m-0 me-2" type="checkbox" />
+                              <input
+                                class="form-check-input m-0 me-2"
+                                type="checkbox"
+                              />
                               <span class="avatar avatar-sm rounded-circle me-2"
                                 ><img
                                   src="@/assets/img/users/user-12.jpg"
@@ -152,7 +165,10 @@
                             <label
                               class="dropdown-item px-2 d-flex align-items-center text-dark"
                             >
-                              <input class="form-check-input m-0 me-2" type="checkbox" />
+                              <input
+                                class="form-check-input m-0 me-2"
+                                type="checkbox"
+                              />
                               <span class="avatar avatar-sm rounded-circle me-2"
                                 ><img
                                   src="@/assets/img/users/user-02.jpg"
@@ -165,7 +181,10 @@
                             <label
                               class="dropdown-item px-2 d-flex align-items-center text-dark"
                             >
-                              <input class="form-check-input m-0 me-2" type="checkbox" />
+                              <input
+                                class="form-check-input m-0 me-2"
+                                type="checkbox"
+                              />
                               <span class="avatar avatar-sm rounded-circle me-2"
                                 ><img
                                   src="@/assets/img/users/user-08.jpg"
@@ -184,7 +203,9 @@
                             >
                           </div>
                           <div class="col-6">
-                            <a href="javascript:void(0);" class="btn btn-primary w-100"
+                            <a
+                              href="javascript:void(0);"
+                              class="btn btn-primary w-100"
                               >Select</a
                             >
                           </div>
@@ -193,7 +214,9 @@
                     </div>
                   </div>
                   <div class="mb-3">
-                    <div class="d-flex align-items-center justify-content-between">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
                       <label class="form-label">Date</label>
                     </div>
                     <div class="input-group position-relative">
@@ -217,7 +240,9 @@
                     id="close-filter"
                     >Close</a
                   >
-                  <button type="submit" class="btn btn-primary btn-md">Filter</button>
+                  <button type="submit" class="btn btn-primary btn-md">
+                    Filter
+                  </button>
                 </div>
               </form>
             </div>
@@ -232,10 +257,14 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-end p-2">
               <li>
-                <a href="javascript:void(0);" class="dropdown-item rounded-1">Recent</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                  >Recent</a
+                >
               </li>
               <li>
-                <a href="javascript:void(0);" class="dropdown-item rounded-1">Oldest</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                  >Oldest</a
+                >
               </li>
             </ul>
           </div>
@@ -263,7 +292,9 @@
                     class="rounded-circle"
                   />
                 </a>
-                <a href="javascript:void(0);" class="fw-medium">{{ record.CreatedBy }}</a>
+                <a href="javascript:void(0);" class="fw-medium">{{
+                  record.CreatedBy
+                }}</a>
               </div>
             </template>
             <template v-if="column.key === 'Priority'">
@@ -295,7 +326,8 @@
                       record.Status === 'Resolved',
                     'bg-soft-warning text-warning border border-warning':
                       record.Status === 'Inprogress',
-                    'bg-soft-info text-info border border-info': record.Status === 'Open',
+                    'bg-soft-info text-info border border-info':
+                      record.Status === 'Open',
                   },
                 ]"
                 >{{ record.Status }}
@@ -340,10 +372,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
@@ -503,7 +532,11 @@
             <!-- end row -->
           </div>
           <div class="modal-footer d-flex align-items-center gap-1">
-            <button type="button" class="btn btn-white border" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-white border"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
             <button type="submit" class="btn btn-primary">Add Ticket</button>
@@ -552,7 +585,11 @@
                   <label class="form-label"
                     >Created By<span class="text-danger ms-1">*</span></label
                   >
-                  <input type="text" class="form-control" value="Andrew Simmons" />
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="Andrew Simmons"
+                  />
                 </div>
               </div>
               <!-- end col -->
@@ -575,7 +612,11 @@
                   <label class="form-label"
                     >Email Address<span class="text-danger ms-1">*</span></label
                   >
-                  <input type="text" class="form-control" value="andrew@example.com" />
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="andrew@example.com"
+                  />
                 </div>
               </div>
               <!-- end col -->
@@ -584,7 +625,11 @@
                   <label class="form-label"
                     >Subject<span class="text-danger ms-1">*</span></label
                   >
-                  <input type="text" class="form-control" value="Auto Logout Complaint" />
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="Auto Logout Complaint"
+                  />
                 </div>
               </div>
               <!-- end col -->
@@ -684,7 +729,11 @@ Keep getting logged out while working, even without being idle. It’s frustrati
             <!-- end row -->
           </div>
           <div class="modal-footer d-flex align-items-center gap-1">
-            <button type="button" class="btn btn-white border" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-white border"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
             <button type="submit" class="btn btn-primary">Save Changes</button>
@@ -744,7 +793,8 @@ const columns = [
     dataIndex: "TicketID",
     key: "TicketID",
     sorter: {
-      compare: (a, b) => (a.TicketID.toLowerCase() > b.TicketID.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.TicketID.toLowerCase() > b.TicketID.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -752,7 +802,8 @@ const columns = [
     dataIndex: "CreatedBy",
     key: "CreatedBy",
     sorter: {
-      compare: (a, b) => (a.CreatedBy.toLowerCase() > b.CreatedBy.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.CreatedBy.toLowerCase() > b.CreatedBy.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -760,7 +811,8 @@ const columns = [
     dataIndex: "Subject",
     key: "Subject",
     sorter: {
-      compare: (a, b) => (a.Subject.toLowerCase() > b.Subject.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Subject.toLowerCase() > b.Subject.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -777,7 +829,8 @@ const columns = [
     dataIndex: "Priority",
     key: "Priority",
     sorter: {
-      compare: (a, b) => (a.Priority.toLowerCase() > b.Priority.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Priority.toLowerCase() > b.Priority.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -785,7 +838,8 @@ const columns = [
     dataIndex: "Assignee",
     key: "Assignee",
     sorter: {
-      compare: (a, b) => (a.Assignee.toLowerCase() > b.Assignee.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Assignee.toLowerCase() > b.Assignee.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -793,7 +847,8 @@ const columns = [
     dataIndex: "Status",
     key: "Status",
     sorter: {
-      compare: (a, b) => (a.Status.toLowerCase() > b.Status.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Status.toLowerCase() > b.Status.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -960,7 +1015,8 @@ export default {
   },
   methods: {
     getImageUrl(imageName) {
-      return new URL(`/src/assets/img/users/${imageName}`, import.meta.url).href;
+      return new URL(`/src/assets/img/users/${imageName}`, import.meta.url)
+        .href;
     },
   },
   computed: {
@@ -999,10 +1055,16 @@ export default {
             endDate: end,
             ranges: {
               Today: [moment(), moment()],
-              Yesterday: [moment().subtract(1, "days"), moment().subtract(1, "days")],
+              Yesterday: [
+                moment().subtract(1, "days"),
+                moment().subtract(1, "days"),
+              ],
               "Last 7 Days": [moment().subtract(6, "days"), moment()],
               "Last 30 Days": [moment().subtract(29, "days"), moment()],
-              "This Month": [moment().startOf("month"), moment().endOf("month")],
+              "This Month": [
+                moment().startOf("month"),
+                moment().endOf("month"),
+              ],
               "Last Month": [
                 moment().subtract(1, "month").startOf("month"),
                 moment().subtract(1, "month").endOf("month"),

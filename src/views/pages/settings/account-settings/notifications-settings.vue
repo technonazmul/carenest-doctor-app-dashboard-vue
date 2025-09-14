@@ -32,7 +32,9 @@
                       <i class="ti ti-calendar-time text-dark fs-16"></i>
                     </span>
                     <div>
-                      <h5 class="fs-14 fw-semibold mb-1">New Appointment Booking</h5>
+                      <h5 class="fs-14 fw-semibold mb-1">
+                        New Appointment Booking
+                      </h5>
                       <p class="fs-13">Alert when an appointment is booked</p>
                     </div>
                   </div>
@@ -40,19 +42,31 @@
                     <div class="">
                       <p class="fw-medium mb-1 text-dark">Email</p>
                       <label class="d-flex align-items-center form-switch ps-0">
-                        <input class="form-check-input m-0" type="checkbox" checked="" />
+                        <input
+                          class="form-check-input m-0"
+                          type="checkbox"
+                          checked=""
+                        />
                       </label>
                     </div>
                     <div class="">
                       <p class="fw-medium mb-1 text-dark">SMS</p>
                       <label class="d-flex align-items-center form-switch ps-0">
-                        <input class="form-check-input m-0" type="checkbox" checked="" />
+                        <input
+                          class="form-check-input m-0"
+                          type="checkbox"
+                          checked=""
+                        />
                       </label>
                     </div>
                     <div class="">
                       <p class="fw-medium mb-1 text-dark">In App</p>
                       <label class="d-flex align-items-center form-switch ps-0">
-                        <input class="form-check-input m-0" type="checkbox" checked="" />
+                        <input
+                          class="form-check-input m-0"
+                          type="checkbox"
+                          checked=""
+                        />
                       </label>
                     </div>
                   </div>
@@ -67,7 +81,9 @@
                       <i class="ti ti-calendar-x text-dark fs-16"></i>
                     </span>
                     <div>
-                      <h5 class="fs-14 fw-semibold mb-1">Appointment Cancellation</h5>
+                      <h5 class="fs-14 fw-semibold mb-1">
+                        Appointment Cancellation
+                      </h5>
                       <p class="fs-13">Alert if a appointment is cancel</p>
                     </div>
                   </div>
@@ -75,19 +91,31 @@
                     <div class="">
                       <p class="fw-medium mb-1 text-dark">Email</p>
                       <label class="d-flex align-items-center form-switch ps-0">
-                        <input class="form-check-input m-0" type="checkbox" checked="" />
+                        <input
+                          class="form-check-input m-0"
+                          type="checkbox"
+                          checked=""
+                        />
                       </label>
                     </div>
                     <div class="">
                       <p class="fw-medium mb-1 text-dark">SMS</p>
                       <label class="d-flex align-items-center form-switch ps-0">
-                        <input class="form-check-input m-0" type="checkbox" checked="" />
+                        <input
+                          class="form-check-input m-0"
+                          type="checkbox"
+                          checked=""
+                        />
                       </label>
                     </div>
                     <div class="">
                       <p class="fw-medium mb-1 text-dark">In App</p>
                       <label class="d-flex align-items-center form-switch ps-0">
-                        <input class="form-check-input m-0" type="checkbox" checked="" />
+                        <input
+                          class="form-check-input m-0"
+                          type="checkbox"
+                          checked=""
+                        />
                       </label>
                     </div>
                   </div>
@@ -103,26 +131,40 @@
                     </span>
                     <div>
                       <h5 class="fs-14 fw-semibold mb-1">Lab Report Ready</h5>
-                      <p class="fs-13">Notify when test reports are available</p>
+                      <p class="fs-13">
+                        Notify when test reports are available
+                      </p>
                     </div>
                   </div>
                   <div class="d-flex align-items-center gap-4">
                     <div class="">
                       <p class="fw-medium mb-1 text-dark">Email</p>
                       <label class="d-flex align-items-center form-switch ps-0">
-                        <input class="form-check-input m-0" type="checkbox" checked="" />
+                        <input
+                          class="form-check-input m-0"
+                          type="checkbox"
+                          checked=""
+                        />
                       </label>
                     </div>
                     <div class="">
                       <p class="fw-medium mb-1 text-dark">SMS</p>
                       <label class="d-flex align-items-center form-switch ps-0">
-                        <input class="form-check-input m-0" type="checkbox" checked="" />
+                        <input
+                          class="form-check-input m-0"
+                          type="checkbox"
+                          checked=""
+                        />
                       </label>
                     </div>
                     <div class="">
                       <p class="fw-medium mb-1 text-dark">In App</p>
                       <label class="d-flex align-items-center form-switch ps-0">
-                        <input class="form-check-input m-0" type="checkbox" checked="" />
+                        <input
+                          class="form-check-input m-0"
+                          type="checkbox"
+                          checked=""
+                        />
                       </label>
                     </div>
                   </div>
@@ -137,7 +179,9 @@
                       <i class="ti ti-activity-heartbeat text-dark fs-16"></i>
                     </span>
                     <div>
-                      <h5 class="fs-14 fw-semibold mb-1">Follow-up Reminders</h5>
+                      <h5 class="fs-14 fw-semibold mb-1">
+                        Follow-up Reminders
+                      </h5>
                       <p class="fs-13">Scheduled follow-ups from doctors</p>
                     </div>
                   </div>
@@ -145,19 +189,31 @@
                     <div class="">
                       <p class="fw-medium mb-1 text-dark">Email</p>
                       <label class="d-flex align-items-center form-switch ps-0">
-                        <input class="form-check-input m-0" type="checkbox" checked="" />
+                        <input
+                          class="form-check-input m-0"
+                          type="checkbox"
+                          checked=""
+                        />
                       </label>
                     </div>
                     <div class="">
                       <p class="fw-medium mb-1 text-dark">SMS</p>
                       <label class="d-flex align-items-center form-switch ps-0">
-                        <input class="form-check-input m-0" type="checkbox" checked="" />
+                        <input
+                          class="form-check-input m-0"
+                          type="checkbox"
+                          checked=""
+                        />
                       </label>
                     </div>
                     <div class="">
                       <p class="fw-medium mb-1 text-dark">In App</p>
                       <label class="d-flex align-items-center form-switch ps-0">
-                        <input class="form-check-input m-0" type="checkbox" checked="" />
+                        <input
+                          class="form-check-input m-0"
+                          type="checkbox"
+                          checked=""
+                        />
                       </label>
                     </div>
                   </div>
@@ -172,27 +228,43 @@
                       <i class="ti ti-file-dollar text-dark fs-16"></i>
                     </span>
                     <div>
-                      <h5 class="fs-14 fw-semibold mb-1">Billing/Invoice Notification</h5>
-                      <p class="fs-13">Notify when a new bill or invoice is generated</p>
+                      <h5 class="fs-14 fw-semibold mb-1">
+                        Billing/Invoice Notification
+                      </h5>
+                      <p class="fs-13">
+                        Notify when a new bill or invoice is generated
+                      </p>
                     </div>
                   </div>
                   <div class="d-flex align-items-center gap-4">
                     <div class="">
                       <p class="fw-medium mb-1 text-dark">Email</p>
                       <label class="d-flex align-items-center form-switch ps-0">
-                        <input class="form-check-input m-0" type="checkbox" checked="" />
+                        <input
+                          class="form-check-input m-0"
+                          type="checkbox"
+                          checked=""
+                        />
                       </label>
                     </div>
                     <div class="">
                       <p class="fw-medium mb-1 text-dark">SMS</p>
                       <label class="d-flex align-items-center form-switch ps-0">
-                        <input class="form-check-input m-0" type="checkbox" checked="" />
+                        <input
+                          class="form-check-input m-0"
+                          type="checkbox"
+                          checked=""
+                        />
                       </label>
                     </div>
                     <div class="">
                       <p class="fw-medium mb-1 text-dark">In App</p>
                       <label class="d-flex align-items-center form-switch ps-0">
-                        <input class="form-check-input m-0" type="checkbox" checked="" />
+                        <input
+                          class="form-check-input m-0"
+                          type="checkbox"
+                          checked=""
+                        />
                       </label>
                     </div>
                   </div>
@@ -217,19 +289,31 @@
                     <div class="">
                       <p class="fw-medium mb-1 text-dark">Email</p>
                       <label class="d-flex align-items-center form-switch ps-0">
-                        <input class="form-check-input m-0" type="checkbox" checked="" />
+                        <input
+                          class="form-check-input m-0"
+                          type="checkbox"
+                          checked=""
+                        />
                       </label>
                     </div>
                     <div class="">
                       <p class="fw-medium mb-1 text-dark">SMS</p>
                       <label class="d-flex align-items-center form-switch ps-0">
-                        <input class="form-check-input m-0" type="checkbox" checked="" />
+                        <input
+                          class="form-check-input m-0"
+                          type="checkbox"
+                          checked=""
+                        />
                       </label>
                     </div>
                     <div class="">
                       <p class="fw-medium mb-1 text-dark">In App</p>
                       <label class="d-flex align-items-center form-switch ps-0">
-                        <input class="form-check-input m-0" type="checkbox" checked="" />
+                        <input
+                          class="form-check-input m-0"
+                          type="checkbox"
+                          checked=""
+                        />
                       </label>
                     </div>
                   </div>
@@ -248,10 +332,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>

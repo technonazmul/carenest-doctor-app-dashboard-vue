@@ -8,7 +8,9 @@
   <div class="page-wrapper">
     <!-- Start Content -->
     <div class="content">
-      <div class="d-flex align-items-sm-center flex-sm-row flex-column gap-2 pb-3">
+      <div
+        class="d-flex align-items-sm-center flex-sm-row flex-column gap-2 pb-3"
+      >
         <div class="flex-grow-1">
           <h4 class="fs-18 fw-semibold mb-0">Voice Call</h4>
         </div>
@@ -20,7 +22,9 @@
             <li class="breadcrumb-item">
               <a href="javascript:void(0);">Applications</a>
             </li>
-            <li class="breadcrumb-item active" aria-current="page">Voice Call</li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Voice Call
+            </li>
           </ol>
         </div>
       </div>
@@ -43,7 +47,10 @@
                     <span class="fs-13 d-block">Online</span>
                   </div>
                 </div>
-                <a href="#" class="avatar avatar-md rounded-circle bg-light text-dark">
+                <a
+                  href="#"
+                  class="avatar avatar-md rounded-circle bg-light text-dark"
+                >
                   <i class="ti ti-user-plus fs-20"></i>
                 </a>
               </div>
@@ -63,7 +70,9 @@
               </div>
               <h5>Anthony Lewis</h5>
               <p>00:24</p>
-              <a href="#" class="avatar avatar-xl position-absolute end-0 bottom-0 m-3"
+              <a
+                href="#"
+                class="avatar avatar-xl position-absolute end-0 bottom-0 m-3"
                 ><img src="@/assets/img/users/user-05.jpg" alt="Img"
               /></a>
             </div>
@@ -98,10 +107,7 @@
     <!-- End Content -->
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>

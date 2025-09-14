@@ -31,7 +31,9 @@
             </ul>
           </div>
 
-          <router-link to="/content/add-page" class="btn btn-primary ms-2 fs-13 btn-md"
+          <router-link
+            to="/content/add-page"
+            class="btn btn-primary ms-2 fs-13 btn-md"
             ><i class="ti ti-plus me-1"></i> Add New Page
           </router-link>
         </div>
@@ -224,10 +226,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
@@ -251,7 +250,9 @@
               ><i class="ti ti-trash fs-24"></i
             ></span>
           </div>
-          <h5 class="fw-bold mb-1 position-relative z-1">Delete Confirmation</h5>
+          <h5 class="fw-bold mb-1 position-relative z-1">
+            Delete Confirmation
+          </h5>
           <p class="mb-3 position-relative z-1">Are you sure want to delete?</p>
           <div class="d-flex justify-content-center">
             <a

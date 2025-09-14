@@ -340,7 +340,6 @@
                 <th>Doctor</th>
                 <th>Method</th>
                 <th>Amount</th>
-                <th>Currency</th>
                 <th>Status</th>
                 <th>Date</th>
                 <th>Actions</th>
@@ -397,14 +396,10 @@
                 </td>
                 <td>
                   <h6 class="fs-14 fw-semibold mb-0">
-                    {{ formatAmount(request.amount, request.currency) }}
+                    {{ formatCurrency(request.amount) }}
                   </h6>
                 </td>
-                <td>
-                  <span class="badge badge-soft-secondary">
-                    {{ request.currency }}
-                  </span>
-                </td>
+
                 <td>
                   <span :class="getStatusClass(request.status)">
                     <i class="ti ti-point-filled me-1"></i>
@@ -571,11 +566,7 @@
 
       <!-- Footer -->
       <div class="footer text-center bg-white p-2 border-top">
-        <p class="text-dark mb-0">
-          2025 &copy;
-          <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-          Rights Reserved
-        </p>
+        <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
       </div>
     </div>
 
@@ -973,6 +964,7 @@
 </template>
 
 <script>
+import { useSettings } from "@/composables/useSettings";
 import axios from "axios";
 import { API_BASE } from "@/api/apiConfig";
 import Cookies from "js-cookie";
@@ -982,9 +974,12 @@ export default {
   name: "WithdrawRequestsManagement",
   setup() {
     const adminToken = Cookies.get("adminToken");
+    const { getCurrencySymbol, formatCurrency } = useSettings();
     return {
       adminToken,
       API_BASE,
+      getCurrencySymbol,
+      formatCurrency,
     };
   },
   data() {
@@ -1523,13 +1518,6 @@ export default {
       return new Intl.NumberFormat("en-US", {
         style: "currency",
         currency: currency,
-      }).format(amount);
-    },
-
-    formatCurrency(amount) {
-      return new Intl.NumberFormat("en-US", {
-        style: "currency",
-        currency: "USD",
       }).format(amount);
     },
 

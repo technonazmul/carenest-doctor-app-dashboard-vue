@@ -10,7 +10,9 @@
     <!-- Start Content -->
     <div class="content">
       <!-- Page Header -->
-      <div class="d-flex align-items-sm-center flex-sm-row flex-column gap-2 pb-3">
+      <div
+        class="d-flex align-items-sm-center flex-sm-row flex-column gap-2 pb-3"
+      >
         <div class="flex-grow-1">
           <h4 class="fs-18 fw-semibold mb-0">Incoming Call</h4>
         </div>
@@ -22,7 +24,9 @@
             <li class="breadcrumb-item">
               <a href="javascript:void(0);">Applications</a>
             </li>
-            <li class="breadcrumb-item active" aria-current="page">Incoming Call</li>
+            <li class="breadcrumb-item active" aria-current="page">
+              Incoming Call
+            </li>
           </ol>
         </div>
       </div>
@@ -31,7 +35,9 @@
       <div class="row">
         <div class="col-xxl-12">
           <div class="card car-max-height mb-0 shadow-none">
-            <div class="card-body text-center d-flex flex-column justify-content-center">
+            <div
+              class="card-body text-center d-flex flex-column justify-content-center"
+            >
               <div
                 class="animation-ripple avatar avatar-xxxl d-flex mx-auto mb-3 rounded-circle mb-3"
               >
@@ -68,10 +74,7 @@
     <!-- End Content -->
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>

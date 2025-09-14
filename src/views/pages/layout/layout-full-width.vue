@@ -1,7 +1,7 @@
 <template>
   <layouts-header></layouts-header>
   <layouts-sidebar></layouts-sidebar>
- <div class="page-wrapper">
+  <div class="page-wrapper">
     <!-- Start Content -->
     <div class="content pb-0">
       <!-- Page Header -->
@@ -20,7 +20,8 @@
           <router-link
             to="/doctors/doctor-schedule"
             class="btn btn-outline-white bg-white d-inline-flex align-items-center"
-            ><i class="ti ti-calendar-time me-1"></i>Schedule Availability</router-link
+            ><i class="ti ti-calendar-time me-1"></i>Schedule
+            Availability</router-link
           >
         </div>
       </div>
@@ -36,7 +37,9 @@
               class="position-absolute start-0 top-0"
             />
             <div class="card-body">
-              <div class="d-flex align-items-center mb-2 justify-content-between">
+              <div
+                class="d-flex align-items-center mb-2 justify-content-between"
+              >
                 <span class="avatar bg-primary rounded-circle"
                   ><i class="ti ti-calendar-heart fs-24"></i
                 ></span>
@@ -77,7 +80,9 @@
               class="position-absolute start-0 top-0"
             />
             <div class="card-body">
-              <div class="d-flex align-items-center mb-2 justify-content-between">
+              <div
+                class="d-flex align-items-center mb-2 justify-content-between"
+              >
                 <span class="avatar bg-danger rounded-circle"
                   ><i class="ti ti-calendar-heart fs-24"></i
                 ></span>
@@ -118,7 +123,9 @@
               class="position-absolute start-0 top-0"
             />
             <div class="card-body">
-              <div class="d-flex align-items-center mb-2 justify-content-between">
+              <div
+                class="d-flex align-items-center mb-2 justify-content-between"
+              >
                 <span class="avatar bg-info rounded-circle"
                   ><i class="ti ti-calendar-heart fs-24"></i
                 ></span>
@@ -158,7 +165,9 @@
               class="position-absolute start-0 top-0"
             />
             <div class="card-body">
-              <div class="d-flex align-items-center mb-2 justify-content-between">
+              <div
+                class="d-flex align-items-center mb-2 justify-content-between"
+              >
                 <span class="avatar bg-success rounded-circle"
                   ><i class="ti ti-calendar-heart fs-24"></i
                 ></span>
@@ -202,7 +211,9 @@
         <div class="col-xl-8">
           <!-- card start -->
           <div class="card shadow-sm flex-fill w-100">
-            <div class="card-header d-flex align-items-center justify-content-between">
+            <div
+              class="card-header d-flex align-items-center justify-content-between"
+            >
               <h5 class="fw-bold mb-0">Appointment Statistics</h5>
               <div class="dropdown">
                 <a
@@ -230,7 +241,8 @@
                 <div class="col-md-3 col-sm-6">
                   <div class="bg-light border p-2 text-center rounded-2">
                     <p class="mb-1 text-truncate">
-                      <i class="ti ti-point-filled me-1 text-primary"></i>All Appointments
+                      <i class="ti ti-point-filled me-1 text-primary"></i>All
+                      Appointments
                     </p>
                     <h5 class="fw-bold mb-0">6314</h5>
                   </div>
@@ -238,7 +250,8 @@
                 <div class="col-md-3 col-sm-6">
                   <div class="bg-light border p-2 text-center rounded-2">
                     <p class="mb-1">
-                      <i class="ti ti-point-filled me-1 text-danger"></i>Cancelled
+                      <i class="ti ti-point-filled me-1 text-danger"></i
+                      >Cancelled
                     </p>
                     <h5 class="fw-bold mb-0">456</h5>
                   </div>
@@ -246,7 +259,8 @@
                 <div class="col-md-3 col-sm-6">
                   <div class="bg-light border p-2 text-center rounded-2">
                     <p class="mb-1">
-                      <i class="ti ti-point-filled me-1 text-warning"></i>Reschedule
+                      <i class="ti ti-point-filled me-1 text-warning"></i
+                      >Reschedule
                     </p>
                     <h5 class="fw-bold mb-0">745</h5>
                   </div>
@@ -254,7 +268,8 @@
                 <div class="col-md-3 col-sm-6">
                   <div class="bg-light border p-2 text-center rounded-2">
                     <p class="mb-1">
-                      <i class="ti ti-point-filled me-1 text-success"></i>Completed
+                      <i class="ti ti-point-filled me-1 text-success"></i
+                      >Completed
                     </p>
                     <h5 class="fw-bold mb-0">4578</h5>
                   </div>
@@ -274,7 +289,9 @@
 
           <!-- card start -->
           <div class="card shadow-sm flex-fill w-100">
-            <div class="card-header d-flex align-items-center justify-content-between">
+            <div
+              class="card-header d-flex align-items-center justify-content-between"
+            >
               <h5 class="fw-bold mb-0">Popular Doctors</h5>
               <div class="dropdown">
                 <a
@@ -320,7 +337,9 @@
                       </router-link>
                       <div>
                         <h6 class="fs-14 mb-1 text-truncate">
-                          <router-link to="/doctors/doctor-details" class="fw-semibold"
+                          <router-link
+                            to="/doctors/doctor-details"
+                            class="fw-semibold"
                             >Dr. Alex Morgan</router-link
                           >
                         </h6>
@@ -353,7 +372,9 @@
                       </router-link>
                       <div>
                         <h6 class="fs-14 mb-1 text-truncate">
-                          <router-link to="/doctors/doctor-details" class="fw-semibold"
+                          <router-link
+                            to="/doctors/doctor-details"
+                            class="fw-semibold"
                             >Dr. Emily Carter</router-link
                           >
                         </h6>
@@ -380,7 +401,9 @@
                       </router-link>
                       <div>
                         <h6 class="fs-14 mb-1 text-truncate">
-                          <router-link to="/doctors/doctor-details" class="fw-semibold"
+                          <router-link
+                            to="/doctors/doctor-details"
+                            class="fw-semibold"
                             >Dr. David Lee</router-link
                           >
                         </h6>
@@ -402,7 +425,9 @@
         <!-- col start -->
         <div class="col-xl-4">
           <div class="card shadow-sm">
-            <div class="card-header d-flex align-items-center justify-content-between">
+            <div
+              class="card-header d-flex align-items-center justify-content-between"
+            >
               <h5 class="fw-bold mb-0 text-truncate">Appointments</h5>
               <div class="dropdown">
                 <a
@@ -414,10 +439,14 @@
                 </a>
                 <ul class="dropdown-menu">
                   <li>
-                    <a class="dropdown-item" href="javascript:void(0);">In Person</a>
+                    <a class="dropdown-item" href="javascript:void(0);"
+                      >In Person</a
+                    >
                   </li>
                   <li>
-                    <a class="dropdown-item" href="javascript:void(0);">Online</a>
+                    <a class="dropdown-item" href="javascript:void(0);"
+                      >Online</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -438,11 +467,13 @@
                 <div>
                   <h6 class="fs-14 fw-semibold mb-1">General Visit</h6>
                   <p class="mb-0 text-truncate">
-                    <i class="ti ti-calendar-time me-1 text-dark"></i> Wed, 05 Apr 2025,
-                    06:30 PM
+                    <i class="ti ti-calendar-time me-1 text-dark"></i> Wed, 05
+                    Apr 2025, 06:30 PM
                   </p>
                 </div>
-                <div class="avatar-list-stacked avatar-group-sm event flex-shrink-0">
+                <div
+                  class="avatar-list-stacked avatar-group-sm event flex-shrink-0"
+                >
                   <span class="avatar avatar-lg rounded-circle border-0"
                     ><img
                       src="@/assets/img/profiles/avatar-26.jpg"
@@ -463,11 +494,13 @@
                 <div>
                   <h6 class="fs-14 fw-semibold mb-1">General Visit</h6>
                   <p class="mb-0 text-truncate">
-                    <i class="ti ti-calendar-time me-1 text-dark"></i> Wed, 05 Apr 2025,
-                    04:10 PM
+                    <i class="ti ti-calendar-time me-1 text-dark"></i> Wed, 05
+                    Apr 2025, 04:10 PM
                   </p>
                 </div>
-                <div class="avatar-list-stacked avatar-group-sm event flex-shrink-0">
+                <div
+                  class="avatar-list-stacked avatar-group-sm event flex-shrink-0"
+                >
                   <span class="avatar avatar-lg rounded-circle border-0"
                     ><img
                       src="@/assets/img/users/user-17.jpg"
@@ -488,11 +521,13 @@
                 <div>
                   <h6 class="fs-14 fw-semibold mb-1">General Visit</h6>
                   <p class="mb-0 text-truncate">
-                    <i class="ti ti-calendar-time me-1 text-dark"></i> Wed, 05 Apr 2025,
-                    10:00 AM
+                    <i class="ti ti-calendar-time me-1 text-dark"></i> Wed, 05
+                    Apr 2025, 10:00 AM
                   </p>
                 </div>
-                <div class="avatar-list-stacked avatar-group-sm event flex-shrink-0">
+                <div
+                  class="avatar-list-stacked avatar-group-sm event flex-shrink-0"
+                >
                   <span class="avatar avatar-lg rounded-circle border-0"
                     ><img
                       src="@/assets/img/users/user-16.jpg"
@@ -524,7 +559,9 @@
         <!-- col start -->
         <div class="col-xl-4 d-flex">
           <div class="card shadow-sm flex-fill w-100">
-            <div class="card-header d-flex align-items-center justify-content-between">
+            <div
+              class="card-header d-flex align-items-center justify-content-between"
+            >
               <h5 class="fw-bold mb-0">Top 3 Departments</h5>
               <div class="dropdown">
                 <a
@@ -562,7 +599,8 @@
               >
                 <p class="d-flex align-items-center mb-0 fs-13">
                   <i class="ti ti-circle-filled text-info fs-10 me-1"></i
-                  ><span class="text-dark fw-semibold me-1">214</span> Cardiology
+                  ><span class="text-dark fw-semibold me-1">214</span>
+                  Cardiology
                 </p>
                 <p class="d-flex align-items-center mb-0 fs-13">
                   <i class="ti ti-circle-filled text-purple fs-10 me-1"></i
@@ -581,7 +619,9 @@
         <!-- col start -->
         <div class="col-xl-4 col-lg-6 d-flex">
           <div class="card shadow-sm flex-fill w-100">
-            <div class="card-header d-flex align-items-center justify-content-between">
+            <div
+              class="card-header d-flex align-items-center justify-content-between"
+            >
               <h5 class="fw-bold mb-0">Doctors Schedule</h5>
               <router-link
                 to="/doctors/doctor-schedule"
@@ -611,7 +651,9 @@
                 </div>
               </div>
               <div class="overflow-auto">
-                <div class="d-flex justify-content-between align-items-center mb-3">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-3"
+                >
                   <div class="d-flex align-items-center flex-shrink-0">
                     <router-link
                       to="/doctors/doctor-details"
@@ -635,12 +677,16 @@
                     </div>
                   </div>
                   <div class="flex-shrink-0 ms-2">
-                    <a href="#" class="btn btn-primary btn-sm py-1 flex-shrink-0"
+                    <a
+                      href="#"
+                      class="btn btn-primary btn-sm py-1 flex-shrink-0"
                       >Book Now</a
                     >
                   </div>
                 </div>
-                <div class="d-flex justify-content-between align-items-center mb-3">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-3"
+                >
                   <div class="d-flex align-items-center flex-shrink-0">
                     <router-link
                       to="/doctors/doctor-details"
@@ -667,7 +713,9 @@
                     <a href="#" class="btn btn-primary btn-sm py-1">Book Now</a>
                   </div>
                 </div>
-                <div class="d-flex justify-content-between align-items-center mb-3">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-3"
+                >
                   <div class="d-flex align-items-center flex-shrink-0">
                     <router-link
                       to="/doctors/doctor-details"
@@ -694,7 +742,9 @@
                     <a href="#" class="btn btn-primary btn-sm py-1">Book Now</a>
                   </div>
                 </div>
-                <div class="d-flex justify-content-between align-items-center mb-0">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-0"
+                >
                   <div class="d-flex align-items-center flex-shrink-0">
                     <router-link
                       to="/doctors/doctor-details"
@@ -730,7 +780,9 @@
         <!-- col start -->
         <div class="col-xl-4 col-lg-6 d-flex">
           <div class="card shadow-sm flex-fill w-100">
-            <div class="card-header d-flex align-items-center justify-content-between">
+            <div
+              class="card-header d-flex align-items-center justify-content-between"
+            >
               <h5 class="fw-bold mb-0">Income By Treatment</h5>
               <div class="dropdown">
                 <a
@@ -754,35 +806,45 @@
               </div>
             </div>
             <div class="card-body">
-              <div class="d-flex align-items-center justify-content-between mb-3">
+              <div
+                class="d-flex align-items-center justify-content-between mb-3"
+              >
                 <div>
                   <p class="fw-semibold mb-1 text-dark">Cardiology</p>
                   <p class="mb-0">4,556 Apointments</p>
                 </div>
                 <h6 class="fw-bold mb-0">$5,985</h6>
               </div>
-              <div class="d-flex align-items-center justify-content-between mb-3">
+              <div
+                class="d-flex align-items-center justify-content-between mb-3"
+              >
                 <div>
                   <p class="fw-semibold mb-1 text-dark">Radiology</p>
                   <p class="mb-0">4,125 Apointments</p>
                 </div>
                 <h6 class="fw-bold mb-0">$5,194</h6>
               </div>
-              <div class="d-flex align-items-center justify-content-between mb-3">
+              <div
+                class="d-flex align-items-center justify-content-between mb-3"
+              >
                 <div>
                   <p class="fw-semibold mb-1 text-dark">Dental Surgery</p>
                   <p class="mb-0">1,796 Apointments</p>
                 </div>
                 <h6 class="fw-bold mb-0">$2,716</h6>
               </div>
-              <div class="d-flex align-items-center justify-content-between mb-3">
+              <div
+                class="d-flex align-items-center justify-content-between mb-3"
+              >
                 <div>
                   <p class="fw-semibold mb-1 text-dark">Orthopaedics</p>
                   <p class="mb-0">3,827 Apointments</p>
                 </div>
                 <h6 class="fw-bold mb-0">$4,682</h6>
               </div>
-              <div class="d-flex align-items-center justify-content-between mb-0">
+              <div
+                class="d-flex align-items-center justify-content-between mb-0"
+              >
                 <div>
                   <p class="fw-semibold mb-1 text-dark">General Medicine</p>
                   <p class="mb-0">9,894 Apointments</p>
@@ -800,7 +862,9 @@
       <div class="row">
         <div class="col-12 d-flex">
           <div class="card shadow-sm flex-fill w-100">
-            <div class="card-header d-flex align-items-center justify-content-between">
+            <div
+              class="card-header d-flex align-items-center justify-content-between"
+            >
               <h5 class="fw-bold mb-0">All Appointments</h5>
               <router-link
                 to="/appointments/appointments-list"
@@ -825,7 +889,10 @@
                     <tr>
                       <td>
                         <div class="d-flex align-items-center">
-                          <router-link to="/doctors/doctor-details" class="avatar me-2">
+                          <router-link
+                            to="/doctors/doctor-details"
+                            class="avatar me-2"
+                          >
                             <img
                               src="@/assets/img/doctors/doctor-06.jpg"
                               alt="img"
@@ -846,7 +913,10 @@
                       </td>
                       <td>
                         <div class="d-flex align-items-center">
-                          <router-link to="/patients/patient-details" class="avatar me-2">
+                          <router-link
+                            to="/patients/patient-details"
+                            class="avatar me-2"
+                          >
                             <img
                               src="@/assets/img/profiles/avatar-02.jpg"
                               alt="img"
@@ -877,7 +947,10 @@
                     <tr>
                       <td>
                         <div class="d-flex align-items-center">
-                          <router-link to="/doctors/doctor-details" class="avatar me-2">
+                          <router-link
+                            to="/doctors/doctor-details"
+                            class="avatar me-2"
+                          >
                             <img
                               src="@/assets/img/doctors/doctor-07.jpg"
                               alt="img"
@@ -898,7 +971,10 @@
                       </td>
                       <td>
                         <div class="d-flex align-items-center">
-                          <router-link to="/patients/patient-details" class="avatar me-2">
+                          <router-link
+                            to="/patients/patient-details"
+                            class="avatar me-2"
+                          >
                             <img
                               src="@/assets/img/profiles/avatar-27.jpg"
                               alt="img"
@@ -929,7 +1005,10 @@
                     <tr>
                       <td>
                         <div class="d-flex align-items-center">
-                          <router-link to="/doctors/doctor-details" class="avatar me-2">
+                          <router-link
+                            to="/doctors/doctor-details"
+                            class="avatar me-2"
+                          >
                             <img
                               src="@/assets/img/doctors/doctor-10.jpg"
                               alt="img"
@@ -950,7 +1029,10 @@
                       </td>
                       <td>
                         <div class="d-flex align-items-center">
-                          <router-link to="/patients/patient-details" class="avatar me-2">
+                          <router-link
+                            to="/patients/patient-details"
+                            class="avatar me-2"
+                          >
                             <img
                               src="@/assets/img/profiles/avatar-20.jpg"
                               alt="img"
@@ -981,7 +1063,10 @@
                     <tr>
                       <td>
                         <div class="d-flex align-items-center">
-                          <router-link to="/doctors/doctor-details" class="avatar me-2">
+                          <router-link
+                            to="/doctors/doctor-details"
+                            class="avatar me-2"
+                          >
                             <img
                               src="@/assets/img/doctors/doctor-11.jpg"
                               alt="img"
@@ -1002,7 +1087,10 @@
                       </td>
                       <td>
                         <div class="d-flex align-items-center">
-                          <router-link to="/patients/patient-details" class="avatar me-2">
+                          <router-link
+                            to="/patients/patient-details"
+                            class="avatar me-2"
+                          >
                             <img
                               src="@/assets/img/profiles/avatar-06.jpg"
                               alt="img"
@@ -1033,7 +1121,10 @@
                     <tr>
                       <td>
                         <div class="d-flex align-items-center">
-                          <router-link to="/doctors/doctor-details" class="avatar me-2">
+                          <router-link
+                            to="/doctors/doctor-details"
+                            class="avatar me-2"
+                          >
                             <img
                               src="@/assets/img/doctors/doctor-14.jpg"
                               alt="img"
@@ -1054,7 +1145,10 @@
                       </td>
                       <td>
                         <div class="d-flex align-items-center">
-                          <router-link to="/patients/patient-details" class="avatar me-2">
+                          <router-link
+                            to="/patients/patient-details"
+                            class="avatar me-2"
+                          >
                             <img
                               src="@/assets/img/profiles/avatar-25.jpg"
                               alt="img"
@@ -1097,7 +1191,9 @@
         <!-- col start -->
         <div class="col-xl-4 d-flex">
           <div class="card shadow-sm flex-fill w-100">
-            <div class="card-header d-flex align-items-center justify-content-between">
+            <div
+              class="card-header d-flex align-items-center justify-content-between"
+            >
               <h5 class="fw-bold mb-0">Top 5 Patients</h5>
               <router-link
                 to="/patients/patients-list"
@@ -1106,7 +1202,9 @@
               >
             </div>
             <div class="card-body">
-              <div class="d-flex justify-content-between align-items-center mb-3">
+              <div
+                class="d-flex justify-content-between align-items-center mb-3"
+              >
                 <div class="d-flex align-items-center">
                   <router-link
                     to="/patients/patient-details"
@@ -1120,7 +1218,9 @@
                   </router-link>
                   <div>
                     <h6 class="fs-14 mb-1 text-truncate">
-                      <router-link to="/patients/patient-details" class="fw-medium"
+                      <router-link
+                        to="/patients/patient-details"
+                        class="fw-medium"
                         >Jesus Adams</router-link
                       >
                     </h6>
@@ -1132,7 +1232,9 @@
                   >80 Appointments</span
                 >
               </div>
-              <div class="d-flex justify-content-between align-items-center mb-3">
+              <div
+                class="d-flex justify-content-between align-items-center mb-3"
+              >
                 <div class="d-flex align-items-center">
                   <router-link
                     to="/patients/patient-details"
@@ -1146,7 +1248,9 @@
                   </router-link>
                   <div>
                     <h6 class="fs-14 mb-1 text-truncate">
-                      <router-link to="/patients/patient-details" class="fw-medium"
+                      <router-link
+                        to="/patients/patient-details"
+                        class="fw-medium"
                         >Ezra Belcher</router-link
                       >
                     </h6>
@@ -1158,7 +1262,9 @@
                   >60 Appointments</span
                 >
               </div>
-              <div class="d-flex justify-content-between align-items-center mb-3">
+              <div
+                class="d-flex justify-content-between align-items-center mb-3"
+              >
                 <div class="d-flex align-items-center">
                   <router-link
                     to="/patients/patient-details"
@@ -1172,7 +1278,9 @@
                   </router-link>
                   <div>
                     <h6 class="fs-14 mb-1 text-truncate">
-                      <router-link to="/patients/patient-details" class="fw-medium"
+                      <router-link
+                        to="/patients/patient-details"
+                        class="fw-medium"
                         >Glen Lentz</router-link
                       >
                     </h6>
@@ -1184,7 +1292,9 @@
                   >40 Appointments</span
                 >
               </div>
-              <div class="d-flex justify-content-between align-items-center mb-3">
+              <div
+                class="d-flex justify-content-between align-items-center mb-3"
+              >
                 <div class="d-flex align-items-center">
                   <router-link
                     to="/patients/patient-details"
@@ -1198,7 +1308,9 @@
                   </router-link>
                   <div>
                     <h6 class="fs-14 mb-1 text-truncate">
-                      <router-link to="/patients/patient-details" class="fw-medium"
+                      <router-link
+                        to="/patients/patient-details"
+                        class="fw-medium"
                         >Bernard Griffith</router-link
                       >
                     </h6>
@@ -1210,7 +1322,9 @@
                   >25 Appointments</span
                 >
               </div>
-              <div class="d-flex justify-content-between align-items-center mb-0">
+              <div
+                class="d-flex justify-content-between align-items-center mb-0"
+              >
                 <div class="d-flex align-items-center">
                   <router-link
                     to="/patients/patient-details"
@@ -1224,7 +1338,9 @@
                   </router-link>
                   <div>
                     <h6 class="fs-14 mb-1 text-truncate">
-                      <router-link to="/patients/patient-details" class="fw-medium"
+                      <router-link
+                        to="/patients/patient-details"
+                        class="fw-medium"
                         >John Elsass</router-link
                       >
                     </h6>
@@ -1244,7 +1360,9 @@
         <!-- col start -->
         <div class="col-xl-4 col-lg-6 d-flex">
           <div class="card shadow-sm flex-fill w-100">
-            <div class="card-header d-flex align-items-center justify-content-between">
+            <div
+              class="card-header d-flex align-items-center justify-content-between"
+            >
               <h5 class="fw-bold mb-0">Recent Transactions</h5>
               <div class="dropdown">
                 <a
@@ -1268,9 +1386,14 @@
               </div>
             </div>
             <div class="card-body">
-              <div class="d-flex justify-content-between align-items-center mb-3">
+              <div
+                class="d-flex justify-content-between align-items-center mb-3"
+              >
                 <div class="d-flex align-items-center">
-                  <a href="javascript:void(0);" class="avatar me-2 flex-shrink-0">
+                  <a
+                    href="javascript:void(0);"
+                    class="avatar me-2 flex-shrink-0"
+                  >
                     <img
                       src="@/assets/img/icons/stripe.svg"
                       alt="img"
@@ -1284,15 +1407,24 @@
                       >
                     </h6>
                     <p class="mb-0 fs-13 text-truncate">
-                      <a href="javascript:void(0);" class="link-primary">#INV5889</a>
+                      <a href="javascript:void(0);" class="link-primary"
+                        >#INV5889</a
+                      >
                     </p>
                   </div>
                 </div>
-                <span class="badge fw-medium bg-success flex-shrink-0">+ $234</span>
+                <span class="badge fw-medium bg-success flex-shrink-0"
+                  >+ $234</span
+                >
               </div>
-              <div class="d-flex justify-content-between align-items-center mb-3">
+              <div
+                class="d-flex justify-content-between align-items-center mb-3"
+              >
                 <div class="d-flex align-items-center">
-                  <a href="javascript:void(0);" class="avatar me-2 flex-shrink-0">
+                  <a
+                    href="javascript:void(0);"
+                    class="avatar me-2 flex-shrink-0"
+                  >
                     <img
                       src="@/assets/img/icons/paypal.svg"
                       alt="img"
@@ -1306,15 +1438,24 @@
                       >
                     </h6>
                     <p class="mb-0 fs-13 text-truncate">
-                      <a href="javascript:void(0);" class="link-primary">#INV7874</a>
+                      <a href="javascript:void(0);" class="link-primary"
+                        >#INV7874</a
+                      >
                     </p>
                   </div>
                 </div>
-                <span class="badge fw-medium bg-success flex-shrink-0">+ $234</span>
+                <span class="badge fw-medium bg-success flex-shrink-0"
+                  >+ $234</span
+                >
               </div>
-              <div class="d-flex justify-content-between align-items-center mb-3">
+              <div
+                class="d-flex justify-content-between align-items-center mb-3"
+              >
                 <div class="d-flex align-items-center">
-                  <a href="javascript:void(0);" class="avatar me-2 flex-shrink-0">
+                  <a
+                    href="javascript:void(0);"
+                    class="avatar me-2 flex-shrink-0"
+                  >
                     <img
                       src="@/assets/img/icons/stripe.svg"
                       alt="img"
@@ -1328,15 +1469,24 @@
                       >
                     </h6>
                     <p class="mb-0 fs-13 text-truncate">
-                      <a href="javascript:void(0);" class="link-primary">#INV4458</a>
+                      <a href="javascript:void(0);" class="link-primary"
+                        >#INV4458</a
+                      >
                     </p>
                   </div>
                 </div>
-                <span class="badge fw-medium bg-danger flex-shrink-0">- $69</span>
+                <span class="badge fw-medium bg-danger flex-shrink-0"
+                  >- $69</span
+                >
               </div>
-              <div class="d-flex justify-content-between align-items-center mb-3">
+              <div
+                class="d-flex justify-content-between align-items-center mb-3"
+              >
                 <div class="d-flex align-items-center">
-                  <a href="javascript:void(0);" class="avatar me-2 flex-shrink-0">
+                  <a
+                    href="javascript:void(0);"
+                    class="avatar me-2 flex-shrink-0"
+                  >
                     <img
                       src="@/assets/img/icons/paypal.svg"
                       alt="img"
@@ -1350,15 +1500,24 @@
                       >
                     </h6>
                     <p class="mb-0 fs-13 text-truncate">
-                      <a href="javascript:void(0);" class="link-primary">#INV5456</a>
+                      <a href="javascript:void(0);" class="link-primary"
+                        >#INV5456</a
+                      >
                     </p>
                   </div>
                 </div>
-                <span class="badge fw-medium bg-success flex-shrink-0">+ $234</span>
+                <span class="badge fw-medium bg-success flex-shrink-0"
+                  >+ $234</span
+                >
               </div>
-              <div class="d-flex justify-content-between align-items-center mb-0">
+              <div
+                class="d-flex justify-content-between align-items-center mb-0"
+              >
                 <div class="d-flex align-items-center">
-                  <a href="javascript:void(0);" class="avatar me-2 flex-shrink-0">
+                  <a
+                    href="javascript:void(0);"
+                    class="avatar me-2 flex-shrink-0"
+                  >
                     <img
                       src="@/assets/img/icons/stripe.svg"
                       alt="img"
@@ -1372,11 +1531,15 @@
                       >
                     </h6>
                     <p class="mb-0 fs-13 text-truncate">
-                      <a href="javascript:void(0);" class="link-primary">#INV4557</a>
+                      <a href="javascript:void(0);" class="link-primary"
+                        >#INV4557</a
+                      >
                     </p>
                   </div>
                 </div>
-                <span class="badge fw-medium bg-success flex-shrink-0">+ $234</span>
+                <span class="badge fw-medium bg-success flex-shrink-0"
+                  >+ $234</span
+                >
               </div>
             </div>
           </div>
@@ -1386,7 +1549,9 @@
         <!-- col start -->
         <div class="col-xl-4 col-lg-6 d-flex">
           <div class="card shadow-sm flex-fill w-100">
-            <div class="card-header d-flex align-items-center justify-content-between">
+            <div
+              class="card-header d-flex align-items-center justify-content-between"
+            >
               <h5 class="fw-bold mb-0">Leave Requests</h5>
               <div class="dropdown">
                 <a
@@ -1412,7 +1577,10 @@
             <div class="card-body">
               <div class="d-flex justify-content-between mb-3">
                 <div class="d-flex align-items-center">
-                  <router-link to="/doctors/doctor-details" class="avatar flex-shrink-0">
+                  <router-link
+                    to="/doctors/doctor-details"
+                    class="avatar flex-shrink-0"
+                  >
                     <img
                       src="@/assets/img/profiles/avatar-16.jpg"
                       class="rounded-circle"
@@ -1426,7 +1594,9 @@
                           >James Allaire</router-link
                         >
                       </h6>
-                      <p class="fs-13 mb-0 text-truncate">4 Days - Personal Reason</p>
+                      <p class="fs-13 mb-0 text-truncate">
+                        4 Days - Personal Reason
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -1445,7 +1615,10 @@
               </div>
               <div class="d-flex justify-content-between mb-3">
                 <div class="d-flex align-items-center">
-                  <router-link to="/doctors/doctor-details" class="avatar flex-shrink-0">
+                  <router-link
+                    to="/doctors/doctor-details"
+                    class="avatar flex-shrink-0"
+                  >
                     <img
                       src="@/assets/img/profiles/avatar-21.jpg"
                       class="rounded-circle"
@@ -1459,7 +1632,9 @@
                           >Esther Schmidt</router-link
                         >
                       </h6>
-                      <p class="fs-13 mb-0 text-truncate">2 Days - Going to Hospital</p>
+                      <p class="fs-13 mb-0 text-truncate">
+                        2 Days - Going to Hospital
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -1478,7 +1653,10 @@
               </div>
               <div class="d-flex justify-content-between mb-3">
                 <div class="d-flex align-items-center">
-                  <router-link to="/doctors/doctor-details" class="avatar flex-shrink-0">
+                  <router-link
+                    to="/doctors/doctor-details"
+                    class="avatar flex-shrink-0"
+                  >
                     <img
                       src="@/assets/img/doctors/doctor-03.jpg"
                       class="rounded-circle"
@@ -1492,7 +1670,9 @@
                           >Valerie Padgett</router-link
                         >
                       </h6>
-                      <p class="fs-13 mb-0 text-truncate">1 Day - Changing Account</p>
+                      <p class="fs-13 mb-0 text-truncate">
+                        1 Day - Changing Account
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -1511,7 +1691,10 @@
               </div>
               <div class="d-flex justify-content-between mb-3">
                 <div class="d-flex align-items-center">
-                  <router-link to="/doctors/doctor-details" class="avatar flex-shrink-0">
+                  <router-link
+                    to="/doctors/doctor-details"
+                    class="avatar flex-shrink-0"
+                  >
                     <img
                       src="@/assets/img/doctors/doctor-02.jpg"
                       class="rounded-circle"
@@ -1521,7 +1704,9 @@
                   <div class="ms-2">
                     <div>
                       <h6 class="fw-semibold text-truncate mb-1 fs-14">
-                        <router-link to="/doctors/doctor-details">Diane Nash</router-link>
+                        <router-link to="/doctors/doctor-details"
+                          >Diane Nash</router-link
+                        >
                       </h6>
                       <p class="fs-13 mb-0 text-truncate">1 Day - Not Well</p>
                     </div>
@@ -1542,7 +1727,10 @@
               </div>
               <div class="d-flex justify-content-between mb-0">
                 <div class="d-flex align-items-center">
-                  <router-link to="/doctors/doctor-details" class="avatar flex-shrink-0">
+                  <router-link
+                    to="/doctors/doctor-details"
+                    class="avatar flex-shrink-0"
+                  >
                     <img
                       src="@/assets/img/doctors/doctor-09.jpg"
                       class="rounded-circle"
@@ -1556,7 +1744,9 @@
                           >Sally Cavazos</router-link
                         >
                       </h6>
-                      <p class="fs-13 mb-0 text-truncate">2 Days - Going to Checkup</p>
+                      <p class="fs-13 mb-0 text-truncate">
+                        2 Days - Going to Checkup
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -1584,11 +1774,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy;
-        <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All Rights
-        Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
@@ -1621,18 +1807,16 @@ export default {
       adminCircleChart: adminCircleChart,
     };
   },
-   setup() {
+  setup() {
     const route = useRoute(); // Get the current route
 
     onMounted(() => {
-        updateHtmlAndBody();
+      updateHtmlAndBody();
     });
 
     // Compute the layout type (data-layout attribute)
     const layoutType = computed(() => {
-      return route.path === "/layout/layout-full-width"
-        ? "full-width"
-        : "";
+      return route.path === "/layout/layout-full-width" ? "full-width" : "";
     });
 
     // Function to update the <html> and <body> tags based on the route
@@ -1673,7 +1857,7 @@ export default {
     });
 
     return {
-      layoutType
+      layoutType,
     };
   },
 };

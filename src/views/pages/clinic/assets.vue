@@ -52,7 +52,9 @@
       <!-- End Page Header -->
 
       <!--  Start Filter -->
-      <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3">
+      <div
+        class="d-flex align-items-center justify-content-between flex-wrap row-gap-3"
+      >
         <div class="d-flex align-items-center gap-2">
           <div class="search-set mb-3">
             <div class="d-flex align-items-center flex-wrap gap-2">
@@ -115,9 +117,13 @@
               <form action="#">
                 <div class="filter-body pb-0">
                   <div class="mb-3">
-                    <div class="d-flex align-items-center justify-content-between">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
                       <label class="form-label">Asset User</label>
-                      <a href="javascript:void(0);" class="link-primary mb-1">Reset</a>
+                      <a href="javascript:void(0);" class="link-primary mb-1"
+                        >Reset</a
+                      >
                     </div>
                     <div class="dropdown">
                       <a
@@ -129,9 +135,13 @@
                       >
                         Select <i class="ti ti-chevron-down ms-auto"></i>
                       </a>
-                      <div class="dropdown-menu shadow-lg w-100 dropdown-info p-3">
+                      <div
+                        class="dropdown-menu shadow-lg w-100 dropdown-info p-3"
+                      >
                         <div class="mb-3">
-                          <div class="input-icon-start input-icon position-relative">
+                          <div
+                            class="input-icon-start input-icon position-relative"
+                          >
                             <span class="input-icon-addon fs-12">
                               <i class="ti ti-search"></i>
                             </span>
@@ -147,7 +157,10 @@
                             <label
                               class="dropdown-item px-2 d-flex align-items-center text-dark"
                             >
-                              <input class="form-check-input m-0 me-2" type="checkbox" />
+                              <input
+                                class="form-check-input m-0 me-2"
+                                type="checkbox"
+                              />
                               <span class="avatar avatar-xs rounded-circle me-2"
                                 ><img
                                   src="@/assets/img/users/user-33.jpg"
@@ -160,7 +173,10 @@
                             <label
                               class="dropdown-item px-2 d-flex align-items-center text-dark"
                             >
-                              <input class="form-check-input m-0 me-2" type="checkbox" />
+                              <input
+                                class="form-check-input m-0 me-2"
+                                type="checkbox"
+                              />
                               <span class="avatar avatar-xs rounded-circle me-2"
                                 ><img
                                   src="@/assets/img/users/user-12.jpg"
@@ -173,7 +189,10 @@
                             <label
                               class="dropdown-item px-2 d-flex align-items-center text-dark"
                             >
-                              <input class="form-check-input m-0 me-2" type="checkbox" />
+                              <input
+                                class="form-check-input m-0 me-2"
+                                type="checkbox"
+                              />
                               <span class="avatar avatar-xs rounded-circle me-2"
                                 ><img
                                   src="@/assets/img/users/user-02.jpg"
@@ -186,7 +205,10 @@
                             <label
                               class="dropdown-item px-2 d-flex align-items-center text-dark"
                             >
-                              <input class="form-check-input m-0 me-2" type="checkbox" />
+                              <input
+                                class="form-check-input m-0 me-2"
+                                type="checkbox"
+                              />
                               <span class="avatar avatar-xs rounded-circle me-2"
                                 ><img
                                   src="@/assets/img/users/user-08.jpg"
@@ -205,7 +227,9 @@
                             >
                           </div>
                           <div class="col-6">
-                            <a href="javascript:void(0);" class="btn btn-primary w-100"
+                            <a
+                              href="javascript:void(0);"
+                              class="btn btn-primary w-100"
                               >Select</a
                             >
                           </div>
@@ -214,9 +238,13 @@
                     </div>
                   </div>
                   <div class="mb-3">
-                    <div class="d-flex align-items-center justify-content-between">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
                       <label class="form-label">Assets</label>
-                      <a href="javascript:void(0);" class="link-primary mb-1">Reset</a>
+                      <a href="javascript:void(0);" class="link-primary mb-1"
+                        >Reset</a
+                      >
                     </div>
                     <div class="dropdown">
                       <a
@@ -228,9 +256,13 @@
                       >
                         Select <i class="ti ti-chevron-down ms-auto"></i>
                       </a>
-                      <div class="dropdown-menu shadow-lg w-100 dropdown-info p-3">
+                      <div
+                        class="dropdown-menu shadow-lg w-100 dropdown-info p-3"
+                      >
                         <div class="mb-3">
-                          <div class="input-icon-start input-icon position-relative">
+                          <div
+                            class="input-icon-start input-icon position-relative"
+                          >
                             <span class="input-icon-addon fs-12">
                               <i class="ti ti-search"></i>
                             </span>
@@ -246,7 +278,10 @@
                             <label
                               class="dropdown-item px-2 d-flex align-items-center text-dark"
                             >
-                              <input class="form-check-input m-0 me-2" type="checkbox" />
+                              <input
+                                class="form-check-input m-0 me-2"
+                                type="checkbox"
+                              />
                               VitalScan Monitor
                             </label>
                           </li>
@@ -254,7 +289,10 @@
                             <label
                               class="dropdown-item px-2 d-flex align-items-center text-dark"
                             >
-                              <input class="form-check-input m-0 me-2" type="checkbox" />
+                              <input
+                                class="form-check-input m-0 me-2"
+                                type="checkbox"
+                              />
                               MediScope
                             </label>
                           </li>
@@ -262,7 +300,10 @@
                             <label
                               class="dropdown-item px-2 d-flex align-items-center text-dark"
                             >
-                              <input class="form-check-input m-0 me-2" type="checkbox" />
+                              <input
+                                class="form-check-input m-0 me-2"
+                                type="checkbox"
+                              />
                               ThermoTrack
                             </label>
                           </li>
@@ -270,7 +311,10 @@
                             <label
                               class="dropdown-item px-2 d-flex align-items-center text-dark"
                             >
-                              <input class="form-check-input m-0 me-2" type="checkbox" />
+                              <input
+                                class="form-check-input m-0 me-2"
+                                type="checkbox"
+                              />
                               InjecSure
                             </label>
                           </li>
@@ -278,7 +322,10 @@
                             <label
                               class="dropdown-item px-2 d-flex align-items-center text-dark"
                             >
-                              <input class="form-check-input m-0 me-2" type="checkbox" />
+                              <input
+                                class="form-check-input m-0 me-2"
+                                type="checkbox"
+                              />
                               LabMate
                             </label>
                           </li>
@@ -286,7 +333,10 @@
                             <label
                               class="dropdown-item px-2 d-flex align-items-center text-dark"
                             >
-                              <input class="form-check-input m-0 me-2" type="checkbox" />
+                              <input
+                                class="form-check-input m-0 me-2"
+                                type="checkbox"
+                              />
                               First Aid Hub
                             </label>
                           </li>
@@ -294,7 +344,10 @@
                             <label
                               class="dropdown-item px-2 d-flex align-items-center text-dark"
                             >
-                              <input class="form-check-input m-0 me-2" type="checkbox" />
+                              <input
+                                class="form-check-input m-0 me-2"
+                                type="checkbox"
+                              />
                               MediCart
                             </label>
                           </li>
@@ -302,7 +355,10 @@
                             <label
                               class="dropdown-item px-2 d-flex align-items-center text-dark"
                             >
-                              <input class="form-check-input m-0 me-2" type="checkbox" />
+                              <input
+                                class="form-check-input m-0 me-2"
+                                type="checkbox"
+                              />
                               SterilBox
                             </label>
                           </li>
@@ -310,7 +366,10 @@
                             <label
                               class="dropdown-item px-2 d-flex align-items-center text-dark"
                             >
-                              <input class="form-check-input m-0 me-2" type="checkbox" />
+                              <input
+                                class="form-check-input m-0 me-2"
+                                type="checkbox"
+                              />
                               MediLogix
                             </label>
                           </li>
@@ -324,7 +383,9 @@
                             >
                           </div>
                           <div class="col-6">
-                            <a href="javascript:void(0);" class="btn btn-primary w-100"
+                            <a
+                              href="javascript:void(0);"
+                              class="btn btn-primary w-100"
                               >Select</a
                             >
                           </div>
@@ -344,10 +405,15 @@
                       >
                         Select
                       </a>
-                      <div class="dropdown-menu shadow-lg w-100 dropdown-info p-3">
+                      <div
+                        class="dropdown-menu shadow-lg w-100 dropdown-info p-3"
+                      >
                         <div class="filter-range">
                           <input type="text" id="range_03" />
-                          <p>Range : <span class="text-gray-9">$200 - $5695</span></p>
+                          <p>
+                            Range :
+                            <span class="text-gray-9">$200 - $5695</span>
+                          </p>
                         </div>
                       </div>
                     </div>
@@ -368,9 +434,13 @@
                     </div>
                   </div>
                   <div class="mb-3">
-                    <div class="d-flex align-items-center justify-content-between">
+                    <div
+                      class="d-flex align-items-center justify-content-between"
+                    >
                       <label class="form-label">Status</label>
-                      <a href="javascript:void(0);" class="link-primary mb-1">Reset</a>
+                      <a href="javascript:void(0);" class="link-primary mb-1"
+                        >Reset</a
+                      >
                     </div>
                     <div class="dropdown">
                       <a
@@ -382,9 +452,13 @@
                       >
                         Select <i class="ti ti-chevron-down ms-auto"></i>
                       </a>
-                      <div class="dropdown-menu shadow-lg w-100 dropdown-info p-3">
+                      <div
+                        class="dropdown-menu shadow-lg w-100 dropdown-info p-3"
+                      >
                         <div class="mb-3">
-                          <div class="input-icon-start input-icon position-relative">
+                          <div
+                            class="input-icon-start input-icon position-relative"
+                          >
                             <span class="input-icon-addon fs-12">
                               <i class="ti ti-search"></i>
                             </span>
@@ -400,7 +474,10 @@
                             <label
                               class="dropdown-item px-2 d-flex align-items-center text-dark"
                             >
-                              <input class="form-check-input m-0 me-2" type="checkbox" />
+                              <input
+                                class="form-check-input m-0 me-2"
+                                type="checkbox"
+                              />
                               Approved
                             </label>
                           </li>
@@ -408,7 +485,10 @@
                             <label
                               class="dropdown-item px-2 d-flex align-items-center text-dark"
                             >
-                              <input class="form-check-input m-0 me-2" type="checkbox" />
+                              <input
+                                class="form-check-input m-0 me-2"
+                                type="checkbox"
+                              />
                               Pending
                             </label>
                           </li>
@@ -422,7 +502,9 @@
                             >
                           </div>
                           <div class="col-6">
-                            <a href="javascript:void(0);" class="btn btn-primary w-100"
+                            <a
+                              href="javascript:void(0);"
+                              class="btn btn-primary w-100"
                               >Select</a
                             >
                           </div>
@@ -440,7 +522,10 @@
                     id="close-filter"
                     >Close</a
                   >
-                  <button type="submit" class="btn btn-primary btn-md fw-medium">
+                  <button
+                    type="submit"
+                    class="btn btn-primary btn-md fw-medium"
+                  >
                     Filter
                   </button>
                 </div>
@@ -457,10 +542,14 @@
             </a>
             <ul class="dropdown-menu dropdown-menu-end p-2">
               <li>
-                <a href="javascript:void(0);" class="dropdown-item rounded-1">Recent</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                  >Recent</a
+                >
               </li>
               <li>
-                <a href="javascript:void(0);" class="dropdown-item rounded-1">Oldest</a>
+                <a href="javascript:void(0);" class="dropdown-item rounded-1"
+                  >Oldest</a
+                >
               </li>
             </ul>
           </div>
@@ -548,10 +637,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
@@ -624,7 +710,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/users/user-02.jpg"
@@ -637,7 +726,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/profiles/avatar-01.jpg"
@@ -650,7 +742,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/profiles/avatar-16.jpg"
@@ -663,7 +758,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/profiles/avatar-15.jpg"
@@ -676,7 +774,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/profiles/avatar-14.jpg"
@@ -689,7 +790,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/profiles/avatar-01.jpg"
@@ -821,7 +925,9 @@
                 >Value <span class="text-danger">* </span>
               </label>
               <div class="input-group">
-                <span class="input-group-text bg-transparent text-dark fs-14">$</span>
+                <span class="input-group-text bg-transparent text-dark fs-14"
+                  >$</span
+                >
                 <input type="text" class="form-control" placeholder="0" />
               </div>
             </div>
@@ -903,7 +1009,11 @@
                   >Asset Name <span class="text-danger">*</span></label
                 >
                 <div class="input-group">
-                  <input type="text" class="form-control" value="VitalScan Monitor" />
+                  <input
+                    type="text"
+                    class="form-control"
+                    value="VitalScan Monitor"
+                  />
                 </div>
               </div>
             </div>
@@ -942,7 +1052,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/users/user-02.jpg"
@@ -955,7 +1068,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/profiles/avatar-01.jpg"
@@ -968,7 +1084,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/profiles/avatar-16.jpg"
@@ -981,7 +1100,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/profiles/avatar-15.jpg"
@@ -994,7 +1116,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/profiles/avatar-14.jpg"
@@ -1007,7 +1132,10 @@
                         <label
                           class="dropdown-item px-2 d-flex align-items-center text-dark"
                         >
-                          <input class="form-check-input m-0 me-2" type="checkbox" />
+                          <input
+                            class="form-check-input m-0 me-2"
+                            type="checkbox"
+                          />
                           <span class="avatar avatar-sm rounded-circle me-2"
                             ><img
                               src="@/assets/img/profiles/avatar-01.jpg"
@@ -1060,7 +1188,11 @@
                   Manufacturer <span class="text-danger">*</span></label
                 >
                 <div class="input-group">
-                  <input type="text" class="form-control" placeholder="Endosys" />
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="Endosys"
+                  />
                 </div>
               </div>
             </div>
@@ -1072,7 +1204,11 @@
                   Model <span class="text-danger">*</span></label
                 >
                 <div class="input-group">
-                  <input type="text" class="form-control" placeholder="CareKIT Pro" />
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="CareKIT Pro"
+                  />
                 </div>
               </div>
             </div>
@@ -1084,7 +1220,11 @@
                   Serial Number <span class="text-danger">*</span></label
                 >
                 <div class="input-group">
-                  <input type="text" class="form-control" placeholder="ENW12547E789" />
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="ENW12547E789"
+                  />
                 </div>
               </div>
             </div>
@@ -1139,8 +1279,15 @@
                 >Value <span class="text-danger">* </span>
               </label>
               <div class="input-group">
-                <span class="input-group-text bg-transparent text-dark fs-14">$</span>
-                <input type="text" class="form-control" placeholder="0" value="100" />
+                <span class="input-group-text bg-transparent text-dark fs-14"
+                  >$</span
+                >
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="0"
+                  value="100"
+                />
               </div>
             </div>
             <!-- end col -->
@@ -1167,7 +1314,11 @@
                   <label class="form-label mb-1 text-dark fs-14 fw-medium"
                     >Description <span class="text-danger">*</span>
                   </label>
-                  <textarea rows="4" class="form-control rounded" placeholder="">
+                  <textarea
+                    rows="4"
+                    class="form-control rounded"
+                    placeholder=""
+                  >
  Evaluates the Autonomic Nervous System (ANS) to help identify disorders such as sudden death risk, silent heart attacks, hypertension, and syncope.​</textarea
                   >
                 </div>
@@ -1214,7 +1365,9 @@
               ><i class="ti ti-trash fs-24"></i
             ></span>
           </div>
-          <h5 class="fw-bold mb-1 position-relative z-1">Delete Confirmation</h5>
+          <h5 class="fw-bold mb-1 position-relative z-1">
+            Delete Confirmation
+          </h5>
           <p class="mb-3 position-relative z-1">Are you sure want to delete?</p>
           <div class="d-flex justify-content-center">
             <a
@@ -1243,7 +1396,8 @@ const columns = [
     dataIndex: "AssetID",
     key: "AssetID",
     sorter: {
-      compare: (a, b) => (a.AssetID.toLowerCase() > b.AssetID.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.AssetID.toLowerCase() > b.AssetID.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -1251,7 +1405,8 @@ const columns = [
     dataIndex: "AssetUser",
     key: "AssetUser",
     sorter: {
-      compare: (a, b) => (a.AssetUser.toLowerCase() > b.AssetUser.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.AssetUser.toLowerCase() > b.AssetUser.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -1259,7 +1414,8 @@ const columns = [
     dataIndex: "Assets",
     key: "Assets",
     sorter: {
-      compare: (a, b) => (a.Assets.toLowerCase() > b.Assets.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Assets.toLowerCase() > b.Assets.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -1276,7 +1432,8 @@ const columns = [
     dataIndex: "Warrenty",
     key: "Warrenty",
     sorter: {
-      compare: (a, b) => (a.Warrenty.toLowerCase() > b.Warrenty.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Warrenty.toLowerCase() > b.Warrenty.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -1293,7 +1450,8 @@ const columns = [
     dataIndex: "Amount",
     key: "Amount",
     sorter: {
-      compare: (a, b) => (a.Amount.toLowerCase() > b.Amount.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Amount.toLowerCase() > b.Amount.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -1301,7 +1459,8 @@ const columns = [
     dataIndex: "Status",
     key: "Status",
     sorter: {
-      compare: (a, b) => (a.Status.toLowerCase() > b.Status.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Status.toLowerCase() > b.Status.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -1478,7 +1637,8 @@ export default {
   },
   methods: {
     getImageUrl(imageName) {
-      return new URL(`/src/assets/img/users/${imageName}`, import.meta.url).href;
+      return new URL(`/src/assets/img/users/${imageName}`, import.meta.url)
+        .href;
     },
   },
   computed: {
@@ -1518,10 +1678,16 @@ export default {
             endDate: end,
             ranges: {
               Today: [moment(), moment()],
-              Yesterday: [moment().subtract(1, "days"), moment().subtract(1, "days")],
+              Yesterday: [
+                moment().subtract(1, "days"),
+                moment().subtract(1, "days"),
+              ],
               "Last 7 Days": [moment().subtract(6, "days"), moment()],
               "Last 30 Days": [moment().subtract(29, "days"), moment()],
-              "This Month": [moment().startOf("month"), moment().endOf("month")],
+              "This Month": [
+                moment().startOf("month"),
+                moment().endOf("month"),
+              ],
               "Last Month": [
                 moment().subtract(1, "month").startOf("month"),
                 moment().subtract(1, "month").endOf("month"),

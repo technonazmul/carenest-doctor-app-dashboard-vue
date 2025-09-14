@@ -23,7 +23,9 @@
                 <div
                   class="d-flex align-items-center justify-content-between flex-wrap gap-2"
                 >
-                  <h6 class="fs-14 fw-semibold mb-0">Salary Month: March,2025</h6>
+                  <h6 class="fs-14 fw-semibold mb-0">
+                    Salary Month: March,2025
+                  </h6>
                   <div class="d-flex align-items-center">
                     <h6 class="fs-14 fw-semibold mb-0 me-2">Status:</h6>
                     <span class="badge bg-success fw-medium">Sucess</span>
@@ -35,7 +37,11 @@
                   class="d-flex align-items-center justify-content-between mb-3 flex-wrap gap-2"
                 >
                   <div>
-                    <img src="@/assets/img/logo.svg" alt="img" class="img-fluid mb-2" />
+                    <img
+                      src="@/assets/img/logo.svg"
+                      alt="img"
+                      class="img-fluid mb-2"
+                    />
                     <p class="mb-0">3864 Quiet Valley Lane,</p>
                     <p class="mb-0">Sherman Oaks, CA, 91403</p>
                     <p class="mb-0">GST No:2914035</p>
@@ -43,10 +49,12 @@
                   <div class="text-end">
                     <h6 class="fs-14 fw-semibold mb-1">Andrew Fletcher</h6>
                     <p class="mb-0">
-                      Employee ID : <span class="text-dark fw-medium">ST-0001</span>
+                      Employee ID :
+                      <span class="text-dark fw-medium">ST-0001</span>
                     </p>
                     <p class="mb-0">
-                      Joining Date : <span class="text-dark fw-medium">7 May 2015</span>
+                      Joining Date :
+                      <span class="text-dark fw-medium">7 May 2015</span>
                     </p>
                   </div>
                 </div>
@@ -60,7 +68,9 @@
                       <input type="text" class="form-control" />
                     </div>
                     <div class="mb-3">
-                      <label class="form-label">House Rent Allowance (H.R.A)</label>
+                      <label class="form-label"
+                        >House Rent Allowance (H.R.A)</label
+                      >
                       <input type="text" class="form-control" />
                     </div>
                     <div class="mb-3">
@@ -80,7 +90,9 @@
                   <div class="col-md-6">
                     <h5 class="mb-3 fw-bold">Deductions</h5>
                     <div class="mb-3">
-                      <label class="form-label">Tax Deducted at Sources (T.D.S)</label>
+                      <label class="form-label"
+                        >Tax Deducted at Sources (T.D.S)</label
+                      >
                       <input type="text" class="form-control" />
                     </div>
                     <div class="mb-3">
@@ -105,12 +117,14 @@
                 <!-- end row -->
 
                 <h6 class="fs-14 fw-semibold mb-2">
-                  Net Salary: $9698 (Nine Thousand Six Hundred and Ninety Eight Only)
+                  Net Salary: $9698 (Nine Thousand Six Hundred and Ninety Eight
+                  Only)
                 </h6>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus sed
-                  dictum ligula, cursus blandit risus. Maecenas eget metus non tellus
-                  dignissim aliquam ut a ex. Maecenas sed vehicula dui, ac suscipit lacus.
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Vivamus sed dictum ligula, cursus blandit risus. Maecenas eget
+                  metus non tellus dignissim aliquam ut a ex. Maecenas sed
+                  vehicula dui, ac suscipit lacus.
                 </p>
               </div>
               <!-- end card body -->
@@ -138,10 +152,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>

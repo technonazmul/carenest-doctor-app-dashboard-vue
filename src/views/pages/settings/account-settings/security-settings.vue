@@ -44,7 +44,8 @@
                             href="javascript:void(0);"
                             data-bs-toggle="modal"
                             data-bs-target="#change_password"
-                            ><span class="btn btn-md btn-light p-1 shadow-sm border"
+                            ><span
+                              class="btn btn-md btn-light p-1 shadow-sm border"
                               ><i class="ti ti-edit"></i></span
                           ></a>
                         </div>
@@ -63,7 +64,9 @@
                           </div>
                         </div>
                         <div class="d-flex align-items-center">
-                          <label class="d-flex align-items-center form-switch ps-3">
+                          <label
+                            class="d-flex align-items-center form-switch ps-3"
+                          >
                             <input
                               class="form-check-input m-0 me-2"
                               type="checkbox"
@@ -77,12 +80,16 @@
                       >
                         <div class="d-flex align-items-center">
                           <div>
-                            <h5 class="fs-16 fw-semibold mb-1">Google Authentication</h5>
+                            <h5 class="fs-16 fw-semibold mb-1">
+                              Google Authentication
+                            </h5>
                             <p class="fs-14">Connect to Google</p>
                           </div>
                         </div>
                         <div class="d-flex align-items-center">
-                          <label class="d-flex align-items-center form-switch ps-3">
+                          <label
+                            class="d-flex align-items-center form-switch ps-3"
+                          >
                             <input
                               class="form-check-input m-0 me-2"
                               type="checkbox"
@@ -97,7 +104,9 @@
                         <div class="d-flex align-items-center">
                           <div>
                             <h5 class="fs-16 fw-semibold mb-1">Phone Number</h5>
-                            <p class="fs-14">Phone Number associated with the account</p>
+                            <p class="fs-14">
+                              Phone Number associated with the account
+                            </p>
                           </div>
                         </div>
                         <div class="d-flex align-items-center">
@@ -106,11 +115,13 @@
                             class="me-3"
                             data-bs-toggle="modal"
                             data-bs-target="#phone_verification"
-                            ><span class="btn btn-md btn-light border shadow-sm p-1"
+                            ><span
+                              class="btn btn-md btn-light border shadow-sm p-1"
                               ><i class="ti ti-edit"></i></span
                           ></a>
                           <a href="javascript:void(0);"
-                            ><span class="btn btn-md btn-light border shadow-sm p-1"
+                            ><span
+                              class="btn btn-md btn-light border shadow-sm p-1"
                               ><i class="ti ti-trash"></i></span
                           ></a>
                         </div>
@@ -120,8 +131,12 @@
                       >
                         <div class="d-flex align-items-center">
                           <div>
-                            <h5 class="fs-16 fw-semibold mb-1">Email Address</h5>
-                            <p class="fs-14">Email Address associated with the account</p>
+                            <h5 class="fs-16 fw-semibold mb-1">
+                              Email Address
+                            </h5>
+                            <p class="fs-14">
+                              Email Address associated with the account
+                            </p>
                           </div>
                         </div>
                         <div class="d-flex align-items-center">
@@ -130,11 +145,13 @@
                             class="me-3"
                             data-bs-toggle="modal"
                             data-bs-target="#email_verification"
-                            ><span class="btn btn-md btn-light border shadow-sm p-1"
+                            ><span
+                              class="btn btn-md btn-light border shadow-sm p-1"
                               ><i class="ti ti-edit"></i></span
                           ></a>
                           <a href="javascript:void(0);"
-                            ><span class="btn btn-md btn-light border shadow-sm p-1"
+                            ><span
+                              class="btn btn-md btn-light border shadow-sm p-1"
                               ><i class="ti ti-trash"></i></span
                           ></a>
                         </div>
@@ -144,15 +161,18 @@
                       >
                         <div class="d-flex align-items-center">
                           <div>
-                            <h5 class="fs-16 fw-semibold mb-1">Deactivate Account</h5>
+                            <h5 class="fs-16 fw-semibold mb-1">
+                              Deactivate Account
+                            </h5>
                             <p class="fs-14">
-                              ​Your account will be deactivated and reactivated upon
-                              signing in again.
+                              ​Your account will be deactivated and reactivated
+                              upon signing in again.
                             </p>
                           </div>
                         </div>
                         <a href="javascript:void(0);"
-                          ><span class="btn btn-md btn-light border shadow-sm p-1"
+                          ><span
+                            class="btn btn-md btn-light border shadow-sm p-1"
                             ><i class="ti ti-ban"></i></span
                         ></a>
                       </div>
@@ -161,15 +181,20 @@
                       >
                         <div class="d-flex align-items-center">
                           <div>
-                            <h5 class="fs-16 fw-semibold mb-1">Delete Account</h5>
-                            <p class="fs-14">Your account will be permanently deleted</p>
+                            <h5 class="fs-16 fw-semibold mb-1">
+                              Delete Account
+                            </h5>
+                            <p class="fs-14">
+                              Your account will be permanently deleted
+                            </p>
                           </div>
                         </div>
                         <a
                           href="javascript:void(0);"
                           data-bs-toggle="modal"
                           data-bs-target="#delete_modal"
-                          ><span class="btn btn-md btn-light border shadow-sm p-1"
+                          ><span
+                            class="btn btn-md btn-light border shadow-sm p-1"
                             ><i class="ti ti-trash"></i></span
                         ></a>
                       </div>
@@ -183,7 +208,8 @@
                           <h6 class="fs-14 fw-semibold">Browsers & Devices</h6>
                           <p class="mb-1">The associated browsers & devices</p>
                           <a href="javascript:void(0);" class="btn btn-primary"
-                            ><i class="ti ti-logout me-1"></i>Sign out from all</a
+                            ><i class="ti ti-logout me-1"></i>Sign out from
+                            all</a
                           >
                         </div>
                         <div
@@ -312,10 +338,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
@@ -374,7 +397,8 @@
               </div>
               <div id="passwordInfo" class="mb-2"></div>
               <p class="text-gray-5">
-                Use 8 or more characters with a mix of letters, numbers & symbols.
+                Use 8 or more characters with a mix of letters, numbers &
+                symbols.
               </p>
             </div>
             <div>
@@ -397,10 +421,18 @@
           <div
             class="modal-footer d-flex align-items-center justify-content-between gap-1"
           >
-            <button type="button" class="btn btn-outline-white" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-outline-white"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
-            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
               Save Changes
             </button>
           </div>
@@ -427,7 +459,9 @@
           <div class="modal-body">
             <div class="mb-3">
               <label class="form-label"
-                >Current Phone Number<span class="text-danger ms-1">*</span></label
+                >Current Phone Number<span class="text-danger ms-1"
+                  >*</span
+                ></label
               >
               <input type="text" class="form-control" id="phone" />
             </div>
@@ -437,8 +471,8 @@
               >
               <input type="text" class="form-control" id="phone2" />
               <p class="mt-2 d-inline-flex align-items-center">
-                <i class="ti ti-info-circle me-1"></i>New phone number only updated once
-                you verified
+                <i class="ti ti-info-circle me-1"></i>New phone number only
+                updated once you verified
               </p>
             </div>
             <div>
@@ -461,10 +495,18 @@
           <div
             class="modal-footer d-flex align-items-center justify-content-between gap-1"
           >
-            <button type="button" class="btn btn-outline-white" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-outline-white"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
-            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
               Save Changes
             </button>
           </div>
@@ -491,7 +533,9 @@
           <div class="modal-body">
             <div class="mb-3">
               <label class="form-label"
-                >Current Email Address<span class="text-danger ms-1">*</span></label
+                >Current Email Address<span class="text-danger ms-1"
+                  >*</span
+                ></label
               >
               <input type="email" class="form-control" />
             </div>
@@ -501,8 +545,8 @@
               >
               <input type="email" class="form-control" />
               <p class="mt-2 d-inline-flex align-items-center">
-                <i class="ti ti-info-circle me-1"></i>New email address only updated once
-                you verified
+                <i class="ti ti-info-circle me-1"></i>New email address only
+                updated once you verified
               </p>
             </div>
             <div>
@@ -522,11 +566,21 @@
               </div>
             </div>
           </div>
-          <div class="modal-footer d-flex align-items-center justify-content-end gap-1">
-            <button type="button" class="btn btn-outline-white" data-bs-dismiss="modal">
+          <div
+            class="modal-footer d-flex align-items-center justify-content-end gap-1"
+          >
+            <button
+              type="button"
+              class="btn btn-outline-white"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
-            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
               Save Changes
             </button>
           </div>
@@ -558,17 +612,25 @@
               <input type="text" class="form-control" id="phone3" />
             </div>
             <p class="fs-13 mb-0">
-              By providing your phone number, you agree to receive text messages from
-              Figma to enable two-factor authentication when you log in.
+              By providing your phone number, you agree to receive text messages
+              from Figma to enable two-factor authentication when you log in.
             </p>
           </div>
           <div
             class="modal-footer d-flex align-items-center justify-content-between gap-1"
           >
-            <button type="button" class="btn btn-outline-white" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-outline-white"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
-            <button type="submit" class="btn btn-primary" data-bs-dismiss="modal">
+            <button
+              type="submit"
+              class="btn btn-primary"
+              data-bs-dismiss="modal"
+            >
               Verify
             </button>
           </div>
@@ -594,10 +656,12 @@
         <form>
           <div class="modal-body">
             <div class="mb-3">
-              <p class="text-dark fw-semibold mb-0">Why Are You Deleting Your Account?</p>
+              <p class="text-dark fw-semibold mb-0">
+                Why Are You Deleting Your Account?
+              </p>
               <p class="fs-13">
-                We're sorry to see you go! To help us improve, please let us know your
-                reason for deleting your account
+                We're sorry to see you go! To help us improve, please let us
+                know your reason for deleting your account
               </p>
             </div>
             <div>
@@ -609,9 +673,12 @@
                   id="Radio-sm-1"
                 />
                 <div class="ms-2">
-                  <p class="text-dark fw-semibold mb-0">No longer using the service</p>
+                  <p class="text-dark fw-semibold mb-0">
+                    No longer using the service
+                  </p>
                   <label class="form-check-label fs-13" for="Radio-sm-1">
-                    I no longer need this service and won’t be using it in the future.
+                    I no longer need this service and won’t be using it in the
+                    future.
                   </label>
                 </div>
               </div>
@@ -625,7 +692,8 @@
                 <div class="ms-2">
                   <p class="text-dark fw-semibold mb-0">Privacy concerns</p>
                   <label class="form-check-label fs-13" for="Radio-sm-2">
-                    I am concerned about how my data is handled and want to remove
+                    I am concerned about how my data is handled and want to
+                    remove
                   </label>
                 </div>
               </div>
@@ -637,7 +705,9 @@
                   id="Radio-sm-3"
                 />
                 <div class="ms-2">
-                  <p class="text-dark fw-semibold mb-0">Too many notifications/emails</p>
+                  <p class="text-dark fw-semibold mb-0">
+                    Too many notifications/emails
+                  </p>
                   <label class="form-check-label fs-13" for="Radio-sm-3">
                     I’m overwhelmed by the volume of notifications or emails
                   </label>
@@ -653,8 +723,8 @@
                 <div class="ms-2">
                   <p class="text-dark fw-semibold mb-0">Poor user experience</p>
                   <label class="form-check-label fs-13" for="Radio-sm-4">
-                    I’ve had difficulty using the platform, and it didn’t meet my
-                    expectations
+                    I’ve had difficulty using the platform, and it didn’t meet
+                    my expectations
                   </label>
                 </div>
               </div>
@@ -666,7 +736,10 @@
                   id="Radio-sm-5"
                   checked
                 />
-                <label class="form-check-label text-dark fw-semibold" for="Radio-sm-5">
+                <label
+                  class="form-check-label text-dark fw-semibold"
+                  for="Radio-sm-5"
+                >
                   Other (Please specify)
                 </label>
               </div>
@@ -681,10 +754,16 @@
           <div
             class="modal-footer d-flex align-items-center justify-content-between gap-1"
           >
-            <button type="button" class="btn btn-outline-white" data-bs-dismiss="modal">
+            <button
+              type="button"
+              class="btn btn-outline-white"
+              data-bs-dismiss="modal"
+            >
               Cancel
             </button>
-            <button type="submit" class="btn btn-primary">Confirm & Delete</button>
+            <button type="submit" class="btn btn-primary">
+              Confirm & Delete
+            </button>
           </div>
         </form>
       </div>

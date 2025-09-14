@@ -27,11 +27,19 @@
                   <div class="profile-container">
                     <img src="@/assets/img/users/user-08.jpg" alt="Profile" />
                     <div class="overlay-btn">
-                      <a href="javascript:void(0);" class="text-white" id="uploadTrigger">
+                      <a
+                        href="javascript:void(0);"
+                        class="text-white"
+                        id="uploadTrigger"
+                      >
                         <i class="ti ti-photo fs-10"></i>
                       </a>
                     </div>
-                    <input type="file" id="profileUpload" style="display: none" />
+                    <input
+                      type="file"
+                      id="profileUpload"
+                      style="display: none"
+                    />
                   </div>
                 </div>
                 <!-- end col -->
@@ -235,7 +243,10 @@
                 <div class="col-lg-6">
                   <div class="pass-group input-group">
                     <span class="isax toggle-password isax-eye-slash"></span>
-                    <input type="password" class="pass-input form-control rounded" />
+                    <input
+                      type="password"
+                      class="pass-input form-control rounded"
+                    />
                   </div>
                 </div>
                 <!-- end col -->
@@ -253,7 +264,10 @@
                 <div class="col-lg-6">
                   <div class="pass-group input-group">
                     <span class="isax toggle-passwords isax-eye-slash"></span>
-                    <input type="password" class="pass-inputs form-control rounded" />
+                    <input
+                      type="password"
+                      class="pass-inputs form-control rounded"
+                    />
                   </div>
                 </div>
                 <!-- end col -->
@@ -271,7 +285,10 @@
                 <div class="col-lg-6">
                   <div class="pass-group input-group">
                     <span class="isax toggle-passworda isax-eye-slash"></span>
-                    <input type="password" class="pass-inputa form-control rounded" />
+                    <input
+                      type="password"
+                      class="pass-inputa form-control rounded"
+                    />
                   </div>
                 </div>
                 <!-- end col -->
@@ -284,7 +301,9 @@
 
           <div class="d-flex align-items-center justify-content-end">
             <a href="javascript:void(0);" class="btn btn-light me-3">Cancel</a>
-            <a href="javascript:void(0);" class="btn btn-primary">Save Changes</a>
+            <a href="javascript:void(0);" class="btn btn-primary"
+              >Save Changes</a
+            >
           </div>
         </div>
         <!-- end card body -->
@@ -295,10 +314,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>

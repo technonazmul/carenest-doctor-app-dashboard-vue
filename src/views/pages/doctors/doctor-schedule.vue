@@ -15,7 +15,8 @@
       >
         <div class="flex-grow-1">
           <h4 class="fw-bold mb-0">
-            Doctor Schedule<span class="badge badge-soft-primary fs-13 fw-medium ms-2"
+            Doctor Schedule<span
+              class="badge badge-soft-primary fs-13 fw-medium ms-2"
               >Total Doctors : 565</span
             >
           </h4>
@@ -43,7 +44,9 @@
       </div>
       <!-- End Page Header -->
 
-      <div class="d-flex align-items-center justify-content-between flex-wrap row-gap-3">
+      <div
+        class="d-flex align-items-center justify-content-between flex-wrap row-gap-3"
+      >
         <div class="search-set mb-3">
           <div class="d-flex align-items-center flex-wrap gap-2">
             <div class="table-search d-flex align-items-center mb-0">
@@ -280,10 +283,7 @@
 
     <!-- Footer Start -->
     <div class="footer text-center bg-white p-2 border-top">
-      <p class="text-dark mb-0">
-        2025 &copy; <a href="javascript:void(0);" class="link-primary">Preclinic</a>, All
-        Rights Reserved
-      </p>
+      <p class="text-dark mb-0">2025 &copy; , All Rights Reserved</p>
     </div>
     <!-- Footer End -->
   </div>
@@ -300,7 +300,8 @@ const columns = [
     dataIndex: "Doctor",
     key: "Doctor",
     sorter: {
-      compare: (a, b) => (a.Doctor.toLowerCase() > b.Doctor.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Doctor.toLowerCase() > b.Doctor.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -315,7 +316,8 @@ const columns = [
     title: "Phone",
     dataIndex: "Phone",
     sorter: {
-      compare: (a, b) => (a.Phone.toLowerCase() > b.Phone.toLowerCase() ? -1 : 1),
+      compare: (a, b) =>
+        a.Phone.toLowerCase() > b.Phone.toLowerCase() ? -1 : 1,
     },
   },
   {
@@ -427,7 +429,8 @@ export default {
   },
   methods: {
     getImageUrl(imageName) {
-      return new URL(`/src/assets/img/doctors/${imageName}`, import.meta.url).href;
+      return new URL(`/src/assets/img/doctors/${imageName}`, import.meta.url)
+        .href;
     },
   },
   computed: {
