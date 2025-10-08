@@ -114,7 +114,7 @@
                 <span class="fw-medium">({{ record.rating }})</span>
               </div>
             </template>
-            <template v-if="column.key === 'ReviewText'">
+            <template v-if="column.key === 'Review'">
               <div
                 class="text-muted fs-13"
                 style="
@@ -124,7 +124,7 @@
                   white-space: nowrap;
                 "
               >
-                {{ record.reviewText || "No comment provided" }}
+                {{ record.review || "No comment provided" }}
               </div>
             </template>
             <template v-if="column.key === 'AppointmentDate'">
@@ -283,7 +283,7 @@
             <div class="col-sm-4 fw-bold">Review Comment:</div>
             <div class="col-sm-8">
               <div class="p-3 bg-light rounded">
-                {{ selectedReview.reviewText || "No comment provided" }}
+                {{ selectedReview.review || "No comment provided" }}
               </div>
             </div>
           </div>
@@ -359,8 +359,8 @@ const columns = [
   },
   {
     title: "Review",
-    dataIndex: "reviewText",
-    key: "ReviewText",
+    dataIndex: "review",
+    key: "Review",
     sorter: false,
   },
   {
@@ -419,7 +419,7 @@ export default {
           patientName: item.userId?.name || "N/A",
           doctorName: item.doctorId?.name || "N/A",
           rating: item.rating || 0,
-          reviewText: item.reviewText || "",
+          review: item.review || "",
           appointmentDate: item.date || "N/A",
           reviewStatus: item.reviewStatus || false,
           email: item.userId?.email || "",
@@ -443,8 +443,7 @@ export default {
               item.email.toLowerCase().includes(searchTermLower)) ||
             (item.appointmentDate &&
               item.appointmentDate.toLowerCase().includes(searchTermLower)) ||
-            (item.reviewText &&
-              item.reviewText.toLowerCase().includes(searchTermLower))
+            (item.review && item.review.toLowerCase().includes(searchTermLower))
           );
         });
       }
